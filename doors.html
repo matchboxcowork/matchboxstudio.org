@@ -1,0 +1,113 @@
+<html>
+	<head>
+		<title>GreaterLaLa</title>
+		<!-- Door dimensions are approx. 94"Wx81"H, for an aspect of approx. 1.16. -->
+		<!-- Display is 1024x768, so 4:3, or 1.33 aspect, so the image projected will be wider than the door. -->
+
+		<style>
+			
+			/* font - need to get actual font Jason wanted from here http://www.typography.com/fonts/gotham/styles/gotham1 */
+			body { margin: 0px; background-color: #FFF; font-family: 'Gotham', Gotham, Verdana, Arial, sans-serif;}
+			
+			/* Set the native resolution of the projector, 1024x768. */
+			#projected-area { width: 1024px; height:768px; background-color: #FFF; margin: auto; padding: 0px; }
+			
+			/* Set to the approximate dimensions of the door.  Door is narrower than the display, but use full height. */
+			#door-area { width: 892px; height: inherit; background-color: #fff; margin: auto; }
+			
+			/* The height of the rows: 768px / 4 rows - 1px border top and bottom = 190px; bumped to 195 for some buffer */
+			.row { width: inherit; height: 190px; border-style: solid; border-width: 1px; border-color: #FFF; background-color: #fff;}
+			
+			/* A class for all window panes */
+			.windowpane { overflow: hidden; border-style: solid; border-width: 1px; border-color: #FFF; background-color: #fff; display: block; }
+			
+			/* Classes for each window type: small left, small right, and the larger center window in each row. Overflow hidden to keep things from breaking if you color outside the lines. A 1px black border to make aligning projected image and door frame easier */
+			.smallwindow_left { width: 200px; height: inherit; float: left; font-size:150px; color:white; } 
+			.smallwindow_right { width: 200px; height: inherit; float: right; font-size:30px; color:white; }
+			.centerwindow { width: 486px; height: inherit; float: left; font-size:40px; color:white;}
+			/*center window width 486 */
+			
+
+		</style>
+		
+		<script>
+		
+			function loopTransition(e) 
+			{
+				var left1 = document.getElementById("left1");
+				
+				var fullOpacity = 1;
+				var lowOpacity = .5;
+				
+				
+				if (left1.style.opacity == lowOpacity)
+				{
+					left1.style.opacity = highOpacity;
+					left1.style.transition = 'opacity 5s';
+				}
+				else
+				{
+					left1.style.opacity = lowOpacity;
+					left1.style.transition = 'opacity 5s';
+				}
+				
+				alert('test');
+				
+			}
+
+			function animate() {
+			
+				var fullOpacity = 1;
+				var lowOpacity = .5;
+				
+				var left1 = document.getElementById("left1");
+				var center1 = document.getElementById("center1");
+				var right1 = document.getElementById("right1");
+				
+				//left1.addEventListener("transitionend", loopTransition, false);
+		
+				
+				left1.style.opacity = lowOpacity;
+				left1.style.transition = 'opacity 5s';
+				center1.style.opacity = lowOpacity;
+				center1.style.transition = 'opacity 5s';
+				right1.style.opacity = lowOpacity;
+				right1.style.transition = 'opacity 5s';
+				
+
+				
+				
+			}
+			
+			//window.onload = animate;
+		
+		</script>
+	</head>
+	
+	<body>
+		<div id="projected-area">
+			<div id="door-area">
+				<div id="row1" class="row" >
+					<div id="left1" class="windowpane smallwindow_left" style="background-color: BE7A1F;">&nbsp;></div>
+					<div id="center1" class="windowpane centerwindow" style="background-color: BE7A1F;"><br />&nbsp;&nbsp;&nbsp;&nbsp;"bike paths"</div>
+					<div id="right1" class="windowpane smallwindow_right" style="background-color: BE7A1F;"><br />&nbsp;&nbsp;&nbsp;4/11<br />&nbsp;&nbsp;&nbsp;6:12 pm</div>
+				</div>
+				<div id="row2" class="row">
+					<div id="left2" class="windowpane smallwindow_left" style="background-color: 575F22;">&nbsp;></div>
+					<div id="center2" class="windowpane centerwindow" style="background-color: 575F22;"><br />&nbsp;&nbsp;&nbsp;&nbsp;"night life"</div>
+					<div id="right2" class="windowpane smallwindow_right" style="background-color: 575F22;"><br />&nbsp;&nbsp;&nbsp;4/11<br />&nbsp;&nbsp;&nbsp;7:44 pm</div>
+				</div>
+				<div id="row3" class="row">
+					<div id="left3" class="windowpane smallwindow_left" style="background-color: 425851;">&nbsp;></div>
+					<div id="center3" class="windowpane centerwindow" style="background-color: 425851;"><br />&nbsp;&nbsp;&nbsp;&nbsp;"live music"</div>
+					<div id="right3" class="windowpane smallwindow_right" style="background-color: 425851;"><br />&nbsp;&nbsp;&nbsp;4/11<br />&nbsp;&nbsp;&nbsp;3:17 pm</div>
+				</div>
+				<div id="row4" class="row">
+					<div id="left4" class="windowpane smallwindow_left" style="background-color: 0F1E3A;">&nbsp;></div>
+					<div id="center4" class="windowpane centerwindow" style="background-color: 0F1E3A;"><br />&nbsp;&nbsp;&nbsp;&nbsp;"organic food"</div>
+					<div id="right4" class="windowpane smallwindow_right" style="background-color: 0F1E3A;"><br />&nbsp;&nbsp;&nbsp;4/11<br />&nbsp;&nbsp;&nbsp;9:55 am</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

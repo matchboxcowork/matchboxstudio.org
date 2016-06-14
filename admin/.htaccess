@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "MBX Admin Authentication Required"
+AuthUserFile "/var/www/htpasswd/.htpasswd"
+Require valid-user
