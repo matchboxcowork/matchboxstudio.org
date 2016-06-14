@@ -1,13 +1,10 @@
 <?php
 
-/*** mysql hostname ***/
-$hostname = 'localhost';
+require_once 'config/build.php';
 
-/*** mysql username ***/
-$username = 'mbx_user';
-
-/*** mysql password ***/
-$password = 'redacted';
+$hostname = $MBX_CONF['mysql_host'];
+$username = $MBX_CONF['mysql_username'];
+$password = $MBX_CONF['mysql_password'];
 
 try {
 
@@ -63,9 +60,12 @@ $to = array(
 $text = "Hi " . $_POST['appFullName'] . ",  \n\n Thanks for your application. We really appreciate it. We'll be in touch in a few weeks.\n\n-The MatchBOX Team \n http://www.MatchBOXStudio.org \n http://fb.com/matchboxcowork \n https://twitter.com/matchboxcowork";
 $html = "Hi " . $_POST['appFullName'] . ", <br /><br />Thanks for your application. We really appreciate it. We'll be in touch in a few weeks.<br /><br />-The MatchBOX Team<br />http://www.MatchBOXStudio.org<br />http://fb.com/matchboxcowork<br />https://twitter.com/matchboxcowork";
 
-$transport = Swift_SmtpTransport::newInstance('smtp.sparkpostmail.com', 587, 'tls');
-$transport->setUsername('SMTP_Injection');
-$transport->setPassword('redacted');
+$smtp_host = $MBX_CONF['smtp_host'];
+$smtp_port = $MBX_CONF['smtp_port'];
+$smtp_encryption = $MBX_CONF['smtp_enc'];
+$transport = Swift_SmtpTransport::newInstance($smtp_host, $smtp_port, $smtp_encryption);
+$transport->setUsername($MBX_CONF['smtp_username']);
+$transport->setPassword($MBX_CONF['smtp_password']);
 $swift = Swift_Mailer::newInstance($transport);
 
 $message = new Swift_Message($subject);

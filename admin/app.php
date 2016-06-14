@@ -15,10 +15,11 @@
 <?php
 
 ini_set('display_errors', 1);
+require_once '../config/build.php';
 
-$db_host = 'localhost';
-$db_user = 'mbx_user';
-$db_pwd = 'redacted';
+$db_host = $MBX_CONF['mysql_host'];
+$db_user = $MBX_CONF['mysql_username'];
+$db_pwd = $MBX_CONF['mysql_password'];
 
 $database = 'mbx';
 $table = 'applications';
