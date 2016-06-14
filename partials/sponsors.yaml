@@ -1,0 +1,70 @@
+- name: 1st Source 
+  img: "assets/img/1st-Source.png"
+- name: Alcoa 
+  img: "assets/img/Alcoa.png"
+- name: Caterpiller 
+  img: "assets/img/catpllr.png"
+- name: Centier Bank 
+  img: "assets/img/Centier_Bank.png"
+- name: City of Lafayette 
+  img: "assets/img/LafayetteLogo.png"
+- name: Cook Medical 
+  img: "assets/img/Cook_Medical.png"
+- name: Copper Moon 
+  img: "assets/img/CopperMoon.png"
+- name: Duke Energy 
+  img: "assets/img/Duke.png"
+- name: First Financial Bank 
+  img: "assets/img/First-Financial.png"
+- name: Fresh City Market 
+  img: "assets/img/FreshCity.png"
+- name: Greater Lafayette Commerce 
+  img: "assets/img/GLC.png"
+- name: Gutwein Law 
+  img: "assets/img/Gutwein.png"
+- name: Harbor Freight Tools 
+  img: "assets/img/HarborFreight.png"
+- name: Henriott Group 
+  img: "assets/img/Henriott.png"
+- name: Huth Thompson 
+  img: "assets/img/Huth-Thompson.png"
+- name: Ivy Tech Community College 
+  img: "assets/img/Ivy-Tech.png"
+- name: Kettelhut Construction 
+  img: "assets/img/Kettlehut.png"
+- name: Kirby Risk 
+  img: "assets/img/Kirby-Risk.png"
+- name: LUEA 
+  img: "assets/img/LUEA.png"
+- name: Lafayettech 
+  img: "assets/img/LafayetTECH.png"
+- name: Lafayette Community Bank 
+  img: "assets/img/Laf-Community-Bank.png"
+- name: MBAH Insurance 
+  img: "assets/img/MBAH.png"
+- name: Nanshan America 
+  img: "assets/img/Nanshan.png"
+- name: Old National Bank 
+  img: "assets/img/OldNationalBank.png"
+- name: Purdue Foundry 
+  img: "assets/img/Foundry.png"
+- name: SIA 
+  img: "assets/img/SIA-logo-black-copy.png"
+- name: School Datebooks 
+  img: "assets/img/School-Datebooks.png"
+- name: Stormfront 
+  img: "assets/img/Stormfront_logo.png"
+- name: Stuart and Branigin 
+  img: "assets/img/Stuart-and-Branigin.png"
+- name: TBIRD 
+  img: "assets/img/TBIRD-Logo.png"
+- name: Tate and Lyle 
+  img: "assets/img/Tate-and-Lyle.png"
+- name: Tippecanoe County 
+  img: "assets/img/Tippecanoe-County-Logo.png"
+- name: Tippecanoe County Public Library 
+  img: "assets/img/TCPL.png"
+- name: Wabash National 
+  img: "assets/img/Wabash.png"
+- name: Wintek 
+  Img: "assets/img/lg_wintek.png"

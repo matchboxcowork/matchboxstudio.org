@@ -224,3 +224,14 @@ img.fullimage {
 .collapsed {
 	display:none;
 }
+
+.sponsors ul {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.sponsors li { 
+    margin: 0.7em;
+    opacity: 0.6;
+}
