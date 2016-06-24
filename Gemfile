@@ -3,6 +3,7 @@
 source "https://rubygems.org"
 
 gem "haml"
+gem "rdiscount"
 gem "guard"
 gem "guard-haml"
 gem "guard-livereload"

@@ -1,0 +1,110 @@
+:php
+  require_once 'config/build.php';
+
+  $hostname = $MBX_CONF['mysql_host'];
+  $username = $MBX_CONF['mysql_username'];
+  $password = $MBX_CONF['mysql_password'];
+
+  try {
+
+  // other_email must be blank, if it isn't this is probably spam submission
+  if ($_POST['other_email'] == '')
+  {
+
+      $dbh = new PDO("mysql:host=$hostname;dbname=mbx", $username, $password);
+      /*** echo a message saying we have connected ***/
+     
+       /*** INSERT data ***/
+  //    $sql = $dbh->prepare("INSERT INTO applications(FullName, Job, Work, MembershipType, Street, City, State, Zip, Phone, Email, Website, Twitter, SkillSet, Hear, Refer, Offer, Relationship) VALUES (:FullName, :Job, :Work, :MembershipType, :Street, :City, :State, :Zip, :Phone, :Email, :Website, :Twitter, :SkillSet, :Hear, :Refer, :Offer, :Relationship)");
+      $sql = $dbh->prepare("INSERT INTO applications(FullName, Job, Work, MembershipType, Street, City, State, Zip, Phone, Email, Website, Twitter, SkillSet, Hear, Refer, Offer, Relationship, SubmissionDateTime) VALUES (:FullName, :Job, :Work, :MembershipType, :Street, :City, :State, :Zip, :Phone, :Email, :Website, :Twitter, :SkillSet, :Hear, :Refer, :Offer, :Relationship, :SubmissionDateTime)");
+
+      $sql->bindParam(':FullName', $_POST['appFullName']);
+      $sql->bindParam(':Job', $_POST['appJob']);
+      $sql->bindParam(':Work', $_POST['appWork']);
+      $sql->bindParam(':MembershipType', $_POST['appMembershipType']);
+      $sql->bindParam(':Street', $_POST['appStreet']);
+      $sql->bindParam(':City', $_POST['appCity']);
+      $sql->bindParam(':State', $_POST['appState']);
+      $sql->bindParam(':Zip', $_POST['appZip']);
+      $sql->bindParam(':Phone', $_POST['appPhone']);
+      $sql->bindParam(':Email', $_POST['appEmail']);
+      $sql->bindParam(':Website', $_POST['appWebsite']);
+      $sql->bindParam(':Twitter', $_POST['appTwitter']);
+      $sql->bindParam(':SkillSet', $_POST['appSkillSet']);
+      $sql->bindParam(':Hear', $_POST['appHear']);
+      $sql->bindParam(':Refer', $_POST['appRefer']);
+      $sql->bindParam(':Offer', $_POST['appOffer']);
+      $sql->bindParam(':Relationship', $_POST['appRelationship']);
+      $date = date("Y-m-d H:i:s");
+      $sql->bindParam(':SubmissionDateTime', $date);
+      
+      $sql->execute();    
+
+      /*** close the database connection ***/
+      $dbh = null;
+   }   
+      }
+  catch(PDOException $e)
+      {
+      echo $e->getMessage();
+      }
+      
+  include_once "assets/lib/swift_required.php";
+
+  $subject = 'MatchBOX Membership Application Confirmation';
+  $from = array('hello@matchboxstudio.org' =>'MatchBOX');
+  $to = array(
+   $_POST['appEmail']  => $_POST['appFullName']
+  );
+
+  $text = "Hi " . $_POST['appFullName'] . ",  \n\n Thanks for your application. We really appreciate it. We'll be in touch in a few weeks.\n\n-The MatchBOX Team \n http://www.MatchBOXStudio.org \n http://fb.com/matchboxcowork \n https://twitter.com/matchboxcowork";
+  $html = "Hi " . $_POST['appFullName'] . ", <br /><br />Thanks for your application. We really appreciate it. We'll be in touch in a few weeks.<br /><br />-The MatchBOX Team<br />http://www.MatchBOXStudio.org<br />http://fb.com/matchboxcowork<br />https://twitter.com/matchboxcowork";
+
+  $smtp_host = $MBX_CONF['smtp_host'];
+  $smtp_port = $MBX_CONF['smtp_port'];
+  $smtp_encryption = $MBX_CONF['smtp_enc'];
+  $transport = Swift_SmtpTransport::newInstance($smtp_host, $smtp_port, $smtp_encryption);
+  $transport->setUsername($MBX_CONF['smtp_username']);
+  $transport->setPassword($MBX_CONF['smtp_password']);
+  $swift = Swift_Mailer::newInstance($transport);
+
+  $message = new Swift_Message($subject);
+  $message->setFrom($from);
+  $message->setBody($html, 'text/html');
+  $message->setTo($to);
+  $message->addPart($text, 'text/plain');
+
+  if ($recipients = $swift->send($message, $failures))
+  {
+  // echo 'Message successfully sent!';
+  } else {
+   echo "There was an error:\n";
+   print_r($failures);
+  }
+
+
+!!!
+%html{:lang => "en"}
+  %head
+    %title MatchBOX - Coworking Studio - A shared place to work and create in Lafayette, Indiana
+    =include 'partials/base_head.haml'
+  %body
+    / Scrolling anchor
+    #up
+
+    %section.home
+      .overlay
+        .super
+          %section#break4.para
+            .container.message
+              %p.quote-block
+                Check your inbox. We sent you a little something just to make
+                sure all the bits and bytes did their thing. We'll be in touch
+                soon.
+              %p
+                Head back to <a href="/">our site</a> or, better yet, <br>
+                go make something awesome.
+
+    %section.menu=include 'partials/menu.haml'
+
+    =include 'partials/body_scripts.haml'

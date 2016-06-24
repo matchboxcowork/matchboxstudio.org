@@ -1,0 +1,45 @@
+.container
+  .sixteen.columns
+    / Message
+    %h2.message-block
+      Don't be shy, you can ask us <span>anything</span>.
+
+    / Map
+    .map-wrap
+      %iframe{:src => "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=17+S+6th+St,+Lafayette,+IN&aq=0&oq=17+S+6th&sll=40.452656,-86.916843&sspn=0.089216,0.147972&ie=UTF8&hq=&hnear=17+S+6th+St,+Lafayette,+Tippecanoe,+Indiana+47901&ll=40.42671,-86.890329&spn=0.011158,0.018497&t=m&z=14&output=embed"}
+      .mobile-fix
+    %hr
+
+  .eight.columns
+    .four.columns.alpha
+
+      / Contact Info
+      %ul.contact-info
+        %li.name
+          %i.icon-user
+          MatchBOX Coworking Studio, LLC
+        %li.address
+          %i.icon-home
+          %span
+            17 South 6th St., Suite X
+            %br
+            Stein Building
+            %br
+            Lafayette, IN 47901
+            %br
+        %li.email
+          %i.icon-envelope-alt
+          %a{:href => "mailto:hello@matchboxstudio.org"} hello@MatchBOXStudio.org
+        %li.phone
+          %i.icon-phone
+          765.588.9295
+          
+    .four.columns.omega
+      / Social
+      .social
+        %a{:href => "http://twitter.com/matchboxcowork"}
+          %i.icon-twitter
+        %a{:href => "http://facebook.com/matchboxcowork"}
+          %i.icon-facebook
+        %span.arrow
+  %br.clear
