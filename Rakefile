@@ -3,7 +3,8 @@ require 'guard/commander' # see https://github.com/guard/guard/issues/793
 
 task :build do
     Guard.setup
-    Guard.run_all group: :mbx
+    mbx_build = Guard::Group.new(:mbx_build)
+    Guard.run_all groups: [mbx_build]
 end
 
 task :default => [:build]
