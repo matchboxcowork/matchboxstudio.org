@@ -138,6 +138,10 @@ body,html {
     border-bottom: 6px solid #FFFFFF;
 }
 
+.super {
+    height: 100%;
+}
+
 .super h4 {
     color: #fff;
 }

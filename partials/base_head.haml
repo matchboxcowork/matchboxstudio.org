@@ -1,0 +1,57 @@
+%meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+
+/ Basic Page Needs
+%meta{:charset => "utf-8"}/
+%meta{:content => "Coworking Studio - A shared place to work and create in Lafayette, Indiana", :name => "description"}/
+%meta{:content => "coworking, co-working, cowork, co-work, office, shared, community, Lafayette, Indiana", :name => "keywords"}/
+%link{:href => "favicon.ico", :rel => "shortcut icon"}/
+
+/ Mobile Specific Metas
+%meta{:content => "width=device-width, initial-scale=1, maximum-scale=1", :name => "viewport"}/
+
+/ CSS
+%link{:href => "http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Oswald:400,300,700", :rel => "stylesheet", :type => "text/css"}/
+%link{:href => "assets/css/supersized.css", :rel => "stylesheet"}/
+%link{:href => "assets/css/supersized.shutter.css", :rel => "stylesheet"}/
+%link{:href => "assets/css/base.css", :rel => "stylesheet"}/
+%link{:href => "assets/css/font-awesome.css", :rel => "stylesheet"}/
+%link{:href => "assets/css/skeleton.css", :rel => "stylesheet"}/
+%link{:href => "assets/css/layout.css", :rel => "stylesheet"}/
+%link{:href => "assets/css/prettyPhoto.css", :rel => "stylesheet"}/
+
+/ Color CSS
+%link#default{:href => "assets/css/mbx.css", :rel => "stylesheet"}/
+
+/ Revolution Banner CSS Settings
+%link{:href => "assets/rs-plugin/css/settings.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
+
+/ Load jQuery in the head so that any inline scripts have access to it
+%script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js", :type => "text/javascript"}
+
+-# IE Compatibility
+-# TODO: see if we can remove this (based on browser usage metrics)
+/[if lt IE 9]
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+/[if IE 7]
+  <link rel="stylesheet" href="assets/css/font-awesome-ie7.css">
+  <style type="text/css">
+  
+  \.page-wrapper,.footer{
+  width: 100%;
+  position: relative;
+  }
+  \#break3{
+  overflow: hidden;
+  }
+  
+  </style>
+
+/ Google Analytics
+:javascript
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  
+  ga('create', 'UA-41745008-1', 'matchboxstudio.org');
+  ga('send', 'pageview');

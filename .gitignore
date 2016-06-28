@@ -1,1 +1,3 @@
 config/prod.php
+.ruby-version
+.ruby-gemset
