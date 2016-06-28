@@ -1,5 +1,11 @@
 # matchboxstudio.org
 
+Table of contents:
+
+1. [Setting up a dev environment](#setting-up-a-dev-environment)
+2. [Using the build tools](#using-the-build-tools)
+3. [Changes workflow](#changes-workflow)
+
 ## Setting up a dev environment
 
 You will need [Ruby][rb] 2.3 or greater, and a *AMP stack. At MatchBOX, we use Nginx 1.8 , MySQL 5.7, and PHP 5.5 (via php-fpm) as of 28 June 2016. You will need a unix-like shell to work in.
