@@ -10,6 +10,8 @@ Table of contents:
 
 You will need [Ruby][rb] 2.3 or greater, and a *AMP stack. At MatchBOX, we use Nginx 1.8 , MySQL 5.7, and PHP 5.5 (via php-fpm) as of 28 June 2016. You will need a unix-like shell to work in.
 
+Aside: I recommend [DigitalOcean][do] if you plan to work from Windows, or if you would rather not install a server stack on your local machine. If you're new to configuring Linux servers, they've put together an excellent [guide][do-guide].
+
 1. Clone this repository and `cd` into it.
 2. Run `bundle install` to load the project's Ruby dependencies. If you don't have a `bundle` command, install [Bundler][b] by running `gem install bundler`.
 3. Configure your web server to serve from the repository's root directory.
@@ -37,6 +39,8 @@ That's it. See the below section for instructions on our build tools.
 [b]: http://bundler.io
 [sql]: https://github.com/matchboxcowork/dev/blob/master/schema_20160614.sql
 [mc]: https://mailcatcher.me
+[do]: https://www.digitalocean.com
+[do-guide]: https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-14-04
 
 ## Using the build tools
 
