@@ -225,6 +225,7 @@ img.fullimage {
 	display:none;
 }
 
+/* SPONSORS */
 .sponsors ul {
     align-items: center;
     display: flex;
@@ -239,4 +240,15 @@ img.fullimage {
 .sponsors li:hover {
     opacity: 1.0;
     transform: scale(1.1);
+}
+.sponsors img {
+    /* height = 50px on font size: 12px */
+    height: 4.16em;
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
+    .sponsors img, .sponsors li {
+        font-size: 0.75em;
+    }
 }
