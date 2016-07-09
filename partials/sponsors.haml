@@ -1,7 +1,6 @@
 .sponsors.container
   .sixteen.columns
-    .heading
-      %h3 With a little help from our friends
+    %h2.message-block Made with a little help from our <span>friends</span>:
     %ul
       - YAML.load_file('partials/sponsors.yaml').each do |s|
         %li

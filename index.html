@@ -649,166 +649,116 @@
           </div>
           <br class='clear'>
         </div>
-        <!-- Supporting styles and JS code for the sponsorship carousel -->
-        <style>
-          .carousel {
-              overflow:hidden;
-              position:relative;	
-          }
-          .carousel ul {
-              width: 100%;
-              position: relative;
-              list-style: none;
-              margin: 0;
-              padding: 0;
-          }
-          
-          .carousel li {
-              display:inline-block;
-              float:left;
-              text-align:center;
-          }
-        </style>
-        <script>
-          $(document).ready(function() {
-              var width = $(".carousel ul").width();
-              $(".carousel ul").width(width*$(".carousel li").length);
-              $(".carousel li").each(function(i, elem) {
-                  $(elem).width(width);
-              });
-              var i = 0;
-              function slide() {
-                  setTimeout(function() {
-                      i++;
-                      if(i==$(".carousel li").length) {
-                          i=0;
-                      }
-                      $(".carousel ul").animate({left:  -1*width*i}, 500, function() {
-                          slide();
-                      });
-                  }, 2000);
-              }
-              slide();
-          });
-        </script>
-        <div class='container'>
+        <div class='sponsors container'>
           <div class='sixteen columns'>
-            <div class='heading'>
-              <h3>
-                <br>
-                <br>
-                With a little help from our friends
-              </h3>
-            </div>
-            <div class='carousel'>
-              <ul>
-                <li>
-                  <img alt='Sponsor' src='assets/img/1st-Source.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Alcoa.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/catpllr.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Centier_Bank.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Cook_Medical.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/CopperMoon.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Duke.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/First-Financial.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Foundry.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/FreshCity.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor"' src='assets/img/OldNationalBank.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/GLC.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Gutwein.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/HarborFreight.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Henriott.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Huth-Thompson.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Ivy-Tech.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Kettlehut.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Kirby-Risk.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Laf-Community-Bank.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/LafayetTECH.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/LafayetteLogo.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/lg_wintek.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/LUEA.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/MBAH.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Nanshan.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/School-Datebooks.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/SIA-logo-black-copy.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Stormfront_logo.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Stuart-and-Branigin.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Tate-and-Lyle.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/TBIRD-Logo.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/TCPL.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Tippecanoe-County-Logo.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Wabash.png'>
-                </li>
-              </ul>
-            </div>
+            <h2 class='message-block'>Made with a little help from our <span>friends</span>:</h2>
+            <ul>
+              <li>
+                <img alt='1st Source' src='assets/img/sponsors/1st-Source.png'>
+              </li>
+              <li>
+                <img alt='Alcoa' src='assets/img/sponsors/Alcoa.png'>
+              </li>
+              <li>
+                <img alt='Caterpiller' src='assets/img/sponsors/catpllr.png'>
+              </li>
+              <li>
+                <img alt='Centier Bank' src='assets/img/sponsors/Centier_Bank.png'>
+              </li>
+              <li>
+                <img alt='City of Lafayette' src='assets/img/sponsors/LafayetteLogo.png'>
+              </li>
+              <li>
+                <img alt='Cook Medical' src='assets/img/sponsors/Cook_Medical.png'>
+              </li>
+              <li>
+                <img alt='Copper Moon' src='assets/img/sponsors/CopperMoon.png'>
+              </li>
+              <li>
+                <img alt='Duke Energy' src='assets/img/sponsors/Duke.png'>
+              </li>
+              <li>
+                <img alt='First Financial Bank' src='assets/img/sponsors/First-Financial.png'>
+              </li>
+              <li>
+                <img alt='Fresh City Market' src='assets/img/sponsors/FreshCity.png'>
+              </li>
+              <li>
+                <img alt='Greater Lafayette Commerce' src='assets/img/sponsors/GLC.png'>
+              </li>
+              <li>
+                <img alt='Gutwein Law' src='assets/img/sponsors/Gutwein.png'>
+              </li>
+              <li>
+                <img alt='Harbor Freight Tools' src='assets/img/sponsors/HarborFreight.png'>
+              </li>
+              <li>
+                <img alt='Henriott Group' src='assets/img/sponsors/Henriott.png'>
+              </li>
+              <li>
+                <img alt='Huth Thompson' src='assets/img/sponsors/Huth-Thompson.png'>
+              </li>
+              <li>
+                <img alt='Ivy Tech Community College' src='assets/img/sponsors/Ivy-Tech.png'>
+              </li>
+              <li>
+                <img alt='Kettelhut Construction' src='assets/img/sponsors/Kettlehut.png'>
+              </li>
+              <li>
+                <img alt='Kirby Risk' src='assets/img/sponsors/Kirby-Risk.png'>
+              </li>
+              <li>
+                <img alt='LUEA' src='assets/img/sponsors/LUEA.png'>
+              </li>
+              <li>
+                <img alt='Lafayettech' src='assets/img/sponsors/LafayetTECH.png'>
+              </li>
+              <li>
+                <img alt='Lafayette Community Bank' src='assets/img/sponsors/Laf-Community-Bank.png'>
+              </li>
+              <li>
+                <img alt='MBAH Insurance' src='assets/img/sponsors/MBAH.png'>
+              </li>
+              <li>
+                <img alt='Nanshan America' src='assets/img/sponsors/Nanshan.png'>
+              </li>
+              <li>
+                <img alt='Old National Bank' src='assets/img/sponsors/OldNationalBank.png'>
+              </li>
+              <li>
+                <img alt='Purdue Foundry' src='assets/img/sponsors/Foundry.png'>
+              </li>
+              <li>
+                <img alt='SIA' src='assets/img/sponsors/SIA-logo-black-copy.png'>
+              </li>
+              <li>
+                <img alt='School Datebooks' src='assets/img/sponsors/School-Datebooks.png'>
+              </li>
+              <li>
+                <img alt='Stormfront' src='assets/img/sponsors/Stormfront_logo.png'>
+              </li>
+              <li>
+                <img alt='Stuart and Branigin' src='assets/img/sponsors/Stuart-and-Branigin.png'>
+              </li>
+              <li>
+                <img alt='TBIRD' src='assets/img/sponsors/TBIRD-Logo.png'>
+              </li>
+              <li>
+                <img alt='Tate and Lyle' src='assets/img/sponsors/Tate-and-Lyle.png'>
+              </li>
+              <li>
+                <img alt='Tippecanoe County' src='assets/img/sponsors/Tippecanoe-County-Logo.png'>
+              </li>
+              <li>
+                <img alt='Tippecanoe County Public Library' src='assets/img/sponsors/TCPL.png'>
+              </li>
+              <li>
+                <img alt='Wabash National' src='assets/img/sponsors/Wabash.png'>
+              </li>
+              <li>
+                <img alt='Wintek'>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
