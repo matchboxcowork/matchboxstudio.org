@@ -4,4 +4,5 @@
     %ul
       - YAML.load_file('partials/sponsors.yaml').each do |s|
         %li
-          %img{:src => s['img'], :alt => s['name']}
+          %a{:href => s['url'], :alt => "Link to #{s['name']}"}
+            %img{:src => s['img'], :alt => s['name']}

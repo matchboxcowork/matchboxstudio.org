@@ -1,68 +1,102 @@
 - name: 1st Source 
   img: "assets/img/sponsors/1st-Source.png"
+  url: "https://www.1stsource.com/"
 - name: Alcoa 
   img: "assets/img/sponsors/Alcoa.png"
+  url: "https://www.alcoa.com/global/en/home.asp"
 - name: Caterpiller 
   img: "assets/img/sponsors/catpllr.png"
+  url: "http://www.caterpillar.com/"
 - name: Centier Bank 
   img: "assets/img/sponsors/Centier_Bank.png"
+  url: "https://www.centier.com/"
 - name: City of Lafayette 
   img: "assets/img/sponsors/LafayetteLogo.png"
+  url: "http://www.lafayette.in.gov/"
 - name: Copper Moon 
   img: "assets/img/sponsors/CopperMoon.png"
+  url: "https://www.coppermooncoffee.com/"
 - name: Duke Energy 
   img: "assets/img/sponsors/Duke.png"
+  url: "https://www.duke-energy.com/"
 - name: First Financial Bank 
   img: "assets/img/sponsors/First-Financial.png"
+  url: "https://www.bankatfirst.com/content/first-financial-bank/home.html"
 - name: Fresh City Market 
   img: "assets/img/sponsors/FreshCity.png"
+  url: "http://freshcitymarket.com/"
 - name: Greater Lafayette Commerce 
   img: "assets/img/sponsors/GLC.png"
+  url: "http://www.greaterlafayettecommerce.com/"
 - name: Gutwein Law 
   img: "assets/img/sponsors/Gutwein.png"
+  url: "http://gutweinlaw.com/"
 - name: Harbor Freight Tools 
   img: "assets/img/sponsors/HarborFreight.png"
+  url: "http://www.harborfreight.com/"
 - name: Henriott Group 
   img: "assets/img/sponsors/Henriott.png"
+  url: "http://www.henriott.com/"
 - name: Huth Thompson 
   img: "assets/img/sponsors/Huth-Thompson.png"
+  url: "https://www.huththompson.com/"
 - name: Ivy Tech Community College 
   img: "assets/img/sponsors/Ivy-Tech.png"
+  url: "https://www.ivytech.edu/"
 - name: Kettelhut Construction 
   img: "assets/img/sponsors/Kettlehut.png"
+  url: "http://www.kettelhut.com/"
 - name: Kirby Risk 
   img: "assets/img/sponsors/Kirby-Risk.png"
+  url: "https://www.kirbyrisk.com/corporate/index.jsp"
 - name: LUEA 
   img: "assets/img/sponsors/LUEA.png"
+  url: "http://www.luea.org/"
 - name: Lafayettech 
   img: "assets/img/sponsors/LafayetTECH.png"
+  url: "http://lafayettech.org/"
 - name: Lafayette Community Bank 
   img: "assets/img/sponsors/Laf-Community-Bank.png"
+  url: "http://www.lafayettecommunitybank.com/"
 - name: MBAH Insurance 
   img: "assets/img/sponsors/MBAH.png"
+  url: "http://www.mbah.com/"
 - name: Nanshan America 
   img: "assets/img/sponsors/Nanshan.png"
+  url: "http://nanshanamerica-aat.com/"
 - name: Old National Bank 
   img: "assets/img/sponsors/OldNationalBank.png"
+  url: "https://www.oldnational.com/"
 - name: Purdue Foundry 
   img: "assets/img/sponsors/Foundry.png"
+  url: "http://www.purduefoundry.com/"
 - name: SIA 
   img: "assets/img/sponsors/SIA-logo-black-copy.png"
+  url: "http://www.bobrohrmansubaru.com/"
 - name: School Datebooks 
   img: "assets/img/sponsors/School-Datebooks.png"
+  url: "https://www.schooldatebooks.com/"
 - name: Stormfront 
   img: "assets/img/sponsors/Stormfront_logo.png"
+  url: "http://sfp.net/"
 - name: Stuart and Branigin 
   img: "assets/img/sponsors/Stuart-and-Branigin.png"
+  url: "http://www.stuartlaw.com/"
 - name: TBIRD 
   img: "assets/img/sponsors/TBIRD-Logo.png"
+  url: "http://tbirddesign.com/"
 - name: Tate and Lyle 
   img: "assets/img/sponsors/Tate-and-Lyle.png"
+  url: "http://www.tateandlyle.com/Pages/default.aspx"
 - name: Tippecanoe County 
   img: "assets/img/sponsors/Tippecanoe-County-Logo.png"
+  url: "https://www.tippecanoe.in.gov/"
 - name: Tippecanoe County Public Library 
   img: "assets/img/sponsors/TCPL.png"
+  url: "http://www.tcpl.lib.in.us/"
 - name: Wabash National 
   img: "assets/img/sponsors/Wabash.png"
+  url: "http://www.wabashnational.com/"
 - name: Wintek 
-  Img: "assets/img/sponsors/lg_wintek.png"
+  img: "assets/img/sponsors/lg_wintek.png"
+  url: "http://www.wintek.com/"

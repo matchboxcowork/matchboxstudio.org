@@ -233,12 +233,17 @@ img.fullimage {
     justify-content: center;
 }
 .sponsors li { 
-    margin: 0.7em;
+    margin: 0.7em 1.2em 1.0em;
     opacity: 0.7;
 }
-.sponsors img {
-    /* height = 50px on font size: 12px */
-    height: 4.16em;
+.sponsors li:hover {
+    opacity: 1.0;
+}
+.sponsors a img {
+    /* height = (50px img + 0.5em padding + 1px border) at font-size: 12px */
+    height: 4.75em;
+    border-bottom: 1px solid #F05241;
+    padding-bottom: 0.5em;
 }
 
 /* All Mobile Sizes (devices and browser) */
