@@ -649,166 +649,181 @@
           </div>
           <br class='clear'>
         </div>
-        <!-- Supporting styles and JS code for the sponsorship carousel -->
-        <style>
-          .carousel {
-              overflow:hidden;
-              position:relative;	
-          }
-          .carousel ul {
-              width: 100%;
-              position: relative;
-              list-style: none;
-              margin: 0;
-              padding: 0;
-          }
-          
-          .carousel li {
-              display:inline-block;
-              float:left;
-              text-align:center;
-          }
-        </style>
-        <script>
-          $(document).ready(function() {
-              var width = $(".carousel ul").width();
-              $(".carousel ul").width(width*$(".carousel li").length);
-              $(".carousel li").each(function(i, elem) {
-                  $(elem).width(width);
-              });
-              var i = 0;
-              function slide() {
-                  setTimeout(function() {
-                      i++;
-                      if(i==$(".carousel li").length) {
-                          i=0;
-                      }
-                      $(".carousel ul").animate({left:  -1*width*i}, 500, function() {
-                          slide();
-                      });
-                  }, 2000);
-              }
-              slide();
-          });
-        </script>
-        <div class='container'>
+        <div class='sponsors container'>
           <div class='sixteen columns'>
-            <div class='heading'>
-              <h3>
-                <br>
-                <br>
-                With a little help from our friends
-              </h3>
-            </div>
-            <div class='carousel'>
-              <ul>
-                <li>
-                  <img alt='Sponsor' src='assets/img/1st-Source.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Alcoa.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/catpllr.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Centier_Bank.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Cook_Medical.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/CopperMoon.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Duke.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/First-Financial.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Foundry.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/FreshCity.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor"' src='assets/img/OldNationalBank.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/GLC.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Gutwein.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/HarborFreight.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Henriott.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Huth-Thompson.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Ivy-Tech.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Kettlehut.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Kirby-Risk.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Laf-Community-Bank.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/LafayetTECH.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/LafayetteLogo.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/lg_wintek.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/LUEA.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/MBAH.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Nanshan.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/School-Datebooks.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/SIA-logo-black-copy.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Stormfront_logo.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Stuart-and-Branigin.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Tate-and-Lyle.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/TBIRD-Logo.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/TCPL.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Tippecanoe-County-Logo.png'>
-                </li>
-                <li>
-                  <img alt='Sponsor' src='assets/img/Wabash.png'>
-                </li>
-              </ul>
-            </div>
+            <h2 class='message-block'>Made with a little help from our <span>friends</span>:</h2>
+            <ul>
+              <li>
+                <a alt='Link to 1st Source' href='https://www.1stsource.com/'>
+                  <img alt='1st Source' src='assets/img/sponsors/1st-Source.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Alcoa' href='https://www.alcoa.com/global/en/home.asp'>
+                  <img alt='Alcoa' src='assets/img/sponsors/Alcoa.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Caterpiller' href='http://www.caterpillar.com/'>
+                  <img alt='Caterpiller' src='assets/img/sponsors/catpllr.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Centier Bank' href='https://www.centier.com/'>
+                  <img alt='Centier Bank' src='assets/img/sponsors/Centier_Bank.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to City of Lafayette' href='http://www.lafayette.in.gov/'>
+                  <img alt='City of Lafayette' src='assets/img/sponsors/LafayetteLogo.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Copper Moon' href='https://www.coppermooncoffee.com/'>
+                  <img alt='Copper Moon' src='assets/img/sponsors/CopperMoon.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Duke Energy' href='https://www.duke-energy.com/'>
+                  <img alt='Duke Energy' src='assets/img/sponsors/Duke.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to First Financial Bank' href='https://www.bankatfirst.com/content/first-financial-bank/home.html'>
+                  <img alt='First Financial Bank' src='assets/img/sponsors/First-Financial.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Fresh City Market' href='http://freshcitymarket.com/'>
+                  <img alt='Fresh City Market' src='assets/img/sponsors/FreshCity.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Greater Lafayette Commerce' href='http://www.greaterlafayettecommerce.com/'>
+                  <img alt='Greater Lafayette Commerce' src='assets/img/sponsors/GLC.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Gutwein Law' href='http://gutweinlaw.com/'>
+                  <img alt='Gutwein Law' src='assets/img/sponsors/Gutwein.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Harbor Freight Tools' href='http://www.harborfreight.com/'>
+                  <img alt='Harbor Freight Tools' src='assets/img/sponsors/HarborFreight.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Henriott Group' href='http://www.henriott.com/'>
+                  <img alt='Henriott Group' src='assets/img/sponsors/Henriott.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Huth Thompson' href='https://www.huththompson.com/'>
+                  <img alt='Huth Thompson' src='assets/img/sponsors/Huth-Thompson.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Ivy Tech Community College' href='https://www.ivytech.edu/'>
+                  <img alt='Ivy Tech Community College' src='assets/img/sponsors/Ivy-Tech.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Kettelhut Construction' href='http://www.kettelhut.com/'>
+                  <img alt='Kettelhut Construction' src='assets/img/sponsors/Kettlehut.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Kirby Risk' href='https://www.kirbyrisk.com/corporate/index.jsp'>
+                  <img alt='Kirby Risk' src='assets/img/sponsors/Kirby-Risk.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to LUEA' href='http://www.luea.org/'>
+                  <img alt='LUEA' src='assets/img/sponsors/LUEA.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Lafayettech' href='http://lafayettech.org/'>
+                  <img alt='Lafayettech' src='assets/img/sponsors/LafayetTECH.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Lafayette Community Bank' href='http://www.lafayettecommunitybank.com/'>
+                  <img alt='Lafayette Community Bank' src='assets/img/sponsors/Laf-Community-Bank.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to MBAH Insurance' href='http://www.mbah.com/'>
+                  <img alt='MBAH Insurance' src='assets/img/sponsors/MBAH.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Nanshan America' href='http://nanshanamerica-aat.com/'>
+                  <img alt='Nanshan America' src='assets/img/sponsors/Nanshan.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Old National Bank' href='https://www.oldnational.com/'>
+                  <img alt='Old National Bank' src='assets/img/sponsors/OldNationalBank.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Purdue Foundry' href='http://www.purduefoundry.com/'>
+                  <img alt='Purdue Foundry' src='assets/img/sponsors/Foundry.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to SIA' href='http://www.bobrohrmansubaru.com/'>
+                  <img alt='SIA' src='assets/img/sponsors/SIA-logo-black-copy.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to School Datebooks' href='https://www.schooldatebooks.com/'>
+                  <img alt='School Datebooks' src='assets/img/sponsors/School-Datebooks.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Stormfront' href='http://sfp.net/'>
+                  <img alt='Stormfront' src='assets/img/sponsors/Stormfront_logo.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Stuart and Branigin' href='http://www.stuartlaw.com/'>
+                  <img alt='Stuart and Branigin' src='assets/img/sponsors/Stuart-and-Branigin.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to TBIRD' href='http://tbirddesign.com/'>
+                  <img alt='TBIRD' src='assets/img/sponsors/TBIRD-Logo.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Tate and Lyle' href='http://www.tateandlyle.com/Pages/default.aspx'>
+                  <img alt='Tate and Lyle' src='assets/img/sponsors/Tate-and-Lyle.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Tippecanoe County' href='https://www.tippecanoe.in.gov/'>
+                  <img alt='Tippecanoe County' src='assets/img/sponsors/Tippecanoe-County-Logo.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Tippecanoe County Public Library' href='http://www.tcpl.lib.in.us/'>
+                  <img alt='Tippecanoe County Public Library' src='assets/img/sponsors/TCPL.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Wabash National' href='http://www.wabashnational.com/'>
+                  <img alt='Wabash National' src='assets/img/sponsors/Wabash.png'>
+                </a>
+              </li>
+              <li>
+                <a alt='Link to Wintek' href='http://www.wintek.com/'>
+                  <img alt='Wintek' src='assets/img/sponsors/lg_wintek.png'>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
