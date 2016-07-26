@@ -95,7 +95,7 @@
     <!-- Mobile Specific Metas -->
     <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
     <!-- CSS -->
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Oswald:400,300,700|Source+Sans+Pro:300,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='assets/css/supersized.css' rel='stylesheet'>
     <link href='assets/css/supersized.shutter.css' rel='stylesheet'>
     <link href='assets/css/base.css' rel='stylesheet'>
