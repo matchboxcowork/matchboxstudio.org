@@ -10,8 +10,9 @@ gem "guard-livereload"
 gem "rake"
 
 group :dev do
-    gem "thin"
-    gem "rack-legacy"
+    gem "guard-rack"
     gem "pry"
     gem "pry-byebug"
+    gem "rack-legacy"
+    gem "thin"
 end
