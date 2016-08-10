@@ -1,9 +1,9 @@
 <?php
   require_once 'config/build.php';
   
-  $hostname = $MBX_CONF['mysql_host'];
-  $username = $MBX_CONF['mysql_username'];
-  $password = $MBX_CONF['mysql_password'];
+  $username = $MBX_CONF['db_username'];
+  $password = $MBX_CONF['db_password'];
+  $dsn = $MBX_CONF['db_source'];
   
   try {
   
@@ -11,7 +11,7 @@
   if ($_POST['other_email'] == '')
   {
   
-      $dbh = new PDO("mysql:host=$hostname;dbname=mbx", $username, $password);
+      $dbh = new PDO($dsn, $username, $password);
       /*** echo a message saying we have connected ***/
      
        /*** INSERT data ***/
