@@ -12,26 +12,15 @@
 	<body>
 <?php
 
+ini_set('display_errors', 1);
 require_once '../config/build.php';
 
-$db_host = $MBX_CONF['mysql_host'];
-$db_user = $MBX_CONF['mysql_username'];
-$db_pwd = $MBX_CONF['mysql_password'];
-
-$database = 'mbx';
-$table = 'applications';
-
-if (!mysql_connect($db_host, $db_user, $db_pwd))
-    die("Can't connect to database");
-
-if (!mysql_select_db($database))
-    die("Can't select database");
-    
-// sending query
-$result = mysql_query("SELECT * FROM {$table} ORDER BY SubmissionDateTime DESC");
-if (!$result) {
-    die("Query to show fields from table failed");
-}
+$username = $MBX_CONF['db_username'];
+$password = $MBX_CONF['db_password'];
+$dsn = $MBX_CONF['db_source'];
+$dbh = new PDO($dsn, $username, $password);
+$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$sql = "SELECT * FROM 'applications' ORDER BY SubmissionDateTime DESC";
 
 echo "<h1>MatchBOX Membership Applications</h1>";
 echo "<table border='0'><tr>";
@@ -47,13 +36,13 @@ echo "</tr>\n";
 $rowCount = 0;
 
 // printing table rows
-while($row = mysql_fetch_row($result))
+foreach($dbh->query($sql) as $row)
 {
-	$rowCount = $rowCount + 1;
+    $rowCount = $rowCount + 1;
 	
     echo "<tr>";
     
-	echo "<td>$rowCount</td>";
+    echo "<td>$rowCount</td>";
     echo "<td><a href='app.php?id=$row[0]'>$row[1]</a></td>";
     echo "<td>$row[4]</td>";
     echo "<td><a href='mailto:$row[10]'>$row[10]</a></td>";
@@ -62,7 +51,5 @@ while($row = mysql_fetch_row($result))
 }
 
 echo "</table>";
-
-mysql_free_result($result);
 ?>
 </body></html>
