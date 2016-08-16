@@ -35,4 +35,8 @@ group :mbx do
         # style changes
         watch /\.css$/
     end
+
+    guard :rack do
+        watch 'config.ru'
+    end
 end

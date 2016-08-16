@@ -17,33 +17,21 @@
 ini_set('display_errors', 1);
 require_once '../config/build.php';
 
-$db_host = $MBX_CONF['mysql_host'];
-$db_user = $MBX_CONF['mysql_username'];
-$db_pwd = $MBX_CONF['mysql_password'];
-
-$database = 'mbx';
-$table = 'applications';
-
-if (!mysql_connect($db_host, $db_user, $db_pwd))
-    die("Can't connect to database");
-
-if (!mysql_select_db($database))
-    die("Can't select database");
+$username = $MBX_CONF['db_username'];
+$password = $MBX_CONF['db_password'];
+$dsn = $MBX_CONF['db_source'];
+$dbh = new PDO($dsn, $username, $password);
+$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
 // sending query
 $appid = filter_input(INPUT_GET, 'id', FILTER_SANITIZE_SPECIAL_CHARS);
-
-$result = mysql_query("SELECT * FROM {$table} WHERE ApplicationID = {$appid}");
-if (!$result) {
-    die("Query to show fields from table failed");
-}
+$sql = "SELECT * FROM applications WHERE ApplicationID = {$appid}";
 
 echo "<h1>MatchBOX Membership Application Details</h1>";
 echo "<table border='0'>";
 
 // printing table rows
-$row = mysql_fetch_row($result);
-
+$row = $dbh->query($sql)->fetch();
 
 echo "<tr>";
 echo "<th>Full Name</th>";
@@ -98,6 +86,5 @@ echo "</tr>";
 echo "</table>";
 
 
-mysql_free_result($result);
 ?>
 </body></html>
