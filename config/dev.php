@@ -6,7 +6,7 @@ $MBX_CONF = array(
     // Examples include:
     //   'mysql:host=localhost;dbname=mbx'  for a mysql server
     //   'sqlite:/path/do/database.sqlite3' for a sqlite database
-    'db_source'         => 'sqlite:' . realpath(__DIR__ . '/../../mbx.sqlite3'),
+    'db_source'         => 'sqlite:' . realpath(__DIR__ . '/../../dev_db.sqlite3'),
 
     // Database credentials
     'db_username'       => '',
@@ -19,5 +19,4 @@ $MBX_CONF = array(
     'smtp_username'     => '',
     'smtp_password'     => '',
 );
-
 ?>

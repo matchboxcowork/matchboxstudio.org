@@ -2,3 +2,4 @@ config/prod.php
 .ruby-version
 .ruby-gemset
 dev_db.sqlite3
+build/

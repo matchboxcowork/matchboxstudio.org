@@ -10,11 +10,11 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.0.1)
-    ffi (1.9.10)
+    ffi (1.9.14)
     formatador (0.2.5)
-    guard (2.14.0)
+    guard (2.12.9)
       formatador (>= 0.2.4)
-      listen (>= 2.7, < 4.0)
+      listen (>= 2.7, <= 4.0)
       lumberjack (~> 1.0)
       nenv (~> 0.1)
       notiffany (~> 0.0)
@@ -34,6 +34,9 @@ GEM
       ffi
       guard (~> 2.3)
       spoon
+    guard-remote-sync (0.1.0)
+      guard (~> 2.12.4)
+      guard-compat (~> 1.0)
     haml (4.0.7)
       tilt
     http_parser.rb (0.6.0)
@@ -45,10 +48,10 @@ GEM
     method_source (0.8.2)
     multi_json (1.12.1)
     nenv (0.3.0)
-    notiffany (0.1.0)
+    notiffany (0.1.1)
       nenv (~> 0.1)
       shellany (~> 0.0)
-    pry (0.10.3)
+    pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
@@ -65,12 +68,12 @@ GEM
     rack-reverse-proxy (0.11.0)
       rack (>= 1.0.0)
       rack-proxy (~> 0.5, >= 0.5.14)
-    rake (10.4.2)
+    rake (11.2.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
       ffi (>= 0.5.0)
     rdiscount (2.2.0.1)
-    ruby_dep (1.3.1)
+    ruby_dep (1.4.0)
     shellany (0.0.1)
     slop (3.6.0)
     spoon (0.0.4)
@@ -90,6 +93,7 @@ DEPENDENCIES
   guard-haml
   guard-livereload
   guard-rack
+  guard-remote-sync (~> 0.1.0)
   haml
   pry
   pry-byebug

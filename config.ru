@@ -1,7 +1,8 @@
 require 'rack'
 require 'rack-legacy'
 
-use Rack::ShowExceptions
-use Rack::Legacy::Php
-use Rack::Static, :urls => [""], :root => '.', :index => 'index.html'
-run Rack::File.new Dir.getwd
+abs_root = Dir.getwd + '/build'
+
+use Rack::Legacy::Php, abs_root
+use Rack::Static, :urls => [''], :root => 'build', :index => 'index.html'
+run Rack::File.new abs_root 
