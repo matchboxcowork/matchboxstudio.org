@@ -20,7 +20,7 @@ $password = $MBX_CONF['db_password'];
 $dsn = $MBX_CONF['db_source'];
 $dbh = new PDO($dsn, $username, $password);
 $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-$sql = "SELECT * FROM 'applications' ORDER BY SubmissionDateTime DESC";
+$sql = "SELECT * FROM applications ORDER BY SubmissionDateTime DESC";
 
 echo "<h1>MatchBOX Membership Applications</h1>";
 echo "<table border='0'><tr>";

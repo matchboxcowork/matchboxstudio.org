@@ -1,5 +1,6 @@
 config/prod.php
 .ruby-version
 .ruby-gemset
+.bundle
 dev_db.sqlite3
 build/
