@@ -1,2 +1,8 @@
 // Load old mbx css
 @import 'imported';
+
+// Load mixins
+@import 'mixins/media';
+
+// Load stylesheets
+@import 'hero';

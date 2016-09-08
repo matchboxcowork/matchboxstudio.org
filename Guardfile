@@ -35,7 +35,7 @@ end
 
 # Guards for interactive development use.
 group :mbx do
-    guard :haml do
+    guard :haml, output: 'build' do
         # Watch all .haml files in partials. When one of them changes, detect
         # which .haml files in the root directory include them, and recompile
         # those.

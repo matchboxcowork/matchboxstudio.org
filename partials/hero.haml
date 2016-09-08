@@ -1,5 +1,13 @@
-.overlay
+%header.overlay
   .super
-    %div{:style => "width:100%;height:100%;min-height:100%;background-color:#000;text-align:center;margin:auto;"}
-      %iframe#topVideo{:allowfullscreen => "", :frameborder => "0", :height => "500", :mozallowfullscreen => "", :src => "//player.vimeo.com/video/76968901", :style => "width:100%; height:92%;", :webkitallowfullscreen => "", :width => "1024"}
-
+    .video-container
+      %iframe{:src => "https://player.vimeo.com/video/181849415?background=1",
+        :frameborder => "0",
+        :webkitallowfullscreen => true,
+        :mozallowfullscreen => true,
+        :allowfullscreen => true}
+    .logo-container
+      %h1 MatchBOX Studio
+      .logo-cta
+        %a.hero-btn{:href => ""} Look Around
+        %a.hero-btn{:href => ""} Apply For Membership

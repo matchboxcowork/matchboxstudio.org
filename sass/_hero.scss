@@ -1,0 +1,24 @@
+.hero {
+  position: relative;
+
+  .logo-container {
+    width: 10em;
+    margin: 40vh auto;
+  }
+
+  .video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+  }
+}

@@ -202,3 +202,21 @@ img.fullimage {
 @media only screen and (max-width: 767px) {
   .sponsors img, .sponsors li {
     font-size: 0.75em; } }
+.hero {
+  position: relative; }
+  .hero .logo-container {
+    width: 10em;
+    margin: 40vh auto; }
+  .hero .video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0; }
+  .hero .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto; }
