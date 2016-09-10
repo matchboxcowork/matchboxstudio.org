@@ -3,6 +3,11 @@
 # More info at https://github.com/guard/guard#readme
 require './haml_extensions'
 
+def run cmd
+    Guard::UI.info cmd
+    system cmd
+end
+
 # Build steps for matchboxstudio.org. To run these build steps from the shell,
 # run `bin/rake`.
 group :mbx_build do
@@ -13,16 +18,13 @@ group :mbx_build do
     end
 
     guard :sass, output: 'assets/css' do
-        watch %r{sass/(.+\.s[ac]ss)}
+        watch %r{^sass/(.+\.s[ac]ss)}
     end
 
-    guard :shell, all_on_start: true do
-        watch(%r{assets/js/_.*\.js}) { `cat assets/js/_*.js > assets/js/mbx.concat.js` }
-    end
-
-    %w{assets admin config favicon.ico}.each do |dir|
-        guard :shell, all_on_start: true do
-            watch(dir) { `rsync -r #{dir} build` }
+    guard :shell do
+        watch(%r{assets/js/_.*\.js}) { run "cat assets/js/_*.js > assets/js/mbx.concat.js" }
+        %w{assets admin config favicon.ico}.each do |path|
+            watch(path) { run "rsync -ri --ignore-existing #{path} build" }
         end
     end
 end
@@ -44,11 +46,8 @@ group :mbx do
     # extension to have your browser automatically reload when something gets
     # re-built.
     guard :livereload do
-        # page template changes
-        watch %r{assets/.+\.(html|php)$}
-
-        # style changes
-        watch %r{assets/.+\.css$}
+        watch %r{.*\.scss}
+        watch %r{.*\.haml}
     end
 
     guard :rack, port: 9292 do
