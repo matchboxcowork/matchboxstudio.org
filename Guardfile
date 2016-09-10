@@ -3,14 +3,6 @@
 # More info at https://github.com/guard/guard#readme
 require './haml_extensions'
 
-def watch_static dir
-    guard 'remote-sync', source: dir, destionation: 'build/#{dir}',
-        exclude_from: nil, cli: '--color', progress: false,
-        sync_on_start: true do
-            watch(dir)
-        end
-end
-
 # Build steps for matchboxstudio.org. To run these build steps from the shell,
 # run `bin/rake`.
 group :mbx_build do
@@ -24,12 +16,14 @@ group :mbx_build do
         watch %r{sass/(.+\.s[ac]ss)}
     end
 
-    ['assets', 'admin', 'config', 'favicon.ico'].each do |dir|
-        guard 'remote-sync', source: dir, destination: "build",
-            exclude_from: nil, cli: '--color', progress: false,
-            sync_on_start: true, dry_run: false do
-                watch %r{^#{dir}.*}
-            end
+    guard :shell, all_on_start: true do
+        watch(%r{assets/js/_.*\.js}) { `cat assets/js/_*.js > assets/js/mbx.concat.js` }
+    end
+
+    %w{assets admin config favicon.ico}.each do |dir|
+        guard :shell, all_on_start: true do
+            watch(dir) { `rsync -r #{dir} build` }
+        end
     end
 end
 
