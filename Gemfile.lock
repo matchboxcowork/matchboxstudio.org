@@ -43,6 +43,8 @@ GEM
     guard-shell (0.7.1)
       guard (>= 2.0.0)
       guard-compat (~> 1.0)
+    guard-yield (0.1.0)
+      guard-compat (~> 1.0)
     haml (4.0.7)
       tilt
     http_parser.rb (0.6.0)
@@ -103,6 +105,7 @@ DEPENDENCIES
   guard-remote-sync (~> 0.1.0)
   guard-sass
   guard-shell
+  guard-yield
   haml
   pry
   pry-byebug

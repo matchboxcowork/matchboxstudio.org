@@ -22,15 +22,24 @@ group :mbx_build do
         watch %r{^sass/(.+\.s[ac]ss)}
     end
 
-    # Run the following shell tasks:
+    # Concatenate all js files within js_src.
     guard :shell, all_on_start: true do
-        # Concatenate js within js_src
         watch(%r{js_src/.*\.js}) { run "cat js_src/*.js > build/assets/js/mbx.concat.js" }
+    end
 
-        # Copy public files to the build directory.
-        %w{assets admin config favicon.ico}.each do |path|
-            watch(/^#{path}.*/) { |m| run "cp #{m[0]} build/#{m[0]}" }
-        end
+    # Copy public files to the build directory. At buildtime, a similar
+    # procedure is done inside Rakefile
+    SYNC_DIRS = %w{assets admin config favicon.ico}
+    sync_all = proc { SYNC_DIRS.each { |d| run "rsync -LricP #{d} build" } }
+    sync_changes = proc { |_,_,changes| changes.each { |f| run "rsync -LicR #{f} build" } }
+    guard :yield, {
+        start: sync_all,
+        run_all: sync_all,
+        run_on_additions: sync_changes,
+        run_on_modifications: sync_changes,
+        run_on_removals: proc { |_,_,changes| changes.each { |f| run "rm build/#{f}" } }
+    } do
+        SYNC_DIRS.each { |d| watch(/^#{d}.*/) }
     end
 end
 
