@@ -3,6 +3,7 @@
 # More info at https://github.com/guard/guard#readme
 require './haml_extensions'
 
+# Run a shell command, and log it's invocation.
 def run cmd
     Guard::UI.info cmd
     system cmd
@@ -17,14 +18,18 @@ group :mbx_build do
         watch %r{^(?!partials/).+\.haml}
     end
 
-    guard :sass, output: 'assets/css' do
+    guard :sass, output: 'build/assets/css' do
         watch %r{^sass/(.+\.s[ac]ss)}
     end
 
-    guard :shell do
-        watch(%r{assets/js/_.*\.js}) { run "cat assets/js/_*.js > assets/js/mbx.concat.js" }
+    # Run the following shell tasks:
+    guard :shell, all_on_start: true do
+        # Concatenate js within js_src
+        watch(%r{js_src/.*\.js}) { run "cat js_src/*.js > build/assets/js/mbx.concat.js" }
+
+        # Copy public files to the build directory.
         %w{assets admin config favicon.ico}.each do |path|
-            watch(path) { run "rsync -ri --ignore-existing #{path} build" }
+            watch(/^#{path}.*/) { |m| run "cp #{m[0]} build/#{m[0]}" }
         end
     end
 end
