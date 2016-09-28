@@ -68,6 +68,7 @@ GEM
     rack-reverse-proxy (0.11.0)
       rack (>= 1.0.0)
       rack-proxy (~> 0.5, >= 0.5.14)
+    rack-rewrite (1.5.1)
     rake (11.2.2)
     rb-fsevent (0.9.7)
     rb-inotify (0.9.7)
@@ -98,6 +99,7 @@ DEPENDENCIES
   pry
   pry-byebug
   rack-legacy
+  rack-rewrite
   rake
   rdiscount
   thin

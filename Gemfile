@@ -9,6 +9,7 @@ gem "guard-rack"
 gem "guard-remote-sync", "~>0.1.0"
 gem "haml"
 gem "rake"
+gem "rack-rewrite"
 gem "rdiscount"
 
 group :dev do
