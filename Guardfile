@@ -60,8 +60,7 @@ group :mbx do
     # extension to have your browser automatically reload when something gets
     # re-built.
     guard :livereload do
-        watch %r{.*\.scss}
-        watch %r{.*\.haml}
+        watch %r{^build/.*}
     end
 
     guard :rack, port: 9292 do
