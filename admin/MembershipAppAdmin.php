@@ -23,6 +23,7 @@ $dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 $sql = "SELECT * FROM applications ORDER BY SubmissionDateTime DESC";
 
 echo "<h1>MatchBOX Membership Applications</h1>";
+echo "(<a href='MembershipAppExport.php'>download csv</a>)";
 echo "<table border='0'><tr>";
 
 echo "<th>#</th>";
