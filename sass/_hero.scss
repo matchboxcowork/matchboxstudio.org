@@ -1,25 +1,17 @@
 .hero {
   position: relative;
   height: 100%;
+}
 
-  .logo-container {
-    width: 10em;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+.hero__video__container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 
-  .video-container {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-
-  .video-container video {
+  video {
     // Make the video at least 100% wide and tall
     min-width: 100%;
     min-height: 100%;
@@ -39,4 +31,43 @@
     display: none !important;
   }
 
+}
+
+
+.hero__header {
+  background: url('/assets/img/hero/linear_3x1.png');
+  height: 100%;
+  position: relative;
+
+  $container_width: 30rem;
+  $logo_width: 15rem;
+
+  &__container {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: $container_width;
+
+    &__logo {
+      background: url('/assets/img/hero/hero_logo.svg') no-repeat;
+      background-size: contain;
+      margin: 0 ($container_width - $logo_width) / 2;
+      text-indent: -9999px;
+
+      // Height calculation based on dimensions of logo
+      height: $logo_width * 1.13;
+      width: $logo_width;
+    }
+
+    &__cta {
+      margin-top: 3em;
+      text-align: center;
+    }
+  }
+}
+
+.hero__button {
+  @include ghost-btn(white);
+  margin: 0.4em;
 }
