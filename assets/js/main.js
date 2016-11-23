@@ -335,17 +335,15 @@ function manageSection(sectionID) {
 
     var section = document.getElementById(sectionID);
 
-    if(sectionID==='virtualTour') {
+    if (sectionID === 'virtualTour') {
         var html = '<iframe src="https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1424526264707!6m8!1m7!1sVIUz6TEPGp8AAAQWtNuo5A!2m2!1d40.416799!2d-86.890355!3f128!4f0!5f1.4214797185029173" width="100%" height="700" frameborder="0" style="border:0"></iframe>';
         section.innerHTML = html;
     }	
 
-    if (section.className == "collapsed"){
-        section.className = "expanded";
-    }
-    else{
-        section.className = "collapsed";				
-        return true;
+    if (section.className === 'collapsed'){
+        section.className = 'expanded';
+    } else {
+        section.className = 'collapsed';				
     }
 }
 
