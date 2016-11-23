@@ -19,7 +19,7 @@
 
   // Embeds the virtual tour and scroll to it.
   function showVirtualTour(animated) {
-    window.manageSection('virtualTour');
+    $('#virtualTour').addClass('expanded').removeClass('collapsed');
     $('body').scrollTo($('#virtualTour'), {
       duration: animated ? 500 : 0,
       onAfter: function () {
