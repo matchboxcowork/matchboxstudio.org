@@ -11,7 +11,7 @@
     $('#membershipApplication').addClass('expanded').removeClass('collapsed');
     $('body').scrollTo($('#app'), {
       duration: animated ? 500 : 0,
-      onAfter: function (target, settings) {
+      onAfter: function () {
         window.location.hash = '#app';
       }
     });
@@ -20,6 +20,12 @@
   // Embeds the virtual tour and scroll to it.
   function showVirtualTour(animated) {
     window.manageSection('virtualTour');
+    $('body').scrollTo($('#virtualTour'), {
+      duration: animated ? 500 : 0,
+      onAfter: function () {
+        window.location.hash = '#virtualTour';
+      }
+    });
   }
 
   function dispatchAnchor(hash, animated) {
