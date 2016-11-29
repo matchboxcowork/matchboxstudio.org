@@ -673,7 +673,6 @@ li:hover .icon{
 	position: relative;
 }
 .map-wrap iframe{
-	width: 30%;
 	height: 324px;
 	margin-bottom: 18px;
 	border: none;
