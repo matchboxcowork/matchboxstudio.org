@@ -125,21 +125,10 @@
       catch on fire. We want to make it easy for you to work, help you
       collaborate, and stoke the flames.
 
-  .sixteen.columns
-    %h3 Keep me in the loop
-    /  MailChimp Signup Form
-    #mc_embed_signup
-      %form#mc-embedded-subscribe-form.validate{:action => "http://matchboxstudio.us3.list-manage1.com/subscribe/post?u=c67a5fc059dc82356ce82a801&id=ff9857df65", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
-        .mc-field-group
-          %input#mce-EMAIL.required.email{:name => "EMAIL", :placeholder => "email address", :type => "email", :value => ""}/
-        #mce-responses.clear
-          #mce-error-response.response{:style => "display:none"}
-          #mce-success-response.response{:style => "display:none"}
-        %a.button.mbxred{:href => "#", :onclick => "document.forms['mc-embedded-subscribe-form'].submit();"} Subscribe
-
-  .sixteen.columns
+  .sixteen.columns.padding-top
     %img.fullimage{:alt => "3D Rendering of MatchBOX", :src => "assets/img/Rendering.png"}/
-  %a.button.mbxred{:href => "#virtualTour", :onclick => "return manageSection('virtualTour')"} See the Virtual Tour
+    .row.text-center
+      %a.button.mbxred{:href => "#virtualTour", :onclick => "return manageSection('virtualTour')"} See Inside
 
   -# Team member stuff could go here at some point
 
