@@ -672,13 +672,25 @@ li:hover .icon{
 }
 .map-wrap{
 	position: relative;
+	float:left;
+	min-width:300px;
 }
 .map-wrap iframe{
 	height: 324px;
 	margin-bottom: 18px;
 	border: none;
+	width:100%;
 }
 
+/* news
+============================== */
+.news-wrap {
+	float:left;
+	margin-left: 30px;
+}
+.news-article h4 {
+	margin-bottom:5px;
+}
 /* slide panel
 ============================== */
 .slide-panel{
@@ -852,6 +864,15 @@ li:hover .icon{
 			padding-top:200px;
 			font-size: 18px;
 			line-height: 24px;
+		}
+		.map-wrap {
+			width: 100%;
+		}
+		.news-wrap {
+			margin-left: 0px !important;
+		}
+		.flex-container {
+			display:block !important;
 		}
 		.map-wrap .mobile-fix{
 			background-color: !transparent;

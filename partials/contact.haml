@@ -5,10 +5,27 @@
       Don't be shy, you can ask us <span>anything</span>.
 
     / Map
-    .map-wrap
-      %iframe.five.columns{:src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.642080649127!2d-86.89256464862818!3d40.41677917926384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88131d44f1ea38cf%3A0xdc61422facb3b4ba!2sMatchBOX+Coworking+Studio!5e0!3m2!1sen!2sus!4v1479753333182"}
-      .mobile-fix
-      %hr.width-100
+    .flex-container
+      .map-wrap
+        %iframe{:src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.642080649127!2d-86.89256464862818!3d40.41677917926384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88131d44f1ea38cf%3A0xdc61422facb3b4ba!2sMatchBOX+Coworking+Studio!5e0!3m2!1sen!2sus!4v1479753333182"}
+        .mobile-fix
+      
+      .news-wrap
+        %h2 News
+        .news-article
+          %a{:href => "http://google.com"}
+            %h4 Nulla Vel Accumsan
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Nulla vel accumsan diam.
+        .news-article
+          %a{:href => "http://google.com"}
+            %h4 Rhoncus Sem
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Nulla vel accumsan diam.
+        .news-article
+          %a{:href => "http://google.com"}
+            %h4 Dolor Sit Amet
+          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Nulla vel accumsan diam.
+        
+    %hr.width-100
 
   .eight.columns
     %h3 Keep me in the loop

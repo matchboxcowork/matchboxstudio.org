@@ -237,6 +237,24 @@ img.fullimage {
     width:100%;
 }
 
+.no-margin-left {
+    margin-left: 0 !important;
+}
+
+.padding-left-30px {
+    padding-left:30px
+}
+
+.filler {
+    width:10%;
+    height:1px;
+    float:left;
+}
+
+.flex-container {
+    display:flex;
+}
+
 /* SPONSORS */
 .sponsors ul {
     align-items: center;
