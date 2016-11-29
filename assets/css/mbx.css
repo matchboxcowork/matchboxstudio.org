@@ -225,6 +225,10 @@ img.fullimage {
 	display:none;
 }
 
+.text-center {
+    text-align:center;
+}
+
 /* SPONSORS */
 .sponsors ul {
     align-items: center;
