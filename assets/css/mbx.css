@@ -229,6 +229,14 @@ img.fullimage {
     text-align:center;
 }
 
+.padding-top {
+    padding-top:30px;
+}
+
+.width-100 {
+    width:100%;
+}
+
 /* SPONSORS */
 .sponsors ul {
     align-items: center;

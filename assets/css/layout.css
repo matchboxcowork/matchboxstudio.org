@@ -598,6 +598,7 @@ li:hover .icon{
 }
 .contact-info li{
 	overflow: hidden;
+	margin-bottom:10px;
 }
 .contact-info i{
 	font-size: 14px;
