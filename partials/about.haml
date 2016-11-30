@@ -4,94 +4,96 @@
     %h2.message-block
       A shared place to <span>work and create</span>
 
-/ Slider
-.slider-area
-  .fullwidthbanner-container{:style => "background:transparent !important;"}
-    .fullwidthbanner{:style => "background:transparent !important;"}
+/ Features
+.features-section
+  .features-container.sixteen.columns.container
+    .four.columns
+      %h2 24/7
+      .responsive-container
+        .dummy
+        .img-container
+          %img{:alt => "24/7", :src => "assets/img/247d-small.png"}/
       %ul
+        %li
+          %i.icon-ok
+          24-hour secure access
+        %li
+          %i.icon-ok
+          Conference rooms
+        %li
+          %i.icon-ok
+          The fastest internet in town
+        %li
+          %i.icon-ok
+          An unlimited supply of coffee and snacks
 
-        / THE FIRST SLIDE
-        %li{"data-masterspeed" => "300", "data-slotamount" => "5", "data-thumb" => "assets/img/transparent.png", "data-transition" => "3dcurtain-vertical"}
-          %img{:alt => "image title", :src => "assets/img/bg-back.png"}/
-          .caption.lfr{"data-easing" => "easeInOutElastic", "data-speed" => "900", "data-start" => "900", "data-x" => "523", "data-y" => "5"}
-            %img{:alt => "24/7", :src => "assets/img/247d.png"}/
-          .caption.color_big.randomrotate{"data-easing" => "easeOutExpo", "data-speed" => "300", "data-start" => "1100", "data-x" => "18", "data-y" => "80"} 24/7
+    
+    .four.columns
+      %h2 HOBBYIST + PROFESSIONAL
+      .responsive-container
+        .dummy
+        .img-container
+          %img{:alt => "Hobbiest to Pro", :src => "assets/img/amateurtopro.png"}/
+      %ul
+        %li
+          %i.icon-ok
+          Start a new business
+        %li
+          %i.icon-ok
+          Grow an existing business
+        %li
+          %i.icon-ok
+          The hobbyist with a crazy new idea
+        %li
+          %i.icon-ok
+          The moonlighting entrepreneur
+        %li
+          %i.icon-ok
+          The professional office nomad
+    
+    .four.columns
+      %h2 CREATIVE CLASS
+      .responsive-container
+        .dummy
+        .img-container
+          %img{:alt => "Changemakers", :src => "assets/img/Changemakers.png"}/
+      %ul
+        %li
+          %i.icon-ok
+          Developers, designers, strategists, artisans, writers, &amp; makers
+        %li
+          %i.icon-ok
+          Change-makers of all types
+        %li
+          %i.icon-ok
+          A home for the creative class
+        %li
+          %i.icon-ok
+          Lafayette, West Lafayette, and throughout the midwest
 
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1300", "data-x" => "20", "data-y" => "180"}
-            %i.icon-ok>
-            24-hour secure access
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1700", "data-x" => "20", "data-y" => "205"}
-            %i.icon-ok>
-            Conference rooms
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2000", "data-x" => "20", "data-y" => "230"}
-            %i.icon-ok>
-            The fastest internet in town
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2300", "data-x" => "20", "data-y" => "255"}
-            %i.icon-ok>
-            An unlimited supply of coffee and snacks
+    .four.columns
+      %h2 LEAVE YOUR TIE
+      .responsive-container
+        .dummy
+        .img-container
+          %img{:alt => "Leave your tie", :src => "assets/img/LeaveTie.png"}/
+      %ul
+        %li
+          %i.icon-ok
+          Bring a laptop or a backpack
+        %li
+          %i.icon-ok
+          Find a place to work for a few hours, or reserve your own desk and chair
+        %li
+          %i.icon-ok
+          Put on your headphones and work undisturbed all night long
+        %li
+          %i.icon-ok
+          Ask a desk neighbor for some advice
+        %li
+          %i.icon-ok
+          Grab some coffee at the bar with an advisor
 
-        / THE Second SLIDE
-        %li{"data-masterspeed" => "300", "data-slotamount" => "5", "data-thumb" => "assets/img/transparent.png", "data-transition" => "3dcurtain-vertical"}
-          %img{:alt => "image title", :src => "assets/img/bg-back.png"}/
-          .caption.lfr{"data-easing" => "easeInOutElastic", "data-speed" => "900", "data-start" => "900", "data-x" => "423", "data-y" => "200"}
-            %img{:alt => "Hobbiest to Pro", :src => "assets/img/amateurtopro.png"}/
-          .caption.color_big.randomrotate{"data-easing" => "easeOutExpo", "data-speed" => "300", "data-start" => "1100", "data-x" => "20", "data-y" => "95"} HOBBYIST + PROFESSIONAL
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1300", "data-x" => "20", "data-y" => "200"}
-            %i.icon-ok>
-            Start a new business
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1700", "data-x" => "20", "data-y" => "225"}
-            %i.icon-ok>
-            Grow an existing business
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2000", "data-x" => "20", "data-y" => "250"}
-            %i.icon-ok>
-            The hobbyist with a crazy new idea
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2300", "data-x" => "20", "data-y" => "275"}
-            %i.icon-ok>
-            The moonlighting entrepreneur
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "700", "data-start" => "2600", "data-x" => "20", "data-y" => "300"}
-            %i.icon-ok>
-            The professional office nomad
-
-        / THE Third SLIDE
-        %li{"data-masterspeed" => "300", "data-slotamount" => "5", "data-thumb" => "assets/img/transparent.png", "data-transition" => "3dcurtain-vertical"}
-          %img{:alt => "image title", :src => "assets/img/bg-back.png"}/
-          .caption.lfr{"data-easing" => "easeInOutElastic", "data-speed" => "900", "data-start" => "900", "data-x" => "623", "data-y" => "100"}
-            %img{:alt => "Changemakers", :src => "assets/img/Changemakers.png"}/
-          .caption.color_big.randomrotate{"data-easing" => "easeOutExpo", "data-speed" => "300", "data-start" => "1100", "data-x" => "18", "data-y" => "80"} CREATIVE CLASS
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1300", "data-x" => "20", "data-y" => "180"}
-            %i.icon-ok>
-            Developers, designers, strategists, artisans, writers, &amp; makers
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1700", "data-x" => "20", "data-y" => "205"}
-            %i.icon-ok>
-            Change-makers of all types
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2000", "data-x" => "20", "data-y" => "230"}
-            %i.icon-ok>
-            A home for the creative class
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2300", "data-x" => "20", "data-y" => "255"}
-            %i.icon-ok>
-            Lafayette, West Lafayette, and throughout the midwest
-
-        / THE Fourth SLIDE
-        %li{"data-masterspeed" => "300", "data-slotamount" => "5", "data-thumb" => "assets/img/transparent.png", "data-transition" => "3dcurtain-vertical"}
-          %img{:alt => "image title", :src => "assets/img/bg-back.png"}/
-          .caption.lfr{"data-easing" => "easeInOutElastic", "data-speed" => "900", "data-start" => "900", "data-x" => "723", "data-y" => "100"}
-            %img{:alt => "Leave your tie", :src => "assets/img/LeaveTie.png"}/
-          .caption.color_big.randomrotate{"data-easing" => "easeOutExpo", "data-speed" => "300", "data-start" => "1100", "data-x" => "20", "data-y" => "95"} LEAVE YOUR TIE
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1300", "data-x" => "20", "data-y" => "175"}
-            %i.icon-ok>
-            Bring a laptop or a backpack
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1700", "data-x" => "20", "data-y" => "200"}
-            %i.icon-ok>
-            Find a place to work for a few hours, or reserve your own desk and chair
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2000", "data-x" => "20", "data-y" => "225"}
-            %i.icon-ok>
-            Put on your headphones and work undisturbed all night long
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2300", "data-x" => "20", "data-y" => "250"}
-            %i.icon-ok>
-            Ask a desk neighbor for some advice
-          .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "700", "data-start" => "2400", "data-x" => "20", "data-y" => "275"}
-            %i.icon-ok>
-            Grab some coffee at the bar with an advisor
 
 
 .container
