@@ -1,4 +1,123 @@
+var newsArray = [
+  {
+    title:'Nulla Vel Accumsan',
+    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Nulla vel accumsan diam.',
+    href:'http://www.google.com'
+  },
+  {
+    title:'Rhoncus Sem',
+    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Nulla vel accumsan diam.',
+    href:'http://www.google.com'
+  },
+  {
+    title:'Dolor Sit Amet',
+    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Nulla vel accumsan diam.',
+    href:'http://www.google.com'
+  }
+];
+
+
+
 $(document).ready(function () {
+
+
+    var top = 0;
+    var article_num = 2;
+    var pause = false;
+    $(newsArray).each(function(key, article) {
+        $('.news-list').append('<div class="news-article" style="top:'+top+'px">'+
+                                 '<a href="'+article.href+'"><h4>'+article.title+'</h4></a>'+
+                                 '<p>'+article.description+'</p>'+
+                               '</div>'
+        );
+        top = top + 90;
+    });
+
+    $('#prev').click(function() {
+        pause = true;
+        var num = article_num-3;
+        if(article_num === 0) {
+            article_num = newsArray.length;
+        } else {
+            article_num--;
+        }
+
+        console.log(num);
+        if(num < 0) {
+            num = num * -1;
+        }
+        var prev = newsArray[num];
+
+        $('.news-list').prepend('<div class="news-article" style="top:-90px">'+
+                                 '<a href="'+prev.href+'"><h4>'+prev.title+'</h4></a>'+
+                                 '<p>'+prev.description+'</p>'+
+                               '</div>'
+        );
+        $('.news-article').each(function(key,value) {
+            $(this).animate({
+                top:"+=90"
+            },900);
+        });
+        setTimeout(function() {
+            $('.news-article').last().remove();
+        },1000);
+        setTimeout(function() {
+            pause = false;
+        },5000);
+    });
+
+    $('#next').click(function() {
+        pause = true;
+        var next = newsArray[article_num];
+        if(article_num === newsArray.length) {
+            article_num = 0;
+        } else {
+            article_num++;
+        }
+        $('.news-list').append('<div class="news-article" style="top:'+$('.news-list').height()+'px">'+
+                                 '<a href="'+next.href+'"><h4>'+next.title+'</h4></a>'+
+                                 '<p>'+next.description+'</p>'+
+                               '</div>'
+        );
+        $('.news-article').each(function(key,value) {
+            $(this).animate({
+                top:"-=90"
+            },900);
+        });
+        setTimeout(function() {
+            $('.news-article').first().remove();
+        },1000);
+        setTimeout(function() {
+            pause = false;
+        },5000);
+    });
+
+    var newsSlider = setInterval(function() {
+        if(!pause) {
+            var next = newsArray[article_num];
+            if(article_num === newsArray.length) {
+                article_num = 0;
+            } else {
+                article_num++;
+            }
+            $('.news-list').append('<div class="news-article" style="top:'+$('.news-list').height()+'px">'+
+                                     '<a href="'+next.href+'"><h4>'+next.title+'</h4></a>'+
+                                     '<p>'+next.description+'</p>'+
+                                   '</div>'
+            );
+            $('.news-article').each(function(key,value) {
+                $(this).animate({
+                    top:"-=90"
+                },900);
+            });
+            setTimeout(function() {
+                $('.news-article').first().remove();
+            },1000);
+        }
+    },5000);
+
+
+
 
     $("#topVideo").height($(window).height()-74);
     $("#topVideo").width($(window).width());
@@ -159,8 +278,6 @@ $(document).ready(function () {
 
 
 });
-
-
 
 var lastId,
     topMenu = $("#main-menu"),

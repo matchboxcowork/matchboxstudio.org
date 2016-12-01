@@ -3,7 +3,10 @@
     / Message
     %h2.message-block
       Don't be shy, you can ask us <span>anything</span>.
-
+    %button#prev
+      Prev
+    %button#next
+      Next
     / Map
     .flex-container
       .map-wrap
@@ -11,19 +14,9 @@
         .mobile-fix
       
       .news-wrap
-        %h2 News
-        .news-article
-          %a{:href => "http://google.com"}
-            %h4 Nulla Vel Accumsan
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Nulla vel accumsan diam.
-        .news-article
-          %a{:href => "http://google.com"}
-            %h4 Rhoncus Sem
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Nulla vel accumsan diam.
-        .news-article
-          %a{:href => "http://google.com"}
-            %h4 Dolor Sit Amet
-          %p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Nulla vel accumsan diam.
+        %h2 Recent News
+        .news-list
+          
         
     %hr.width-100
 
