@@ -2,51 +2,65 @@ var newsArray = [
   {
     title:'Nulla Vel Accumsan',
     description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Nulla vel accumsan diam.',
-    href:'http://www.google.com'
+    href:'http://www.yahoo.com',
+    active:true
   },
   {
     title:'Rhoncus Sem',
-    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Nulla vel accumsan diam.',
-    href:'http://www.google.com'
+    description:'Pellentesque blandit tincidunt tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec rhoncus sem.',
+    href:'http://www.google.com',
+    active:true
+  },
+  {
+    title:'Pellentesque',
+    description:'Cras blandit tincidunt tincidunt nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel accumsan diam.',
+    href:'http://www.bing.com',
+    active:true
   },
   {
     title:'Dolor Sit Amet',
-    description:'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Nulla vel accumsan diam.',
-    href:'http://www.google.com'
+    description:'Cras nec rhoncus sem. Pellentesque blandit tincidunt tincidunt. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla vel accumsan diam.',
+    href:'http://www.askjeeves.com',
+    active:false
   }
 ];
 
+function updateArt(key) {
+    console.log(key);
+    $('.news-admin h4 span').html('Edit');
+    var article = newsArray[key];
+    $('.news-form input[name="title"]').val(article.title);
+    $('.news-form input[name="url"]').val(article.href);
+    $('.news-form textarea').val(article.description);
+}
 
+function clearNews() {
+    $('.news-form input[name="title"]').val('');
+    $('.news-form input[name="url"]').val('');
+    $('.news-form textarea').val('');
+}
+
+function deleteArt(key) {
+    console.log(key);
+}
+
+function saveArt() {
+    clearNews();
+}
 
 $(document).ready(function () {
-
-
-    var top = 0;
-    var article_num = 2;
-    var pause = false;
-    $(newsArray).each(function(key, article) {
-        $('.news-list').append('<div class="news-article" style="top:'+top+'px">'+
-                                 '<a href="'+article.href+'"><h4>'+article.title+'</h4></a>'+
-                                 '<p>'+article.description+'</p>'+
-                               '</div>'
-        );
-        top = top + 90;
-    });
-
-    $('#prev').click(function() {
-        pause = true;
-        var num = article_num-3;
-        if(article_num === 0) {
-            article_num = newsArray.length;
-        } else {
-            article_num--;
+    function prevArt() {
+        console.log('prev');
+        console.log(article_num);
+        article_num = article_num-3;
+        console.log(article_num);
+        if(article_num < 0) {
+            console.log('length',newsArray.length);
+            article_num = newsArray.length + article_num;
         }
+        console.log(article_num);
 
-        console.log(num);
-        if(num < 0) {
-            num = num * -1;
-        }
-        var prev = newsArray[num];
+        var prev = newsArray[article_num];
 
         $('.news-list').prepend('<div class="news-article" style="top:-90px">'+
                                  '<a href="'+prev.href+'"><h4>'+prev.title+'</h4></a>'+
@@ -58,22 +72,21 @@ $(document).ready(function () {
                 top:"+=90"
             },900);
         });
+
         setTimeout(function() {
             $('.news-article').last().remove();
         },1000);
-        setTimeout(function() {
-            pause = false;
-        },5000);
-    });
-
-    $('#next').click(function() {
-        pause = true;
-        var next = newsArray[article_num];
-        if(article_num === newsArray.length) {
+    }
+    function nextArt() {
+        console.log('next');
+        console.log(article_num);
+        if(article_num+1 === newsArray.length) {
             article_num = 0;
         } else {
             article_num++;
         }
+        console.log(article_num);
+        var next = newsArray[article_num];
         $('.news-list').append('<div class="news-article" style="top:'+$('.news-list').height()+'px">'+
                                  '<a href="'+next.href+'"><h4>'+next.title+'</h4></a>'+
                                  '<p>'+next.description+'</p>'+
@@ -87,6 +100,62 @@ $(document).ready(function () {
         setTimeout(function() {
             $('.news-article').first().remove();
         },1000);
+    }
+
+    var top = 0;
+    var article_num = 2;
+    var pause = false;
+
+    $(newsArray).each(function(key, article) {
+        if(article.active) {
+            $('.news-list').append('<div class="news-article" style="top:'+top+'px">'+
+                                     '<a href="'+article.href+'"><h4>'+article.title+'</h4></a>'+
+                                     '<p>'+article.description+'</p>'+
+                                   '</div>'
+            );
+        }
+        top = top + 90;
+    });
+
+    $(newsArray).each(function(key, article) {
+        var num = key + 1;
+        if(article.active === true) {
+            var checked = 'checked';
+        } else {
+            var checked = '';
+        }
+        $('.news-management').append('<tr class="ui-state-default">'+
+                                      '<td width="15%">'+num+'</td>'+
+                                      '<td width="50%">'+article.title+'</td>'+
+                                      '<td width="15%"><input type="checkbox" '+checked+' /></td>'+
+                                      '<td width="20%">'+
+                                       '<i class="icon-pencil icon-large" onclick="updateArt('+key+')"></i>&nbsp;&nbsp;<i class="icon-trash icon-large" onclick="deleteArt('+key+')"></i>'+
+                                      '</td>'+
+                                     '</tr>'
+        );
+        top = top + 90;
+    });
+
+    $(".news-management tbody").sortable({
+        update: function(event, ui) {
+            $('.news-management tr').each(function(key, value) {
+                $('td:first-child', this).html('<span class="order">'+key+'</span>');
+            });
+            $('.order').fadeIn(1000);
+        }
+    }).disableSelection();
+
+    $('#prev').click(function() {
+        pause = true;
+        prevArt();
+        setTimeout(function() {
+            pause = false;
+        },5000);
+    });
+
+    $('#next').click(function() {
+        pause = true;
+        nextArt();
         setTimeout(function() {
             pause = false;
         },5000);
@@ -94,25 +163,7 @@ $(document).ready(function () {
 
     var newsSlider = setInterval(function() {
         if(!pause) {
-            var next = newsArray[article_num];
-            if(article_num === newsArray.length) {
-                article_num = 0;
-            } else {
-                article_num++;
-            }
-            $('.news-list').append('<div class="news-article" style="top:'+$('.news-list').height()+'px">'+
-                                     '<a href="'+next.href+'"><h4>'+next.title+'</h4></a>'+
-                                     '<p>'+next.description+'</p>'+
-                                   '</div>'
-            );
-            $('.news-article').each(function(key,value) {
-                $(this).animate({
-                    top:"-=90"
-                },900);
-            });
-            setTimeout(function() {
-                $('.news-article').first().remove();
-            },1000);
+            nextArt();
         }
     },5000);
 
