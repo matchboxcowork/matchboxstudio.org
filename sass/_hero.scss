@@ -10,6 +10,7 @@
   width: 100%;
   height: 100%;
   overflow: hidden;
+  z-index: 5;
 
   video {
     // Make the video at least 100% wide and tall
@@ -33,14 +34,16 @@
 
 }
 
-
 .hero__header {
-  background: url('/assets/img/hero/linear_3x1.png');
-  height: 100%;
-  position: relative;
-
   $container_width: 30rem;
   $logo_width: 15rem;
+
+  &__overlay {
+    background: url('/assets/img/hero/linear_3x1.png');
+    height: 100%;
+    position: relative;
+    z-index: 10;
+  }
 
   &__container {
     left: 50%;
@@ -48,22 +51,23 @@
     top: 50%;
     transform: translate(-50%, -50%);
     width: $container_width;
+    z-index: 15;
+  }
 
-    &__logo {
-      background: url('/assets/img/hero/hero_logo.svg') no-repeat;
-      background-size: contain;
-      margin: 0 ($container_width - $logo_width) / 2;
-      text-indent: -9999px;
+  &__logo {
+    background: url('/assets/img/hero/hero_logo.svg') no-repeat;
+    background-size: contain;
+    margin: 0 ($container_width - $logo_width) / 2;
+    text-indent: -9999px;
 
-      // Height calculation based on dimensions of logo
-      height: $logo_width * 1.13;
-      width: $logo_width;
-    }
+    // Height calculation based on dimensions of logo
+    height: $logo_width * 1.13;
+    width: $logo_width;
+  }
 
-    &__cta {
-      margin-top: 3em;
-      text-align: center;
-    }
+  &__cta {
+    margin-top: 3em;
+    text-align: center;
   }
 }
 
