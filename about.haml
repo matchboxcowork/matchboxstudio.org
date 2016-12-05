@@ -25,7 +25,7 @@
               %a{:href => "./"}
                 Home
                 %span.arrow
-            %li
+            %li.active
               %a{:href => "/about.html"}
                 About
                 %span.arrow
@@ -33,7 +33,7 @@
               %a{:href => "./#services"}
                 Join
                 %span.arrow
-            %li.active
+            %li
               %a{:href => "/apply.html"}
                 Apply
                 %span.arrow
@@ -62,7 +62,7 @@
           %hr
 
         / Application
-        =include 'partials/application.haml'
+        //=include 'partials/application.haml'
 
     / Footer
     %section.footer

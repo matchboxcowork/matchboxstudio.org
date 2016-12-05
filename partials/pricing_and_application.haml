@@ -91,7 +91,7 @@
 
 .container
   %h2.sixteen.columns.message-block
-    %a.button.mbxred{:href => "#app", :onclick => "return manageSection('membershipApplication');return false"}
+    %a.button.mbxred{:href => "/about.html"}
       Apply to become a member
     Limited spots by application only.
   
@@ -153,11 +153,4 @@
           %br
           %small [billed monthly, requires BASIC]
 
-  / Spacer between tiers and application
-  %br.clear
-  .sixteen.columns
-    %hr
-
-  / Application
-  =include 'partials/application.haml'
 

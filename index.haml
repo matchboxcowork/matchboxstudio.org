@@ -20,7 +20,7 @@
     / Page body
     #container.page-wrapper
       / About section
-      %section#about.about= include 'partials/about.haml'
+      %section.about= include 'partials/about.haml'
 
       / Virtual tour (JS inserts here when tour is activated)
       #virtualTour.collapsed
@@ -57,9 +57,6 @@
 
     / Panel
     %section.slide-panel= include 'partials/slide-panel.haml'
-
-    / Menu
-    %section.news= include 'partials/news-admin.haml'
 
     / Footer
     %section.footer
