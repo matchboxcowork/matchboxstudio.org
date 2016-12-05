@@ -241,6 +241,10 @@ img.fullimage {
     margin-left: 0 !important;
 }
 
+.no-margin {
+    margin: 0 !important;
+}
+
 .padding-left-30px {
     padding-left:30px
 }

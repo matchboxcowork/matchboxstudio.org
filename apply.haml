@@ -1,0 +1,76 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %title MatchBOX - Coworking Studio - A shared place to work and create in Lafayette, Indiana
+    =include 'partials/base_head.haml'
+
+    :css
+      #membershipApplication {
+        display:block !important
+      }
+
+  %body
+    / Anchor for scrolling to top
+    #up
+
+    / Menu
+    %section.container
+      .sixteen.columns.clearfix
+        %h1.logo
+          %a{:href => "./"}
+            %img{:alt => "MatchBOX logo", :src => "assets/img/theme/logo.png"}/
+        %nav.menu-holder
+          %ul#main-menu.menu-list
+            %li
+              %a{:href => "./"}
+                Home
+                %span.arrow
+            %li
+              %a{:href => "./#about"}
+                About
+                %span.arrow
+            %li
+              %a{:href => "./#services"}
+                Join
+                %span.arrow
+            %li.active
+              %a{:href => "/"}
+                Apply
+                %span.arrow
+            %li
+              %a{:href => "./#contact"}
+                Contact
+                %span.arrow
+            / Slide panel toggle
+            %li.toggle-panel
+              %a.closed{:href => "#"}
+                %i.icon-plus
+                %span.arrow
+      / ./sixteen columns
+    / ./container
+
+
+
+    / Page body
+    #container.page-wrapper
+
+      .container
+
+        / Spacer between tiers and application
+        %br.clear
+        .sixteen.columns
+          %hr
+
+        / Application
+        =include 'partials/application.haml'
+
+    / Footer
+    %section.footer
+      .container
+        .sixteen.columns
+          MatchBOX Coworking Studio © All Rights Reserved
+
+    / End Content
+
+    / JS
+    =include 'partials/body_scripts.haml'

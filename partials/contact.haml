@@ -64,34 +64,3 @@
           %i.icon-facebook
         %span.arrow
   %br.clear
-
-.container.news-admin
-  .sixteen.columns
-    %h2 News Management
-
-    .five.columns
-      %h4
-        %span Add 
-        Article
-
-      %form.news-form
-        %label Title
-        %input{:name => "title", :type => "text"}/
-
-        %label Link URL
-        %input{:name => "url", :type => "text"}/
-
-        %label Description
-        %textarea{:name => "desc", :type => "text"}
-
-        %a.button.mbxred{:onclick => "saveArt()"} Save
-        %a.button.lightgrey{:onclick => "clearNews()"} Clear
-
-    .six.columns
-      %table.news-management{:width => "100%"}
-        %thead
-          %th{:width => "15%"} Order
-          %th{:width => "50%"} Title
-          %th{:width => "15%"} Active
-          %th{:width => "20%"} Actions
-        %tbody
