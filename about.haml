@@ -4,11 +4,6 @@
     %title MatchBOX - Coworking Studio - A shared place to work and create in Lafayette, Indiana
     =include 'partials/base_head.haml'
 
-    :css
-      #membershipApplication {
-        display:block !important
-      }
-
   %body
     / Anchor for scrolling to top
     #up
@@ -17,12 +12,12 @@
     %section.container
       .sixteen.columns.clearfix
         %h1.logo
-          %a{:href => "./"}
+          %a{:href => "/"}
             %img{:alt => "MatchBOX logo", :src => "assets/img/theme/logo.png"}/
         %nav.menu-holder
           %ul#main-menu.menu-list
             %li
-              %a{:href => "./"}
+              %a{:href => "/"}
                 Home
                 %span.arrow
             %li.active
@@ -30,7 +25,7 @@
                 About
                 %span.arrow
             %li
-              %a{:href => "./#services"}
+              %a{:href => "/#services"}
                 Join
                 %span.arrow
             %li
@@ -38,7 +33,7 @@
                 Apply
                 %span.arrow
             %li
-              %a{:href => "./#contact"}
+              %a{:href => "/#contact"}
                 Contact
                 %span.arrow
             / Slide panel toggle
@@ -62,7 +57,9 @@
           %hr
 
         / Application
-        //=include 'partials/application.haml'
+        .container.news-admin
+          .sixteen.columns
+            %h2 About
 
     / Footer
     %section.footer
