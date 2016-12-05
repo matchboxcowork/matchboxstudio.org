@@ -50,15 +50,15 @@ function saveArt() {
 
 $(document).ready(function () {
     function prevArt() {
-        console.log('prev');
-        console.log(article_num);
+        //console.log('prev');
+        //console.log(article_num);
         article_num = article_num-3;
-        console.log(article_num);
+        //console.log(article_num);
         if(article_num < 0) {
             console.log('length',newsArray.length);
             article_num = newsArray.length + article_num;
         }
-        console.log(article_num);
+        //console.log(article_num);
 
         var prev = newsArray[article_num];
 
@@ -78,14 +78,14 @@ $(document).ready(function () {
         },1000);
     }
     function nextArt() {
-        console.log('next');
-        console.log(article_num);
+        //console.log('next');
+        //console.log(article_num);
         if(article_num+1 === newsArray.length) {
             article_num = 0;
         } else {
             article_num++;
         }
-        console.log(article_num);
+        //console.log(article_num);
         var next = newsArray[article_num];
         $('.news-list').append('<div class="news-article" style="top:'+$('.news-list').height()+'px">'+
                                  '<a href="'+next.href+'"><h4>'+next.title+'</h4></a>'+
@@ -342,7 +342,6 @@ var lastId,
             return item;
         }
     });
-
 
 $(window).scroll(function () {
 
