@@ -6,5 +6,8 @@
 @import 'mixins/media';
 @import 'mixins/buttons';
 
+// Load fonts (fonts not included here are probably defined in `imported`)
+@import 'fonts';
+
 // Load stylesheets
 @import 'hero';

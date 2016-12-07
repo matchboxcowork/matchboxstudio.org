@@ -36,7 +36,6 @@
 
 .hero__header {
   $container_width: 30rem;
-  $logo_width: 15rem;
 
   &__overlay {
     background: url('/assets/img/hero/linear_3x1.png');
@@ -51,22 +50,44 @@
     top: 50%;
     transform: translate(-50%, -50%);
     width: $container_width;
+    max-width: 100%;
     z-index: 15;
+
+    @include m-mobile-landscape {
+      top: 20%;
+      transform: translate(-50%, -20%);
+    }
   }
 
   &__logo {
     background: url('/assets/img/hero/hero_logo.svg') no-repeat;
     background-size: contain;
-    margin: 0 ($container_width - $logo_width) / 2;
+    background-position: center;
     text-indent: -9999px;
 
-    // Height calculation based on dimensions of logo
-    height: $logo_width * 1.13;
-    width: $logo_width;
+    // Height calculation based on dimensions of logo (FWIW, logo WxH aspect
+    // ratio is 1:1.13)
+    height: 17rem;
+    width: 100%;
+
+    @include m-mobile-landscape {
+      height: 11rem;
+    }
+  }
+
+  &__slogan {
+    font: 2.2em $font_family-cursive;
+    color: white;
+    text-align: center;
+    margin: 1em 0 0.6em;
+    -webkit-font-smoothing: antialiased;
+
+    @include m-mobile-landscape {
+      display: none;
+    }
   }
 
   &__cta {
-    margin-top: 3em;
     text-align: center;
   }
 }
