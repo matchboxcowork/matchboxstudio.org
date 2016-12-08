@@ -4,3 +4,4 @@ config/prod.php
 .bundle
 dev_db.sqlite3
 build/
+.sass-cache
