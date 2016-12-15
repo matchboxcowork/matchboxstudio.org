@@ -386,10 +386,10 @@ hr{
 .social a{
 	color: #333;
 	display: inline-block;
-	width:24px;
-	height: 24px;
-	font-size: 13px;
-	line-height: 24px;
+	width:35px;
+	height: 35px;
+	font-size: 20px;
+	line-height: 33px;
 	-moz-border-radius:24px; 
 	-webkit-border-radius:24px; 
 	border-radius: 24px;
@@ -601,8 +601,8 @@ li:hover .icon{
 	margin-bottom:10px;
 }
 .contact-info i{
-	font-size: 14px;
-	margin-right: 3px;
+	font-size: 25px;
+	margin-right: 10px;
 	float:left;
 }
 
