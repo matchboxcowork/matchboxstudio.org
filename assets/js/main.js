@@ -25,10 +25,42 @@ var newsArray = [
   }
 ];
 
+var newsArticles = [];
+function getArticles() {
+    $.ajax({
+        url: "../news/newsCtl.php",
+        type: "POST",
+        data: { "funct": "getArticles" }
+    })
+    .done(function(data) {
+        newsArticles = JSON.parse(data);
+        console.log(newsArticles);
+
+        $(newsArticles).each(function(key, article) {
+            var num = key + 1;
+            if(article.active === '1') {
+                var checked = 'checked';
+            } else {
+                var checked = '';
+            }
+            $('.news-management').append('<tr class="ui-state-default">'+
+                                          '<td width="15%">'+num+'</td>'+
+                                          '<td width="50%">'+article.title+'</td>'+
+                                          '<td width="15%"><input type="checkbox" '+checked+' /></td>'+
+                                          '<td width="20%">'+
+                                           '<i class="icon-pencil icon-large" onclick="updateArt('+key+')"></i>&nbsp;&nbsp;<i class="icon-trash icon-large" onclick="deleteArt('+key+')"></i>'+
+                                          '</td>'+
+                                         '</tr>'
+            );
+            top = top + 90;
+        });
+    });
+}
+
 function updateArt(key) {
     console.log(key);
     $('.news-admin h4 span').html('Edit');
-    var article = newsArray[key];
+    var article = newsArticles[key];
     $('.news-form input[name="title"]').val(article.title);
     $('.news-form input[name="url"]').val(article.href);
     $('.news-form textarea').val(article.description);
@@ -41,11 +73,67 @@ function clearNews() {
 }
 
 function deleteArt(key) {
-    console.log(key);
+    $.ajax({
+        url: "../news/newsCtl.php",
+        type: "POST",
+        data: { "funct": "deleteArticles", "key":key}
+    })
+    .done(function(data) {
+        newsArticles = JSON.parse(data);
+        console.log(newsArticles);
+
+        $(newsArticles).each(function(key, article) {
+            var num = key + 1;
+            if(article.active === '1') {
+                var checked = 'checked';
+            } else {
+                var checked = '';
+            }
+            $('.news-management').append('<tr class="ui-state-default">'+
+                                          '<td width="15%">'+num+'</td>'+
+                                          '<td width="50%">'+article.title+'</td>'+
+                                          '<td width="15%"><input type="checkbox" '+checked+' /></td>'+
+                                          '<td width="20%">'+
+                                           '<i class="icon-pencil icon-large" onclick="updateArt('+key+')"></i>&nbsp;&nbsp;<i class="icon-trash icon-large" onclick="deleteArt('+key+')"></i>'+
+                                          '</td>'+
+                                         '</tr>'
+            );
+            top = top + 90;
+        });
+    });
 }
 
-function saveArt() {
-    clearNews();
+function createArt() {
+
+    $.ajax({
+        url: "../news/newsCtl.php",
+        type: "POST",
+        data: { "funct": "createArticles", "title":$('.news-form input[name="title"]').val() }
+    })
+    .done(function(data) {
+        newsArticles = JSON.parse(data);
+        console.log(newsArticles);
+
+        $(newsArticles).each(function(key, article) {
+            var num = key + 1;
+            if(article.active === '1') {
+                var checked = 'checked';
+            } else {
+                var checked = '';
+            }
+            $('.news-management').append('<tr class="ui-state-default">'+
+                                          '<td width="15%">'+num+'</td>'+
+                                          '<td width="50%">'+article.title+'</td>'+
+                                          '<td width="15%"><input type="checkbox" '+checked+' /></td>'+
+                                          '<td width="20%">'+
+                                           '<i class="icon-pencil icon-large" onclick="updateArt('+key+')"></i>&nbsp;&nbsp;<i class="icon-trash icon-large" onclick="deleteArt('+key+')"></i>'+
+                                          '</td>'+
+                                         '</tr>'
+            );
+            top = top + 90;
+        });
+    });
+    //clearNews();
 }
 
 $(document).ready(function () {
@@ -117,25 +205,6 @@ $(document).ready(function () {
         top = top + 90;
     });
 
-    $(newsArray).each(function(key, article) {
-        var num = key + 1;
-        if(article.active === true) {
-            var checked = 'checked';
-        } else {
-            var checked = '';
-        }
-        $('.news-management').append('<tr class="ui-state-default">'+
-                                      '<td width="15%">'+num+'</td>'+
-                                      '<td width="50%">'+article.title+'</td>'+
-                                      '<td width="15%"><input type="checkbox" '+checked+' /></td>'+
-                                      '<td width="20%">'+
-                                       '<i class="icon-pencil icon-large" onclick="updateArt('+key+')"></i>&nbsp;&nbsp;<i class="icon-trash icon-large" onclick="deleteArt('+key+')"></i>'+
-                                      '</td>'+
-                                     '</tr>'
-        );
-        top = top + 90;
-    });
-
     $(".news-management tbody").sortable({
         update: function(event, ui) {
             $('.news-management tr').each(function(key, value) {
@@ -167,7 +236,7 @@ $(document).ready(function () {
         }
     },5000);
 
-
+    getArticles();
 
 
     $("#topVideo").height($(window).height()-74);

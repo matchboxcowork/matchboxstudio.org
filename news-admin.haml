@@ -31,7 +31,7 @@
       .container.news-admin
         .sixteen.columns
           %h2 News Management
-
+          <?php echo "Hello"; ?>
           .eight.columns.no-margin{:style => "padding:10px"}
             %h3
               %span Add 
@@ -47,7 +47,7 @@
               %label Description
               %textarea{:name => "desc", :type => "text"}
 
-              %a.button.mbxred{:onclick => "saveArt()"} Save
+              %a.button.mbxred{:onclick => "createArt()", :type => "Submit"} Save
               %a.button.lightgrey{:onclick => "clearNews()"} Clear
 
           .eight.columns.no-margin{:style => "padding:10px"}
