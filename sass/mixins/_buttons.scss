@@ -1,0 +1,21 @@
+@mixin ghost-btn($color, $btn_font_size: 1.8em, $border_measure: 0.1em) {
+    // Layout
+    border-radius: $border_measure * 2;
+    border: $border_measure solid $color;
+    display: inline-block;
+    padding: 0.7em;
+
+    // Type
+    color: $color;
+    font-family: $font_family-title;
+    font-size: $btn_font_size;
+    font-weight: 300;
+
+    &:link, &:active, &:visited { color: $color; }
+
+    &:hover {
+    	background-color: $color;
+    	color: rgba(black, 0.8);
+    	text-decoration: none;
+    }
+}

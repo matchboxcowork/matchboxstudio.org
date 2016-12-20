@@ -834,6 +834,25 @@ li:hover .icon{
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
+		.dummy {
+			display:none;
+		}
+		.img-container {
+			position:relative !important;
+		}
+		.features-container .four {
+	    margin-bottom: 60px;
+		}
+		.features-container .four:first-child img, .features-container .four:nth-child(3) img {
+			width: 70%;
+		}
+		.features-container .four:nth-child(4) img {
+			height: 200px;
+		}
+		.features-container .four:nth-child(2) .responsive-container {
+			margin-top: 0px !important;
+		}
+
 		.slide-panel{
 			position: relative;
 		}
