@@ -246,6 +246,10 @@ img.fullimage {
     padding-top:30px;
 }
 
+.padding-bottom-20px {
+    padding-bottom:20px;
+}
+
 .width-100 {
     width:100%;
 }
@@ -266,6 +270,10 @@ img.fullimage {
     width:10%;
     height:1px;
     float:left;
+}
+
+.float-right {
+    float:right;
 }
 
 
@@ -320,6 +328,9 @@ table.news-management input[type="checkbox"] {
     padding-left:10px;
 }
 
+.bold {
+    font-weight:bold;
+}
 
 
 /* SPONSORS */
