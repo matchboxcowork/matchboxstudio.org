@@ -216,6 +216,19 @@ img.fullimage {
 	height: auto;
 	-webkit-transition: opacity .15s ease-in-out;
 }
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
 
 .expanded {
 	display:block;
@@ -233,9 +246,14 @@ img.fullimage {
     padding-top:30px;
 }
 
+.padding-bottom-20px {
+    padding-bottom:20px;
+}
+
 .width-100 {
     width:100%;
 }
+
 
 /* Features Section */
 .features-container ul > li {
@@ -309,6 +327,85 @@ img.fullimage {
 }
 /* / VCenter Image */
 
+.no-margin-left {
+    margin-left: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.padding-left-30px {
+    padding-left:30px
+}
+
+.filler {
+    width:10%;
+    height:1px;
+    float:left;
+}
+
+.float-right {
+    float:right;
+}
+
+
+
+.flex-container {
+    display:flex;
+}
+table.news-management {
+    table-layout: fixed;
+}
+table.news-management th {
+    padding: 6px;
+    color:#FFF;
+    font-weight: 500;
+    border: 1px solid black;
+    background-color:#4c4c4c;
+}
+table.news-management td {
+        padding: 0 6px 6px 6px;
+}
+table.news-management tbody tr{
+    cursor:pointer;
+}
+table.news-management table, table.news-management td {
+    border: 1px solid black;
+    background-color:#FFF;
+}
+table.news-management tbody tr > td:first-child, table.news-management tbody tr > td:last-child {
+    text-align:center;
+}
+table.news-management tbody tr > td:nth-child(3) {
+    white-space:nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ui-sortable-helper {
+    display: table !important;
+}
+.order {
+    display:none;
+}
+table.news-management input[type="checkbox"] {
+    margin-top: 7px;
+    height: 14px;
+}
+
+
+.about-paragraphs .eight:first-child {
+    padding-right:10px;
+}
+.about-paragraphs .eight:nth-child(2) {
+    padding-left:10px;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+
 /* SPONSORS */
 .sponsors ul {
     align-items: center;
@@ -334,5 +431,12 @@ img.fullimage {
 @media only screen and (max-width: 767px) {
     .sponsors img, .sponsors li {
         font-size: 0.75em;
+    }
+
+    .about-paragraphs .eight:first-child {
+        padding-right:0;
+    }
+    .about-paragraphs .eight:nth-child(2) {
+        padding-left:0;
     }
 }
