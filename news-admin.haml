@@ -43,7 +43,13 @@
               %input{:name => "url", :type => "text"}/
 
               %label Description
-              %textarea{:name => "desc", :type => "text"}
+              %textarea{:name => "desc", :type => "text", :maxlength => "150"}
+
+              %p
+                %span.length 0
+                \/ 150 characters
+
+              %p.invalid{:style => "color: red"}
 
               %a.button.mbxred{:onclick => "createArt()", :type => "Submit"} Save
               %a.button.lightgrey{:onclick => "clearNews()"} Clear
@@ -72,6 +78,8 @@
       %br.clear
       %br.clear
 
+    %script{:type => "text/javascript", :src => "assets/js/news-management.js"}
+
     / Footer
     %section.footer
       .container
@@ -82,3 +90,4 @@
 
     / JS
     =include 'partials/body_scripts.haml'
+
