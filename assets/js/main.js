@@ -26,6 +26,8 @@ var newsArray = [
 ];
 
 var newsArticles = [];
+
+/* News Management */
 function getArticles() {
     $.ajax({
         url: "../news/newsCtl.php",
@@ -36,107 +38,190 @@ function getArticles() {
         newsArticles = JSON.parse(data);
         console.log(newsArticles);
 
-        $(newsArticles).each(function(key, article) {
-            var num = key + 1;
-            if(article.active === '1') {
-                var checked = 'checked';
-            } else {
-                var checked = '';
-            }
-            $('.news-management').append('<tr class="ui-state-default">'+
-                                          '<td width="15%">'+num+'</td>'+
-                                          '<td width="50%">'+article.title+'</td>'+
-                                          '<td width="15%"><input type="checkbox" '+checked+' /></td>'+
-                                          '<td width="20%">'+
-                                           '<i class="icon-pencil icon-large" onclick="updateArt('+key+')"></i>&nbsp;&nbsp;<i class="icon-trash icon-large" onclick="deleteArt('+key+')"></i>'+
-                                          '</td>'+
-                                         '</tr>'
-            );
-            top = top + 90;
-        });
+        appendRows();
     });
 }
 
-function updateArt(key) {
-    console.log(key);
-    $('.news-admin h4 span').html('Edit');
-    var article = newsArticles[key];
+function initUpdateArt(id) {
+    $('.news-admin h3 span').html('Edit');
+    $('.news-admin a.button.mbxred').attr('onclick','updateArt('+id+')');
+    var article = newsArticles.filter(function(art) { if(art.id == id) { return art; }})[0];
     $('.news-form input[name="title"]').val(article.title);
     $('.news-form input[name="url"]').val(article.href);
     $('.news-form textarea').val(article.description);
 }
 
+function updateArt(id) {
+    console.log(id);
+    var title = $('.news-form input[name="title"]').val();
+    var href = $('.news-form input[name="url"]').val();
+    var description = $('.news-form textarea').val();
+    $.ajax({
+        url: "../news/newsCtl.php",
+        type: "POST",
+        data: { "funct":"updateArticles", "id":id, "title":title, "href":href, "description":description}
+    })
+    .done(function(data) {
+        newsArticles = JSON.parse(data);
+        console.log(newsArticles);
+
+        appendRows();
+    });
+    clearNews();
+}
+
+function updateActive(id, active) {
+    $.ajax({
+        url: "../news/newsCtl.php",
+        type: "POST",
+        data: { "funct":"updateActive", "id":id, "active":active}
+    })
+    .done(function(data) {
+        newsArticles = JSON.parse(data);
+        console.log(newsArticles);
+
+        appendRows();
+        initUpdateNew();
+    });
+    clearNews();
+}
+
+function updateOrder(id, order) {
+    $.ajax({
+        url: "../news/newsCtl.php",
+        type: "POST",
+        data: { "funct":"updateOrder", "id":id, "order":order}
+    })
+    .done(function(data) {
+        newsArticles = JSON.parse(data);
+        console.log(newsArticles);
+
+        appendRows();
+    });
+    clearNews();
+}
+
+function reorder() {
+    $(newsArticles).each(function(key, article) {
+        if(article.order) {
+            article.order = parseInt(article.order);
+        }
+    });
+    newsArticles.sort(function(a, b) {
+        return a.order - b.order;
+    });
+    console.log(newsArticles);
+}
+
+function appendRows() {
+    $('.news-management.active tbody').html('');
+    $('.news-management.inactive tbody').html('');
+
+    reorder();
+    $(newsArticles).each(function(key, article) {
+        if(article.active === '1') {        
+            $('.news-management.active').append('<tr class="ui-state-default" data-id="'+article.id+'">'+
+                                          '<td width="15%"><span class="order">'+article.order+'</span></td>'+
+                                          '<td width="50%">'+article.title+'</td>'+
+                                          '<td width="15%"><input type="checkbox" checked /></td>'+
+                                          '<td width="20%">'+
+                                           '<i class="icon-pencil icon-large" onclick="initUpdateArt('+article.id+')"></i>&nbsp;&nbsp;<i class="icon-trash icon-large" onclick="deleteArt('+article.id+')"></i>'+
+                                          '</td>'+
+                                         '</tr>'
+            );
+        } else {
+            $('.news-management.inactive').append('<tr class="ui-state-default" data-id="'+article.id+'">'+
+                                          '<td width="15%"></td>'+
+                                          '<td width="50%">'+article.title+'</td>'+
+                                          '<td width="15%"><input type="checkbox" /></td>'+
+                                          '<td width="20%">'+
+                                           '<i class="icon-pencil icon-large" onclick="initUpdateArt('+article.id+')"></i>&nbsp;&nbsp;<i class="icon-trash icon-large" onclick="deleteArt('+article.id+')"></i>'+
+                                          '</td>'+
+                                         '</tr>'
+            );
+        }
+    });
+    $('.order').fadeIn(1000);
+}
+
 function clearNews() {
+    $('.news-admin h3 span').html('Add');
+    $('.news-admin a.button.mbxred').attr('onclick','createArt()');
     $('.news-form input[name="title"]').val('');
     $('.news-form input[name="url"]').val('');
     $('.news-form textarea').val('');
 }
 
-function deleteArt(key) {
+function deleteArt(id) {
     $.ajax({
         url: "../news/newsCtl.php",
         type: "POST",
-        data: { "funct": "deleteArticles", "key":key}
+        data: { "funct": "deleteArticles", "id":id}
     })
     .done(function(data) {
         newsArticles = JSON.parse(data);
         console.log(newsArticles);
 
-        $(newsArticles).each(function(key, article) {
-            var num = key + 1;
-            if(article.active === '1') {
-                var checked = 'checked';
-            } else {
-                var checked = '';
-            }
-            $('.news-management').append('<tr class="ui-state-default">'+
-                                          '<td width="15%">'+num+'</td>'+
-                                          '<td width="50%">'+article.title+'</td>'+
-                                          '<td width="15%"><input type="checkbox" '+checked+' /></td>'+
-                                          '<td width="20%">'+
-                                           '<i class="icon-pencil icon-large" onclick="updateArt('+key+')"></i>&nbsp;&nbsp;<i class="icon-trash icon-large" onclick="deleteArt('+key+')"></i>'+
-                                          '</td>'+
-                                         '</tr>'
-            );
-            top = top + 90;
-        });
+        appendRows();
+        initUpdateNew();
     });
+}
+
+function initUpdateNew() {
+    $('.news-management.active tr').each(function(key, value) {
+        console.log($(this).attr('data-id'));
+        $('td:first-child', this).html('<span class="order">'+key+'</span>');
+        if(typeof($(this).attr('data-id')) != 'undefined') {
+            updateOrder($(this).attr('data-id'), key);
+        }
+    });
+    $('.order').fadeIn(1000);
 }
 
 function createArt() {
-
+    var title = $('.news-form input[name="title"]').val();
+    var href = $('.news-form input[name="url"]').val();
+    var description = $('.news-form textarea').val();
     $.ajax({
         url: "../news/newsCtl.php",
         type: "POST",
-        data: { "funct": "createArticles", "title":$('.news-form input[name="title"]').val() }
+        data: { "funct": "createArticles", "title":title, "order":$('.news-management.active tr').length, "href":href, "description":description}
     })
     .done(function(data) {
         newsArticles = JSON.parse(data);
         console.log(newsArticles);
 
-        $(newsArticles).each(function(key, article) {
-            var num = key + 1;
-            if(article.active === '1') {
-                var checked = 'checked';
-            } else {
-                var checked = '';
-            }
-            $('.news-management').append('<tr class="ui-state-default">'+
-                                          '<td width="15%">'+num+'</td>'+
-                                          '<td width="50%">'+article.title+'</td>'+
-                                          '<td width="15%"><input type="checkbox" '+checked+' /></td>'+
-                                          '<td width="20%">'+
-                                           '<i class="icon-pencil icon-large" onclick="updateArt('+key+')"></i>&nbsp;&nbsp;<i class="icon-trash icon-large" onclick="deleteArt('+key+')"></i>'+
-                                          '</td>'+
-                                         '</tr>'
-            );
-            top = top + 90;
-        });
+        appendRows();
     });
-    //clearNews();
+    clearNews();
 }
+/* / News Management */
 
 $(document).ready(function () {
+    $(".news-management.active tbody").sortable({
+        update: function(event, ui) {
+            initUpdateNew();
+        }
+    }).disableSelection();
+
+    $(document).on('click', '.news-management input[type="checkbox"]', function() {
+        var row = $(this).parent().parent().clone();
+        if($(this)[0].checked) {
+            $(this).parent().parent().remove();
+            var num = $('.news-management.active tbody tr').length + 1;
+            row.find('td:first-child').html(num);
+            $('.news-management.active tbody').append(row);
+            updateActive(row.attr('data-id'),'1');
+        } else {
+            $(this).parent().parent().remove();
+            row.find('td:first-child').html('');
+            $('.news-management.inactive tbody').append(row);
+            updateActive(row.attr('data-id'),'0');
+        }
+    });
+
+
+    
     function prevArt() {
         //console.log('prev');
         //console.log(article_num);
@@ -165,6 +250,7 @@ $(document).ready(function () {
             $('.news-article').last().remove();
         },1000);
     }
+
     function nextArt() {
         //console.log('next');
         //console.log(article_num);
@@ -205,15 +291,8 @@ $(document).ready(function () {
         top = top + 90;
     });
 
-    $(".news-management tbody").sortable({
-        update: function(event, ui) {
-            $('.news-management tr').each(function(key, value) {
-                $('td:first-child', this).html('<span class="order">'+key+'</span>');
-            });
-            $('.order').fadeIn(1000);
-        }
-    }).disableSelection();
 
+    
     $('#prev').click(function() {
         pause = true;
         prevArt();
@@ -237,6 +316,9 @@ $(document).ready(function () {
     },5000);
 
     getArticles();
+
+
+
 
 
 

@@ -25,13 +25,11 @@
       / Spacer between tiers and application
       %br.clear
       .sixteen.columns
-        %hr
 
       / Application
       .container.news-admin
         .sixteen.columns
           %h2 News Management
-          <?php echo "Hello"; ?>
           .eight.columns.no-margin{:style => "padding:10px"}
             %h3
               %span Add 
@@ -51,13 +49,28 @@
               %a.button.lightgrey{:onclick => "clearNews()"} Clear
 
           .eight.columns.no-margin{:style => "padding:10px"}
-            %table.news-management{:width => "100%"}
+            %h3 Active Articles
+            %table.news-management.active{:width => "100%"}
               %thead
                 %th{:width => "15%"} Order
                 %th{:width => "50%"} Title
                 %th{:width => "15%"} Active
                 %th{:width => "20%"} Actions
               %tbody
+
+            %br.clear
+
+            %h3 Inactive Articles
+            %table.news-management.inactive{:width => "100%"}
+              %thead
+                %th{:width => "15%"} Order
+                %th{:width => "50%"} Title
+                %th{:width => "15%"} Active
+                %th{:width => "20%"} Actions
+              %tbody
+
+      %br.clear
+      %br.clear
 
     / Footer
     %section.footer

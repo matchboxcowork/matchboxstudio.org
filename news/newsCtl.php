@@ -14,20 +14,26 @@ switch ($_POST['funct']) {
         getArticles($dbh);
         break;
     case "createArticles":
-        createArticles($dbh, $_POST['title']);
+        createArticles($dbh, $_POST['title'], $_POST['order'], $_POST['href'], $_POST['description']);
         break;
     case "updateArticles":
-        updateArticles($dbh, $_POST['key']);
+        updateArticles($dbh, $_POST['id'], $_POST['title'], $_POST['href'], $_POST['description']);
+        break;
+    case "updateActive":
+        updateActive($dbh, $_POST['id'], $_POST['active']);
+        break;
+    case "updateOrder":
+        updateOrder($dbh, $_POST['id'], $_POST['order']);
         break;
     case "deleteArticles":
-        deleteArticles($dbh, $_POST['key']);
+        deleteArticles($dbh, $_POST['id']);
         break;
     default:
         echo "Your favorite color is neither red, blue, nor green!";
 }
 
 function getArticles($dbh) {
-  $sql = "SELECT * FROM news";
+  $sql = "SELECT * FROM news WHERE deleted='0'";
 
   $array = array();
 
@@ -39,54 +45,65 @@ function getArticles($dbh) {
   echo json_encode($array);
 }
 
-function deleteArticles($dbh, $key) {
+function deleteArticles($dbh, $id) {
 
-  $sql = "DELETE FROM news WHERE id = '".$key."'";
+  //$sql = "DELETE FROM news WHERE id = '".$id."'";
+  $sql = "UPDATE news SET deleted='1' WHERE id = '".$id."'";
 
   if($dbh->query($sql) === TRUE)
   {  
-    echo "Success";
+    //echo "Success";
   }
-
+  getArticles($dbh);
   
 }
 
-function createArticles($dbh, $art) {
+function createArticles($dbh, $title, $order, $href, $description) {
 
-  $sql = "INSERT INTO news (title, href, description, active) VALUES ('title','href','desc','1')";
+  $sql = "INSERT INTO news (title, 'order', href, description, active, deleted) VALUES ('".$title."', '".$order."', '".$href."', '".$description."', '1', '0')";
 
   if($dbh->query($sql) === TRUE)
   {  
-    echo "Success";
+    //echo "Success";
   }
-  /*
-  $array = array();
+  getArticles($dbh);
 
-  foreach($dbh->query($sql) as $row)
-  {  
-    array_push($array, $row);
-  }
-
-  echo json_encode($array);*/
 }
 
-function updateArticles($dbh, $art) {
+function updateArticles($dbh, $id, $title, $href, $description) {
 
-  $sql = "INSERT INTO news (title, href, description, active) VALUES ('title','href','desc','1')";
+  $sql = "UPDATE news SET title='".$title."', href='".$href."', description='".$description."' WHERE id = '".$id."'";
 
   if($dbh->query($sql) === TRUE)
   {  
-    echo "Success";
+    //echo "Success";
   }
-  /*
-  $array = array();
+  getArticles($dbh);
 
-  foreach($dbh->query($sql) as $row)
+}
+
+function updateActive($dbh, $id, $active) {
+
+  $sql = "UPDATE news SET active='".$active."' WHERE id = '".$id."'";
+
+  if($dbh->query($sql) === TRUE)
   {  
-    array_push($array, $row);
+    //echo "Success";
   }
+  getArticles($dbh);
 
-  echo json_encode($array);*/
+}
+
+function updateOrder($dbh, $id, $order) {
+  
+  $sql = "UPDATE news SET 'order'='".$order."' WHERE id = '".$id."'";
+
+  if($dbh->query($sql) === TRUE)
+  {  
+    //echo "Success";
+  }
+  getArticles($dbh);
+
 }
 
 ?>
