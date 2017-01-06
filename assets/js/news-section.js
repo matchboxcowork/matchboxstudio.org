@@ -1,3 +1,5 @@
+var newsArticles = [];
+
 function reorder() {
     $(newsArticles).each(function(key, article) {
         if(article.order) {
@@ -116,7 +118,9 @@ $(function() {
 
   var newsSlider = setInterval(function() {
     if(!pause) {
-        nextArt();
+        if(newsArticles.length > 0) {
+          nextArt();
+        }
     }
   },5000);
 
