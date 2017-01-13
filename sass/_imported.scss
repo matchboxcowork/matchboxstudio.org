@@ -208,13 +208,13 @@ body,html {
 }
 
 img.fullimage {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: auto;
-	width: 100%;
-	height: auto;
-	-webkit-transition: opacity .15s ease-in-out;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    -webkit-transition: opacity .15s ease-in-out;
 }
 .videoWrapper {
     position: relative;
@@ -231,11 +231,11 @@ img.fullimage {
 }
 
 .expanded {
-	display:block;
+    display:block;
 }
 
 .collapsed {
-	display:none;
+    display:none;
 }
 
 .text-center {
@@ -440,4 +440,3 @@ table.news-management input[type="checkbox"] {
         padding-left:0;
     }
 }
-
