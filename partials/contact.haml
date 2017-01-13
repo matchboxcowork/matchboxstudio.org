@@ -3,16 +3,34 @@
     / Message
     %h2.message-block
       Don't be shy, you can ask us <span>anything</span>.
-
+      
     / Map
-    .map-wrap
-      %iframe{:src => "https://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=17+S+6th+St,+Lafayette,+IN&aq=0&oq=17+S+6th&sll=40.452656,-86.916843&sspn=0.089216,0.147972&ie=UTF8&hq=&hnear=17+S+6th+St,+Lafayette,+Tippecanoe,+Indiana+47901&ll=40.42671,-86.890329&spn=0.011158,0.018497&t=m&z=14&output=embed"}
-      .mobile-fix
-    %hr
+    .flex-container
+      .map-wrap
+        %iframe{:src => "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.642080649127!2d-86.89256464862818!3d40.41677917926384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88131d44f1ea38cf%3A0xdc61422facb3b4ba!2sMatchBOX+Coworking+Studio!5e0!3m2!1sen!2sus!4v1479753333182"}
+        .mobile-fix
+      
+      .news-wrap
+        %h2 Recent News
+        .news-list
+          
+        
+    %hr.width-100
 
   .eight.columns
-    .four.columns.alpha
+    %h3 Keep me in the loop
+    /  MailChimp Signup Form
+    #mc_embed_signup
+      %form#mc-embedded-subscribe-form.validate{:action => "http://matchboxstudio.us3.list-manage1.com/subscribe/post?u=c67a5fc059dc82356ce82a801&id=ff9857df65", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+        .mc-field-group
+          %input#mce-EMAIL.required.email{:name => "EMAIL", :placeholder => "email address", :type => "email", :value => ""}/
+        #mce-responses.clear
+          #mce-error-response.response{:style => "display:none"}
+          #mce-success-response.response{:style => "display:none"}
+        %a.button.mbxred{:href => "#", :onclick => "document.forms['mc-embedded-subscribe-form'].submit();"} Subscribe
 
+  .eight.columns
+    .five.columns.alpha
       / Contact Info
       %ul.contact-info
         %li.name
@@ -34,8 +52,11 @@
           %i.icon-phone
           765.588.9295
           
-    .four.columns.omega
+    .two.columns.omega
       / Social
+      %br
+      %br
+      %br
       .social
         %a{:href => "http://twitter.com/matchboxcowork"}
           %i.icon-twitter
@@ -43,3 +64,5 @@
           %i.icon-facebook
         %span.arrow
   %br.clear
+
+  %script{:type => "text/javascript", :src => "assets/js/news-section.js"}

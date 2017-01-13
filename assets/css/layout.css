@@ -386,10 +386,10 @@ hr{
 .social a{
 	color: #333;
 	display: inline-block;
-	width:24px;
-	height: 24px;
-	font-size: 13px;
-	line-height: 24px;
+	width:35px;
+	height: 35px;
+	font-size: 20px;
+	line-height: 33px;
 	-moz-border-radius:24px; 
 	-webkit-border-radius:24px; 
 	border-radius: 24px;
@@ -598,10 +598,11 @@ li:hover .icon{
 }
 .contact-info li{
 	overflow: hidden;
+	margin-bottom:10px;
 }
 .contact-info i{
-	font-size: 14px;
-	margin-right: 3px;
+	font-size: 25px;
+	margin-right: 10px;
 	float:left;
 }
 
@@ -671,14 +672,36 @@ li:hover .icon{
 }
 .map-wrap{
 	position: relative;
+	float:left;
+	min-width:300px;
 }
 .map-wrap iframe{
-	width: 100%;
 	height: 324px;
 	margin-bottom: 18px;
 	border: none;
+	width:100%;
 }
 
+/* news
+============================== */
+.news-wrap {
+	float:left;
+	margin-left: 30px;
+	flex:100;
+}
+.news-article {
+	position:absolute;
+	height:90px;
+}
+.news-article h4 {
+	margin-bottom:5px;
+}
+.news-list {
+	overflow:hidden;
+	width:100%;
+	height: 270px;
+	position:relative;
+}
 /* slide panel
 ============================== */
 .slide-panel{
@@ -811,6 +834,25 @@ li:hover .icon{
 
 	/* All Mobile Sizes (devices and browser) */
 	@media only screen and (max-width: 767px) {
+		.dummy {
+			display:none;
+		}
+		.img-container {
+			position:relative !important;
+		}
+		.features-container .four {
+	    margin-bottom: 60px;
+		}
+		.features-container .four:first-child img, .features-container .four:nth-child(3) img {
+			width: 70%;
+		}
+		.features-container .four:nth-child(4) img {
+			height: 200px;
+		}
+		.features-container .four:nth-child(2) .responsive-container {
+			margin-top: 0px !important;
+		}
+
 		.slide-panel{
 			position: relative;
 		}
@@ -852,6 +894,16 @@ li:hover .icon{
 			padding-top:200px;
 			font-size: 18px;
 			line-height: 24px;
+		}
+		.map-wrap {
+			width: 100%;
+		}
+		.news-wrap {
+			margin-left: 0px !important;
+			 width: 100%;
+		}
+		.flex-container {
+			display:block !important;
 		}
 		.map-wrap .mobile-fix{
 			background-color: !transparent;

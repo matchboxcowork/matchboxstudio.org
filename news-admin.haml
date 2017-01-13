@@ -1,0 +1,93 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %title MatchBOX - Coworking Studio - A shared place to work and create in Lafayette, Indiana
+    =include 'partials/base_head.haml'
+
+  %body
+    / Anchor for scrolling to top
+    #up
+
+    / Menu
+    %section.container
+      .sixteen.columns.clearfix
+        %h1.logo
+          %a{:href => "./"}
+            %img{:alt => "MatchBOX logo", :src => "assets/img/theme/logo.png"}/
+      / ./sixteen columns
+    / ./container
+
+
+
+    / Page body
+    #container.page-wrapper
+
+      / Spacer between tiers and application
+      %br.clear
+      .sixteen.columns
+
+      / Application
+      .container.news-admin
+        .sixteen.columns
+          %h2 News Management
+          .eight.columns.no-margin{:style => "padding:10px"}
+            %h3
+              %span Add 
+              Article
+
+            %form.news-form
+              %label Title
+              %input{:name => "title", :type => "text"}/
+
+              %label Link URL
+              %input{:name => "url", :type => "text"}/
+
+              %label Description
+              %textarea{:name => "desc", :type => "text", :maxlength => "150"}
+
+              %p
+                %span.length 0
+                \/ 150 characters
+
+              %p.invalid{:style => "color: red"}
+
+              %a.button.mbxred{:onclick => "createArt()", :type => "Submit"} Save
+              %a.button.lightgrey{:onclick => "clearNews()"} Clear
+
+          .eight.columns.no-margin{:style => "padding:10px"}
+            %h3 Active Articles
+            %table.news-management.active{:width => "100%"}
+              %thead
+                %th{:width => "15%"} Order
+                %th{:width => "50%"} Title
+                %th{:width => "15%"} Active
+                %th{:width => "20%"} Actions
+              %tbody
+
+            %br.clear
+
+            %h3 Inactive Articles
+            %table.news-management.inactive{:width => "100%"}
+              %thead
+                %th{:width => "15%"} Order
+                %th{:width => "50%"} Title
+                %th{:width => "15%"} Active
+                %th{:width => "20%"} Actions
+              %tbody
+
+      %br.clear
+      %br.clear
+
+    %script{:type => "text/javascript", :src => "assets/js/news-management.js"}
+
+    / Footer
+    %section.footer
+      .container
+        .sixteen.columns
+          MatchBOX Coworking Studio © All Rights Reserved
+
+    / End Content
+
+    / JS
+    =include 'partials/body_scripts.haml'
+
