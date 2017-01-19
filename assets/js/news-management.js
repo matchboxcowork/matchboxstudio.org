@@ -6,9 +6,9 @@ function getArticles() {
         type: "POST",
         data: { "funct": "getArticles" }
     })
-    .done(function(data) { console.log(data);
+    .done(function(data) { 
         newsArticles = JSON.parse(data);
-        console.log(newsArticles);
+        //console.log(newsArticles);
 
         appendRows();
     });
@@ -189,7 +189,7 @@ function createArt() {
         })
         .done(function(data) {
             newsArticles = JSON.parse(data);
-            console.log(newsArticles);
+            //console.log(newsArticles);
 
             appendRows();
         });
