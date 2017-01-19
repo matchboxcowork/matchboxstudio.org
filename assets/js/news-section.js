@@ -70,7 +70,7 @@ $(function() {
 
 
   $.ajax({
-    url: "../newsCtl.php",
+    url: "newsCtl.php",
     type: "POST",
     data: { "funct": "getArticles" }
   })

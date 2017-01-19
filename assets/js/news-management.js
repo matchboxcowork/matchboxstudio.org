@@ -2,11 +2,11 @@ var newsArticles = [];
 
 function getArticles() {
     $.ajax({
-        url: "../newsCtl.php",
+        url: "newsCtl.php",
         type: "POST",
         data: { "funct": "getArticles" }
     })
-    .done(function(data) {
+    .done(function(data) { console.log(data);
         newsArticles = JSON.parse(data);
         console.log(newsArticles);
 
@@ -33,7 +33,7 @@ function updateArt(id) {
     if(!checkInputs(title, href, description)) {
         $('.invalid').html('');
         $.ajax({
-            url: "../newsCtl.php",
+            url: "newsCtl.php",
             type: "POST",
             data: { "funct":"updateArticles", "id":id, "title":title, "href":href, "description":description}
         })
@@ -51,7 +51,7 @@ function updateArt(id) {
 
 function updateActive(id, active) {
     $.ajax({
-        url: "../newsCtl.php",
+        url: "newsCtl.php",
         type: "POST",
         data: { "funct":"updateActive", "id":id, "active":active}
     })
@@ -67,7 +67,7 @@ function updateActive(id, active) {
 
 function updateOrder(id, order) {
     $.ajax({
-        url: "../newsCtl.php",
+        url: "newsCtl.php",
         type: "POST",
         data: { "funct":"updateOrder", "id":id, "order":order}
     })
@@ -134,7 +134,7 @@ function clearNews() {
 
 function deleteArt(id) {
     $.ajax({
-        url: "../newsCtl.php",
+        url: "newsCtl.php",
         type: "POST",
         data: { "funct": "deleteArticles", "id":id}
     })
@@ -183,7 +183,7 @@ function createArt() {
     if(!checkInputs(title, href, description)) {
         $('.invalid').html('');
         $.ajax({
-            url: "../newsCtl.php",
+            url: "newsCtl.php",
             type: "POST",
             data: { "funct": "createArticles", "title":title, "order":$('.news-management.active tr').length, "href":href, "description":description}
         })
