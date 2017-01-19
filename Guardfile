@@ -13,9 +13,8 @@ end
 # run `bin/rake`.
 group :mbx_build do
     guard :haml, output: 'build', run_at_start: true do
-        # Watch .haml files not in `partials/` (they only get referenced from
-        # within other templates)
-        watch %r{^(?!partials/).+\.haml}
+        # Watch .haml files not in `partials` or `vendor`.
+        watch %r{^(?!partials/|vendor/).+\.haml}
     end
 
     guard :sass, output: 'build/assets/css' do
