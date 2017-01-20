@@ -149,7 +149,7 @@ function deleteArt(id) {
 
 function initUpdateNew() {
     $('.news-management.active tr').each(function(key, value) {
-        console.log($(this).attr('data-id'));
+        //console.log($(this).attr('data-id'));
         $('td:first-child', this).html('<span class="order">'+key+'</span>');
         if(typeof($(this).attr('data-id')) != 'undefined') {
             updateOrder($(this).attr('data-id'), key);

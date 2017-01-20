@@ -118,7 +118,7 @@ $(function() {
 
   var newsSlider = setInterval(function() {
     if(!pause) {
-        if(newsArticles.length > 0) {
+        if(newsArticles.length > 3) {
           nextArt();
         }
     }
