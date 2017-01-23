@@ -21,8 +21,11 @@
       / Virtual tour (JS inserts here when tour is activated)
       #virtualTour.collapsed
         %iframe{src: 'https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1424526264707!6m8!1m7!1sVIUz6TEPGp8AAAQWtNuo5A!2m2!1d40.416799!2d-86.890355!3f128!4f0!5f1.4214797185029173',
-          width: '100%', height: '700', frameborder: '0', style: 'border:0'}
-        %a{href: '#'} Back to top
+          width: '100%', height: '550', frameborder: '0', style: 'border:0'}
+
+      .container
+        .sixteen.columns.text-center.vertical-padding-30px 
+          %span#see-inside.button.mbxred{:onclick => "toggleHref();"} See Inside
 
       / Parallax - Tennenhouse quote
       %section#break1.para

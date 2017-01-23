@@ -335,9 +335,21 @@ function manageSection(sectionID) {
     } else {
         section.className = 'collapsed';				
     }
+
 }
 
-function moveTo(contentArea){
+function moveTo(contentArea){ 
     var goPosition = $(contentArea).offset().top - 73;
     $('html,body').animate({ scrollTop: goPosition}, 'slow');
+}
+
+function toggleHref() {
+    manageSection('virtualTour');
+    if($('#virtualTour').hasClass('expanded')) {
+        window.location.hash = 'virtualTour';
+        moveTo('#virtualTour');
+        $('#see-inside').html('Close Virtual Tour');
+    } else {
+        $('#see-inside').html('See Inside');
+    }
 }
