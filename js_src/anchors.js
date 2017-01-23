@@ -19,8 +19,8 @@
 
   // Embeds the virtual tour and scroll to it.
   function showVirtualTour(animated) {
-    console.log('trigger show tour');
     $('#virtualTour').addClass('expanded').removeClass('collapsed');
+    $('#see-inside').html('Close Virtual Tour');
     $('body').scrollTo($('#virtualTour'), {
       duration: animated ? 500 : 0,
       onAfter: function () {
