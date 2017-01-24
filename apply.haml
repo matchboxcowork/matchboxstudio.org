@@ -29,13 +29,9 @@
               %a{:href => "/about.html"}
                 About
                 %span.arrow
-            %li
-              %a{:href => "/#services"}
-                Join
-                %span.arrow
             %li.active
               %a{:href => "/apply.html"}
-                Apply
+                Join
                 %span.arrow
             %li
               %a{:href => "/#contact"}
@@ -53,6 +49,12 @@
 
     / Page body
     #container.page-wrapper
+      .container
+        / Pricing tiers
+        %br.clear
+        %br.clear
+        %br.clear
+        = include 'partials/pricing.haml'
 
       .container
 
