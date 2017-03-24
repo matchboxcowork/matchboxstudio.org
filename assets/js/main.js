@@ -350,6 +350,6 @@ function toggleHref() {
         moveTo('#virtualTour');
         $('#see-inside').html('Close Virtual Tour');
     } else {
-        $('#see-inside').html('See Inside');
+        $('#see-inside').html('Explore Inside');
     }
 }
