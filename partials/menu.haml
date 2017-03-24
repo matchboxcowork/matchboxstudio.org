@@ -27,11 +27,10 @@
             %i.icon-plus
             %span.arrow
       / SubMenu
-      %select#subMenu.sub-menu{:name => "subMenu", :onchange => "moveTo(this.value)", :size => "1"}
+      %select#subMenu.sub-menu{:name => "subMenu", :onchange => "navigate(this.value)", :size => "1"}
         %option{:selected => "selected", :value => ""} Menu
-        %option{:value => "#up"} - Top
-        %option{:value => "#about"} - About
-        %option{:value => "#apply"} - Join
+        %option{:value => "/about.html"} - About
+        %option{:value => "/apply.html"} - Join
         %option{:value => "#contact"} - Contact
   / ./sixteen columns
 / ./container
