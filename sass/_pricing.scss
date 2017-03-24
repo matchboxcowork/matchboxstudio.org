@@ -85,3 +85,11 @@
     line-height: 1.5em;
     font-size: 15px;
 }
+
+// Customize the "Join" button in the services unit (which is a wrapper for the
+// pricing tiers).
+.services .button {
+  // Align baseline of button to h3 text.
+  position: relative;
+  top: -0.2rem;
+}
