@@ -41,24 +41,9 @@ li:hover .social {
     color: #666666;
 }
 
-.social a:hover .icon-pinterest {
-    color: #E00002;
-}
-
-.social a:hover .icon-twitter {
-    color: #4099ff;
-}
-
-.social a:hover .icon-goggle-plus {
-    color: #db5a3c;
-}
-
-.social a:hover .icon-linkedin {
-    color: #4875B4;
-}
-
-.social a:hover .icon-facebook {
-    color: #3B5998;
+.social a:hover {
+    background-color: #bbb;
+    color: #444;
 }
 
 .info em {
