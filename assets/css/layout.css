@@ -601,9 +601,11 @@ li:hover .icon{
 	margin-bottom:10px;
 }
 .contact-info i{
-	font-size: 25px;
-	margin-right: 10px;
-	float:left;
+  margin-right: 5px;
+  float: left;
+  line-height: 16px;
+  font-size: 14px;
+  width: 2ch;
 }
 
 .contact-info li span{
