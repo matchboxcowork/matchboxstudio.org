@@ -73,6 +73,10 @@
     @include m-mobile-landscape {
       height: 11rem;
     }
+
+    @include m-mobile-portrait {
+      height: 13rem;
+    }
   }
 
   &__slogan {

@@ -9,6 +9,14 @@ def run cmd
     system cmd
 end
 
+# Returns a list of haml files in the root of the repository that contain
+# `matching`.
+def toplevel_haml matching
+  Dir.glob('*.haml').select do |filename|
+    File.foreach(filename).any? { |line| line[matching] }
+  end
+end
+
 # Build steps for matchboxstudio.org. To run these build steps from the shell,
 # run `bin/rake`.
 group :mbx_build do
@@ -48,11 +56,10 @@ group :mbx do
         # Watch all .haml files in partials. When one of them changes, detect
         # which .haml files in the root directory include them, and recompile
         # those.
-        watch(%r{^partials/.+\.haml}) do |matches|
-            Dir.glob('*.haml').select do |filename|
-                File.foreach(filename).any? { |line| line[matches[0]] }
-            end
-        end
+        watch(%r{^partials/.+\.haml}) { |m| toplevel_haml m[0] }
+
+        # Recompile sponsors partial when the list changes.
+        watch(%r{^partials/sponsors.yaml}) { toplevel_haml("partials/sponsors.haml") }
     end
     
     # Note: we do not serve livereload.js -- install the LiveReload Chrome

@@ -41,24 +41,9 @@ li:hover .social {
     color: #666666;
 }
 
-.social a:hover .icon-pinterest {
-    color: #E00002;
-}
-
-.social a:hover .icon-twitter {
-    color: #4099ff;
-}
-
-.social a:hover .icon-goggle-plus {
-    color: #db5a3c;
-}
-
-.social a:hover .icon-linkedin {
-    color: #4875B4;
-}
-
-.social a:hover .icon-facebook {
-    color: #3B5998;
+.social a:hover {
+    background-color: #bbb;
+    color: #444;
 }
 
 .info em {
@@ -181,7 +166,7 @@ body,html {
 }
 .slide-panel{
     background-color: #3a3a3a;
-    color:#676767;
+    color:#dedede;
     border-bottom: 1px solid #4d4d4d;
 }
 .panel-wrap h3{
@@ -208,24 +193,77 @@ body,html {
 }
 
 img.fullimage {
-	display: block;
-	margin-right: auto;
-	margin-left: auto;
-	margin-top: auto;
-	width: 100%;
-	height: auto;
-	-webkit-transition: opacity .15s ease-in-out;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    width: 100%;
+    height: auto;
+    -webkit-transition: opacity .15s ease-in-out;
 }
 
 .expanded {
-	display:block;
+    display:block;
 }
 
 .collapsed {
-	display:none;
+    display:none;
+}
+
+.text-center {
+    text-align:center;
+}
+
+.padding-top {
+    padding-top:30px;
+}
+
+.padding-bottom-20px {
+    padding-bottom:20px;
+}
+
+.width-100 {
+    width:100%;
+}
+
+.no-margin-left {
+    margin-left: 0 !important;
+}
+
+.no-margin {
+    margin: 0 !important;
+}
+
+.padding-left-30px {
+    padding-left:30px
+}
+
+.filler {
+    width:10%;
+    height:1px;
+    float:left;
+}
+
+.float-right {
+    float:right;
+}
+
+.flex-container {
+    display:flex;
+}
+
+.bold {
+    font-weight:bold;
+}
+
+.vertical-padding-30px {
+    padding:30px 0;
 }
 
 /* SPONSORS */
+.sponsors.container {
+    margin-top: 6em;
+}
 .sponsors ul {
     align-items: center;
     display: flex;
@@ -234,10 +272,10 @@ img.fullimage {
 }
 .sponsors li { 
     margin: 0.7em 1.2em 1.0em;
-    opacity: 0.7;
+    opacity: 0.52;
 }
 .sponsors li:hover {
-    opacity: 1.0;
+    opacity: 0.7;
 }
 .sponsors a img {
     /* height = (50px img + 0.5em padding + 1px border) at font-size: 12px */
@@ -251,5 +289,14 @@ img.fullimage {
     .sponsors img, .sponsors li {
         font-size: 0.75em;
     }
-}
 
+    .about-paragraphs .eight:first-child {
+        padding-right:0 !important;
+    }
+    .about-paragraphs .eight:nth-child(2) {
+        padding-left:0 !important;
+    }
+    #continue {
+        display:none
+    }
+}

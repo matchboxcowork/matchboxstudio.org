@@ -1,0 +1,95 @@
+.pricing {
+    font-family: "Montserrat", Gotham, sans-serif;
+    text-align: center;
+}
+.pricing .teir {
+    display: inline-block;
+    vertical-align: top;
+    margin: 2%;
+    min-width: 200px;
+}
+.pricing .teir.main {
+    min-width: 300px;
+    margin-top: 0;
+}
+.pricing .teir.main header {
+    font-size: 25px;
+    line-height:30px;
+    height:60px;
+}
+.pricing .teir.main .content li {
+    font-size: 20px;
+}
+.pricing .teir.main .cost {
+    font-size: 18px;
+}
+.pricing .teir.main .cost strong {
+    font-weight: 700;
+    font-size: 30px;
+}
+.pricing .teir.main .cost .dollar {
+    font-size: 18px;
+    padding: 2px;
+    vertical-align: top;
+}
+.pricing .teir.main .cost small {
+    font-size: 15px;
+}
+.pricing .cost {
+    font-family: "Source Sans Pro", sans-serif;
+    margin: 15%;
+    white-space: nowrap;
+    font-size: 15px;
+}
+.pricing .cost strong {
+    font-family: "Montserrat", Gotham, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    vertical-align: middle;
+}
+.pricing .cost .text {
+    vertical-align: middle;
+}
+.pricing .cost .dollar {
+    font-size: 14px;
+    padding: 2px;
+    vertical-align: top;
+}
+.pricing .cost small {
+    font-size: 11px;
+}
+.pricing .box {
+    text-align: center;
+    min-width: 150px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.3);
+    margin-top: 25px;
+}
+.pricing .box header {
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    background: #000;
+    height: 40px;
+    line-height: 20px;
+    padding: 5%;
+}
+.pricing .box .content {
+    font-family: "Source Sans Pro", sans-serif;
+    list-style: none;
+    margin: 0;
+    padding: 2% 20%;
+    font-weight: 300;
+    min-height: 120px;
+}
+.pricing .box .content li {
+    line-height: 1.5em;
+    font-size: 15px;
+}
+
+// Customize the "Join" button in the services unit (which is a wrapper for the
+// pricing tiers).
+.services .button {
+  // Align baseline of button to h3 text.
+  position: relative;
+  top: -0.2rem;
+}

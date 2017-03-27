@@ -160,8 +160,6 @@ $(document).ready(function () {
 
 });
 
-
-
 var lastId,
     topMenu = $("#main-menu"),
     topMenuHeight = topMenu.outerHeight() + 15,
@@ -174,7 +172,6 @@ var lastId,
             return item;
         }
     });
-
 
 $(window).scroll(function () {
 
@@ -204,8 +201,6 @@ $(window).scroll(function () {
             .end().filter("[href=#" + id + "]").parent().addClass("active");
     }
 });
-
-
 
 
 
@@ -340,9 +335,21 @@ function manageSection(sectionID) {
     } else {
         section.className = 'collapsed';				
     }
+
 }
 
-function moveTo(contentArea){
+function moveTo(contentArea){ 
     var goPosition = $(contentArea).offset().top - 73;
     $('html,body').animate({ scrollTop: goPosition}, 'slow');
+}
+
+function toggleHref() {
+    manageSection('virtualTour');
+    if($('#virtualTour').hasClass('expanded')) {
+        window.location.hash = 'virtualTour';
+        moveTo('#virtualTour');
+        $('#see-inside').html('Close Virtual Tour');
+    } else {
+        $('#see-inside').html('Explore Inside');
+    }
 }

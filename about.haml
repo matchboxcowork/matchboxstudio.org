@@ -1,0 +1,190 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %title MatchBOX - Coworking Studio - A shared place to work and create in Lafayette, Indiana
+    =include 'partials/base_head.haml'
+
+  %body
+    / Anchor for scrolling to top
+    #up
+
+    / Menu
+    %section.container
+      .sixteen.columns.clearfix
+        %h1.logo
+          %a{:href => "/"}
+            %img{:alt => "MatchBOX logo", :src => "assets/img/theme/logo.png"}/
+        %nav.menu-holder
+          %ul.menu-list
+            %li
+              %a{:href => "/"}
+                Home
+                %span.arrow
+            %li.active
+              %a{:href => "/about.html"}
+                About
+                %span.arrow
+            %li
+              %a{:href => "/apply.html"}
+                Join
+                %span.arrow
+            %li
+              %a{:href => "/#contact"}
+                Contact
+                %span.arrow
+            / Slide panel toggle
+            %li.toggle-panel
+              %a.closed{:href => "#"}
+                %i.icon-plus
+                %span.arrow
+      / ./sixteen columns
+    / ./container
+
+
+
+    / Page body
+    #container.page-wrapper
+
+      .container
+
+        / Spacer between tiers and application
+        %br.clear
+        .sixteen.columns
+
+        / Video
+        .container
+          .sixteen.columns
+            %h2 About
+
+            .videoWrapper
+              %iframe{:allowfullscreen => "", :frameborder => "0", :mozallowfullscreen => "", :src => "//player.vimeo.com/video/76968901", :style => "width:100%; height:92%;", :webkitallowfullscreen => ""}
+
+        .container.about-paragraphs#articleTop
+          .eight.columns
+
+            %p Sitting on the corner of Sixth and Main, it’s an inauspicious building, an unassuming industrial space, a relic from a bygone era. Open the doors, though, and one is transported from the edge of a Midwestern downtown into a state-of-the-art workspace where minds are engaged and traversing the forefront of innovation.
+
+            %p <b class="bold">This is MatchBOX Coworking Studio, where entrepreneurs and artists can meet, mingle and create — all while contributing to making Lafayette a welcoming city for young innovators.</b>
+
+            %p MatchBOX is the brainchild, so to speak, of Jason Tennenhouse and Mikel Berger, the two young developers who were charged by Lafayette Mayor Tony Roswarski with making it happen. These two Purdue University graduates saw the need for a space such as Matchbox, a place where youthful creators could come together and bring their ideas to fruition.
+
+            %img.padding-bottom-20px{:src => "assets/img/grandopening_small/reservedspaces.jpg", :width => "100%", :style => "margin:8px 0"}
+
+            %p Tennenhouse graduated from Purdue with degrees in psychology and industrial design — “I use the psychology more than the industrial design,” he quips — and lived and worked in West Lafayette for a time after graduation, marrying, starting a family, and renovating an old house in the New Chauncey neighborhood in West Lafayette. His career path ultimately led to the development of his own toy company. But somewhere along the line, he realized that merely creating consumer goods felt empty and hollow — “At the end of the day, it’s just a hunk of plastic” — so he turned his energy instead toward not-for-profit work.
+
+            %p “I went all the way to the other end of the spectrum,” Tennenhouse says. “But I missed the speed of the market-driven stuff I did at the beginning of my career.”
+
+            %p Tennenhouse took on various other ventures, including Greyhouse Coffee & Supply Co., which was in some ways an early precursor to the co-working studio concept. He was involved with the Quality of Life Committee with the City of Lafayette, where people were throwing around ideas and brainstorming about how to retain young people, with their talent and creativity. As someone who cared about giving back to the community, Tennenhouse was immediately on board with this dialogue.
+
+            %p <b class="bold">He was looking toward the future and wanted Lafayette to be a place where people like him could be inspired, be optimistic</b> — a place where the younger generation would feel welcome and encouraged. He saw too many people like him leaving for Indianapolis or the coasts. What, he wondered, could be done to counter their exodus?
+
+            %p Somewhere in these discussions, a thought germinated about creating a place where people could be encouraged to stay and create. Encouraged and wanting to move forward, the discussions continued with Dennis Carson, economic development director for the City of Lafayette, about creating a space where people could collaborate.
+
+            %p “How could we get this to happen?” he says.
+
+            %p Intrigued, Tennenhouse came on initially as an adviser.
+
+            %p “It isn’t just another business,” he says. “It’s about an ethos we’re creating.”
+
+            %p Tennenhouse says he actually was fairly negative early on, wanting to make sure the project was handled carefully, with thoughtfulness and a commitment to the people of Lafayette. And then before he knew it, he became the project leader. He brought on Mikel Berger, a fellow Purdue alum, to help guide the project.
+
+            .videoWrapper
+              %iframe.padding-bottom-20px{:allowfullscreen => "", :frameborder => "0", :mozallowfullscreen => "", :src => "https://player.vimeo.com/video/198357295", :style => "width:100%; height:92%;", :frameborder=>"0"}
+
+            %p Berger had a background not unlike Tennenhouse. He grew up in north central Indiana and came to Purdue in 1997, staying to complete his graduate studies. Tennenhouse identified him early on as someone who shared his own commitment to giving back to the city and caring about its people.
+
+            %p And Berger had similar experience in starting up his own business; he had ideas and determination, but no need for full-time office space.
+
+            %p “MatchBOX is the place I wish had existed when I was in grad school and starting DelMar Software Development,” Berger says.
+
+            %p <b class="bold">Both men had used coffee shops and small restaurants for their start-up companies early on, when they lacked the resources to actually rent office space.</b> But coffee shops are less than ideal for a variety of reasons: The Wi-Fi is slow, Berger says, and it can be difficult to snag that one seat next to the outlet one needs to plug in a laptop.
+
+            %p “It’s not very professional, sitting next to a baby coughing,” Berger says. “But I didn’t need a full-time office. I didn’t want to sign a lease. I don’t know if I’ll be around in six months. I saw a gap for folks like myself.”
+
+            %p A co-working studio would help fill that niche, they knew. But they wanted to do their homework and be sure to create exactly the type of studio that would be successful in Lafayette, not merely copy one from Chicago or Los Angeles.
+
+            %p “How do we help the tech industry grow; how can we help smaller start-up industries grow?” Berger says he wondered at the time. “We could learn generic things, but what is Lafayette’s brand of co-working?
+
+            %p The team, led by Tennenhouse and Berger, and armed with a healthy dose of skepticism, forged ahead, tentative about the feasibility. They found a location (a former auto dealership on the corner of Sixth and South streets, next to the Tippecanoe County Public Library) and came up with a name and logo.
+
+            %a#continue.float-right{:href => "#articleTop"} Continue
+
+          .eight.columns   
+
+            %p The building had been donated to benefit the community, so the group was able to work with the library to make the space work. Berger likes the repurposing of a former auto dealership as a place to house a bustling group of young entrepreneurs.
+
+            %img.padding-bottom-20px{:src => "assets/img/grandopening_small/stein+hdr+before+-+composite-2451829711-O.jpg", :width => "100%", :style => "margin:8px 0"}
+
+            %p “Cars were new technology when that building was built,” he says. “They were the high-tech industry of the day. We’re trying to connect to the past.”
+
+            %p Tennenhouse admits they were tentative about the project’s viability. There were several factors that needed to come together in order for it to open. But, he thought, if it didn’t work, at least the historic building would have been renovated.
+
+            %p But local businesses were anxious to partner with the city in making this venture a reality. Early on, Tennenhouse says they were able to secure 25 people and businesses as partners and supporters. Even early on, people were very enthusiastic. And they were able to capitalize on relationships, offering memberships in trade for service, such as web development and social media expertise.
+
+            %p <b class="bold">“It took a lot of folks — in a good way — to get MatchBOX started,”</b> Berger says.
+
+            %p In April 2014, MatchBOX Coworking Studio opened its doors. Tennenhouse and Berger saw their vision come to life. The look is industrial and spare, hightech yet welcoming. There are spaces for working that have the coffeehouse feel, with open desks and a stage; there are more quiet areas, with reserved desks. There are private meeting and conference rooms, and there’s a workroom with a bench area, a drill press and a 3D printer. And plenty of amenities are provided — the obvious, such as Wi-Fi and printing, but also 24-hour access, lockers, tools and snacks. And, of course, plenty of coffee. 
+
+            %img.padding-bottom-20px{:src => "assets/img/grandopening_small/party2.jpg", :width => "100%", :style => "margin:8px 0"}
+
+            %p “We didn’t know if it would work,” Tennehouse says. “It’s worked better than we thought.”
+
+            %p “People come for the space,” says Berger. “They end up staying for the community. Whether they’re a freelancer or working for a different business, the struggles are very similar. It doesn’t matter that your paychecks don’t have the same name.”
+
+            %p Thus far, Tennenhouse and Berger are content to call MatchBOX a success. The downtown location has been a perfect fit. With the population and business density, it has been a great addition to an already thriving downtown.
+
+            %p “Downtown, you can walk to a restaurant and grab lunch,” Berger says. “You don’t have to get in your car. You can move around the space, run to the bank.”
+
+            %p MatchBOX is a boon for the entire city. And Berger and Tennenhouse are quick to give credit to the many people who helped make it a reality, from those who helped get it up and running to those who take care of day-to-day operations.
+
+            %p “I think the piece of the story that is often overlooked is this whole team of people,” Tennenhouse says. “The mayor has been such a big supporter. It’s really about all these other people.”
+
+            %p Berger agrees; it took a whole group to make MatchBOX happen. “We’re just really thankful for the support of the mayor and the community, the people who took a chance on becoming a member early on, people who didn’t quite know what this co-working thing was about,” says Berger.
+
+            .videoWrapper
+              %iframe{:allowfullscreen => "", :frameborder => "0", :mozallowfullscreen => "", :src => "//player.vimeo.com/video/158115953", :style => "width:100%; height:92%;", :webkitallowfullscreen => ""}
+
+            %p Ultimately, it’s all about community. Berger says they are anxious to see the MatchBOX community grow, whether it’s within the building’s walls or beyond. Tennenhouse says they are still working on forming partnerships, from working with Purdue to state government to other co-working spaces or even larger national corporations.
+
+            %p “I’m excited about what some of those things might turn out to be, “ he says.
+
+            %p <b class="bold">“We want folks to feel like they can get involved,”</b> Berger says. Businesses are using the space for off-site retreats, and he is anxious for more groups to take advantage.
+
+            %p “There are more creative ways for people to use the space and become part of the bigger community,” Berger says. “When the web developer is sitting next to the writer, that’s when great things happen.”
+
+            %em.float-right by Cindy Gerlach
+
+
+        / Spacer between tiers and application
+        %br.clear
+        .sixteen.columns
+          %hr.width-100
+
+        .container
+          .eight.columns#imgCol1
+            %img{:src => "assets/img/grandopening_small/groupoutside.jpg", :width => "100%", :style => "margin:8px 0"}
+            %img{:src => "assets/img/grandopening_small/crowd.jpg", :width => "100%", :style => "margin:8px 0"}
+
+          .eight.columns#imgCol2
+            %img{:src => "assets/img/grandopening_small/936466_458917010855475_498251418_n.jpg", :width => "100%", :style => "margin:8px 0"}
+            %img{:src => "assets/img/grandopening_small/IMG_3663.jpg", :width => "100%", :style => "margin:8px 0"}
+
+          .sixteen.columns
+            %img{:src => "assets/img/grandopening_small/wall texture.jpg", :width => "100%", :style => "margin:8px 0"}
+
+        %br.clear
+        %br.clear
+
+    / Panel
+    %section.slide-panel= include 'partials/slide-panel.haml'
+
+    / Footer
+    %section.footer
+      .container
+        .sixteen.columns
+          MatchBOX Coworking Studio © All Rights Reserved
+
+    / End Content
+
+    / JS
+    =include 'partials/body_scripts.haml'

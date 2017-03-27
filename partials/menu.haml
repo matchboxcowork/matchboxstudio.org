@@ -2,7 +2,7 @@
   .sixteen.columns.clearfix
     %h1.logo
       %a{:href => "#up"}
-        %img{:alt => "MatchBOX logo", :src => "assets/img/theme/logo.png"}/
+        %img{:alt => "MatchBOX logo", :src => "/assets/img/theme/logo.png"}/
     %nav.menu-holder
       %ul#main-menu.menu-list
         %li.active
@@ -10,11 +10,11 @@
             Home
             %span.arrow
         %li
-          %a{:href => "#about"}
+          %a{:href => "/about.html"}
             About
             %span.arrow
         %li
-          %a{:href => "#services"}
+          %a{:href => "/apply.html"}
             Join
             %span.arrow
         %li
@@ -27,11 +27,10 @@
             %i.icon-plus
             %span.arrow
       / SubMenu
-      %select#subMenu.sub-menu{:name => "subMenu", :onchange => "moveTo(this.value)", :size => "1"}
+      %select#subMenu.sub-menu{:name => "subMenu", :onchange => "navigate(this.value)", :size => "1"}
         %option{:selected => "selected", :value => ""} Menu
-        %option{:value => "#up"} - Top
-        %option{:value => "#about"} - About
-        %option{:value => "#services"} - Join
+        %option{:value => "/about.html"} - About
+        %option{:value => "/apply.html"} - Join
         %option{:value => "#contact"} - Contact
   / ./sixteen columns
 / ./container

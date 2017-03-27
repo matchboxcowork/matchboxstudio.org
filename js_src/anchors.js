@@ -1,4 +1,4 @@
-(function () {
+(function (window) {
   // Mappings of hash URLs to a function that transitions to that hash's
   // content.
   var bindings = {
@@ -6,26 +6,36 @@
     'virtualTour': showVirtualTour
   };
 
+  // If `path` is not empty, either scroll to it or navigate to it.
+  function navigate(path, animated) {
+    if (animated === undefined)
+      animated = true;
+    if (path === "")
+      return;
+
+    if (path.startsWith("#")) {
+      $('body').scrollTo($(path), {
+        duration: animated ? 500 : 0,
+        onAfter: function () {
+          window.location.hash = path;
+        }
+      });
+    } else {
+      window.location = path;
+    }
+  }
+
   // Expands the membership application section and scrolls to it.
   function showMemebershipApplication(animated) {
     $('#membershipApplication').addClass('expanded').removeClass('collapsed');
-    $('body').scrollTo($('#app'), {
-      duration: animated ? 500 : 0,
-      onAfter: function () {
-        window.location.hash = '#app';
-      }
-    });
+    navigate("#app");
   }
 
   // Embeds the virtual tour and scroll to it.
   function showVirtualTour(animated) {
     $('#virtualTour').addClass('expanded').removeClass('collapsed');
-    $('body').scrollTo($('#virtualTour'), {
-      duration: animated ? 500 : 0,
-      onAfter: function () {
-        window.location.hash = '#virtualTour';
-      }
-    });
+    $('#see-inside').html('Close Virtual Tour');
+    navigate("#virtualTour");
   }
 
   function dispatchAnchor(hash, animated) {
@@ -61,4 +71,7 @@
   // Bind the onclick event of any anchor link on the page (any link beginning
   // with '#') to clickAnchor.
   $('a[href^="#"]').click(clickAnchor);
-})()
+
+  // Export declarations.
+  this.navigate = navigate;
+})(window);
