@@ -34,6 +34,9 @@
 - name: Fresh City Market 
   img: "/assets/img/sponsors/FreshCity.png"
   url: "http://freshcitymarket.com/"
+- name: Gigi's Cupcakes
+  img: "/assets/img/sponsors/gigis.jpg"
+  url: "http://www.gigiscupcakesusa.com/location/lafayette-indiana-in/"
 - name: Greater Lafayette Commerce 
   img: "/assets/img/sponsors/GLC.png"
   url: "http://www.greaterlafayettecommerce.com/"
