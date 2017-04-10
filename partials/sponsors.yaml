@@ -79,6 +79,9 @@
 - name: Old National Bank 
   img: "/assets/img/sponsors/OldNationalBank.png"
   url: "https://www.oldnational.com/"
+- name: Passageways
+  img: "/assets/img/sponsors/passageways.png"
+  url: "http://www.passageways.com"
 - name: Purdue Convocations
   img: "/assets/img/sponsors/convos.jpg"
   url: "https://www.purdue.edu/convocations/"
