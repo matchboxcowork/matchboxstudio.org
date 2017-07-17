@@ -2,12 +2,12 @@ var newsArticles = [];
 
 function reorder() {
     $(newsArticles).each(function(key, article) {
-        if(article.order) {
-            article.order = parseInt(article.order);
+        if(article.arrange) {
+            article.arrange = parseInt(article.arrange);
         }
     });
     newsArticles.sort(function(a, b) {
-        return a.order - b.order;
+        return a.arrange - b.arrange;
     });
     //console.log(newsArticles);
 }

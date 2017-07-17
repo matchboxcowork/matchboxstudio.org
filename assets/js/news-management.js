@@ -65,11 +65,11 @@ function updateActive(id, active) {
     clearNews();
 }
 
-function updateOrder(id, order) {
+function updateOrder(id, arrange) {
     $.ajax({
         url: "newsCtl.php",
         type: "POST",
-        data: { "funct":"updateOrder", "id":id, "order":order}
+        data: { "funct":"updateOrder", "id":id, "arrange":arrange}
     })
     .done(function(data) {
         newsArticles = JSON.parse(data);
@@ -82,12 +82,12 @@ function updateOrder(id, order) {
 
 function reorder() {
     $(newsArticles).each(function(key, article) {
-        if(article.order) {
-            article.order = parseInt(article.order);
+        if(article.arrange) {
+            article.arrange = parseInt(article.arrange);
         }
     });
     newsArticles.sort(function(a, b) {
-        return a.order - b.order;
+        return a.arrange - b.arrange;
     });
     //console.log(newsArticles);
 }
@@ -100,7 +100,7 @@ function appendRows() {
     $(newsArticles).each(function(key, article) {
         if(article.active === '1') {        
             $('.news-management.active').append('<tr class="ui-state-default" data-id="'+article.id+'">'+
-                                          '<td width="15%"><span class="order">'+article.order+'</span></td>'+
+                                          '<td width="15%"><span class="order">'+article.arrange+'</span></td>'+
                                           '<td width="50%">'+article.title+'</td>'+
                                           '<td width="15%"><input type="checkbox" checked /></td>'+
                                           '<td width="20%">'+
@@ -185,7 +185,7 @@ function createArt() {
         $.ajax({
             url: "newsCtl.php",
             type: "POST",
-            data: { "funct": "createArticles", "title":title, "order":$('.news-management.active tr').length, "href":href, "description":description}
+            data: { "funct": "createArticles", "title":title, "arrange":$('.news-management.active tr').length, "href":href, "description":description}
         })
         .done(function(data) {
             newsArticles = JSON.parse(data);
