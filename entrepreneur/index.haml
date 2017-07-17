@@ -29,26 +29,14 @@
     %link{:href => "../assets/css/font-awesome.css", :rel => "stylesheet"}/
     %link{:href => "../assets/css/skeleton.css", :rel => "stylesheet"}/
     %link{:href => "../assets/css/layout.css", :rel => "stylesheet"}/
+    %link{:href => "../assets/css/entrepreneur.css", :rel => "stylesheet"}/
     %link{:href => "../assets/css/prettyPhoto.css", :rel => "stylesheet"}/
     / COLOR CSS
     %link#default{:href => "../assets/css/mbx.css", :rel => "stylesheet"}/
     / REVOLUTION BANNER CSS SETTINGS
     / <link rel="stylesheet" type="text/css" href="../assets/css/fullwidth.css" media="screen" />
     %link{:href => "../assets/rs-plugin/css/settings.css", :media => "screen", :rel => "stylesheet", :type => "text/css"}/
-    / expanding membership application section
-    :javascript
-      function manageSection(sectionID) {
 
-      var section = document.getElementById(sectionID);
-
-      if (section.className == "collapsed"){
-      	section.className = "expanded";
-      	}
-      else{
-      	section.className = "collapsed";				
-      	return true;
-      	}
-      }
     /[if lt IE 9]
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     /[if IE 7]
@@ -72,7 +60,19 @@
 
       ga('create', 'UA-41745008-1', 'matchboxstudio.org');
       ga('send', 'pageview');
-  %body
+  %body#entrepreneur
+
+    %fb-root
+    :javascript
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=443709452332248";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+
+
     /
       Primary Page Layout
       \==================================================
@@ -82,534 +82,262 @@
               	$('html,body').animate({ scrollTop: goPosition}, 'slow');
               }
     #up
-    %section.home
-      .overlay
-        .super
-          %div{:style => "width:100%;height:100%;background-color:#000;text-align:center;margin:auto;"}
-            %img{:alt => "MatchBOX logo on the wall", :height => "92%", :src => "../assets/img/MBXOld.jpg", :width => "100%"}/
-            /
-              <iframe src="//player.vimeo.com/video/76968901" width="100%" height="92%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        / ./super
-      / ./overlay
-    / ./home
+    
+    %section
+      %img{:src => "../assets/img/entrepreneur/ent-week.png", :width => "100%"}
+
     %section.menu
       .container
-        .sixteen.columns.clearfix
-          %h1.logo
-            %a{:href => "#up"}
-              %img{:alt => "MatchBOX logo", :src => "../assets/img/theme/logo.png"}/
+        .sixteen.columns.clearfix{:style => "text-align: center;"}
           %nav.menu-holder
             %ul#main-menu.menu-list
-              %li.active
-                %a{:href => "#up"}
-                  Home
+              %li
+                %a{:href => "#monday-image"}
+                  Monday<br>
+                  %span.day
+                    25
                   %span.arrow
               %li
-                %a{:href => "#2016"}
-                  2016
+                %a{:href => "#tuesday-image"}
+                  Tuesday<br>
+                  %span.day
+                    26
                   %span.arrow
               %li
-                %a{:href => "#history"}
-                  History
+                %a{:href => "#wednesday-image"}
+                  Wednesday<br>
+                  %span.day
+                    27
                   %span.arrow
               %li
-                %a{:href => "#compared"}
-                  Compared
+                %a{:href => "#thursday-image"}
+                  Thursday<br>
+                  %span.day
+                    28
                   %span.arrow
               %li
-                %a{:href => "#markets"}
-                  Markets
+                %a{:href => "#friday-image"}
+                  Friday<br>
+                  %span.day
+                    29
                   %span.arrow
-              %li
-                %a{:href => "#funding"}
-                  Funding
-                  %span.arrow
-              %li
-                %a{:href => "#summary"}
-                  Summary
-                  %span.arrow
-              %li.toggle-panel
-                %a.closed{:href => "#"}
-                  %i.icon-plus
-                  %span.arrow
+            
             / SubMenu
             %select#subMenu.sub-menu{:name => "subMenu", :onchange => "moveTo(this.value)", :size => "1"}
               %option{:selected => "selected", :value => ""} Menu
-              %option{:value => "#up"} - Top
-              %option{:value => "#2016"} - 2016
-              %option{:value => "#history"} - History
-              %option{:value => "#compared"} - Compared
-              %option{:value => "#markets"} - Markets
-              %option{:value => "#funding"} - Funding
-              %option{:value => "#summary"} - Summary
+              %option{:value => "#monday-image"} - Monday the 25th
+              %option{:value => "#tuesday-image"} - Tuesday the 26th
+              %option{:value => "#wednesday-image"} - Wednesday the 27th
+              %option{:value => "#thursday-image"} - Thursday the 28th
+              %option{:value => "#friday-image"} - Friday the 29th
         / ./sixteen columns
       / ./container
     / ./menu
     #container.page-wrapper
-      %section#2016.2016
-        .container
+      %section#up.up
+        .container.events{:style => "padding-top:100px"}
           / SECTION TITLE
           .sixteen.columns
             / MESSAGE
-            %h2.message-block
-              Entrepreneurship
+            .message-block
               %br>/
-              In
-              = succeed "," do
-                %span Greater Lafayette
+              %h3
+                MatchBOX Presents:
+              %h2
+                %span Greater Lafayette Entrepreneurship Week
+            %h3
+              WHAT IT IS
             %p
-              Greater Lafayette has a long and rich history of entrepreneurial activity. That being said, historically, entrepreneurship in the area has focused heavily on Small and Medium Enterprises (SME) that make up the traditional Main Street of middle America. Recent efforts, however, have concentrated on expanding the scope of entrepreneurial support and resources to include Innovation Driven Enterprises (IDE). Organizations focusing on IDEs include
-              = succeed "," do
-                %a{:href => "http://matchboxstudio.org", :target => "_blank"} MatchBOX Coworking Studio
-              = succeed "," do
-                %a{:href => "http://purdueresearchpark.com/", :target => "_blank"} The Purdue Research Park
-              = succeed "," do
-                %a{:href => "http://www.purduefoundry.com/", :target => "_blank"} Purdue Foundry
-              = succeed "," do
-                %a{:href => "http://www.anvilstartups.com/", :target => "_blank"} The Anvil
+              In celebration of the Greater Lafayette entrepreneurial ecosystem, MatchBOX Coworking Studio is partnering with Little Engine Ventures, Purdue Foundry, and the cities of Lafayette and West Lafayette to host five days of events surrounding tech and entrepreneurship. The week's events will feature <a href="https://www.resultsjunkies.com/"" target="_blank">Paul Singh with Results Junkies</a>, and will focus on highlighting the local and regional resources for startups.
+            %p
+              Events will cover startup branding and marketing, a VERGE event ftr Paul Singh as the fireside chat, involvement in Purdue's Dawn or Doom conference, classroom and campus visits and talks, MBX member meetup that will be open to the larger ecosystem, a patent/IP workshop, private office hours with Paul and his team, a Friday Morning Foundry Grounds event ftr Paul, an MBX Free Day and a workshop in the MatchBOX Rapid Prototyping LAB.
             / END MESSAGE
           / ./sixteen columns
         / ./container
-        / SLIDER SECTION
-        .slider-area
-          .fullwidthbanner-container{:style => "background:transparent !important;"}
-            .fullwidthbanner{:style => "background:transparent !important;"}
-              %ul
-                / THE FIRST SLIDE
-                %li{"data-masterspeed" => "300", "data-slotamount" => "5", "data-thumb" => "../assets/img/transparent.png", "data-transition" => "3dcurtain-vertical"}
-                  %img{:alt => "image title", :src => "../assets/img/bg-back.png"}/
-                  .caption.lfr{"data-easing" => "easeInOutElastic", "data-speed" => "900", "data-start" => "900", "data-x" => "523", "data-y" => "5"}
-                    %img{:alt => "24/7", :src => "../assets/img/247d.png"}/
-                  /
-                    <div class="caption lfr"
-                    data-x="523"
-                    data-y="64"
-                    data-speed="900"
-                    data-start="900"
-                    data-easing="easeInOutElastic"  ><img src="../assets/img/big-screen.png" alt="Image 4"></div>
-                    
-                    <div class="caption lfr"
-                    data-x="360"
-                    data-y="190"
-                    data-speed="900"
-                    data-start="500"
-                    data-easing="easeInOutElastic" ><img src="../assets/img/pad.png" alt="Image 4"></div>
-                    
-                    <div class="caption lfr"
-                    data-x="510"
-                    data-y="280"
-                    data-speed="900"
-                    data-start="1300"
-                    data-easing="easeInOutElastic" ><img src="../assets/img/phone.png" alt="Image 4"></div>
-                  .caption.color_big.randomrotate{"data-easing" => "easeOutExpo", "data-speed" => "300", "data-start" => "1100", "data-x" => "18", "data-y" => "80"} History
-                  .caption.small_text.noshadow.sft{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1300", "data-x" => "90", "data-y" => "150"} OF ENTREPRENEURSHIP
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1300", "data-x" => "20", "data-y" => "180"} From optimization to disruption, to opportunity and resourcefulness,
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1700", "data-x" => "20", "data-y" => "205"} entrepreneurship has meant many things over the years.
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2000", "data-x" => "20", "data-y" => "230"} Today, we believe VISION may be the most useful trait
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2300", "data-x" => "20", "data-y" => "255"} of a modern entrepreneur…
-                  /
-                    <div class="caption black sfl"
-                    data-x="20"
-                    data-y="280"
-                    data-speed="800"
-                    data-start="2600"
-                    data-easing="easeOutExpo"><i class="icon-ok"></i>Vision</div>
-                    
-                    <div class="caption black sfl"
-                    data-x="20"
-                    data-y="305"
-                    data-speed="800"
-                    data-start="2900"
-                    data-easing="easeOutExpo"><i class="icon-plus"></i>Mentors</div>
-                    
-                    <div class="caption sfb"
-                    data-x="20"
-                    data-y="350"
-                    data-speed="800"
-                    data-start="3200"
-                    data-easing="easeOutExpo"><a href="#" class="button grey">Apply Starting August 2013</a></div>
-                / THE Second SLIDE
-                %li{"data-masterspeed" => "300", "data-slotamount" => "5", "data-thumb" => "../assets/img/transparent.png", "data-transition" => "3dcurtain-vertical"}
-                  %img{:alt => "image title", :src => "../assets/img/bg-back.png"}/
-                  .caption.lfr{"data-easing" => "easeInOutElastic", "data-speed" => "900", "data-start" => "900", "data-x" => "423", "data-y" => "200"}
-                    %img{:alt => "Hobbiest to Pro", :src => "../assets/img/amateurtopro.png"}/
-                  /
-                    <div class="caption lfr"
-                    data-x="360"
-                    data-y="190"
-                    data-speed="900"
-                    data-start="500"
-                    data-easing="easeInOutElastic" ><img src="../assets/img/pad.png" alt="Image 4"></div>
-                    
-                    <div class="caption lfr"
-                    data-x="510"
-                    data-y="280"
-                    data-speed="900"
-                    data-start="1300"
-                    data-easing="easeInOutElastic" ><img src="../assets/img/phone.png" alt="Image 4"></div>
-                  .caption.color_big.randomrotate{"data-easing" => "easeOutExpo", "data-speed" => "300", "data-start" => "1100", "data-x" => "20", "data-y" => "95"} Comparing
-                  .caption.small_text.noshadow.sft{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1300", "data-x" => "95", "data-y" => "170"} SMEs to IDEs
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1300", "data-x" => "20", "data-y" => "200"}
-                    Key areas of differentiation between
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1700", "data-x" => "20", "data-y" => "225"} Small and Medium Enterprises
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2000", "data-x" => "20", "data-y" => "250"} and Innovation-driven Enterprises
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2300", "data-x" => "20", "data-y" => "275"} include market opportunities, funding options,
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "700", "data-start" => "2600", "data-x" => "20", "data-y" => "300"} response to capital, growth potential,
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "700", "data-start" => "2900", "data-x" => "20", "data-y" => "325"} and job opportunities…
-                  /
-                    <div class="caption sfb"
-                    data-x="20"
-                    data-y="350"
-                    data-speed="800"
-                    data-start="3200"
-                    data-easing="easeOutExpo"><a href="#" class="button grey">Apply Starting August 2013</a></div>
-                / THE Third SLIDE
-                %li{"data-masterspeed" => "300", "data-slotamount" => "5", "data-thumb" => "../assets/img/transparent.png", "data-transition" => "3dcurtain-vertical"}
-                  %img{:alt => "image title", :src => "../assets/img/bg-back.png"}/
-                  .caption.lfr{"data-easing" => "easeInOutElastic", "data-speed" => "900", "data-start" => "900", "data-x" => "623", "data-y" => "100"}
-                    %img{:alt => "Changemakers", :src => "../assets/img/Changemakers.png"}/
-                  /
-                    <div class="caption lfr"
-                    data-x="523"
-                    data-y="64"
-                    data-speed="900"
-                    data-start="900"
-                    data-easing="easeInOutElastic"  ><img src="../assets/img/big-screen.png" alt="Image 4"></div>
-                    
-                    <div class="caption lfr"
-                    data-x="360"
-                    data-y="190"
-                    data-speed="900"
-                    data-start="500"
-                    data-easing="easeInOutElastic" ><img src="../assets/img/pad.png" alt="Image 4"></div>
-                    
-                    <div class="caption lfr"
-                    data-x="510"
-                    data-y="280"
-                    data-speed="900"
-                    data-start="1300"
-                    data-easing="easeInOutElastic" ><img src="../assets/img/phone.png" alt="Image 4"></div>
-                  .caption.color_big.randomrotate{"data-easing" => "easeOutExpo", "data-speed" => "300", "data-start" => "1100", "data-x" => "18", "data-y" => "80"} Market
-                  .caption.small_text.noshadow.sft{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1300", "data-x" => "95", "data-y" => "150"} Opportunity
-                  /
-                    <div class="caption small_text noshadow sft"
-                    data-x="95"
-                    data-y="150"
-                    data-speed="900"
-                    data-start="1300"
-                    data-easing="easeOutExpo">Coworking Studio</div>
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1300", "data-x" => "20", "data-y" => "180"} Innovation-Driven Enterprises have the potential
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1700", "data-x" => "20", "data-y" => "205"} to access global markets and leapfrog revenue
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2000", "data-x" => "20", "data-y" => "230"} projections confined to a local geography…
-                  /
-                    <div class="caption black sfl"
-                    data-x="20"
-                    data-y="255"
-                    data-speed="800"
-                    data-start="2300"
-                    data-easing="easeOutExpo"><i class="icon-ok"></i>tradeable opportunities</div>
-                    
-                    <div class="caption black sfl"
-                    data-x="20"
-                    data-y="280"
-                    data-speed="800"
-                    data-start="2600"
-                    data-easing="easeOutExpo"><i class="icon-ok"></i>Whiteboards</div>
-                    
-                    <div class="caption black sfl"
-                    data-x="20"
-                    data-y="305"
-                    data-speed="800"
-                    data-start="2900"
-                    data-easing="easeOutExpo"><i class="icon-plus"></i>Mentors</div>
-                    
-                    <div class="caption sfb"
-                    data-x="20"
-                    data-y="350"
-                    data-speed="800"
-                    data-start="3200"
-                    data-easing="easeOutExpo"><a href="#" class="button grey">Apply Starting August 2013</a></div>
-                / THE New SLIDE
-                %li{"data-masterspeed" => "300", "data-slotamount" => "5", "data-thumb" => "../assets/img/transparent.png", "data-transition" => "3dcurtain-vertical"}
-                  %img{:alt => "image title", :src => "../assets/img/bg-back.png"}/
-                  .caption.lfr{"data-easing" => "easeInOutElastic", "data-speed" => "900", "data-start" => "900", "data-x" => "623", "data-y" => "100"}
-                    %img{:alt => "Changemakers", :src => "../assets/img/Changemakers.png"}/
-                  /
-                    <div class="caption lfr"
-                    data-x="523"
-                    data-y="64"
-                    data-speed="900"
-                    data-start="900"
-                    data-easing="easeInOutElastic"  ><img src="../assets/img/big-screen.png" alt="Image 4"></div>
-                    
-                    <div class="caption lfr"
-                    data-x="360"
-                    data-y="190"
-                    data-speed="900"
-                    data-start="500"
-                    data-easing="easeInOutElastic" ><img src="../assets/img/pad.png" alt="Image 4"></div>
-                    
-                    <div class="caption lfr"
-                    data-x="510"
-                    data-y="280"
-                    data-speed="900"
-                    data-start="1300"
-                    data-easing="easeInOutElastic" ><img src="../assets/img/phone.png" alt="Image 4"></div>
-                  .caption.color_big.randomrotate{"data-easing" => "easeOutExpo", "data-speed" => "300", "data-start" => "1100", "data-x" => "18", "data-y" => "80"} Jobs
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1300", "data-x" => "20", "data-y" => "180"} Innovation-Driven Enterprises can create tradeable opportunities
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1700", "data-x" => "20", "data-y" => "205"} for a global workforce wherein jobs
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2000", "data-x" => "20", "data-y" => "230"} can be performed remotely anywhere in the world,
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2300", "data-x" => "20", "data-y" => "255"} and are often able to be transferred
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2600", "data-x" => "20", "data-y" => "280"} from one industry to another as well…
-                  /
-                    <div class="caption black sfl"
-                    data-x="20"
-                    data-y="305"
-                    data-speed="800"
-                    data-start="2900"
-                    data-easing="easeOutExpo"><i class="icon-plus"></i>Mentors</div>
-                    
-                    <div class="caption sfb"
-                    data-x="20"
-                    data-y="350"
-                    data-speed="800"
-                    data-start="3200"
-                    data-easing="easeOutExpo"><a href="#" class="button grey">Apply Starting August 2013</a></div>
-                / THE Fourth SLIDE
-                %li{"data-masterspeed" => "300", "data-slotamount" => "5", "data-thumb" => "../assets/img/transparent.png", "data-transition" => "3dcurtain-vertical"}
-                  %img{:alt => "image title", :src => "../assets/img/bg-back.png"}/
-                  .caption.lfr{"data-easing" => "easeInOutElastic", "data-speed" => "900", "data-start" => "900", "data-x" => "723", "data-y" => "100"}
-                    %img{:alt => "Leave your tie", :src => "../assets/img/LeaveTie.png"}/
-                  /
-                    <div class="caption lfr"
-                    data-x="360"
-                    data-y="190"
-                    data-speed="900"
-                    data-start="500"
-                    data-easing="easeInOutElastic" ><img src="../assets/img/pad.png" alt="Image 4"></div>
-                    
-                    <div class="caption lfr"
-                    data-x="510"
-                    data-y="280"
-                    data-speed="900"
-                    data-start="1300"
-                    data-easing="easeInOutElastic" ><img src="../assets/img/phone.png" alt="Image 4"></div>
-                  .caption.color_big.randomrotate{"data-easing" => "easeOutExpo", "data-speed" => "300", "data-start" => "1100", "data-x" => "20", "data-y" => "95"} Funding
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1300", "data-x" => "20", "data-y" => "200"} Innovation-Driven Enterprises respond to capital differently,
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "900", "data-start" => "1700", "data-x" => "20", "data-y" => "225"} and therefore require a different way of assessing risk,
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2000", "data-x" => "20", "data-y" => "250"} a different timeline on returns,
-                  .caption.black.sfl{"data-easing" => "easeOutExpo", "data-speed" => "800", "data-start" => "2300", "data-x" => "20", "data-y" => "275"} and oftentimes new entities created for these specific purposes…
-                  /
-                    <div class="caption black sfl"
-                    data-x="20"
-                    data-y="275"
-                    data-speed="700"
-                    data-start="2400"
-                    data-easing="easeOutExpo"><i class="icon-ok"></i>angel investors; venture capital firms</div>
-                    
-                    <div class="caption sfb"
-                    data-x="20"
-                    data-y="350"
-                    data-speed="800"
-                    data-start="3200"
-                    data-easing="easeOutExpo"><a href="#" class="button grey">Apply Starting August 2013</a></div>
-        / END SLIDER SECTION
-        %section#history.history
-          .container
-            .eight.columns
-              %h3 HISTORY OF ENTREPRENEURSHIP
-              %p The modern era of entrepreneurship has evolved since the term was introduced by French economist Jean-Baptiste Say, in the early 1800s. Say’s focus was on the OPTIMIZATION of resources as a result of shifting them from lower to higher areas of productivity; a definition that would be fitting of a wide array of entrepreneurial endeavors even today. In the 20th century, Austrian-American economist and political scientist Joseph Schumpeter focused his definition of entrepreneurship on the role of DISRUPTION, or “creative destruction,” as the primary driver in economic growth.
-              %p Later that century, Peter Drucker, an American management consultant and educator, focused on entrepreneurs as best defined by those who spot and exploit OPPORTUNITY in order to be successful. Howard Stevenson, a contemporary Harvard School of Business professor, has more recently expounded on the RESOURCEFULNESS of the entrepreneur as their most distinguishing trait, which doesn’t allow resources to limit their options.
-            .eight.columns
-              %h3  
-              %p The authors of this paper would like to contribute to this great history of entrepreneurship by adding that VISION may be the most useful trait of a modern entrepreneur as it considers the motivation of the entrepreneur; the critical element of pursuing entrepreneurial activity not as much out of what could be, but more of a fixing of the present in light of a future picture of “the way that things should be.”
-              %p As the definition has evolved, it has grown from a simple umbrella term that identifies any individual who can optimize resources to a more focused, opportunistic and innovative person with a desire to deconstruct the status quo to solve a problem. In other words, the shift from a Small and Medium Enterprise focus to an Innovation Driven Enterprise focus is clear, and mirrors the evolution of the entrepreneurial culture across the country and, more importantly, in Greater Lafayette.
-          / Team member stuff could go here at some point
-        / ./history
+
         / PARALLAX
-        %section#quote1.para
+        %section#monday-image.monday.para
           .overlay
             .container.message
               %p.quote-block
-                Innovation is the specific instrument of entrepreneurship... the act that endows resources with a new capacity to create wealth.
+                Monday<br>
                 %span
-                  %br>/
-                  \-Drucker
+                  September 25th
         / END PARALLAX
+
         / SERVICES
-        %section#compared.compared
-          .container
-            .eight.columns
-              %p
-              %h3 SMEs COMPARED TO IDEs
-              %p We believe that promoting a general understanding of the difference between Small and Medium Enterprises (SMEs) and Innovation Driven Enterprises (IDEs) is vital in cultivating a community that embraces the rapidly changing world of entrepreneurship. Key areas of differentiation include market opportunities, funding options, response to capital, growth potential, and job opportunities.
-            .eight.columns
-              %p
-              %h3  
-              %p
-                The Kauffman Foundation’s recently published report entitled
-                %a{:href => "http://www.kauffman.org/~/media/kauffman_org/research%20reports%20and%20covers/2013/05/a_tale_of_two_entrepreneurs_report.pdf", :target => "_blank"} “The Tale of Two Entrepreneurs”
-                draws a clear and important distinction between SMEs and IDEs, or small businesses and startups, and why it’s important for governments and policymakers to support both.
+        %section#monday.monday
+          .container.events
             .sixteen.columns
-              %img.fullimage{:alt => "SME versus IDE", :src => "../assets/img/SMEvIDE.jpg"}/
-            .four.columns
-              %p  
-            .eight.columns
-              %p Tippecanoe County scored a 99.8 Innovation Index score in the Economic Development Administration ratings, third behind Kosciusko County (107.9) and Hamilton County (100.7). The index factors in human capital, economic dynamics, productivity and employment, and economic well-being.
-            .four.columns
-              %p  
+              %h3.red-text GREATER LAFAYETTE ENTREPRENEURSHIP WEEK KICKOFF EVENT
+              %p <b>Monday 9.25 at 7 pm</b> <br> MatchBOX Coworking Studio <br> 17 South 6th St., Lafayette
+              %p Local bites, beer and wine, and an event to launch our week of entrepreneurship. Paul Singh and Dana Duncan with Results Junkies will at the studio with their RV parked on 6th Street. Meet the sponsors, local VCs, and many of the entrepreneurs at the forefront of innovation in Greater Lafayette.
+
+              .link-container
+                %a#see-inside.button.mbxred{:href => "https://mbxentrepreneurshipweek.eventbrite.com", :target => "_blank"} Tickets
           / ./container
         / ./about
         / END SERVICES
+
         / PARALLAX
-        %section#quote2.para
+        %section#tuesday-image.tueday.para
           .overlay
             .container.message
               %p.quote-block
-                Business has only two basic functions-marketing and innovation.
+                Tuesday<br>
                 %span
-                  %br>/
-                  \-Drucker
+                  September 26th
         / END PARALLAX
+
         / CONTACT
-        %section#markets.markets
-          .container
-            .eight.columns
-              %p
-              %h3 Market Opportunity
-              %p From a market opportunity perspective, SMEs tend to focus on a local market. For example, a retail operation or dining establishment caters to the needs of the potential custom- ers that are in their direct proximity. Conversely, IDEs tend to have global opportunities in a very niche market. Consider high-tech intellectual property, such as a cloud-based data software product, that can significantly impact or alter an industry or series of industries around the globe, and thereby access global markets and leapfrog revenue projections confined to a local geography.
-            .eight.columns
-              %p
-              %h3 Jobs
-              %p The types of jobs that are created by SMEs are generally performed locally and may or may not be able to transfer to other industries. Job creation by IDEs, though, often results in tradeable opportunities for a global workforce wherein jobs can be performed remotely anywhere in the world. The necessary skills for these positions are frequently transferable as well. An individual who writes software in the agricultural industry can often do the same in another industry—education, manufacturing, etc.
+        %section
+          .container.events
+            .sixteen.columns
+              %h3.red-text DAWN OR DOOM FTR: PAUL SINGH
+              %p <b>Tuesday 9.26</b> <br> Stewart Center, Purdue University <br> 128 Memorial Mall, West Lafayette
+              %p Dawn or Doom enables open-minded and thoughtful consideration of the potential risks and rewards posed by rapid, disruptive and seemingly continuous technological change that may be moving faster than our ability to understand it. Paul’s talk will be part of the “Designing Cities” track and will address startup culture in the 55 cities Paul and Dana have “lived in” one week at a time via their North American Tech Tour. 
+
+              .link-container
+                %a#see-inside.button.mbxred{:href => "http://www.purdue.edu/dawnordoom/", :target => "_blank"} More information
           / ./container
+
         / PARALLAX
-        %section#quote3.para
+        %section#wednesday-image.wednesday.para
           .overlay
             .container.message
               %p.quote-block
-                Entrepreneurship is the relentless pursuit of opportunity without regard to resources currently controlled.
+                Wednesday<br>
                 %span
-                  %br>/
-                  \-Stevenson
+                  September 27th
         / END PARALLAX
-        %section#funding.funding
-          .container
-            .eight.columns
-              %p
-              %h3 Funding
-              %p For an SME, traditional funding options are relatively straightforward: banks provide small business loans to individuals or partnerships that are deemed low-risk, based on a trusted formulaic analysis that’s been improved over time. These same risk management calculations don’t work in favor of IDEs, as they often have a period of latency after funding from research and development. The acceptance of failure in the support of IDEs is critical to encourage this type of startup activity to thrive.
-              %p Funding options for IDEs, beyond the simple but effective “boot strapping,” can be nondilutive long-in- vestment interest in the form of grant opportunities from sources like SBIR/STTRs from Departments of Agriculture, Commerce, Defense, Education, Health and Human Services, Homeland Security, Interi- or, Transportation, EPA, NASA, and especially the NSF, as well as other national and more regional organizations, or dilutive with investment opportuni- ties from common places such as angel investors and venture capital (VC) firms.
-            .eight.columns
-              %p
-              %h3  
-              %p
-                It is the authors’ firm belief that a disciplined focus on the quality of the startup community itself, with a long-term perspective, is the best way to attract start-up capital. Regionally, sources of investment capital currently available to IDEs are limited but increasing. The Purdue Foundry, in partnership with Elevate Ventures and the Indiana Economic Development Corporation, operate the
-                = succeed "." do
-                  %a{:href => "http://purduefoundry.com/elevate", :target => "_blank"} Elevate Purdue Foundry Fund
-              %p
-                %a{:href => "http://visiontech-partners.com/", :target => "_blank"}> VisionTech Partners
-                , an Indiana based group with an angel investment arm, operates regionally and has a specific chapter dedicated to the Greater Lafayette area.
-                %a{:href => "http://m25group.com/", :target => "_blank"} M25 Group
-                and Hyde Park Angels both operate out of the Chicago area with interest in Greater Lafayette. MatchBOX supports investment groups that can make an impact in our community and give IDEs investment options to help propel their startups forward.
-        / ./about
-        / PARALLAX
-        %section#quote4.para
-          .overlay
-            .container.message
-              %p.quote-block
-                Real excellence and humility are not incompatible one with the other, on the contrary they are twin sisters.
-                %span
-                  %br>/
-                  \-Say
-        / END PARALLAX
-        %section#services.services
-          .container
+
+        %section
+          .container.events
             .sixteen.columns
-              %img.fullimage{:alt => "Infinity loop", :src => "../assets/img/infinity.jpg"}/
-            .four.columns
-              %p  
-            .eight.columns
-              %div{"text-align" => "left"}
-                “Innovative risk takers are likely to become serial entrepreneurs, reinvesting the gains from their initial business in successive employment-generating enterprises. Entrepreneurs themselves are central to economic growth, accounting for one-third of the difference in economic growth rates among countries.”
-                = succeed "Paul" do
-                  %br/
-            .four.columns
-              %p  
+              %h3.red-text MBXam STARTUP BRANDING WORKSHOP
+              %p <b>Wednesday 9.27 from 12 - 2 pm</b> <br> MatchBOX Coworking Studio <br> 17 South 6th St., Lafayette
+              %p This special edition of our monthly MBXam program will focus on startup branding. Graphic designer and 3D artist Aaron Winey, who specializes in brand and visual identity development, will lead this workshop for founders to explore the elements and importance of branding as they launch new companies.
+
+              .link-container
+                %a#see-inside.button.mbxred{:href => "https://mbxentrepreneurshipweek.eventbrite.com", :target => "_blank"} Tickets
+              %br/
+              %br/
+              %hr{:style => "width:100%"}
+              %br/
+            .sixteen.columns
+              %h3.red-text MBX MEMBER MEETUP
+              %p <b>Wednesday 9.27 from 12 - 1 pm</b> <br> MatchBOX Coworking Studio <br> 17 South 6th St., Lafayette
+              %p This free lunch that usually serves as a meet-and-greet exclusively for MatchBOX Coworking Studio members will open up to the entrepreneurial and innovation community.
+
+              .link-container
+                %a#see-inside.button.mbxred{:href => "https://mbxentrepreneurshipweek.eventbrite.com", :target => "_blank"} Tickets
         / ./about
+
         / PARALLAX
-        %section#quote5.para
+        %section#thursday-image.thursday.para
           .overlay
             .container.message
               %p.quote-block
-                We always plan too much and always think too little.
+                Thursday<br>
                 %span
-                  %br>/
-                  \-Schumpeter
+                  September 28th
         / END PARALLAX
+
+        %section
+          .container.events
+            .sixteen.columns
+              %h3.red-text PRIVATE PITCHES & OFFICE HOURS WITH RESULTS JUNKIES
+              %p <b>Thursday 9.28 from 8 am - 12 pm</b> <br> MatchBOX Coworking Studio <br> 17 South 6th St., Lafayette
+              %p Greater Lafayette founders are invited to apply to spend one-on-one time with Paul Singh, who is an investor and entrepreneur. He’s the former Managing Director of 1776, Founder of Disruption Corporation, Partner at 500Startups, and Entrepreneur in Resident at USCIS / DHS. Startups he selects will have the opportunity to pitch and receive feedback during their sessions. Application link coming soon.
+              %br/
+              %hr{:style => "width:100%"}
+              %br/
+
+            .sixteen.columns
+              %h3.red-text STARTUP IP LAW WORKSHOP
+              %p <b>Thursday 9.28 from 12 - 2 pm</b> <br> MatchBOX Coworking Studio <br> 17 South 6th St., Lafayette
+              %p Local attorneys specializing in protecting intellectual property will lead this workshop to address issues that founders and entrepreneurs face as they prepare for launch or growth of their companies.
+
+              .link-container
+                %a#see-inside.button.mbxred{:href => "https://mbxentrepreneurshipweek.eventbrite.com", :target => "_blank"} Tickets
+              %br/
+              %br/
+              %hr{:style => "width:100%"}
+              %br/
+
+            .sixteen.columns
+              %h3.red-text VERGE LAFAYETTE / WEST LAFAYETTE
+              %p <b>Thursday 9.28 from 7 - 9 pm</b> <br> MatchBOX Coworking Studio <br> 17 South 6th St., Lafayette
+              %p MBX’s monthly Verge event will feature Paul Singh as the fireside chat, with pitches from the winner(s) of Greater Lafayette Startup Weekend and the Convo application. The MBX coffee bar will be serving an extended lineup of beverages for the night, and EMT foodtruck serving up tasty food.
+
+              .link-container
+                %a#see-inside.button.mbxred{:href => "https://mbxentrepreneurshipweek.eventbrite.com", :target => "_blank"} Tickets
+        / ./about
+
+        / PARALLAX
+        %section#friday-image.friday.para
+          .overlay
+            .container.message
+              %p.quote-block
+                Friday<br>
+                %span
+                  September 29th
+        / END PARALLAX
+
         %section#summary.summary
-          .container
+          .container.events
             .sixteen.columns
-              %p
-              %h3 Summary
-              %p A single-word approach to summarize the variances between the two categories of entrepreneurial activity is to refer to SMEs, or traditional small businesses, as evolutionary. The growth of the organization is steady and consistent, but can be slow and limited. When ran well, they can continue and do well for generations, but change is often slow. Conversely, IDEs, or startups, are revolutionary. They’re disruptive by nature, and albeit volatile, they can cause rapid and immediate growth and change.
-              %p
-                That being said, it’s critical for communities, policymakers, and legislation to support both types of entrepreneurship. The authors of this paper and MatchBOX support policies and programs that remove hurdles for entrepreneurs and allow for the forward-movement of SMEs and IDEs alike. Examples include recent federal legislation that
-                = succeed "," do
-                  %a{:href => "http://www.heritagecapitalventures.com/blog/halloween-treat-for-crowdfunding-sec-approves-title-iii-of-jobs", :target => "_blank"} further expands crowdfunding
-                = succeed "," do
-                  %a{:href => "http://ignitingindiana.com/", :target => "_blank"} Entrepreneurship Week
-                %a{:href => "http://xtern.me/", :target => "_blank"} Xtern
-                program - an immersive summer tech internship experience, and the
-                %a{:href => "http://techpoint.org/jobs-in-tech/", :target => "_blank"} XPat
-                program - an effort to draw skilled workers back to Indiana. Alignment with these existing efforts is a logical and strategic possibility for the Greater Lafayette community.
-              %p We believe building a community based on the optimism of a better future, a shared vision for collaboration and ideation, a culture of openness, surrounded by innovation-driven service providers, and favorable policies is a necessary compliment to the existing business climate and a recipe for a healthy and thriving Greater Lafayette.
-              %p
-                %br/
-                %a{:href => "https://www.linkedin.com/in/jtennenhouse", :target => "_blank"} Jason Tennenhouse
-                %br/
-                %a{:href => "https://www.linkedin.com/in/mikelberger\n", :target => "_blank"} Mikel Berger
-                %br/
-                %a{:href => "https://www.linkedin.com/in/amandafindlay", :target => "_blank"} Amanda Findlay
-              %p{:style => "color:#cccccc"}
-                To share your ideas or contribute to the body of thought celebrating entrepreneurship in Greater Lafayette please email us at
-                = succeed "." do
-                  %a{:href => "mailto:entrepreneur@matchboxstudio.org"} entrepreneur@matchboxstudio.org
+              %h3.red-text MBX FREE DAY
+              %p <b>Friday 9.29 from 8 am - 5 pm</b> <br> MatchBOX Coworking Studio <br> 17 South 6th St., Lafayette
+              %p Interested in being part of a coworking community for a day? MBX opens their doors to entrepreneurs, innovators, freelancers, designers, hobbyists, developers, and anyone who needs space to get work done. Setup your laptop or just stop by for a tour. A food truck will be parked on 6th Street during the lunch hour. 
+              
+              .link-container
+                %a#see-inside.button.mbxred{:href => "https://mbxentrepreneurshipweek.eventbrite.com", :target => "_blank"} Tickets
+              %br/
+              %br/
+              %hr{:style => "width:100%"}
+              %br/
+
+            .sixteen.columns
+              %h3.red-text FRIDAY MORNING FOUNDRY GROUNDS
+              %p <b>Friday 9.29 from 8:30 - 10 am</b> <br> Burton D. Morgan Center for Entrepreneurship <br> 1201 West State St., West Lafayette
+              %p This weekly event hosted by Purdue Foundry (on the second floor of the Burton D. Morgan Center for Entrepreneurship) will feature an interactive talk with Paul Singh and Dana Duncan, and the opportunity to network with Foundry entrepreneurs in residence and Purdue startup companies. 
+
+              .link-container
+                %a#see-inside.button.mbxred{:href => "https://www.facebook.com/events/1841060659549763/?acontext=%7B%22source%22%3A5%2C%22page_id_source%22%3A377475319044531%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%7B%5C%22page_id%5C%22%3A377475319044531%2C%5C%22tour_id%5C%22%3Anull%7D%22%7D]%2C%22has_source%22%3Atrue%7D", :target => "_blank"} More Information
+
+              %br/
+              %br/
         / ./about
+
+        %section#contact
+          .container
+            .sixteen.columns.social
+              .third
+                %a{:href => "http://twitter.com/matchboxcowork"}
+                  %i.icon-twitter
+              .third
+                %a{:href => "http://facebook.com/matchboxcowork"}
+                  %i.icon-facebook
+              .third
+                %a{:href => "https://www.instagram.com/matchboxcowork/"}
+                  %i.icon-instagram
+            .sixteen.columns{:style => "padding-bottom: 25px;"}
+              %p To share your ideas or contribute to the body of thought celebrating entrepreneurship in Greater Lafayette please email us at <a href="mailto:entrepreneur@matchboxstudio.org">entrepreneur@matchboxstudio.org</a>
+
+        %section#facebook
+          .container.events
+            .sixteen.columns{:style => "text-align:center"}
+              .fb-page{"data-href" => "https://www.facebook.com/matchboxcowork/", "data-tabs" => "timeline", "data-small-header" => "false", "data-width" => "960px", "data-adapt-container-width" => "true", "data-hide-cover" => "false", "data-show-facepile" => "true"}
+                %blockquote.fb-xfbml-parse-ignore{:cite => "https://www.facebook.com/matchboxcowork/"}
+                  %a{:href => "https://www.facebook.com/matchboxcowork/"}
+                    MatchBOX
+
+        / Contact
+        %section#sponsors.contact
+          = include 'entrepreneur/sponsors.haml'
     / ./page-wrapper
-    / Panel
-    %section.slide-panel
-      .container
-        .panel-wrap
-          / TEXT AREA
-          /
-            <div class="one-third column">
-            <h3>About MatchBOX</h3>
-            <p>MatchBOX is a coworking studio in Lafayette, Indiana.</p>
-            
-            </div>
-          / FEATURE LIST
-          .one-third.column
-            %h3 Disruption
-            %ul.list
-              %li.last The gale of creative destruction is the process of incessantly destroying the old one, incessantly creating a new one.
-          .one-third.column
-            %h3 Resourcefulness
-            %ul.list
-              %li.last Entrepreneurs not only see and pursue opportunities that elude administrative managers; entrepreneurs do not allow their own initial resource endowments to limit their options.
-          .one-third.column
-            %h3 Vision
-            %ul.list
-              %li.last Seeing our world the way it should be, not just the way it is today
-          /
-            Flickr
-            
-            <div class="one-third column">
-            <h3>Flickr Photos</h3>
-            <div id="flickrImages" class="flickr"></div>
-            </div>
-          %span.toggle
-            %i.icon-minus
+
     / FOOTER
     %section.footer
       .container
