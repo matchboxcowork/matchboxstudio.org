@@ -698,6 +698,9 @@ li:hover .icon{
 .news-article h4 {
 	margin-bottom:5px;
 }
+.news-article p {
+	line-height: 15px;
+}
 .news-list {
 	overflow:hidden;
 	width:100%;
