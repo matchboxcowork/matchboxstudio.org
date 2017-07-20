@@ -1,15 +1,15 @@
 - name: The City of Lafayette
-  img: "../assets/img/sponsors/highres/LafayetteLogo.png"
+  img: "/assets/img/sponsors/LafayetteLogo.png"
   url: "http://www.lafayette.in.gov/"
 - name: The City of West Lafayette
-  img: "../assets/img/sponsors/highres/West-Lafayette.png"
+  img: "/assets/img/sponsors/West-Lafayette.png"
   url: "http://www.westlafayette.in.gov/"
 - name: Lev 
-  img: "../assets/img/sponsors/highres/LEV.png"
+  img: "/assets/img/sponsors/LEV.png"
   url: "http://www.lev.vc/"
 - name: MatchBOX Studio
-  img: "../assets/img/sponsors/highres/matchbox.png"
+  img: "/assets/img/sponsors/matchbox.png"
   url: "http://matchboxstudio.org/"
 - name: Purdue Foundry
-  img: "../assets/img/sponsors/highres/Foundry.png"
+  img: "/assets/img/sponsors/Foundry.png"
   url: "https://purduefoundry.com/"
