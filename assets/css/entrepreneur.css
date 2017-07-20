@@ -54,6 +54,42 @@
 }
 /* /background images */
 
+.title {
+  text-align:center;
+  padding
+  :30px 0;
+  display: block;
+}
+
+.title img {
+  width:100%;
+  max-width:595px;
+}
+
+#entrepreneur .button {
+  background-color: #F05241;
+  margin-right: 10px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  height: 30px;
+  cursor: pointer;
+  color: #fff !important;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6) !important;
+  line-height: 45px !important;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+}
+
+.button.entred {
+  box-shadow: #862b21 0px 3px 0px 0px, #af3b2e 0px -18px 21px inset;
+}
+
+.button.entred:hover {
+  box-shadow: #af3b2e 0px 18px 21px inset;
+}
+
 .lowercase {
   text-transform: lowercase;
 }
@@ -117,17 +153,17 @@ h3 {
 }
 
 #entrepreneur .social a {
-  width:125px;
-  height:125px;
+  width:110px;
+  height:110px;
   text-align:center;
-  line-height: 157px;
+  line-height: 137px;
   background-color: #666666;
   color: #FFF;
-  border-radius: 63px;
+  border-radius: 55px;
 }
 
 .social a i {
-  font-size: 65px;
+  font-size: 55px;
 }
 
 #entrepreneur .social {

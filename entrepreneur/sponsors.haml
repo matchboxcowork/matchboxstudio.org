@@ -1,8 +1,6 @@
 .sponsors.container
   .sixteen.columns
     .message-block
-      %h2 Big thanks to our <span>sponsors</span>!
-      %br/
       %h3{:style => "text-align:center"} MatchBOX Presents: Greater Lafayette Entrepreneurship Week is supported by: 
     %ul
       - YAML.load_file('entrepreneur/sponsors.yaml').each do |s|
