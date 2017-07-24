@@ -229,3 +229,12 @@ h3 {
   }
 
 }
+
+@media only screen and (max-width: 415px) {
+  #monday-image, #tuesday-image, #wednesday-image, #thursday-image, #friday-image {
+    height: 300px;
+    background-attachment: inherit;
+    background-color:#000;
+    background-repeat: no-repeat;
+  }
+}
