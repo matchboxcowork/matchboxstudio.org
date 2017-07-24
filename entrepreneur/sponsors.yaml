@@ -7,9 +7,9 @@
 - name: Lev 
   img: "/assets/img/sponsors/LEV.png"
   url: "http://www.lev.vc/"
-- name: MatchBOX Studio
-  img: "/assets/img/sponsors/matchbox.png"
-  url: "http://matchboxstudio.org/"
 - name: Purdue Foundry
   img: "/assets/img/sponsors/Foundry.png"
   url: "https://purduefoundry.com/"
+- name: MatchBOX Studio
+  img: "/assets/img/sponsors/matchbox.png"
+  url: "http://matchboxstudio.org/"
