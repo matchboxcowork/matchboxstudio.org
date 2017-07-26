@@ -14,7 +14,7 @@
           getArticles($dbh);
           break;
       case "createArticles":
-          createArticles($dbh, $_POST['title'], $_POST['order'], $_POST['href'], $_POST['description']);
+          createArticles($dbh, $_POST['title'], $_POST['arrange'], $_POST['href'], $_POST['description']);
           break;
       case "updateArticles":
           updateArticles($dbh, $_POST['id'], $_POST['title'], $_POST['href'], $_POST['description']);
@@ -23,7 +23,7 @@
           updateActive($dbh, $_POST['id'], $_POST['active']);
           break;
       case "updateOrder":
-          updateOrder($dbh, $_POST['id'], $_POST['order']);
+          updateOrder($dbh, $_POST['id'], $_POST['arrange']);
           break;
       case "deleteArticles":
           deleteArticles($dbh, $_POST['id']);
@@ -58,9 +58,9 @@
     
   }
 
-  function createArticles($dbh, $title, $order, $href, $description) {
+  function createArticles($dbh, $title, $arrange, $href, $description) {
 
-    $sql = "INSERT INTO news (title, 'order', href, description, active, deleted) VALUES ('".$title."', '".$order."', '".$href."', '".$description."', '1', '0')";
+    $sql = "INSERT INTO news (title, arrange, href, description, active, deleted) VALUES ('".$title."', '".$arrange."', '".$href."', '".$description."', '1', '0')";
 
     if($dbh->query($sql) === TRUE)
     {  
@@ -94,9 +94,9 @@
 
   }
 
-  function updateOrder($dbh, $id, $order) {
+  function updateOrder($dbh, $id, $arrange) {
     
-    $sql = "UPDATE news SET 'order'='".$order."' WHERE id = '".$id."'";
+    $sql = "UPDATE news SET arrange='".$arrange."' WHERE id = '".$id."'";
 
     if($dbh->query($sql) === TRUE)
     {  
