@@ -1,0 +1,130 @@
+:css
+  .banner-container {
+    display: flex;
+    flex-direction: row;
+    height:100px;
+    justify-content: center;
+  }
+
+  .ad-banner {
+    box-shadow: #000 0px 4px 10px;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:100px;
+    background-color:#ecd6b6;
+    z-index:99999
+  }
+
+  .cursive {
+    font: 1.75em "thirsty_roughblack_one", "Brush Script MT", cursive;
+    color: #4A4F8B;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.3em;
+    margin:0
+  }
+
+  .button-section, .text-section {
+    padding:0 20px
+  }
+
+  .text-section {
+    flex: 1 auto;
+  }
+
+  .button-section {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items:flex-end;
+    flex: none;
+  }
+
+  .sticker-section {
+    flex: none;
+  }
+
+  .button-section, .text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+  }
+
+  .text-section h3 {
+    margin-bottom:0;
+    text-transform:uppercase;
+    padding-bottom:5px;
+    color: #4A4F8B;
+  }
+
+  .banner-container .button {
+    text-transform:uppercase;
+    line-height:22px !important;
+    margin:0
+  }
+
+  .circle {
+    height:150px;
+    width:150px;
+    margin-top: 7px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .text-section .button {
+      display:none
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .button-section {
+      display:none
+    }
+
+    .text-section {
+      text-align: center;
+    }
+
+    .circle {
+      height:110px;
+      width:110px;
+      margin-top: 15px;
+      margin-left: 15px;
+    }
+
+    .banner-container, .ad-banner {
+      height:100px
+    }
+
+    .banner-container {
+      justify-content: center;
+    }
+
+    .cursive {
+      font: 1em "thirsty_roughblack_one", "Brush Script MT", cursive;
+      padding-bottom:5px
+    }
+  }
+
+  @media only screen and (max-width: 767px) and (min-width: 480px) {
+    .banner-container {
+      width: 455px;
+    }
+  }
+
+  @media only screen and (max-width: 479px) {
+    .banner-container {
+      width: 100%;
+    }
+  }
+
+.banner-container.container
+  .button-section
+    %a.button.mbxred Special Offer
+  .sticker-section
+    %img.circle{:src=>"/assets/img/50off.png"}
+  .text-section
+    %div
+      %h3 For a limited time only
+      %p.cursive Receive $50 off sign-up fees with new memberships
+      %a.button.mbxred Special Offer
