@@ -16,8 +16,6 @@
     / Page body
     #container.page-wrapper
 
-      / Panel
-      %section.ad-banner= include 'partials/banner.haml'
       / About section
       %section.about= include 'partials/about.haml'
 
@@ -59,6 +57,9 @@
       %section#contact.contact
         = include 'partials/contact.haml'
         = include 'partials/sponsors.haml'
+
+    / Panel
+    %section.ad-banner= include 'partials/banner.haml'
 
     / Panel
     %section.slide-panel= include 'partials/slide-panel.haml'
