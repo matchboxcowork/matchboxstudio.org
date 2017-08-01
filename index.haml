@@ -15,11 +15,11 @@
 
     / Page body
     #container.page-wrapper
-      / About section
-      %section.about= include 'partials/about.haml'
 
       / Panel
       %section.ad-banner= include 'partials/banner.haml'
+      / About section
+      %section.about= include 'partials/about.haml'
 
       / Virtual tour (JS inserts here when tour is activated)
       #virtualTour.collapsed
