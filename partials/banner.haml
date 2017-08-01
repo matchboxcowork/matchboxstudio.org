@@ -13,13 +13,14 @@
     right:0;
     position:absolute;
     height:100px;
+    background:url("/assets/img/CraftPaperBackground.png") repeat;
     background-color:#ecd6b6;
-    z-index:9999999
+    z-index:999
   }
 
   .cursive {
     font: 1.75em "thirsty_roughblack_one", "Brush Script MT", cursive;
-    color: #4A4F8B;
+    color: #484E8A;
     -webkit-font-smoothing: antialiased;
     line-height: 1.3em;
     margin:0
@@ -55,7 +56,7 @@
     margin-bottom:0;
     text-transform:uppercase;
     padding-bottom:5px;
-    color: #4A4F8B;
+    color: #484E8A;
   }
 
   .banner-container .button {
@@ -77,6 +78,19 @@
   }
 
   @media only screen and (max-width: 767px) {
+
+    .hero__header__container {
+      top:52% !important;
+    }
+
+    .hero__header__slogan {
+      margin:0;
+    }
+
+    .hero__header__logo {
+      margin-bottom: 6px;
+    }
+
     .button-section {
       display:none
     }
@@ -115,6 +129,12 @@
   @media only screen and (max-width: 479px) {
     .banner-container {
       width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .button-section, .text-section {
+      padding: 0 10px;
     }
   }
 

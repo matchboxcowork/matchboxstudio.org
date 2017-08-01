@@ -7,6 +7,9 @@
     / Anchor for scrolling to top
     #up
 
+    / Panel
+    %section.ad-banner= include 'partials/banner.haml'
+    
     / Video overlay unit
     %section.hero= include 'partials/hero.haml'
 
@@ -57,9 +60,6 @@
       %section#contact.contact
         = include 'partials/contact.haml'
         = include 'partials/sponsors.haml'
-
-    / Panel
-    %section.ad-banner= include 'partials/banner.haml'
 
     / Panel
     %section.slide-panel= include 'partials/slide-panel.haml'
