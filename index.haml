@@ -18,6 +18,9 @@
       / About section
       %section.about= include 'partials/about.haml'
 
+      / Panel
+      %section.ad-banner= include 'partials/banner.haml'
+
       / Virtual tour (JS inserts here when tour is activated)
       #virtualTour.collapsed
         %iframe{src: 'https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1424526264707!6m8!1m7!1sVIUz6TEPGp8AAAQWtNuo5A!2m2!1d40.416799!2d-86.890355!3f128!4f0!5f1.4214797185029173',
@@ -56,9 +59,6 @@
       %section#contact.contact
         = include 'partials/contact.haml'
         = include 'partials/sponsors.haml'
-
-    / Panel
-    %section.ad-banner= include 'partials/banner.haml'
 
     / Panel
     %section.slide-panel= include 'partials/slide-panel.haml'
