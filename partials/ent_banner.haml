@@ -1,0 +1,79 @@
+:css
+  .banner-container {
+    display: flex;
+    flex-direction: row;
+    height:100px;
+    justify-content: center;
+    padding:10px 0;
+  }
+
+  .ad-banner {
+    box-shadow: #000 0px 4px 10px;
+    top:0;
+    left:0;
+    right:0;
+    position:absolute;
+    height:100px;
+    background:url("/assets/img/CraftPaperBackground.png") repeat;
+    background-color:#ecd6b6;
+    z-index:999
+  }
+
+  .small-title {
+    display:none;
+    max-width:100%
+  }
+
+  @media only screen and (max-width: 767px) {
+
+    .hero__header__container {
+      top:52% !important;
+    }
+
+    .hero__header__slogan {
+      margin:0;
+    }
+
+    .hero__header__logo {
+      margin-bottom: 6px;
+    }
+
+    .banner-container, .ad-banner {
+      height:100px
+    }
+
+    .banner-container {
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .large-title {
+      display:none;
+    }
+    .small-title {
+      display:block;
+    }
+  }
+
+  @media only screen and (max-width: 767px) and (min-width: 480px) {
+    .banner-container {
+      width: 455px;
+    }
+  }
+
+  @media only screen and (max-width: 479px) {
+    .banner-container {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .button-section, .text-section {
+      padding: 0 10px;
+    }
+  }
+
+.banner-container.container
+  %img.large-title{:src=>"/assets/img/entrepreneur/title.png"}
+  %img.small-title{:src=>"/assets/img/entrepreneur/title-small.png"}
