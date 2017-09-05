@@ -4,7 +4,8 @@
     flex-direction: row;
     height:100px;
     justify-content: center;
-    padding:10px 0;
+    padding-top:15px;
+    text-align:center;
   }
 
   .ad-banner {
@@ -19,8 +20,13 @@
     z-index:999
   }
 
+  .large-title {
+    display:block;
+  }
   .small-title {
     display:none;
+  }
+  .small-title img {
     max-width:100%
   }
 
@@ -56,24 +62,23 @@
     }
   }
 
-  @media only screen and (max-width: 767px) and (min-width: 480px) {
-    .banner-container {
-      width: 455px;
-    }
-  }
-
   @media only screen and (max-width: 479px) {
     .banner-container {
       width: 100%;
     }
-  }
-
-  @media only screen and (max-width: 320px) {
-    .button-section, .text-section {
-      padding: 0 10px;
+    .banner-container {
+      padding-top:20px;
     }
   }
 
-.banner-container.container
-  %img.large-title{:src=>"/assets/img/entrepreneur/title.png"}
-  %img.small-title{:src=>"/assets/img/entrepreneur/title-small.png"}
+  @media only screen and (max-width: 380px) {
+    .banner-container {
+      padding-top:25px;
+    }
+  }
+
+.banner-container
+  %a.large-title{:href=>"http://www.matchboxstudio.org/entrepreneur/"}
+    %img{:src=>"/assets/img/entrepreneur/title.png"}
+  %a.small-title{:href=>"http://www.matchboxstudio.org/entrepreneur/"}
+    %img{:src=>"/assets/img/entrepreneur/title-small.png"}
