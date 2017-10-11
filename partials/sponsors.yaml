@@ -52,6 +52,9 @@
 - name: Henriott Group 
   img: "/assets/img/sponsors/Henriott.png"
   url: "http://www.henriott.com/"
+- name: Horizon Bank
+  img: "/assets/img/sponsors/Horizon-Bank.jpg"
+  url: "http://www.horizonbank.com/"
 - name: Huth Thompson 
   img: "/assets/img/sponsors/Huth-Thompson.png"
   url: "https://www.huththompson.com/"
@@ -70,9 +73,6 @@
 - name: Lafayettech 
   img: "/assets/img/sponsors/LafayetTECH.png"
   url: "http://lafayettech.org/"
-- name: Horizon Bank
-  img: "/assets/img/sponsors/Horizon-Bank.jpg"
-  url: "http://www.horizonbank.com/"
 - name: MBAH Insurance 
   img: "/assets/img/sponsors/MBAH.png"
   url: "http://www.mbah.com/"
