@@ -1,0 +1,7 @@
+.sponsors.container
+  .sixteen.columns{:style => "padding:0"}
+    %ul{:style => "justify-content: center;"}
+      - YAML.load_file('lab/color-sponsors.yaml').each do |s|
+        %li
+          %a{:href => s['url'], :alt => "Link to #{s['name']}"}
+            %img{:src => s['img'], :alt => s['name']}

@@ -44,6 +44,10 @@
   height:8.75em
 }
 
+#entrepreneur.lab .sponsors a img {
+  height:4.75em
+}
+
 #entrepreneur .sponsors li:nth-child(4) a img {
   height:5.75em
 }
@@ -197,6 +201,33 @@ h3 {
 
 #entrepreneur .sponsors.container {
   margin-top:0
+}
+
+.list-section li {
+  list-style-type:disc;
+  line-height:26px;
+  text-transform: uppercase;
+  font-weight: 600
+}
+
+.list-section {
+  margin: 0; 
+  padding-left:50px;
+  font-size:16px;
+}
+
+#entrepreneur.lab {
+  color:#272262;
+}
+
+.burst {
+  height:150px;
+  width:150px;
+  position: absolute;
+  top: -100px;
+  right: 0;
+  z-index: 105;
+  transform: rotate(16deg);
 }
 
 @media only screen and (max-width: 767px) {
