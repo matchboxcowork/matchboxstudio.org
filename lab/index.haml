@@ -85,18 +85,19 @@
     %section#header
       .hero__header__container
         %h1.hero__header__logo MatchBOX Studio
-        %p{:style => "margin: 1em 0 0.6em;"} Rapid Prototyping
+        %p.rapid{:style => "margin: 1em 0 0.6em;"} Rapid Prototyping
         %p{:style => "font-size: 96px; line-height: 55px;"} Lab
-      %img{:src => "../assets/img/grandopening_small/crowd.jpg", :width => "100%"} 
+      %img{:src => "../assets/img/lab.png", :width => "100%"} 
 
     #container.page-wrapper{:style => "overflow: visible;"}
-      %section{:style => "background-color:#dae1ec; border-bottom:2px solid #bab9b8; position:relative"}
-        %img.burst{:src=>"/assets/img/50off.png"}
+      %section{:style => "background-color:#dae1ec; box-shadow: 0px 5px 6px #a7a7a7; position:relative"}
+        %img.burst{:src=>"/assets/img/burst.png"}
         .container
           / SECTION TITLE
           .sixteen.columns
-            %p{:style => "font-size: 61px; text-transform: uppercase;"} Lab Membership Available
-            %p Highlighting the local and regional resources for startups. In celebration of the Greater Lafayette entrepreneurial ecosystem, MatchBOX Coworking Studio is partnering with Little Engine Ventures,
+            %p.lab-membership
+              %img{:src => "../assets/img/LabMembAvailable.png"}
+            %p Our Rapid Prototyping Lab is a collection of some of the newest and most advanced rapid prototyping tools available to you 24-hours/day and it's right inside MatchBOX
       %section
         .container
           .sixteen.columns.body
@@ -105,23 +106,23 @@
                 %b Tinkers, Makers, Entrepreneurs, Artisans, and Creative Constructivists of all Types:
             .ten.columns{:style => "margin: 0; text-align:justify"}
               %p{:style => "font-size:16px;"}
-                In celebration of the Greater Lafayette entrepreneurial ecosystem, MatchBOX Coworking Studio is partnering with Little Engine Ventures, Purdue Foundry, and the cities of Lafayette and West Lafayette to host five days of events surrounding tech and entrepreneurship. The week's events will feature Paul Singh with Results Junkies, and will focus on highlighting the local and regional resources for startups. In celebration of the Greater Lafayette entrepreneurial ecosystem, MatchBOX Coworking Studio is partnering with Little Engine Ventures, Purdue Foundry, and the cities of Lafayette and West Lafayette to host five days of events surrounding tech and entrepreneurship.
+                We're here for you if you need a place to build a prototype for your startup business, you're a hobbyist looking for a place to build, you're brand new to 3D rapid prototyping and want to learn from scratch, or you'd just like to find others in our community interested in the same things as you with access 24-hours a day.
               %p{:style => "font-size:16px;"}
-                In celebration of the Greater Lafayette entrepreneurial ecosystem, MatchBOX Coworking Studio is partnering with Little Engine Ventures, Purdue Foundry, and the cities of Lafayette and West Lafayette to host five days of events surrounding tech and entrepreneurship. The week's events will feature Paul Singh with Results Junkies, and will focus on highlighting the local and regional resources for startups. In celebration of the Greater Lafayette entrepreneurial ecosystem, MatchBOX Coworking Studio is partnering with Little Engine Ventures, Purdue Foundry
+                Thanks to our generous sponsors, we are able to offer FREE office hours with our expert of makers to learn and ask questions as well as FREE workshops, events, and weekly programs. You also get access to MatchBOX itself and all of our events, programs, and amenities too.
               %p{:style => "font-size:16px;"}
-                In celebration of the Greater Lafayette entrepreneurial ecosystem, MatchBOX Coworking Studio is partnering with Little Engine Ventures, Purdue Foundry, and the cities of Lafayette and West Lafayette to host five days of events surrounding tech and entrepreneurship. The week's events will feature Paul Singh with Results Junkies, 
+                For a limited time when you sign up for a Lab Membership and a Basic Membership at the same time, we will waive the set-up fee, a $99 value for you FREE.
             .six.columns.list-section
               %ul
-                %li Ember Sla Printers
-                %li Air wolf something
-                %li Delta 3 Axis Printer
-                %li Carvey Desktop
-                %li Air wolf something
-                %li Delta 3 Axis Printer
-                %li Carvey Desktop This Longer
-                %li Air wolf something
-                %li Delta 3 Axis Printer
-                %li Carvey Desktop
+                %li Ember SLA 3D Printers
+                %li Air Wolf FDM 3D Printer
+                %li Delta 3-axis 3D Printer
+                %li Carvey Desktop CNC
+                %li Class C 40" Laser Cutter
+                %li Vacuum Former Rig
+                %li Programmable Embroiderer
+                %li EE Breadboard Bench
+                %li Desktop Spray Booth
+                %li And Lots More!
 
           .sixteen.columns
             
@@ -132,7 +133,7 @@
         / Contact
         %section#color-sponsors
           = include 'lab/color-sponsors.haml'
-        %section#sponsors
+        %section#sponsors{:style => "box-shadow: 0px -3px 10px #a7a7a7;"}
           = include 'lab/sponsors.haml'
     / ./page-wrapper
 

@@ -69,6 +69,7 @@
     height:150px;
     width:150px;
     margin-top: 7px;
+    transform:rotate(-19deg);
   }
 
   @media only screen and (min-width: 768px) {
@@ -130,21 +131,29 @@
     .banner-container {
       width: 100%;
     }
-  }
 
-  @media only screen and (max-width: 320px) {
     .button-section, .text-section {
       padding: 0 10px;
     }
   }
 
+  @media only screen and (max-width: 372px) {
+    .banner-container, .ad-banner {
+      height: 120px;
+    }
+
+    .circle {
+      margin-top: 32px;
+    }
+  }
+
 .banner-container.container
   .button-section
-    %a.button.mbxred{:href => "http://matchboxstudio.org/apply.html"} Special Offer
+    %a.button.mbxred{:href => "http://matchboxstudio.org/lab"} Special Offer
   .sticker-section
-    %img.circle{:src=>"/assets/img/50off.png"}
+    %img.circle{:src=>"/assets/img/burst.png"}
   .text-section
     %div
       %h3 For a limited time only
-      %p.cursive Receive $50 off sign-up fees with new memberships
-      %a.button.mbxred{:href => "http://matchboxstudio.org/apply.html"} Special Offer
+      %p.cursive{:style => "letter-spacing: -0.2px;"} Waive the $99 setup fee when you add LAB access to your Basic Membership.
+      %a.button.mbxred{:href => "http://matchboxstudio.org/lab"} Special Offer

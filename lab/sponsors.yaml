@@ -1,15 +1,12 @@
 - name: The City of Lafayette
-  img: "/assets/img/sponsors/LafayetteLogo.png"
+  img: "/assets/img/sponsors/LafayetteLogo-dark.png"
   url: "http://www.lafayette.in.gov/"
-- name: The City of West Lafayette
-  img: "/assets/img/sponsors/West-Lafayette.png"
-  url: "http://www.westlafayette.in.gov/"
-- name: Lev 
-  img: "/assets/img/sponsors/LEV.png"
-  url: "http://www.lev.vc/"
-- name: Purdue Foundry
-  img: "/assets/img/sponsors/Foundry.png"
-  url: "https://purduefoundry.com/"
-- name: MatchBOX Studio
-  img: "/assets/img/sponsors/matchbox.png"
-  url: "http://matchboxstudio.org/"
+- name: Tippecanoe County
+  img: "/assets/img/sponsors/Tippecanoe-County.png"
+  url: "https://www.tippecanoe.in.gov/"
+- name: Tippecanoe County Public Library 
+  img: "/assets/img/sponsors/TCPL.png"
+  url: "https://tcpl.lib.in.us/"
+- name: Greater Lafayette Commerce
+  img: "/assets/img/sponsors/GLC.png"
+  url: "http://www.greaterlafayettecommerce.com/"
