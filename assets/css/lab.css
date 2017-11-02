@@ -10,6 +10,11 @@
   height:7.5em
 }
 
+#lab #color-sponsors li:nth-child(3) img {
+  width: 322px;
+  height: auto !important;
+}
+
 #lab .hero__header__container {
   margin-left: -240px;
   margin-top: -200px;
@@ -199,6 +204,10 @@ h3 {
   #lab .hero__header__container {
     margin-top: -166px !important;
   }
+
+  #lab #color-sponsors li:nth-child(3) img {
+    width: 230px;
+  }
 }
 
 @media only screen and (max-width: 767px) {
@@ -256,6 +265,10 @@ h3 {
 
   .burst {
     right:-45px;
+  }
+
+  #lab #color-sponsors li:nth-child(3) img {
+    width: 230px;
   }
 }
 
