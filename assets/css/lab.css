@@ -253,6 +253,10 @@ h3 {
   .list-section {
     padding-left:20px;
   }
+
+  .burst {
+    right:-45px;
+  }
 }
 
 @media only screen and (max-width: 479px) {
