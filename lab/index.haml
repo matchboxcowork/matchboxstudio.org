@@ -85,8 +85,10 @@
     %section#header
       .hero__header__container
         %h1.hero__header__logo MatchBOX Studio
-        %p.rapid{:style => "margin: 1em 0 0.6em;"} Rapid Prototyping
-        %p{:style => "font-size: 80px; line-height: 55px; font-family: Carton;"} Lab
+        .maker-container{:style => "position:relative; text-align: center;"}
+          %img.maker-image{:src => "../assets/img/maker.png"}
+        .lab-container{:style => "position:relative; text-align: center;"}
+          %img.lab-image{:src => "../assets/img/lab2.png"}
       %img{:src => "../assets/img/lab.png", :width => "100%"} 
 
     #container.page-wrapper{:style => "overflow: visible;"}
