@@ -7,15 +7,15 @@
 
   try {
 
-  // other_email must be blank, if it isn't this is probably spam submission
-  if ($_POST['other_email'] == '')
-  {
+    // other_email must be blank, if it isn't this is probably spam submission
+    //if ($_POST['other_email'] == '')
+    //{
 
       $dbh = new PDO($dsn, $username, $password);
       /*** echo a message saying we have connected ***/
      
-       /*** INSERT data ***/
-  //    $sql = $dbh->prepare("INSERT INTO applications(FullName, Job, Work, MembershipType, Street, City, State, Zip, Phone, Email, Website, Twitter, SkillSet, Hear, Refer, Offer, Relationship) VALUES (:FullName, :Job, :Work, :MembershipType, :Street, :City, :State, :Zip, :Phone, :Email, :Website, :Twitter, :SkillSet, :Hear, :Refer, :Offer, :Relationship)");
+      /*** INSERT data ***/
+      //    $sql = $dbh->prepare("INSERT INTO applications(FullName, Job, Work, MembershipType, Street, City, State, Zip, Phone, Email, Website, Twitter, SkillSet, Hear, Refer, Offer, Relationship) VALUES (:FullName, :Job, :Work, :MembershipType, :Street, :City, :State, :Zip, :Phone, :Email, :Website, :Twitter, :SkillSet, :Hear, :Refer, :Offer, :Relationship)");
       $sql = $dbh->prepare("INSERT INTO applications(FullName, Job, Work, MembershipType, Street, City, State, Zip, Phone, Email, Website, Twitter, SkillSet, Hear, Refer, Offer, Relationship, SubmissionDateTime) VALUES (:FullName, :Job, :Work, :MembershipType, :Street, :City, :State, :Zip, :Phone, :Email, :Website, :Twitter, :SkillSet, :Hear, :Refer, :Offer, :Relationship, :SubmissionDateTime)");
 
       $sql->bindParam(':FullName', $_POST['appFullName']);
@@ -42,12 +42,12 @@
 
       /*** close the database connection ***/
       $dbh = null;
-   }   
-      }
+    //}   
+  }
   catch(PDOException $e)
-      {
-      echo $e->getMessage();
-      }
+  {
+    echo $e->getMessage();
+  }
       
   include_once "assets/lib/swift_required.php";
 
