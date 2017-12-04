@@ -1,54 +1,5 @@
 :php
-  require_once 'config/build.php';
-
-  $username = $MBX_CONF['db_username'];
-  $password = $MBX_CONF['db_password'];
-  $dsn = $MBX_CONF['db_source'];
-
-  try {
-
-    // other_email must be blank, if it isn't this is probably spam submission
-    //if ($_POST['other_email'] == '')
-    //{
-
-      $dbh = new PDO($dsn, $username, $password);
-      /*** echo a message saying we have connected ***/
-     
-      /*** INSERT data ***/
-      //    $sql = $dbh->prepare("INSERT INTO applications(FullName, Job, Work, MembershipType, Street, City, State, Zip, Phone, Email, Website, Twitter, SkillSet, Hear, Refer, Offer, Relationship) VALUES (:FullName, :Job, :Work, :MembershipType, :Street, :City, :State, :Zip, :Phone, :Email, :Website, :Twitter, :SkillSet, :Hear, :Refer, :Offer, :Relationship)");
-      $sql = $dbh->prepare("INSERT INTO applications(FullName, Job, Work, MembershipType, Street, City, State, Zip, Phone, Email, Website, Twitter, SkillSet, Hear, Refer, Offer, Relationship, SubmissionDateTime) VALUES (:FullName, :Job, :Work, :MembershipType, :Street, :City, :State, :Zip, :Phone, :Email, :Website, :Twitter, :SkillSet, :Hear, :Refer, :Offer, :Relationship, :SubmissionDateTime)");
-
-      $sql->bindParam(':FullName', $_POST['appFullName']);
-      $sql->bindParam(':Job', $_POST['appJob']);
-      $sql->bindParam(':Work', $_POST['appWork']);
-      $sql->bindParam(':MembershipType', $_POST['appMembershipType']);
-      $sql->bindParam(':Street', $_POST['appStreet']);
-      $sql->bindParam(':City', $_POST['appCity']);
-      $sql->bindParam(':State', $_POST['appState']);
-      $sql->bindParam(':Zip', $_POST['appZip']);
-      $sql->bindParam(':Phone', $_POST['appPhone']);
-      $sql->bindParam(':Email', $_POST['appEmail']);
-      $sql->bindParam(':Website', $_POST['appWebsite']);
-      $sql->bindParam(':Twitter', $_POST['appTwitter']);
-      $sql->bindParam(':SkillSet', $_POST['appSkillSet']);
-      $sql->bindParam(':Hear', $_POST['appHear']);
-      $sql->bindParam(':Refer', $_POST['appRefer']);
-      $sql->bindParam(':Offer', $_POST['appOffer']);
-      $sql->bindParam(':Relationship', $_POST['appRelationship']);
-      $date = date("Y-m-d H:i:s");
-      $sql->bindParam(':SubmissionDateTime', $date);
-      
-      $sql->execute();    
-
-      /*** close the database connection ***/
-      $dbh = null;
-    //}   
-  }
-  catch(PDOException $e)
-  {
-    echo $e->getMessage();
-  }
-      
+  require_once 'config/build.php';     
   include_once "assets/lib/swift_required.php";
 
   $subject = 'MatchBOX Membership Application Confirmation';
