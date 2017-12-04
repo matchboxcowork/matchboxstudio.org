@@ -1,39 +1,3 @@
-:php
-  require_once 'config/build.php';     
-  include_once "assets/lib/swift_required.php";
-
-  $subject = 'MatchBOX Membership Application Confirmation';
-  $from = array('hello@matchboxstudio.org' =>'MatchBOX');
-  $to = array(
-   $_POST['appEmail']  => $_POST['appFullName']
-  );
-
-  $text = "Hi " . $_POST['appFullName'] . ",  \n\n Thanks for your application. We really appreciate it. We'll be in touch in a few weeks.\n\n-The MatchBOX Team \n http://www.MatchBOXStudio.org \n http://fb.com/matchboxcowork \n https://twitter.com/matchboxcowork";
-  $html = "Hi " . $_POST['appFullName'] . ", <br /><br />Thanks for your application. We really appreciate it. We'll be in touch in a few weeks.<br /><br />-The MatchBOX Team<br />http://www.MatchBOXStudio.org<br />http://fb.com/matchboxcowork<br />https://twitter.com/matchboxcowork";
-
-  $smtp_host = $MBX_CONF['smtp_host'];
-  $smtp_port = $MBX_CONF['smtp_port'];
-  $smtp_encryption = $MBX_CONF['smtp_enc'];
-  $transport = Swift_SmtpTransport::newInstance($smtp_host, $smtp_port, $smtp_encryption);
-  $transport->setUsername($MBX_CONF['smtp_username']);
-  $transport->setPassword($MBX_CONF['smtp_password']);
-  $swift = Swift_Mailer::newInstance($transport);
-
-  $message = new Swift_Message($subject);
-  $message->setFrom($from);
-  $message->setBody($html, 'text/html');
-  $message->setTo($to);
-  $message->addPart($text, 'text/plain');
-
-  if ($recipients = $swift->send($message, $failures))
-  {
-  // echo 'Message successfully sent!';
-  } else {
-   echo "There was an error:\n";
-   print_r($failures);
-  }
-
-
 !!!
 %html{:lang => "en"}
   %head
