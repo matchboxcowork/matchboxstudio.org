@@ -69,7 +69,13 @@
     height:150px;
     width:150px;
     margin-top: 7px;
-    transform:rotate(-19deg);
+    transform:rotate(-3deg);
+  }
+
+  .carton {
+    font-family:Carton;
+    font-weight:600;
+    font-style: italic;
   }
 
   @media only screen and (min-width: 768px) {
@@ -135,6 +141,14 @@
     .button-section, .text-section {
       padding: 0 10px;
     }
+
+    .banner-container, .prom-banner {
+      height: 120px;
+    }
+
+    .circle {
+      margin-top: 32px;
+    }
   }
 
   @media only screen and (max-width: 372px) {
@@ -149,11 +163,11 @@
 
 .banner-container.container
   .button-section
-    %a.button.mbxred{:href => "http://matchboxstudio.org/lab"} Special Offer
+    %a.button.mbxred{:href => "https://matchbox.spaces.nexudus.com/en/signup"} Join Now
   .sticker-section
-    %img.circle{:src=>"/assets/img/burst.png"}
+    %img.circle{:src=>"/assets/img/burst2.png"}
   .text-section
     %div
-      %h3 For a limited time only
-      %p.cursive{:style => "letter-spacing: -0.2px;"} Waive the $99 setup fee when you add <span style="font-family:Carton;font-weight:600;font-style: italic;">LAB</span> access to your Basic Membership.
-      %a.button.mbxred{:href => "http://matchboxstudio.org/lab"} Special Offer
+      %h3 Basic Membership @ MatchBox Now Includes
+      %p.cursive{:style => "letter-spacing: -0.2px;"} Access to our <span class="carton">MBX</span> Maker <span class="carton">LAB</span> at no additional cost
+      %a.button.mbxred{:href => "https://matchbox.spaces.nexudus.com/en/signup"} Join Now

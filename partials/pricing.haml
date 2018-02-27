@@ -2,7 +2,7 @@
   .pricing
     .main.teir
       #basic.box
-        %header BASIC
+        %header{:style => "padding: 16px;"} BASIC
         %ul.content
           %li New Desk Each Visit
           %li Gigabit Fiber
@@ -11,12 +11,14 @@
           %li Coffee Bar &amp; Snacks
           %li Event Access
           %li Conference Rooms
-          %li Lockers
+          %li Maker LAB Access
+          %li{:style => "white-space: nowrap;"} 3D Printing, Laser Cutting
       .cost
         %span.dollar $
         %strong 499
         %span.text /member/year
         %br
+        %small{:style => "font-size: 11px;"} Paid annually or quarterly
         %br
         %small [+ $99 setup fee]
       .cost
@@ -40,16 +42,22 @@
         %small *limited spots available.
     .teir
       #basic.box
-        %header LAB
+        %header DAY PASSES
         %ul.content
-          %li BASIC+
-          %li Shop Access
-          %li 3D Printing
-          %li Laser Cutting
-          %li Tools
+          %li Available M - F, 8a - 5p
+          %li Shared Space or Reserved
+          %li{:style => "white-space: nowrap;"} Advanced Booking Required
+          %li <a href="mailto:hello@matchboxstudio.org">hello@matchboxstudio.org</a>
       .cost
         %span.dollar $
-        %strong 25
-        %span.text /member/month
+        %strong 10
+        %span.text /day/shared space
         %br
-        %small [billed monthly, requires BASIC]
+        %span.dollar $
+        %strong 20
+        %span.text /day/reserved desk**
+        %br
+        %br
+        %small *requires one business day's notice
+        %br
+        %small **limited spots available
