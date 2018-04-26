@@ -379,8 +379,6 @@ hr{
 	padding: 18px 0;
 	margin-bottom: 18px;
 	position: relative;
-	overflow: hidden;
-
 }
 
 .social a{
@@ -666,6 +664,13 @@ li:hover .icon{
 .first{
 	margin-top:0 !important;
 }
+
+/*@media only screen and (max-width: 479px) {
+	.page-wrapper .button {
+		padding: 10px 20px;
+    font-size: 16px !important;
+	}
+}*/
 
 /* map
 ============================== */

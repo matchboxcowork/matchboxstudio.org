@@ -1,6 +1,6 @@
-.sixteen.columns
-  .pricing
-    .main.teir
+.sixteen.columns{:style => "margin:0"}
+  .pricing{:style => "display: flex; flex-direction: row;"}
+    .main.teir{:style => "flex-basis: 35%; padding-top: 192px;"}
       #basic.box
         %header{:style => "padding: 16px;"} BASIC
         %ul.content
@@ -22,7 +22,9 @@
         %br
         %small [+ $99 setup fee]
       .cost
-    .teir
+    .teir.startup-special
+      %img{:src => "assets/img/startup-special.png"}
+      %p.blue ONLY for entrepreneurs paying for their own desks. We know how tight funding can get, and we want to help.
       #basic.box
         %header RESERVED*
         %ul.content
@@ -40,7 +42,10 @@
         %br
         %br
         %small *limited spots available.
-    .teir
+      %img.off-25{:src => "assets/img/25off.png"}
+      %img.red-price{:src => "assets/img/155.png"}
+      %small{:style => "font-family:'Source Sans Pro', sans-serif; font-size:11px; color:#ed5348"} /member/month <br> [billed monthly, requires BASIC] <br> *limited spots and a limited good for the life of your membership!
+    .teir{:style => "flex-basis: 35%; padding-top:212px;"}
       #basic.box
         %header DAY PASSES
         %ul.content
