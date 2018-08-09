@@ -1,7 +1,8 @@
 #entrepreneur .para .message p {
   font-size: 54px !important;
   color: #FFF;
-  padding-top: 170px;
+  padding: 0;
+  margin: 0;
 }
 
 #entrepreneur .para span {
@@ -129,6 +130,13 @@
   padding-top: 40px;
 }
 
+#entrepreneur .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* font sizes */
 p {
   font-size: 16px;
@@ -191,6 +199,16 @@ h3 {
   color: #F05241;
 }
 
+.no-wrap {
+  white-space: nowrap;
+}
+
+.quote-block > span {
+  margin-top: 20px;
+  line-height: 24px !important;
+  display: block;
+}
+
 #contact, #sponsors {
   background-color: #e3e3e3;
 }
@@ -233,7 +251,6 @@ h3 {
 @media only screen and (max-width: 767px) {
   #entrepreneur .para .message p {
     font-size: 45px !important;
-    padding-top:130px;
   }
 
   #monday-image, #tuesday-image, #wednesday-image, #thursday-image, #friday-image {
