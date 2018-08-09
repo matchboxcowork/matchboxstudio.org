@@ -5,4 +5,4 @@ config/prod.php
 dev_db.sqlite3
 build/
 .sass-cache
-DS_Store*
+**/.DS_Store
