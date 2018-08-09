@@ -288,7 +288,7 @@ hr{
 	padding:0;
 }
 .menu-list li a{
-
+	cursor: pointer;
 	position: relative;
 	text-align:center;
 	height: 74px;
