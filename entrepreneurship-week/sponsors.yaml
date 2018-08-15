@@ -4,12 +4,6 @@
 - name: The City of West Lafayette
   img: "/assets/img/sponsors/West-Lafayette.png"
   url: "http://www.westlafayette.in.gov/"
-- name: Lev 
-  img: "/assets/img/sponsors/LEV.png"
-  url: "http://www.lev.vc/"
-- name: Purdue Foundry
-  img: "/assets/img/sponsors/Foundry.png"
-  url: "https://purduefoundry.com/"
 - name: MatchBOX Studio
   img: "/assets/img/sponsors/matchbox.png"
   url: "http://matchboxstudio.org/"
