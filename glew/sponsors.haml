@@ -1,0 +1,9 @@
+.sponsors.container
+  .sixteen.columns
+    .message-block
+      %h3{:style => "text-align:center"} MatchBOX Presents: Greater Lafayette Entrepreneurship Week is supported by: 
+    %ul
+      - YAML.load_file('glew/sponsors.yaml').each do |s|
+        %li
+          %a{:href => s['url'], :alt => "Link to #{s['name']}"}
+            %img{:src => s['img'], :alt => s['name']}
