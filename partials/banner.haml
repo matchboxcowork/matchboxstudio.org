@@ -13,7 +13,8 @@
     right:0;
     position:absolute;
     height:100px;
-    background-color:#FFF;
+    background:url("/assets/img/CraftPaperBackground.png") repeat;
+    background-color:#ecd6b6;
     z-index:999
   }
 
@@ -31,7 +32,6 @@
 
   .text-section {
     flex: 1 auto;
-    padding-right: 0px;
   }
 
   .button-section {
@@ -69,7 +69,6 @@
     height:150px;
     width:150px;
     margin-top: 7px;
-    margin-left: 60px;
     transform:rotate(2deg);
   }
 
@@ -77,21 +76,6 @@
     font-family:Carton;
     font-weight:600;
     font-style: italic;
-  }
-
-  .button-section a {
-    transform: translate(-100px, 10px);
-  }
-
-  .text-section img {
-    width: 90%;
-    margin-top: 8px;
-  }
-
-  @media only screen and (max-width: 959px) {
-    .button-section a {
-      transform: translate(-70px, 10px);
-    }
   }
 
   @media only screen and (min-width: 768px) {
@@ -126,7 +110,7 @@
       height:110px;
       width:110px;
       margin-top: 15px;
-      margin-left: 0px;
+      margin-left: 15px;
     }
 
     .banner-container, .prom-banner {
@@ -140,11 +124,6 @@
     .cursive {
       font: 1em "thirsty_roughblack_one", "Brush Script MT", cursive;
       padding-bottom:5px
-    }
-
-    .text-section img {
-      width: 100%;
-      margin-top: 0px;
     }
   }
 
@@ -183,11 +162,12 @@
   }
 
 .banner-container.container
-  .sticker-section
-    %img.circle{:src=>"/assets/img/burst4.png"}
-  .text-section
-    %img{:src=>"/assets/img/glew-promo.jpg"}
-    %div{:style=>"margin-top: 10px"}
-      %a.button.mbxred{:href => "/glew"} Learn More
   .button-section
-    %a.button.mbxred{:href => "/glew"} Learn More
+    %a.button.mbxred{:href => "https://matchbox.spaces.nexudus.com/en/signup"} Join Now
+  .sticker-section
+    %img.circle{:src=>"/assets/img/burst2.png"}
+  .text-section
+    %div
+      %h3 Basic Membership @ MatchBox Now Includes
+      %p.cursive{:style => "letter-spacing: -0.2px;"} Access to our <span class="carton">MBX</span> Maker <span class="carton">LAB</span> at no additional cost
+      %a.button.mbxred{:href => "https://matchbox.spaces.nexudus.com/en/signup"} Join Now
