@@ -1,0 +1,84 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %title MatchBOX - Coworking Studio - A shared place to work and create in Lafayette, Indiana
+    =include 'partials/base_head.haml'
+
+  %body
+    / Anchor for scrolling to top
+    #up
+
+    / Menu
+    %section.container
+      .sixteen.columns.clearfix
+        %h1.logo
+          %a{:href => "/"}
+            %img{:alt => "MatchBOX logo", :src => "assets/img/theme/logo.png"}/
+        %nav.menu-holder
+          %ul.menu-list
+            %li
+              %a{:href => "/"}
+                Home
+                %span.arrow
+            %li.active
+              %a{:href => "/about.html"}
+                About
+                %span.arrow
+            %li
+              %a{:href => "https://matchbox.spaces.nexudus.com/en/signup"}
+                Join
+                %span.arrow
+            %li
+              %a{:href => "/#contact"}
+                Contact
+                %span.arrow
+            / Slide panel toggle
+            %li.toggle-panel
+              %a.closed{:href => "#"}
+                %i.icon-plus
+                %span.arrow
+      / ./sixteen columns
+    / ./container
+
+    / Hero Image
+    %section
+      %img{:src => "../assets/img/entrepreneur/ent-week.png", :width => "100%"}
+
+    / Intro paragraph
+    %section
+      cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe
+
+    #container.page-wrapper
+      / MBX Vent Dev Cohort Section
+      .container
+        cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe
+
+    %section
+      / Text with image bg
+      .container
+        cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe
+
+    #container.page-wrapper
+      / MBX Vent Dev Cohort Section
+      .container
+        cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe
+        
+    / Large bottom image
+    %section
+      / Pre footer stuff
+      .container
+        cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe
+
+    / Panel
+    %section.slide-panel= include 'partials/slide-panel.haml'
+
+    / Footer
+    %section.footer
+      .container
+        .sixteen.columns
+          MatchBOX Coworking Studio © All Rights Reserved
+
+    / End Content
+
+    / JS
+    =include 'partials/body_scripts.haml'
