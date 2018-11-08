@@ -6,3 +6,4 @@ dev_db.sqlite3
 build/
 .sass-cache
 **/.DS_Store
+assets/img/entrepreneur/.DS_Store
