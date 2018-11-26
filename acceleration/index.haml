@@ -46,33 +46,80 @@
       %img{:src => "../assets/img/acceleration/landing.png", :width => "100%"}
 
     / Intro paragraph
-    %section
+    %section.page-wrapper
       #intro-paragraph
         %p The new MatchBOX Acceleration Programs are early-stage, multi-sector programs designed to help founders develop and scale their business ideas. They are intended specifically for regional innovative entrepreneurs solving very focused problems in niche industries. The new programs are headquartered at MatchBOX, and are comprised of two major initiatives: The Entrepreneur Development Program is a twice a year 6-week class supporting the first time entrepreneur. The Venture Development Program is a 12-week once a year class focusing on growing nasacent ventures.
 
-    #container.page-wrapper
+    #container.page-wrapper.flex-col
       / MBX Vent Dev Cohort Section
-      .container
-        cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe
+      %img.large-image-icon{:src => "../assets/img/acceleration/venture-development-cohort.png", :width => "60%"}
 
-    %section
+      .container
+        .flex-row-space-between.align-items-flex-end
+          %p#text-block-1 A hands-on 12-week program for entrepreneurs and business owners to help them design their business models, build their brands, launch their products, and get their first sales. Learn from experts. Meet others like you.
+          %img#only-99{:src => "../assets/img/acceleration/only-99.png"}
+
+        .flex-row-space-between.align-items-stretch
+          %img{:src => "../assets/img/acceleration/6-for-12.png", :width => "20%", :height => "20%"}
+          %p#text-block-2 Six 2-week sprints learning from experts in their field. Our goal is to get you to YOUR goal, no matter what stage you are in. We are open to businesses of all types and sectors.
+
+        %p#text-block-3 All participants get FREE access to MatchBOX for the summer.
+
+        .flex-row-space-between.flex-wrap#dev-list-container
+          %p.dev-list PRODUCT DEV
+          %p.dev-list OPS & LEGAL
+          %p.dev-list MARKET DEV
+          %p.dev-list BIZ DEV
+          %p.dev-list CUSTOMER DEV
+          %p.dev-list FUNDING
+
+        .flex-row-center
+          %p.wisdom-script-font Now taking applications
+          %p.duke-fill LIMITED SPOTS AVAILABLE
+        .link-container
+          %a.red-button APPLY TO MBX VENT DEV
+
+    %section.page-wrapper
       / Text with image bg
-      .container
-        cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe
+      .container#quote-block
+        //%img{:src => "../assets/img/acceleration/quote.png"}
+        %p#quote “The Venture Dev series connected us with local mentors and a cohort of other entrepreneurs in Greater Lafayette who have helped us focus what our organization can and will be. We’ve made some pivots and are structuring the agency on a firm foundation because of exploration that happened during the workshops that MatchBOX provided.”
+        %p#quoteTitle ~ Steven, 2018 Summer Cohort. CoFounder of Hustlefish
 
-    #container.page-wrapper
+    #container.page-wrapper.flex-col
       / MBX Vent Dev Cohort Section
+      %img.large-image-icon{:src => "../assets/img/acceleration/entrepreneur-development-cohort.png", :width => "60%"}
       .container
-        cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe
+        .flex-row-space-between.align-items-flex-end
+          %img#only-25{:src => "../assets/img/acceleration/only-25.png"}
+          %p#text-block-1 A hands-on 12-week program for first-time or early-stage entrepreneurs to help them learn about starting a business, their value propositions, and pitching to others. Come meet others like you and take things to the next level.
+
+        %p#text-block-3 All participants get FREE access to MatchBOX for the 5 weeks.
+
+        .flex-row-space-between.flex-wrap#dev-list-container
+          %p.dev-list BUSINESS MODELING
+          %p.dev-list OFFICE HOURS
+          %p.dev-list CUSTOMER FEEDBACK
+          %p.dev-list PEER MENTORING
+          %p.dev-list PITCHING
+          %p.dev-list 1:1 LAUNCHING
+
+        .flex-row-center
+          %p.wisdom-script-font Now taking applications
+          %p.duke-fill LIMITED SPOTS AVAILABLE
+        .link-container
+          %a.red-button APPLY TO MBX VENT DEV
         
     / Large bottom image
-    %section
+    #container.page-wrapper#pre-footer
       / Pre footer stuff
-      .container
-        cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe cdcwecwecwe
-
-    / Panel
-    %section.slide-panel= include 'partials/slide-panel.haml'
+      .container.flex-row-space-between.align-items-flex-end
+        %img{:src => "../assets/img/acceleration/logo-district.png"}
+        #pre-footer-text-block.flex-col
+          %p MatchBOX Coworking Studio, LLC
+          %p 17 SOUTH 6TH ST. SUITE X, STEIN BLDG. LAFAYETTE, INDIANA 47901
+          %p matchboxstudio.org   ACCELERATOR@MATCHBOXSTUDIO.ORG
+        %img{:src => "../assets/img/acceleration/logo-matchbox.png"}
 
     / Footer
     %section.footer
