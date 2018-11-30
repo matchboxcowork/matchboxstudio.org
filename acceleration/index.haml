@@ -55,23 +55,25 @@
       %img.large-image-icon{:src => "../assets/img/acceleration/venture-development-cohort.png", :width => "60%"}
 
       .container
-        .flex-row-space-between.align-items-flex-end
-          %p#text-block-1 A hands-on 12-week program for entrepreneurs and business owners to help them design their business models, build their brands, launch their products, and get their first sales. Learn from experts. Meet others like you.
-          %img#only-99{:src => "../assets/img/acceleration/only-99.png"}
+        %img#only-99{:src => "../assets/img/acceleration/only-99.png"}
+        %p#text-block-1 A hands-on 12-week program for entrepreneurs and business owners to help them design their business models, build their brands, launch their products, and get their first sales. Learn from experts. Meet others like you.
+
+        %p#text-block-3 All participants get FREE access to MatchBOX for the summer.
 
         .flex-row-space-between.align-items-stretch
           %img{:src => "../assets/img/acceleration/6-for-12.png", :width => "20%", :height => "20%"}
           %p#text-block-2 Six 2-week sprints learning from experts in their field. Our goal is to get you to YOUR goal, no matter what stage you are in. We are open to businesses of all types and sectors.
 
-        %p#text-block-3 All participants get FREE access to MatchBOX for the summer.
 
-        .flex-row-space-between.flex-wrap#dev-list-container
-          %p.dev-list PRODUCT DEV
-          %p.dev-list OPS & LEGAL
-          %p.dev-list MARKET DEV
-          %p.dev-list BIZ DEV
-          %p.dev-list CUSTOMER DEV
-          %p.dev-list FUNDING
+        #dev-list-container
+          #dev-list-left
+            %p.dev-list PRODUCT DEV
+            %p.dev-list MARKET DEV
+            %p.dev-list CUSTOMER DEV
+          #dev-list-right
+            %p.dev-list OPS & LEGAL
+            %p.dev-list BIZ DEV
+            %p.dev-list FUNDING
 
         .flex-row-center
           %p.wisdom-script-font Now taking applications
@@ -89,20 +91,22 @@
     #container.page-wrapper.flex-col
       / MBX Vent Dev Cohort Section
       %img.large-image-icon{:src => "../assets/img/acceleration/entrepreneur-development-cohort.png", :width => "60%"}
+
       .container
-        .flex-row-space-between.align-items-flex-end
-          %img#only-25{:src => "../assets/img/acceleration/only-25.png"}
-          %p#text-block-1 A hands-on 12-week program for first-time or early-stage entrepreneurs to help them learn about starting a business, their value propositions, and pitching to others. Come meet others like you and take things to the next level.
+        %img#only-25{:src => "../assets/img/acceleration/only-25.png"}
+        %p#text-block-1 A hands-on 12-week program for first-time or early-stage entrepreneurs to help them learn about starting a business, their value propositions, and pitching to others. Come meet others like you and take things to the next level.
 
         %p#text-block-3 All participants get FREE access to MatchBOX for the 5 weeks.
 
-        .flex-row-space-between.flex-wrap#dev-list-container
-          %p.dev-list BUSINESS MODELING
-          %p.dev-list OFFICE HOURS
-          %p.dev-list CUSTOMER FEEDBACK
-          %p.dev-list PEER MENTORING
-          %p.dev-list PITCHING
-          %p.dev-list 1:1 LAUNCHING
+        #dev-list-container
+          #dev-list-left
+            %p.dev-list BUSINESS MODELING
+            %p.dev-list CUSTOMER FEEDBACK
+            %p.dev-list PITCHING
+          #dev-list-right
+            %p.dev-list OFFICE HOURS
+            %p.dev-list PEER MENTORING
+            %p.dev-list 1:1 LAUNCHING
 
         .flex-row-center
           %p.wisdom-script-font Now taking applications
@@ -111,15 +115,14 @@
           %a.red-button APPLY TO MBX VENT DEV
         
     / Large bottom image
-    #container.page-wrapper#pre-footer
+    #container.page-wrapper#pre-footer.flex-row-space-between.align-items-flex-end
       / Pre footer stuff
-      .container.flex-row-space-between.align-items-flex-end
-        %img{:src => "../assets/img/acceleration/logo-district.png"}
-        #pre-footer-text-block.flex-col
-          %p MatchBOX Coworking Studio, LLC
-          %p 17 SOUTH 6TH ST. SUITE X, STEIN BLDG. LAFAYETTE, INDIANA 47901
-          %p matchboxstudio.org   ACCELERATOR@MATCHBOXSTUDIO.ORG
-        %img{:src => "../assets/img/acceleration/logo-matchbox.png"}
+      %img{:src => "../assets/img/acceleration/logo-district.png"}
+      #pre-footer-text-block.flex-col
+        %p MatchBOX Coworking Studio, LLC
+        %p 17 SOUTH 6TH ST. SUITE X, STEIN BLDG. LAFAYETTE, INDIANA 47901
+        %p matchboxstudio.org   ACCELERATOR@MATCHBOXSTUDIO.ORG
+      %img{:src => "../assets/img/acceleration/logo-matchbox.png"}
 
     / Footer
     %section.footer
