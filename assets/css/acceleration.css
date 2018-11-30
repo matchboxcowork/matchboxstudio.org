@@ -160,6 +160,11 @@
     float: left;
 }
 
+#quote-block-container{
+    margin-top: -300px;
+    margin-bottom: -300px;
+}
+
 #quote-block {
     background: url("../img/acceleration/quote.png") no-repeat center center;
     background-size: cover;
@@ -195,6 +200,7 @@
     background-size: cover;
     height: 1500px;
     padding: 0px 250px 100px 250px;
+    margin-top: -500px;
 }
 
 #pre-footer-text-block {
@@ -206,4 +212,20 @@
 
 #pre-footer-text-block p {
     margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+
+}
+
+@media only screen and (max-width: 992px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+}
+
+@media only screen and (max-width: 576px) {
+
 }
