@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39569dd9-d310-41cb-b562-c646f534f825" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/acceleration/index.haml" beforeDir="false" afterPath="$PROJECT_DIR$/acceleration/index.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/acceleration.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/acceleration.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,60 +16,60 @@
     <session id="364452063">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="5" />
+          <entry key="project.closed" value="6" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.25" value="1" />
-          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.5" value="2" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="5" />
+          <entry key="css" value="6" />
           <entry key="haml" value="6" />
           <entry key="html" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="5" />
+          <entry key="CSS" value="6" />
           <entry key="HTML" value="2" />
           <entry key="Haml" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2276" />
-          <entry key="haml" value="1312" />
+          <entry key="css" value="3060" />
+          <entry key="haml" value="1333" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2276" />
-          <entry key="Haml" value="1312" />
+          <entry key="CSS" value="3060" />
+          <entry key="Haml" value="1333" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/acceleration/index.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+            <state relative-caret-position="257">
+              <caret line="85" column="28" lean-forward="true" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/acceleration.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="163" column="18" selection-start-line="163" selection-start-column="18" selection-end-line="163" selection-end-column="18" />
+            <state relative-caret-position="590">
+              <caret line="350" column="43" selection-start-line="350" selection-start-column="43" selection-end-line="350" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -76,16 +78,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>apply for</find>
-      <find>only-25</find>
-      <find>slide-panel</find>
-      <find>duke</find>
-      <find>#text-block-3</find>
-      <find>fixed</find>
-      <find>align-item</find>
-      <find>pre</find>
-      <find>.flex-wrap</find>
-      <find>flex-wrap</find>
       <find>flex-w</find>
       <find>.d</find>
       <find>font-weight</find>
@@ -95,15 +87,27 @@
       <find>wrapp</find>
       <find>only-99</find>
       <find>text</find>
-      <find>flex-row-space-between</find>
-      <find>align-items-flex-end</find>
       <find>font-we</find>
       <find>text-bloc</find>
-      <find>pre-footer</find>
       <find>wis</find>
-      <find>#quote-block</find>
-      <find>page-wrapper</find>
       <find>-200</find>
+      <find>page-wrapper</find>
+      <find>wisdom</find>
+      <find>flex-row-center</find>
+      <find>red-button</find>
+      <find>dev-list-container</find>
+      <find>dev</find>
+      <find>pre-footer</find>
+      <find>wrap</find>
+      <find>flex-row-space-b</find>
+      <find>flex-row</find>
+      <find>flex-row-space-between</find>
+      <find>align-items-flex-end</find>
+      <find>flex</find>
+      <find>lex-row-center</find>
+      <find>flex-wra</find>
+      <find>#quote-block</find>
+      <find>quote</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -112,8 +116,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/assets/css/acceleration.css" />
         <option value="$PROJECT_DIR$/acceleration/index.haml" />
+        <option value="$PROJECT_DIR$/assets/css/acceleration.css" />
       </list>
     </option>
   </component>
@@ -208,7 +212,7 @@
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27110156" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2746781" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -259,17 +263,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/acceleration.css">
+    <entry file="file://$PROJECT_DIR$/acceleration/index.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="163" column="18" selection-start-line="163" selection-start-column="18" selection-end-line="163" selection-end-column="18" />
+        <state relative-caret-position="257">
+          <caret line="85" column="28" lean-forward="true" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/acceleration/index.haml">
+    <entry file="file://$PROJECT_DIR$/assets/css/acceleration.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+        <state relative-caret-position="590">
+          <caret line="350" column="43" selection-start-line="350" selection-start-column="43" selection-end-line="350" selection-end-column="43" />
         </state>
       </provider>
     </entry>
