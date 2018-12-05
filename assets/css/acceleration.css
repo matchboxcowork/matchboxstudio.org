@@ -62,21 +62,23 @@
     text-align: center;
 }
 
-#dev-list-container {
-    width: 70%;
+.dev-list-container {
+    width: 100%;
     margin: 40px auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
+    white-space: nowrap;
 }
 
-#dev-list-left {
+.dev-list-left {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    margin-right: 50px;
 }
 
-#dev-list-left p {
+.dev-list-left p {
     text-align: right;
 }
 
@@ -109,6 +111,7 @@
 }
 
 .red-button {
+    cursor: pointer;
     color: #FFF;
     padding: 18px 40px;
     font-size:20px;
@@ -171,19 +174,23 @@
 
 #quote{
     position: relative;
-    margin: 0 200px;
     font-size: 30px;
     line-height: 40px !important;
     color: #FFF;
     font-family: GothamMedium, sans-serif;
     text-shadow: 1px 1px 12px #666;
     text-align: center;
-    padding-top: 700px;
+}
+
+.quote-div {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #quoteTitle {
     position: relative;
-    margin-right: 250px;
     font-size: 16px;
     color: #FFF;
     font-family: GothamMedium, sans-serif;
@@ -257,8 +264,7 @@
         margin: 9px;
     }
 
-    #dev-list-container {
-        width: 100%;
+    .dev-list-container {
         margin: 20px auto;
     }
 
@@ -267,8 +273,8 @@
         line-height: 25px !important;
     }
 
-    #dev-list-left {
-        margin-right: 10px;
+    .dev-list-left {
+        margin-right: 30px;
     }
 
     .wisdom-script-font {
@@ -311,11 +317,13 @@
     }
 
     #quote{
-        margin: 0 50px;
         font-size: 15px;
         line-height: 20px !important;
         text-shadow: 1px 1px 6px #666;
-        padding-top: 250px;
+    }
+
+    .quote-div {
+        min-width: 80%;
     }
 
     #quoteTitle {

@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,11 +68,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>flex-w</find>
-      <find>.d</find>
-      <find>font-weight</find>
-      <find>dev-lis</find>
-      <find>larg</find>
       <find>only</find>
       <find>wrapp</find>
       <find>only-99</find>
@@ -83,8 +79,6 @@
       <find>page-wrapper</find>
       <find>wisdom</find>
       <find>flex-row-center</find>
-      <find>red-button</find>
-      <find>dev-list-container</find>
       <find>dev</find>
       <find>pre-footer</find>
       <find>wrap</find>
@@ -96,7 +90,14 @@
       <find>lex-row-center</find>
       <find>flex-wra</find>
       <find>#quote-block</find>
+      <find>quote-block-container</find>
       <find>quote</find>
+      <find>quote-div</find>
+      <find>red-button</find>
+      <find>dev-list-right</find>
+      <find>dev-list-left</find>
+      <find>dev-list-container</find>
+      <find>.dev-list-left p</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -116,54 +117,44 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="877" />
+    <option name="height" value="822" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="MatchboxSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MatchboxSite" type="462c0819:PsiDirectoryNode" />
+              <item name="livematchbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="livematchbox" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="MatchboxSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MatchboxSite" type="462c0819:PsiDirectoryNode" />
+              <item name="livematchbox" type="b2602c69:ProjectViewProjectNode" />
+              <item name="livematchbox" type="462c0819:PsiDirectoryNode" />
               <item name="acceleration" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MatchboxSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MatchboxSite" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MatchboxSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MatchboxSite" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MatchboxSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MatchboxSite" type="462c0819:PsiDirectoryNode" />
-              <item name="entrepreneur" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MatchboxSite" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MatchboxSite" type="462c0819:PsiDirectoryNode" />
-              <item name="glew" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -184,6 +175,9 @@
       </list>
     </option>
   </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -198,7 +192,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="877" extended-state="0" />
+    <frame x="0" y="22" width="1440" height="822" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27825466" />
@@ -230,12 +224,26 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/entrepreneur/index.haml">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/acceleration/index.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1445">
+          <caret line="85" column="28" lean-forward="true" selection-start-line="85" selection-start-column="28" selection-end-line="85" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/base.css">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/assets/css/acceleration.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5950">
+          <caret line="350" column="43" lean-forward="false" selection-start-line="350" selection-start-column="43" selection-end-line="350" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/index.html" />
     <entry file="file://$PROJECT_DIR$/glew/index.haml">
