@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39569dd9-d310-41cb-b562-c646f534f825" name="Default Changelist" comment="">
-<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-=======
-      <change beforePath="$PROJECT_DIR$/acceleration/index.haml" beforeDir="false" afterPath="$PROJECT_DIR$/acceleration/index.haml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/acceleration.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/acceleration.css" afterDir="false" />
->>>>>>> 934d8220ba84f1189ea46bd978146c0c0d441862
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,14 +67,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/acceleration.css">
           <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
             <state relative-caret-position="410">
               <caret line="82" column="1" lean-forward="true" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
               <folding />
-=======
-            <state relative-caret-position="461">
-              <caret line="174" column="22" lean-forward="true" selection-start-line="174" selection-start-column="22" selection-end-line="174" selection-end-column="22" />
->>>>>>> 934d8220ba84f1189ea46bd978146c0c0d441862
             </state>
           </provider>
         </entry>
@@ -266,14 +256,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/acceleration.css">
       <provider selected="true" editor-type-id="text-editor">
-<<<<<<< HEAD
         <state relative-caret-position="410">
           <caret line="82" column="1" lean-forward="true" selection-start-line="82" selection-start-column="1" selection-end-line="82" selection-end-column="1" />
           <folding />
-=======
-        <state relative-caret-position="461">
-          <caret line="174" column="22" lean-forward="true" selection-start-line="174" selection-start-column="22" selection-end-line="174" selection-end-column="22" />
->>>>>>> 934d8220ba84f1189ea46bd978146c0c0d441862
         </state>
       </provider>
     </entry>
