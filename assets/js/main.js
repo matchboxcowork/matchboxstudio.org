@@ -102,6 +102,10 @@ $(document).ready(function () {
     $("#main-menu li:not('.toggle-panel')").click(function () {
         $("#main-menu li").removeClass("active");
         $(this).addClass("active");
+        var link = $(this).find('a').attr("href");
+        if(link.startsWith('#')) {
+            moveTo(link);
+        }
     });
 
 
@@ -167,9 +171,11 @@ var lastId,
     menuItems = topMenu.find("a"),
 
     scrollItems = menuItems.map(function () {
-        var item = $($(this).attr("href"));
-        if (item.length) {
-            return item;
+        if($(this).attr("href").startsWith('#')) {
+            var item = $($(this).attr("href"));
+            if (item.length) {
+                return item;
+            }
         }
     });
 
