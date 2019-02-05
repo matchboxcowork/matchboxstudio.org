@@ -34,7 +34,7 @@
       %select#subMenu.sub-menu{:name => "subMenu", :onchange => "navigate(this.value)", :size => "1"}
         %option{:selected => "selected", :value => ""} Menu
         %option{:value => "/about.html"} - About
-        %option{:value => "https://matchbox.spaces.nexudus.com/en/signup"} - Join
+        %option{:value => "https://matchbox.spaces.nexudus.com/en/signup", :onclick => "trackOutboundLink('https://matchbox.spaces.nexudus.com/en/signup'); return false;"} - Join
         %option{:value => "/acceleration"} - Acceleration
         %option{:value => "#contact"} - Contact
   / ./sixteen columns
