@@ -1,0 +1,316 @@
+#lab {
+  color:#272262;
+}
+
+#lab #sponsors a img {
+  height:4.75em
+}
+
+#lab #color-sponsors a img {
+  height:7.5em
+}
+
+#lab #color-sponsors li:nth-child(3) img {
+  width: 322px;
+  height: auto !important;
+}
+
+#lab .hero__header__container {
+  margin-left: -240px;
+  margin-top: -200px;
+  transform:initial;
+}
+
+#lab #header {
+  overflow: hidden; 
+  background-color: #dae1ec;
+  position: relative;
+}
+
+#lab .hero__header__container p {
+  color: white; 
+  text-align: center;
+  text-transform:uppercase
+}
+
+#lab .hero__header__logo {
+  background: url('/assets/img/MBXWhiteTransparent.png') no-repeat;
+  background-size: auto 100%;
+  background-position: center !important;
+}
+
+.lab-image {
+  width: 160px;
+}
+
+.maker-image {
+  width: 90px;
+}
+
+.title {
+  text-align:center;
+  padding:30px 0;
+  display: block;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+/* font sizes */
+p {
+  font-size: 16px;
+  line-height: 1.5em
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+#lab .button {
+  padding: 3px 40px;
+  font-size:20px;
+}
+/* / font sizes */
+
+/* social section */
+.social {
+  padding: 40px 0;
+  margin-bottom: 0;
+}
+
+#lab .social a {
+  width:110px;
+  height:110px;
+  text-align:center;
+  line-height: 137px;
+  background-color: #666666;
+  color: #FFF;
+  border-radius: 55px;
+}
+
+#lab .social {
+  border:0;
+}
+/* / social section */
+
+#lab b {
+  font-weight: 600;
+}
+
+.red-text {
+  color: #F05241;
+}
+
+#sponsors {
+  background-color: #98261f;
+}
+
+#sponsors ul {
+  margin-bottom: 0px;
+}
+
+#lab .sponsors.container {
+  margin-top:0;
+  display: flex;
+}
+
+#lab .sponsors.container .columns:first-child {
+  display: flex;
+}
+
+#lab #sponsors .sponsors.container ul li:last-child img {
+  height:3.75em;
+  margin-bottom: -10px;
+}
+
+#lab .contact p {
+  font-size:12px;
+  color:#FFF;
+  font-weight: lighter;
+}
+
+#lab .contact p a {
+  font-size:16px;
+  color:#FFF;
+}
+
+#lab a img {
+  border-bottom:none;
+}
+
+.body {
+  padding-top:20px;
+}
+
+.contact {
+  padding-bottom:24px;
+}
+
+.list-section li {
+  list-style-type:disc;
+  line-height:26px;
+  text-transform: uppercase;
+  font-weight: 600
+}
+
+.list-section {
+  display:flex;
+  margin: 0; 
+  padding-left:50px;
+  font-size:16px;
+}
+
+.burst {
+  height:170px;
+  width:170px;
+  position: absolute;
+  top: -120px;
+  right: 8px;
+  z-index: 105;
+}
+
+.lab-membership {
+  font-size: 61px; 
+  text-transform: uppercase; 
+  margin:0;
+}
+
+.lab-membership img {
+  max-width:calc(100% - 90px)
+}
+
+@media only screen and (max-width: 959px) {
+  #lab #color-sponsors a img {
+    height: 6em !important;
+  }
+
+  #sponsors .ten, #sponsors .six {
+    flex:1 100;
+    width:100%;
+  }
+
+  #lab .sponsors.container .columns:first-child, #lab .sponsors.container {
+    display: block;
+  }
+  
+  #sponsors .ten ul {
+    justify-content: center !important;
+    padding-top: 30px;
+  }
+
+  #lab .hero__header__logo {
+    height: 13rem;
+  }
+
+  #lab .hero__header__container {
+    margin-top: -166px !important;
+  }
+
+  #lab #color-sponsors li:nth-child(3) img {
+    width: 230px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .lab-membership {
+    font-size: 49px;
+  }
+
+  .lab-image {
+    width: 95px;
+  }
+
+  .burst {
+    height: 150px;
+    width: 150px;
+  }
+
+  #lab .para .message p {
+    font-size: 45px !important;
+    padding-top:130px;
+  }
+
+  #lab .social a {
+    width:80px;
+    height:80px;
+    line-height: 104px;
+    border-radius: 40px;
+  }
+
+  .social a i {
+    font-size: 47px;
+  }
+
+  #lab .button {
+    font-size:20px !important;
+  }
+
+  #lab .hero__header__container {
+    margin-left: -150px !important;
+    margin-top: -115px !important;
+    top: 50% !important;
+    width:300px;
+  }
+
+  #lab .hero__header__container p.rapid {
+    margin: 1em 0 0 !important;
+  }
+
+  #lab .hero__header__container p:last-child {
+    font-size:50px !important; 
+  }
+
+  .hero__header__logo {
+    height: 8rem !important;
+  }
+
+  .list-section {
+    padding-left:20px;
+  }
+
+  .burst {
+    right:-45px;
+  }
+
+  #lab #color-sponsors li:nth-child(3) img {
+    width: 230px;
+  }
+}
+
+@media only screen and (max-width: 479px) {
+  .lab-membership {
+    font-size: 32px;
+  }
+
+  .hero__header__logo {
+    height: 5rem !important;
+    margin-bottom: 6px;
+  }
+
+  #lab .hero__header__container {
+    margin-top: -83px !important;
+  }
+
+  #lab .hero__header__container p:last-child {
+    font-size:40px !important; 
+    line-height: 36px !important;
+  }
+
+  .burst {
+    height: 100px;
+    width: 100px;
+    top: -73px;
+  }
+
+  .burst {
+    right: -12px;
+  }
+
+}
