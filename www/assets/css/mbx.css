@@ -127,6 +127,45 @@ body, html {
   color: #fff;
   background-color: #ff0000; }
 
+.contact .events-list h4 {
+  color: #F05241;
+  font-size: 20px;
+}
+
+.contact .event-date {
+  padding: 0px 15px;
+  margin-bottom: 18px;
+  flex-basis: 80px;
+}
+
+.contact .events-list span.date {
+  font-weight: 500;
+  font-size: 24px;
+  font-family: "Oswald",Helvetica, Arial, sans-serif;
+  margin: 10px;
+}
+
+.contact .events-list span.day {
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Oswald",Helvetica, Arial, sans-serif;
+}
+
+.contact .events-list h5 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Open Sans",Helvetica,Arial, sans-serif;
+  margin-bottom: 10px;
+}
+
+.contact span#see-more-button {
+  color: #F05241;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: "Oswald",Helvetica, Arial, sans-serif;
+  text-align: center;
+}
+
 .slide-panel {
   background-color: #3a3a3a;
   color: #dedede;
@@ -198,6 +237,28 @@ img.fullimage {
 
 .flex-container {
   display: flex; }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
 
 .bold {
   font-weight: bold; }
