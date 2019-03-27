@@ -1,723 +1,746 @@
 <!DOCTYPE html>
 <html lang='en'>
-  <head>
-    <title>MatchBOX - Coworking Studio - A shared place to work and create in Lafayette, Indiana</title>
-    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
-    <!-- Basic Page Needs -->
-    <meta charset='utf-8'>
-    <meta content='Coworking Studio - A shared place to work and create in Lafayette, Indiana' name='description'>
-    <meta content='coworking, co-working, cowork, co-work, office, shared, community, Lafayette, Indiana' name='keywords'>
-    <meta content='http://matchboxstudio.org/assets/img/mbx-logo-meta.png' property='og:image'>
-    <meta content='1172' property='og:image:width'>
-    <meta content='630' property='og:image:height'>
-    <link href='/favicon.ico' rel='shortcut icon'>
-    <!-- Mobile Specific Metas -->
-    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
-    <!-- CSS -->
-    <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Oswald:400,300,700|Source+Sans+Pro:300,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <link href='/assets/css/supersized.css' rel='stylesheet'>
-    <link href='/assets/css/supersized.shutter.css' rel='stylesheet'>
-    <link href='/assets/css/base.css' rel='stylesheet'>
-    <link href='/assets/css/font-awesome.min.css' rel='stylesheet'>
-    <link href='/assets/css/skeleton.css' rel='stylesheet'>
-    <link href='/assets/css/layout.css' rel='stylesheet'>
-    <link href='/assets/css/prettyPhoto.css' rel='stylesheet'>
-    <!-- Color CSS -->
-    <link href='/assets/css/mbx.css' id='default' rel='stylesheet'>
-    <!-- Revolution Banner CSS Settings -->
-    <link href='/assets/rs-plugin/css/settings.css' media='screen' rel='stylesheet' type='text/css'>
-    <!-- Load jQuery in the head so that any inline scripts have access to it -->
-    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js' type='text/javascript'></script>
-    <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if IE 7]>
-      <link rel="stylesheet" href="/assets/css/font-awesome-ie7.css">
-      <style type="text/css">
-      .page-wrapper,.footer{
+<head>
+  <title>MatchBOX - Coworking Studio - A shared place to work and create in Lafayette, Indiana</title>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+  <!-- Basic Page Needs -->
+  <meta charset='utf-8'>
+  <meta content='Coworking Studio - A shared place to work and create in Lafayette, Indiana' name='description'>
+  <meta content='coworking, co-working, cowork, co-work, office, shared, community, Lafayette, Indiana' name='keywords'>
+  <meta content='http://matchboxstudio.org/assets/img/mbx-logo-meta.png' property='og:image'>
+  <meta content='1172' property='og:image:width'>
+  <meta content='630' property='og:image:height'>
+  <link href='/favicon.ico' rel='shortcut icon'>
+  <!-- Mobile Specific Metas -->
+  <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+  <!-- CSS -->
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Oswald:400,300,700|Source+Sans+Pro:300,400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='/assets/css/supersized.css' rel='stylesheet'>
+  <link href='/assets/css/supersized.shutter.css' rel='stylesheet'>
+  <link href='/assets/css/base.css' rel='stylesheet'>
+  <link href='/assets/css/font-awesome.min.css' rel='stylesheet'>
+  <link href='/assets/css/skeleton.css' rel='stylesheet'>
+  <link href='/assets/css/layout.css' rel='stylesheet'>
+  <link href='/assets/css/prettyPhoto.css' rel='stylesheet'>
+  <!-- Color CSS -->
+  <link href='/assets/css/mbx.css' id='default' rel='stylesheet'>
+  <!-- Revolution Banner CSS Settings -->
+  <link href='/assets/rs-plugin/css/settings.css' media='screen' rel='stylesheet' type='text/css'>
+  <!-- Load jQuery in the head so that any inline scripts have access to it -->
+  <script src='//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js' type='text/javascript'></script>
+  <!--[if lt IE 9]>
+  <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if IE 7]>
+  <link rel="stylesheet" href="/assets/css/font-awesome-ie7.css">
+  <style type="text/css">
+    .page-wrapper,.footer{
       width: 100%;
       position: relative;
-      }
-      #break3{
+    }
+    #break3{
       overflow: hidden;
-      }
-      </style>
-    <![endif]-->
-    <!-- Google Analytics -->
-    <script>
+    }
+  </style>
+  <![endif]-->
+  <!-- Google Analytics -->
+  <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-      
+
       ga('create', 'UA-41745008-1', 'matchboxstudio.org');
       ga('send', 'pageview');
-    </script>
-  </head>
-  <body>
-    <!-- Anchor for scrolling to top -->
-    <div id='up'></div>
-    <!-- banner -->
-    <section class='prom-banner'>
-      <style>
-        .banner-container {
-          display: flex;
-          flex-direction: row;
-          height:100px;
-          justify-content: center;
-        }
-        
-        .prom-banner {
-          box-shadow: #000 0px 4px 10px;
-          top:0;
-          left:0;
-          right:0;
-          position:absolute;
-          height:100px;
-          background:url("/assets/img/CraftPaperBackground.png") repeat;
-          background-color:#ecd6b6;
-          z-index:999
-        }
-        
-        .cursive {
-          font: 1.75em "thirsty_roughblack_one", "Brush Script MT", cursive;
-          color: #484E8A;
-          -webkit-font-smoothing: antialiased;
-          line-height: 1.3em;
-          margin:0
-        }
-        
-        .button-section, .text-section {
-          padding:0 20px
-        }
-        
-        .text-section {
-          flex: 1 auto;
-        }
-        
-        .button-section {
-          display: flex;
-          flex-direction: row;
-          justify-content:flex-end;
-          align-items:flex-end;
-          flex: none;
-        }
-        
-        .sticker-section {
-          flex: none;
-        }
-        
-        .button-section, .text-section {
-          display: flex;
-          flex-direction: column;
-          justify-content:center;
-        }
-        
-        .text-section h3 {
-          margin-bottom:0;
-          text-transform:uppercase;
-          padding-bottom:5px;
-          color: #484E8A;
-        }
-        
-        .banner-container .button {
-          text-transform:uppercase;
-          line-height:22px !important;
-          margin:0
-        }
-        
-        .circle {
-          height:150px;
-          width:150px;
-          margin-top: 7px;
-          transform:rotate(2deg);
-        }
-        
-        .carton {
-          font-family:Carton;
-          font-weight:600;
-          font-style: italic;
-        }
-        
-        @media only screen and (min-width: 768px) {
-          .text-section .button {
-            display:none
+  </script>
+  <script>
+      $(document).ready(function () {
+
+          if ($("#events-list").height() > 200) {
+              $("#events-list").height(200);
+              $("#see-more-button").css("display", "block");
           }
-        }
-        
-        @media only screen and (max-width: 767px) {
-        
-          .hero__header__container {
-            top:52% !important;
-          }
-        
-          .hero__header__slogan {
-            margin:0;
-          }
-        
-          .hero__header__logo {
-            margin-bottom: 6px;
-          }
-        
-          .button-section {
-            display:none
-          }
-        
-          .text-section {
-            text-align: center;
-          }
-        
-          .circle {
-            height:110px;
-            width:110px;
-            margin-top: 15px;
-            margin-left: 15px;
-          }
-        
-          .banner-container, .prom-banner {
-            height:100px
-          }
-        
-          .banner-container {
-            justify-content: center;
-          }
-        
-          .cursive {
-            font: 1em "thirsty_roughblack_one", "Brush Script MT", cursive;
-            padding-bottom:5px
-          }
-        }
-        
-        @media only screen and (max-width: 767px) and (min-width: 480px) {
-          .banner-container {
-            width: 455px;
-          }
-        }
-        
-        @media only screen and (max-width: 479px) {
-          .banner-container {
-            width: 100%;
-          }
-        
-          .button-section, .text-section {
-            padding: 0 10px;
-          }
-        
-          .banner-container, .prom-banner {
-            height: 120px;
-          }
-        
-          .circle {
-            margin-top: 32px;
-          }
-        }
-        
-        @media only screen and (max-width: 372px) {
-          .banner-container, .prom-banner {
-            height: 120px;
-          }
-        
-          .circle {
-            margin-top: 32px;
-          }
-        }
-      </style>
-      <div class='banner-container container'>
-        <div class='button-section'>
-          <a class='button mbxred' href='https://matchbox.spaces.nexudus.com/en/signup'>Join Now</a>
-        </div>
-        <div class='sticker-section'>
-          <img class='circle' src='/assets/img/burst2.png'>
-        </div>
-        <div class='text-section'>
-          <div>
-            <h3>Basic Membership @ MatchBox Now Includes</h3>
-            <p class='cursive' style='letter-spacing: -0.2px;'>Access to our <span class="carton">MBX</span> Maker <span class="carton">LAB</span> at no additional cost</p>
-            <a class='button mbxred' href='https://matchbox.spaces.nexudus.com/en/signup'>Join Now</a>
-          </div>
-        </div>
+
+          $('#see-more-button').click(function () {
+            $("#events-list").height("100%");
+            $("#see-less-button").css("display", "block");
+            $("#see-more-button").css("display", "none");
+          });
+
+          $('#see-less-button').click(function () {
+            $("#events-list").height(200);
+            $("#see-more-button").css("display", "block");
+            $("#see-less-button").css("display", "none");
+          });
+
+      });
+  </script>
+</head>
+<body>
+<!-- Anchor for scrolling to top -->
+<div id='up'></div>
+<!-- banner -->
+<section class='prom-banner'>
+  <style>
+    .banner-container {
+      display: flex;
+      flex-direction: row;
+      height:100px;
+      justify-content: center;
+    }
+
+    .prom-banner {
+      box-shadow: #000 0px 4px 10px;
+      top:0;
+      left:0;
+      right:0;
+      position:absolute;
+      height:100px;
+      background:url("/assets/img/CraftPaperBackground.png") repeat;
+      background-color:#ecd6b6;
+      z-index:999
+    }
+
+    .cursive {
+      font: 1.75em "thirsty_roughblack_one", "Brush Script MT", cursive;
+      color: #484E8A;
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.3em;
+      margin:0
+    }
+
+    .button-section, .text-section {
+      padding:0 20px
+    }
+
+    .text-section {
+      flex: 1 auto;
+    }
+
+    .button-section {
+      display: flex;
+      flex-direction: row;
+      justify-content:flex-end;
+      align-items:flex-end;
+      flex: none;
+    }
+
+    .sticker-section {
+      flex: none;
+    }
+
+    .button-section, .text-section {
+      display: flex;
+      flex-direction: column;
+      justify-content:center;
+    }
+
+    .text-section h3 {
+      margin-bottom:0;
+      text-transform:uppercase;
+      padding-bottom:5px;
+      color: #484E8A;
+    }
+
+    .banner-container .button {
+      text-transform:uppercase;
+      line-height:22px !important;
+      margin:0
+    }
+
+    .circle {
+      height:150px;
+      width:150px;
+      margin-top: 7px;
+      transform:rotate(2deg);
+    }
+
+    .carton {
+      font-family:Carton;
+      font-weight:600;
+      font-style: italic;
+    }
+
+    @media only screen and (min-width: 768px) {
+      .text-section .button {
+        display:none
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+
+      .hero__header__container {
+        top:52% !important;
+      }
+
+      .hero__header__slogan {
+        margin:0;
+      }
+
+      .hero__header__logo {
+        margin-bottom: 6px;
+      }
+
+      .button-section {
+        display:none
+      }
+
+      .text-section {
+        text-align: center;
+      }
+
+      .circle {
+        height:110px;
+        width:110px;
+        margin-top: 15px;
+        margin-left: 15px;
+      }
+
+      .banner-container, .prom-banner {
+        height:100px
+      }
+
+      .banner-container {
+        justify-content: center;
+      }
+
+      .cursive {
+        font: 1em "thirsty_roughblack_one", "Brush Script MT", cursive;
+        padding-bottom:5px
+      }
+    }
+
+    @media only screen and (max-width: 767px) and (min-width: 480px) {
+      .banner-container {
+        width: 455px;
+      }
+    }
+
+    @media only screen and (max-width: 479px) {
+      .banner-container {
+        width: 100%;
+      }
+
+      .button-section, .text-section {
+        padding: 0 10px;
+      }
+
+      .banner-container, .prom-banner {
+        height: 120px;
+      }
+
+      .circle {
+        margin-top: 32px;
+      }
+    }
+
+    @media only screen and (max-width: 372px) {
+      .banner-container, .prom-banner {
+        height: 120px;
+      }
+
+      .circle {
+        margin-top: 32px;
+      }
+    }
+  </style>
+  <div class='banner-container container'>
+    <div class='button-section'>
+      <a class='button mbxred' href='https://matchbox.spaces.nexudus.com/en/signup'>Join Now</a>
+    </div>
+    <div class='sticker-section'>
+      <img class='circle' src='/assets/img/burst2.png'>
+    </div>
+    <div class='text-section'>
+      <div>
+        <h3>Basic Membership @ MatchBox Now Includes</h3>
+        <p class='cursive' style='letter-spacing: -0.2px;'>Access to our <span class="carton">MBX</span> Maker <span class="carton">LAB</span> at no additional cost</p>
+        <a class='button mbxred' href='https://matchbox.spaces.nexudus.com/en/signup'>Join Now</a>
       </div>
-    </section>
-    <!-- Video overlay unit -->
-    <section class='hero'>
-      <div class='hero__video__container'>
-        <video autoplay loop poster='/assets/img/hero/keyframe.jpg'>
-          <source src='/assets/video/background_720.webm' type='video/webm'>
-          <source src='/assets/video/background_720.mp4' type='video/mp4'>
-        </video>
+    </div>
+  </div>
+</section>
+<!-- Video overlay unit -->
+<section class='hero'>
+  <div class='hero__video__container'>
+    <video autoplay loop poster='/assets/img/hero/keyframe.jpg'>
+      <source src='/assets/video/background_720.webm' type='video/webm'>
+      <source src='/assets/video/background_720.mp4' type='video/mp4'>
+    </video>
+  </div>
+  <header class='hero__header__overlay'>
+    <div class='hero__header__container'>
+      <h1 class='hero__header__logo'>MatchBOX Studio</h1>
+      <p class='hero__header__slogan'>A shared place to work and create.</p>
+      <div class='hero__header__cta'>
+        <a class='hero__button' href='#virtualTour'>Explore</a>
+        <a class='hero__button' href='https://matchbox.spaces.nexudus.com/en/signup'>Join</a>
       </div>
-      <header class='hero__header__overlay'>
-        <div class='hero__header__container'>
-          <h1 class='hero__header__logo'>MatchBOX Studio</h1>
-          <p class='hero__header__slogan'>A shared place to work and create.</p>
-          <div class='hero__header__cta'>
-            <a class='hero__button' href='#virtualTour'>Explore</a>
-            <a class='hero__button' href='https://matchbox.spaces.nexudus.com/en/signup'>Join</a>
-          </div>
-        </div>
-      </header>
-    </section>
-    <!-- Menu -->
-    <section class='menu'>
-      <div class='container'>
-        <div class='sixteen columns clearfix'>
-          <h1 class='logo'>
+    </div>
+  </header>
+</section>
+<!-- Menu -->
+<section class='menu'>
+  <div class='container'>
+    <div class='sixteen columns clearfix'>
+      <h1 class='logo'>
+        <a href='#up'>
+          <img alt='MatchBOX logo' src='/assets/img/theme/logo.png'>
+        </a>
+      </h1>
+      <nav class='menu-holder'>
+        <ul class='menu-list' id='main-menu'>
+          <li class='active'>
             <a href='#up'>
-              <img alt='MatchBOX logo' src='/assets/img/theme/logo.png'>
+              Home
+              <span class='arrow'></span>
             </a>
-          </h1>
-          <nav class='menu-holder'>
-            <ul class='menu-list' id='main-menu'>
-              <li class='active'>
-                <a href='#up'>
-                  Home
-                  <span class='arrow'></span>
-                </a>
-              </li>
-              <li>
-                <a href='/about.html'>
-                  About
-                  <span class='arrow'></span>
-                </a>
-              </li>
-              <li>
-                <a href='https://matchbox.spaces.nexudus.com/en/signup'>
-                  Join
-                  <span class='arrow'></span>
-                </a>
-              </li>
-              <li>
-                <a href='/acceleration'>
-                  Acceleration
-                  <span class='arrow'></span>
-                </a>
-              </li>
-              <li>
-                <a href='/calendar'>
-                  Calendar
-                  <span class='arrow'></span>
-                </a>
-              </li>
-              <li>
-                <a href='/blog'>
-                  Blog
-                  <span class='arrow'></span>
-                </a>
-              </li>
-              <li>
-                <a href='#contact'>
-                  Contact
-                  <span class='arrow'></span>
-                </a>
-              </li>
-              <!-- Slide panel toggle -->
-              <li class='toggle-panel'>
-                <a class='closed' href='#'>
-                  <i class='icon-plus'></i>
-                  <span class='arrow'></span>
-                </a>
-              </li>
-            </ul>
-            <!-- SubMenu -->
-            <select class='sub-menu' id='subMenu' name='subMenu' onchange='navigate(this.value)' size='1'>
-              <option selected='selected' value=''>Menu</option>
-              <option value='/about.html'>- About</option>
-              <option value='https://matchbox.spaces.nexudus.com/en/signup'>- Join</option>
-              <option value='/acceleration'>- Acceleration</option>
-              <option value='/calendar'>- Calendar</option>
-              <option value='/blog'>- Blog</option>
-              <option value='#contact'>- Contact</option>
-            </select>
-          </nav>
-        </div>
-        <!-- ./sixteen columns -->
+          </li>
+          <li>
+            <a href='/about.html'>
+              About
+              <span class='arrow'></span>
+            </a>
+          </li>
+          <li>
+            <a href='https://matchbox.spaces.nexudus.com/en/signup'>
+              Join
+              <span class='arrow'></span>
+            </a>
+          </li>
+          <li>
+            <a href='/acceleration'>
+              Acceleration
+              <span class='arrow'></span>
+            </a>
+          </li>
+          <li>
+            <a href='/calendar'>
+              Calendar
+              <span class='arrow'></span>
+            </a>
+          </li>
+          <li>
+            <a href='/blog'>
+              Blog
+              <span class='arrow'></span>
+            </a>
+          </li>
+          <li>
+            <a href='#contact'>
+              Contact
+              <span class='arrow'></span>
+            </a>
+          </li>
+          <!-- Slide panel toggle -->
+          <li class='toggle-panel'>
+            <a class='closed' href='#'>
+              <i class='icon-plus'></i>
+              <span class='arrow'></span>
+            </a>
+          </li>
+        </ul>
+        <!-- SubMenu -->
+        <select class='sub-menu' id='subMenu' name='subMenu' onchange='navigate(this.value)' size='1'>
+          <option selected='selected' value=''>Menu</option>
+          <option value='/about.html'>- About</option>
+          <option value='https://matchbox.spaces.nexudus.com/en/signup'>- Join</option>
+          <option value='/acceleration'>- Acceleration</option>
+          <option value='/calendar'>- Calendar</option>
+          <option value='/blog'>- Blog</option>
+          <option value='#contact'>- Contact</option>
+        </select>
+      </nav>
+    </div>
+    <!-- ./sixteen columns -->
+  </div>
+  <!-- ./container -->
+</section>
+<!-- Page body -->
+<div class='page-wrapper' id='container'>
+  <!-- About section -->
+  <section class='about'>
+    <div class='container'>
+      <!-- Section Title -->
+      <div class='sixteen columns'>
+        <h2 class='message-block'>
+          A shared place to <span>work and create</span>
+        </h2>
       </div>
-      <!-- ./container -->
-    </section>
-    <!-- Page body -->
-    <div class='page-wrapper' id='container'>
-      <!-- About section -->
-      <section class='about'>
-        <div class='container'>
-          <!-- Section Title -->
-          <div class='sixteen columns'>
-            <h2 class='message-block'>
-              A shared place to <span>work and create</span>
-            </h2>
+    </div>
+    <!-- Features -->
+    <div class='features-section'>
+      <div class='features-container sixteen columns container'>
+        <div class='four columns'>
+          <h2>24/7</h2>
+          <div class='responsive-container'>
+            <div class='dummy'></div>
+            <div class='img-container'>
+              <img alt='24/7' src='/assets/img/247d-small.png'>
+            </div>
           </div>
+          <ul>
+            <li>
+              <i class='icon-ok'></i>
+              24-hour secure access
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              Conference rooms
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              The fastest internet in town
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              An unlimited supply of coffee and snacks
+            </li>
+          </ul>
         </div>
-        <!-- Features -->
-        <div class='features-section'>
-          <div class='features-container sixteen columns container'>
-            <div class='four columns'>
-              <h2>24/7</h2>
-              <div class='responsive-container'>
-                <div class='dummy'></div>
-                <div class='img-container'>
-                  <img alt='24/7' src='/assets/img/247d-small.png'>
-                </div>
-              </div>
-              <ul>
-                <li>
-                  <i class='icon-ok'></i>
-                  24-hour secure access
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  Conference rooms
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  The fastest internet in town
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  An unlimited supply of coffee and snacks
-                </li>
-              </ul>
-            </div>
-            <div class='four columns'>
-              <h2>HOBBYIST + PROFESSIONAL</h2>
-              <div class='responsive-container'>
-                <div class='dummy'></div>
-                <div class='img-container'>
-                  <img alt='Hobbiest to Pro' src='/assets/img/amateurtopro.png'>
-                </div>
-              </div>
-              <ul>
-                <li>
-                  <i class='icon-ok'></i>
-                  Start a new business
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  Grow an existing business
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  The hobbyist with a crazy new idea
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  The moonlighting entrepreneur
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  The professional office nomad
-                </li>
-              </ul>
-            </div>
-            <div class='four columns'>
-              <h2>CREATIVE CLASS</h2>
-              <div class='responsive-container'>
-                <div class='dummy'></div>
-                <div class='img-container'>
-                  <img alt='Changemakers' src='/assets/img/Changemakers.png'>
-                </div>
-              </div>
-              <ul>
-                <li>
-                  <i class='icon-ok'></i>
-                  Developers, designers, strategists, artisans, writers, &amp; makers
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  Change-makers of all types
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  A home for the creative class
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  Lafayette, West Lafayette, and throughout the midwest
-                </li>
-              </ul>
-            </div>
-            <div class='four columns'>
-              <h2>LEAVE YOUR TIE</h2>
-              <div class='responsive-container'>
-                <div class='dummy'></div>
-                <div class='img-container'>
-                  <img alt='Leave your tie' src='/assets/img/LeaveTie.png'>
-                </div>
-              </div>
-              <ul>
-                <li>
-                  <i class='icon-ok'></i>
-                  Bring a laptop or a backpack
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  Find a place to work for a few hours, or reserve your own desk and chair
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  Put on your headphones and work undisturbed all night long
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  Ask a desk neighbor for some advice
-                </li>
-                <li>
-                  <i class='icon-ok'></i>
-                  Grab some coffee at the bar with an advisor
-                </li>
-              </ul>
+        <div class='four columns'>
+          <h2>HOBBYIST + PROFESSIONAL</h2>
+          <div class='responsive-container'>
+            <div class='dummy'></div>
+            <div class='img-container'>
+              <img alt='Hobbiest to Pro' src='/assets/img/amateurtopro.png'>
             </div>
           </div>
+          <ul>
+            <li>
+              <i class='icon-ok'></i>
+              Start a new business
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              Grow an existing business
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              The hobbyist with a crazy new idea
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              The moonlighting entrepreneur
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              The professional office nomad
+            </li>
+          </ul>
         </div>
-        <div class='container'>
-          <div class='eight columns'>
-            <h3>coffee shop + office park + garage</h3>
-            <p>MatchBOX is a place to work for those who don't have places to work.
-            Think of a coffee shop mashed up with an office park in an old garage.
-            It's a room full of desks with all the amenities you need to get work
-            done: 24-hour secure access, conference rooms, the fastest internet in
-            town, and an unlimited supply of coffee and snacks.</p>
-            
-            <p>It's a great place to start a new business, or to grow an existing small
-            business. It's for the hobbyist with a crazy new idea, the moonlighting
-            entrepreneur, or the professional office nomad. It's for developers,
-            designers, strategists, artisans, writers, makers, and change-makers of
-            all types. It's a home for the creative class in Lafayette, West
-            Lafayette, and throughout the midwest.</p>
+        <div class='four columns'>
+          <h2>CREATIVE CLASS</h2>
+          <div class='responsive-container'>
+            <div class='dummy'></div>
+            <div class='img-container'>
+              <img alt='Changemakers' src='/assets/img/Changemakers.png'>
+            </div>
           </div>
-          <div class='eight columns'>
-            <h3> </h3>
-            <p>Bring a laptop or a backpack, but leave your tie at home. Find a place to
-            work for a few hours, or reserve your own desk and chair. Put on your
-            headphones and work undisturbed all night long, or ask a desk neighbor
-            for some advice or grab some coffee at the bar with an advisor. The space
-            is about the people there, and we only ask that you be willing to
-            contribute to the success of the others around you.</p>
-            
-            <p>We have a box. We're looking for matches...people with a dream about to
-            catch on fire. We want to make it easy for you to work, help you
-            collaborate, and stoke the flames.</p>
-          </div>
-          <div class='sixteen columns padding-top'>
-            <img alt='3D Rendering of MatchBOX' class='fullimage' src='/assets/img/Rendering.png'>
-            <div class='row text-center'></div>
-          </div>
+          <ul>
+            <li>
+              <i class='icon-ok'></i>
+              Developers, designers, strategists, artisans, writers, &amp; makers
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              Change-makers of all types
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              A home for the creative class
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              Lafayette, West Lafayette, and throughout the midwest
+            </li>
+          </ul>
         </div>
-      </section>
-      <!-- Virtual tour (JS inserts here when tour is activated) -->
-      <div class='collapsed' id='virtualTour'>
-        <iframe frameborder='0' height='550' src='https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1424526264707!6m8!1m7!1sVIUz6TEPGp8AAAQWtNuo5A!2m2!1d40.416799!2d-86.890355!3f128!4f0!5f1.4214797185029173' style='border:0' width='100%'></iframe>
-      </div>
-      <div class='container'>
-        <div class='sixteen columns text-center padding-bottom-20px'>
-          <span class='button mbxred' id='see-inside' onclick='toggleHref();'>Explore Inside</span>
+        <div class='four columns'>
+          <h2>LEAVE YOUR TIE</h2>
+          <div class='responsive-container'>
+            <div class='dummy'></div>
+            <div class='img-container'>
+              <img alt='Leave your tie' src='/assets/img/LeaveTie.png'>
+            </div>
+          </div>
+          <ul>
+            <li>
+              <i class='icon-ok'></i>
+              Bring a laptop or a backpack
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              Find a place to work for a few hours, or reserve your own desk and chair
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              Put on your headphones and work undisturbed all night long
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              Ask a desk neighbor for some advice
+            </li>
+            <li>
+              <i class='icon-ok'></i>
+              Grab some coffee at the bar with an advisor
+            </li>
+          </ul>
         </div>
       </div>
-      <!-- Parallax - Tennenhouse quote -->
-      <section class='para' id='break1'>
-        <div class='overlay'>
-          <div class='container message'>
-            <p class='quote-block'>
-              <img alt='Group work function' class='fullimage' src='assets/img/Equation-3.png'>
+    </div>
+    <div class='container'>
+      <div class='eight columns'>
+        <h3>coffee shop + office park + garage</h3>
+        <p>MatchBOX is a place to work for those who don't have places to work.
+          Think of a coffee shop mashed up with an office park in an old garage.
+          It's a room full of desks with all the amenities you need to get work
+          done: 24-hour secure access, conference rooms, the fastest internet in
+          town, and an unlimited supply of coffee and snacks.</p>
+
+        <p>It's a great place to start a new business, or to grow an existing small
+          business. It's for the hobbyist with a crazy new idea, the moonlighting
+          entrepreneur, or the professional office nomad. It's for developers,
+          designers, strategists, artisans, writers, makers, and change-makers of
+          all types. It's a home for the creative class in Lafayette, West
+          Lafayette, and throughout the midwest.</p>
+      </div>
+      <div class='eight columns'>
+        <h3> </h3>
+        <p>Bring a laptop or a backpack, but leave your tie at home. Find a place to
+          work for a few hours, or reserve your own desk and chair. Put on your
+          headphones and work undisturbed all night long, or ask a desk neighbor
+          for some advice or grab some coffee at the bar with an advisor. The space
+          is about the people there, and we only ask that you be willing to
+          contribute to the success of the others around you.</p>
+
+        <p>We have a box. We're looking for matches...people with a dream about to
+          catch on fire. We want to make it easy for you to work, help you
+          collaborate, and stoke the flames.</p>
+      </div>
+      <div class='sixteen columns padding-top'>
+        <img alt='3D Rendering of MatchBOX' class='fullimage' src='/assets/img/Rendering.png'>
+        <div class='row text-center'></div>
+      </div>
+    </div>
+  </section>
+  <!-- Virtual tour (JS inserts here when tour is activated) -->
+  <div class='collapsed' id='virtualTour'>
+    <iframe frameborder='0' height='550' src='https://www.google.com/maps/embed?pb=!1m0!3m2!1sen!2sus!4v1424526264707!6m8!1m7!1sVIUz6TEPGp8AAAQWtNuo5A!2m2!1d40.416799!2d-86.890355!3f128!4f0!5f1.4214797185029173' style='border:0' width='100%'></iframe>
+  </div>
+  <div class='container'>
+    <div class='sixteen columns text-center padding-bottom-20px'>
+      <span class='button mbxred' id='see-inside' onclick='toggleHref();'>Explore Inside</span>
+    </div>
+  </div>
+  <!-- Parallax - Tennenhouse quote -->
+  <section class='para' id='break1'>
+    <div class='overlay'>
+      <div class='container message'>
+        <p class='quote-block'>
+          <img alt='Group work function' class='fullimage' src='assets/img/Equation-3.png'>
+          <br>
+          The group generated by work is greater than the sum of elements in the group.
+          <br>
+          <span>-Tennenhouse</span>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Services sections -->
+  <section class='services' id='services'>
+    <div class='container'>
+      <h2 class='sixteen columns message-block' style='margin:0'>
+        <a class='button mbxred' href='https://matchbox.spaces.nexudus.com/en/signup'>Join</a>
+        Limited spots by application only.
+      </h2>
+      <!-- Pricing tiers -->
+      <br class='clear'>
+      <div class='sixteen columns' style='margin:0'>
+        <div class='pricing' style='display: flex; flex-direction: row;'>
+          <div class='main teir' style='flex-basis: 35%; padding-top: 246px;'>
+            <div class='box' id='basic'>
+              <header style='padding: 16px;'>BASIC</header>
+              <ul class='content'>
+                <li>New Desk Each Visit</li>
+                <li>Gigabit Fiber</li>
+                <li>Wireless</li>
+                <li>24/7 Access</li>
+                <li>Coffee Bar &amp; Snacks</li>
+                <li>Event Access</li>
+                <li>Conference Rooms</li>
+                <li>Maker LAB Access</li>
+                <li style='white-space: nowrap;'>3D Printing, Laser Cutting</li>
+              </ul>
+            </div>
+            <div class='cost'>
+              <span class='dollar'>$</span>
+              <strong>499</strong>
+              <span class='text'>/member/year</span>
               <br>
-              The group generated by work is greater than the sum of elements in the group.
+              <small style='font-size: 11px;'>Paid annually or quarterly</small>
               <br>
-              <span>-Tennenhouse</span>
-            </p>
+              <small>[+ $99 setup fee]</small>
+            </div>
+            <div class='cost'></div>
           </div>
-        </div>
-      </section>
-      <!-- Services sections -->
-      <section class='services' id='services'>
-        <div class='container'>
-          <h2 class='sixteen columns message-block' style='margin:0'>
-            <a class='button mbxred' href='https://matchbox.spaces.nexudus.com/en/signup'>Join</a>
-            Limited spots by application only.
-          </h2>
-          <!-- Pricing tiers -->
-          <br class='clear'>
-          <div class='sixteen columns' style='margin:0'>
-            <div class='pricing' style='display: flex; flex-direction: row;'>
-              <div class='main teir' style='flex-basis: 35%; padding-top: 246px;'>
-                <div class='box' id='basic'>
-                  <header style='padding: 16px;'>BASIC</header>
-                  <ul class='content'>
-                    <li>New Desk Each Visit</li>
-                    <li>Gigabit Fiber</li>
-                    <li>Wireless</li>
-                    <li>24/7 Access</li>
-                    <li>Coffee Bar &amp; Snacks</li>
-                    <li>Event Access</li>
-                    <li>Conference Rooms</li>
-                    <li>Maker LAB Access</li>
-                    <li style='white-space: nowrap;'>3D Printing, Laser Cutting</li>
-                  </ul>
-                </div>
-                <div class='cost'>
-                  <span class='dollar'>$</span>
-                  <strong>499</strong>
-                  <span class='text'>/member/year</span>
-                  <br>
-                  <small style='font-size: 11px;'>Paid annually or quarterly</small>
-                  <br>
-                  <small>[+ $99 setup fee]</small>
-                </div>
-                <div class='cost'></div>
-              </div>
-              <div class='teir startup-special'>
-                <img src='assets/img/startup-special.png'>
-                <p class='blue'><b style="font-weight:600">We know how tight funding can get, and we want to help.</b><br> <br> While desks are available and only for entrepreneurs paying for their own desks.</p>
-                <div class='box' id='basic'>
-                  <header>RESERVED*</header>
-                  <ul class='content'>
-                    <li>BASIC+</li>
-                    <li>Reserved Desk</li>
-                    <li>Reserved Chair</li>
-                    <li>Personal Cabinet</li>
-                    <li>1Gb Port</li>
-                  </ul>
-                </div>
-                <div class='cost'>
-                  <span class='dollar'>$</span>
-                  <strong>199</strong>
-                  <span class='text'>/member/month</span>
-                  <br>
-                  <small>[billed monthly, requires BASIC]</small>
-                  <br>
-                  <br>
-                  <small>*limited spots available.</small>
-                </div>
-                <img class='off-25' src='assets/img/25off.png'>
-                <img class='red-price' src='assets/img/150.png'>
-                <small style="font-family:'Source Sans Pro', sans-serif; font-size:11px; color:#ed5348">/member/month <br> [billed monthly, requires BASIC] <br><br> *limited desks available while they last. <br> Sign up during this limited time and lock in this rate for the life of your membership.</small>
-              </div>
-              <div class='teir' style='flex-basis: 35%; padding-top:265px;'>
-                <div class='box' id='basic'>
-                  <header>DAY PASSES</header>
-                  <ul class='content'>
-                    <li>Available M - F, 8a - 5p</li>
-                    <li>Shared Space or Reserved</li>
-                    <li style='white-space: nowrap;'>Advanced Booking Required</li>
-                    <li><a href="mailto:hello@matchboxstudio.org">hello@matchboxstudio.org</a></li>
-                  </ul>
-                </div>
-                <div class='cost'>
-                  <span class='dollar'>$</span>
-                  <strong>10</strong>
-                  <span class='text'>/day/shared space</span>
-                  <br>
-                  <span class='dollar'>$</span>
-                  <strong>20</strong>
-                  <span class='text'>/day/reserved desk**</span>
-                  <br>
-                  <br>
-                  <small>*requires one business day's notice</small>
-                  <br>
-                  <small>**limited spots available</small>
-                </div>
-              </div>
+          <div class='teir startup-special'>
+            <img src='assets/img/startup-special.png'>
+            <p class='blue'><b style="font-weight:600">We know how tight funding can get, and we want to help.</b><br> <br> While desks are available and only for entrepreneurs paying for their own desks.</p>
+            <div class='box' id='basic'>
+              <header>RESERVED*</header>
+              <ul class='content'>
+                <li>BASIC+</li>
+                <li>Reserved Desk</li>
+                <li>Reserved Chair</li>
+                <li>Personal Cabinet</li>
+                <li>1Gb Port</li>
+              </ul>
+            </div>
+            <div class='cost'>
+              <span class='dollar'>$</span>
+              <strong>199</strong>
+              <span class='text'>/member/month</span>
+              <br>
+              <small>[billed monthly, requires BASIC]</small>
+              <br>
+              <br>
+              <small>*limited spots available.</small>
+            </div>
+            <img class='off-25' src='assets/img/25off.png'>
+            <img class='red-price' src='assets/img/150.png'>
+            <small style="font-family:'Source Sans Pro', sans-serif; font-size:11px; color:#ed5348">/member/month <br> [billed monthly, requires BASIC] <br><br> *limited desks available while they last. <br> Sign up during this limited time and lock in this rate for the life of your membership.</small>
+          </div>
+          <div class='teir' style='flex-basis: 35%; padding-top:265px;'>
+            <div class='box' id='basic'>
+              <header>DAY PASSES</header>
+              <ul class='content'>
+                <li>Available M - F, 8a - 5p</li>
+                <li>Shared Space or Reserved</li>
+                <li style='white-space: nowrap;'>Advanced Booking Required</li>
+                <li><a href="mailto:hello@matchboxstudio.org">hello@matchboxstudio.org</a></li>
+              </ul>
+            </div>
+            <div class='cost'>
+              <span class='dollar'>$</span>
+              <strong>10</strong>
+              <span class='text'>/day/shared space</span>
+              <br>
+              <span class='dollar'>$</span>
+              <strong>20</strong>
+              <span class='text'>/day/reserved desk**</span>
+              <br>
+              <br>
+              <small>*requires one business day's notice</small>
+              <br>
+              <small>**limited spots available</small>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Parallax - Tesla quote -->
-      <section class='para' id='break2'>
-        <div class='overlay'>
-          <div class='container message'>
-            <p class='quote-block'>
-              I do not think there is any thrill that can go through the human
-              heart like that felt by the inventor as he sees some creation of
-              the brain unfolding to success.
-              <br>
-              <span>-Tesla</span>
-            </p>
+      </div>
+    </div>
+  </section>
+  <!-- Parallax - Tesla quote -->
+  <section class='para' id='break2'>
+    <div class='overlay'>
+      <div class='container message'>
+        <p class='quote-block'>
+          I do not think there is any thrill that can go through the human
+          heart like that felt by the inventor as he sees some creation of
+          the brain unfolding to success.
+          <br>
+          <span>-Tesla</span>
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- Contact -->
+  <section class='contact' id='contact'>
+    <div class='container'>
+      <div class='sixteen columns'>
+        <!-- Message -->
+        <h2 class='message-block'>
+          Don't be shy, you can ask us <span>anything</span>.
+        </h2>
+        <!-- Events Calendar -->
+        <div>
+
+          <h2>2019 Events Calendar</h2>
+          <div id='events-list' style="overflow: hidden;">
+
+            <h4>January</h4>
+
+            <div class="flex-row align-items-center margin-bottom-18px">
+              <div class="flex-col align-items-center event-date">
+                <span class="date">24</span>
+                <span class="day">Thurs</span>
+              </div>
+
+              <div class="flex-col flex-1" style="padding-left: 15px">
+                <h5>MBX Maker LAB: CNC & Vacuum Forming Workshop</h5>
+                <p>Learn the basics of the MBX Maker LAB CNC and Vacuum Forming Machines. The session will cover the Carvet Desktop CNC, MBX vacuum former, and more.</p>
+              </div>
+            </div>
+
+            <h4>February</h4>
+
+            <div class="flex-row align-items-center margin-bottom-18px">
+              <div class="flex-col align-items-center event-date">
+                <span class="date">7</span>
+                <span class="day">Thurs</span>
+              </div>
+
+              <div class="flex-col flex-1" style="padding-left: 15px">
+                <h5>645 @ 6th Street Dive</h5>
+                <p>We’re shining a spotlight on brilliant ideas, big passions, and creative projects. At 645, presenters share their stories in just 6 visual minutes.</p>
+              </div>
+            </div>
+
+            <div class="flex-row align-items-center margin-bottom-18px">
+              <div class="flex-col align-items-center event-date">
+                <span class="date">21</span>
+                <span class="day">Thurs</span>
+              </div>
+
+              <div class="flex-col flex-1" style="padding-left: 15px">
+                <h5>T-6.6 Pitch Night @ MatchBOX</h5>
+                <p>Two pitches and a featured chat. Pizza, beer, and great conversations with Greater Lafayette entrepreneurs, innovators, creatives, and renegades.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <span id="see-more-button" class="flex-row justify-content-center">See More<i class='icon-caret-down' style="padding-left: 10px;"></i></span>
+          <span id="see-less-button" class="flex-row justify-content-center">See Less<i class='icon-caret-up' style="padding-left: 10px;"></i></span>
+
+        </div>
+        <hr class='width-100'>
+        <!-- Map -->
+        <div class='flex-container'>
+          <div class='map-wrap'>
+            <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.642080649127!2d-86.89256464862818!3d40.41677917926384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88131d44f1ea38cf%3A0xdc61422facb3b4ba!2sMatchBOX+Coworking+Studio!5e0!3m2!1sen!2sus!4v1479753333182'></iframe>
+            <div class='mobile-fix'></div>
+          </div>
+          <div class='news-wrap'>
+            <h2>Recent News</h2>
+            <div class='news-list'></div>
           </div>
         </div>
-      </section>
-      <!-- Contact -->
-      <section class='contact' id='contact'>
-        <div class='container'>
-          <div class='sixteen columns'>
-            <!-- Message -->
-            <h2 class='message-block'>
-              Don't be shy, you can ask us <span>anything</span>.
-            </h2>
-            <!-- Events Calendar -->
-            <div>
-
-              <h2>2019 Events Calendar</h2>
-              <div class='events-list'>
-
-                <h4>January</h4>
-
-                <div class="flex-row">
-                  <div class="flex-col align-items-center event-date">
-                    <span class="date">24</span>
-                    <span class="day">Thurs</span>
-                  </div>
-
-                  <div class="flex-col flex-1" style="padding-left: 15px">
-                    <h5>MBX Maker LAB: CNC & Vacuum Forming Workshop</h5>
-                    <p>Learn the basics of the MBX Maker LAB CNC and Vacuum Forming Machines. The session will cover the Carvet Desktop CNC, MBX vacuum former, and more.</p>
-                  </div>
-                </div>
-
-                <h4>February</h4>
-
-                <div class="flex-row">
-                  <div class="flex-col align-items-center event-date">
-                    <span class="date">7</span>
-                    <span class="day">Thurs</span>
-                  </div>
-
-                  <div class="flex-col flex-1" style="padding-left: 15px">
-                    <h5>645 @ 6th Street Dive</h5>
-                    <p>We’re shining a spotlight on brilliant ideas, big passions, and creative projects. At 645, presenters share their stories in just 6 visual minutes.</p>
-                  </div>
-                </div>
-
-                <div class="flex-row">
-                  <div class="flex-col align-items-center event-date">
-                    <span class="date">21</span>
-                    <span class="day">Thurs</span>
-                  </div>
-
-                  <div class="flex-col flex-1" style="padding-left: 15px">
-                    <h5>T-6.6 Pitch Night @ MatchBOX</h5>
-                    <p>Two pitches and a featured chat. Pizza, beer, and great conversations with Greater Lafayette entrepreneurs, innovators, creatives, and renegades.</p>
-                  </div>
-                </div>
-
-                <span id="see-more-button" class="flex-row justify-content-center">See More<i class='icon-caret-down' style="padding-left: 10px;"></i></span>
-
-              </div>
-
-            </div>
-            <hr class='width-100'>
-            <!-- Map -->
-            <div class='flex-container'>
-              <div class='map-wrap'>
-                <iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.642080649127!2d-86.89256464862818!3d40.41677917926384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88131d44f1ea38cf%3A0xdc61422facb3b4ba!2sMatchBOX+Coworking+Studio!5e0!3m2!1sen!2sus!4v1479753333182'></iframe>
-                <div class='mobile-fix'></div>
-              </div>
-              <div class='news-wrap'>
-                <h2>Recent News</h2>
-                <div class='news-list'></div>
-              </div>
-            </div>
-            <br class='clear'>
-            <hr class='width-100'>
-          </div>
-          <br class='clear'>
-          <div class='eight columns' style='padding-right:15px'>
-            <div class='six columns alpha'>
-              <!-- Contact Info -->
-              <ul class='contact-info'>
-                <li class='name'>
-                  <i class='icon-user'></i>
-                  MatchBOX Coworking Studio, LLC
-                </li>
-                <li class='address'>
-                  <i class='icon-home'></i>
-                  <span>
+        <br class='clear'>
+        <hr class='width-100'>
+      </div>
+      <br class='clear'>
+      <div class='eight columns' style='padding-right:15px'>
+        <div class='six columns alpha'>
+          <!-- Contact Info -->
+          <ul class='contact-info'>
+            <li class='name'>
+              <i class='icon-user'></i>
+              MatchBOX Coworking Studio, LLC
+            </li>
+            <li class='address'>
+              <i class='icon-home'></i>
+              <span>
                     17 South 6th St., Suite X
                     <br>
                     Stein Building
@@ -725,407 +748,407 @@
                     Lafayette, IN 47901
                     <br>
                   </span>
-                </li>
-                <li class='email'>
-                  <i class='icon-envelope-alt'></i>
-                  <a href='mailto:hello@matchboxstudio.org'>hello@MatchBOXStudio.org</a>
-                </li>
-                <li class='phone'>
-                  <i class='icon-phone'></i>
-                  765.588.9295
-                </li>
-              </ul>
-            </div>
+            </li>
+            <li class='email'>
+              <i class='icon-envelope-alt'></i>
+              <a href='mailto:hello@matchboxstudio.org'>hello@MatchBOXStudio.org</a>
+            </li>
+            <li class='phone'>
+              <i class='icon-phone'></i>
+              765.588.9295
+            </li>
+          </ul>
+        </div>
 
-            <div class='one columns omega'>
-              <!-- Social -->
-              <br>
-              <div class='social'>
-                <a href='http://twitter.com/matchboxcowork'>
-                  <i class='icon-twitter'></i>
-                </a>
-                <a href='http://facebook.com/matchboxcowork'>
-                  <i class='icon-facebook'></i>
-                </a>
-                <a href='https://www.instagram.com/matchboxcowork/'>
-                  <i class='icon-instagram'></i>
-                </a>
-                <span class='arrow'></span>
-              </div>
+        <div class='one columns omega'>
+          <!-- Social -->
+          <br>
+          <div class='social'>
+            <a href='http://twitter.com/matchboxcowork'>
+              <i class='icon-twitter'></i>
+            </a>
+            <a href='http://facebook.com/matchboxcowork'>
+              <i class='icon-facebook'></i>
+            </a>
+            <a href='https://www.instagram.com/matchboxcowork/'>
+              <i class='icon-instagram'></i>
+            </a>
+            <span class='arrow'></span>
+          </div>
+        </div>
+      </div>
+      <script src='assets/js/news-section.js' type='text/javascript'></script>
+      <div class='eight columns' style='padding-left:15px'>
+        <h3>Sign up for our newsletter</h3>
+        <!-- MailChimp Signup Form -->
+        <div id='mc_embed_signup'>
+          <form action='//matchboxstudio.us3.list-manage1.com/subscribe/post?u=c67a5fc059dc82356ce82a801&amp;id=ff9857df65' class='validate' id='mc-embedded-subscribe-form' method='post' name='mc-embedded-subscribe-form' novalidate='' target='_blank'>
+            <div class='mc-field-group'>
+              <input class='required email' id='mce-EMAIL' name='EMAIL' placeholder='email address' type='email' value=''>
             </div>
-          </div>
-          <script src='assets/js/news-section.js' type='text/javascript'></script>
-          <div class='eight columns' style='padding-left:15px'>
-          <h3>Sign up for our newsletter</h3>
-          <!-- MailChimp Signup Form -->
-          <div id='mc_embed_signup'>
-            <form action='//matchboxstudio.us3.list-manage1.com/subscribe/post?u=c67a5fc059dc82356ce82a801&amp;id=ff9857df65' class='validate' id='mc-embedded-subscribe-form' method='post' name='mc-embedded-subscribe-form' novalidate='' target='_blank'>
-              <div class='mc-field-group'>
-                <input class='required email' id='mce-EMAIL' name='EMAIL' placeholder='email address' type='email' value=''>
-              </div>
-              <div class='clear' id='mce-responses'>
-                <div class='response' id='mce-error-response' style='display:none'></div>
-                <div class='response' id='mce-success-response' style='display:none'></div>
-              </div>
-              <a class='button mbxred' href='#' onclick="document.forms['mc-embedded-subscribe-form'].submit();">Subscribe</a>
-            </form>
-          </div>
+            <div class='clear' id='mce-responses'>
+              <div class='response' id='mce-error-response' style='display:none'></div>
+              <div class='response' id='mce-success-response' style='display:none'></div>
+            </div>
+            <a class='button mbxred' href='#' onclick="document.forms['mc-embedded-subscribe-form'].submit();">Subscribe</a>
+          </form>
         </div>
-        </div>
-        <div class='sponsors container'>
-          <div class='sixteen columns'>
-            <h2 class='message-block'>Made with a little help from our <span>friends</span>:</h2>
-            <ul>
-              <li>
-                <a alt='Link to 1st Source' href='https://www.1stsource.com/'>
-                  <img alt='1st Source' src='/assets/img/sponsors/1st-Source.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Alcoa' href='https://www.alcoa.com/global/en/home.asp'>
-                  <img alt='Alcoa' src='/assets/img/sponsors/Alcoa.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Arconic' href='https://www.arconic.com/'>
-                  <img alt='Arconic' src='/assets/img/sponsors/arconic.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Arkor' href='https://www.arkor-inc.com/'>
-                  <img alt='Arkor' src='/assets/img/sponsors/arkor.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to AT&amp;T' href='https://www.att.com/'>
-                  <img alt='AT&amp;T' src='/assets/img/sponsors/att.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Caterpiller' href='http://www.caterpillar.com/'>
-                  <img alt='Caterpiller' src='/assets/img/sponsors/catpllr.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Centier Bank' href='https://www.centier.com/'>
-                  <img alt='Centier Bank' src='/assets/img/sponsors/Centier_Bank.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to City of Lafayette' href='http://www.lafayette.in.gov/'>
-                  <img alt='City of Lafayette' src='/assets/img/sponsors/LafayetteLogo.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Copper Moon' href='https://www.coppermooncoffee.com/'>
-                  <img alt='Copper Moon' src='/assets/img/sponsors/CopperMoon.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to DelMar Software Development' href='http://delmarsd.com/'>
-                  <img alt='DelMar Software Development' src='/assets/img/sponsors/delmarsd-h.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Duke Energy' href='https://www.duke-energy.com/'>
-                  <img alt='Duke Energy' src='/assets/img/sponsors/Duke.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to First Financial Bank' href='https://www.bankatfirst.com/content/first-financial-bank/home.html'>
-                  <img alt='First Financial Bank' src='/assets/img/sponsors/First-Financial.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Fresh City Market' href='http://freshcitymarket.com/'>
-                  <img alt='Fresh City Market' src='/assets/img/sponsors/FreshCity.png'>
-                </a>
-              </li>
-              <li>
-                <a alt="Link to Gigi's Cupcakes" href='http://www.gigiscupcakesusa.com/location/lafayette-indiana-in/'>
-                  <img alt="Gigi's Cupcakes" src='/assets/img/sponsors/gigis.jpg'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Greater Lafayette Commerce' href='http://www.greaterlafayettecommerce.com/'>
-                  <img alt='Greater Lafayette Commerce' src='/assets/img/sponsors/GLC.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Gutwein Law' href='http://gutweinlaw.com/'>
-                  <img alt='Gutwein Law' src='/assets/img/sponsors/Gutwein.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Harbor Freight Tools' href='http://www.harborfreight.com/'>
-                  <img alt='Harbor Freight Tools' src='/assets/img/sponsors/HarborFreight.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Henriott Group' href='http://www.henriott.com/'>
-                  <img alt='Henriott Group' src='/assets/img/sponsors/Henriott.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Horizon Bank' href='http://www.horizonbank.com/'>
-                  <img alt='Horizon Bank' src='/assets/img/sponsors/Horizon-Bank.jpg'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Huth Thompson' href='https://www.huththompson.com/'>
-                  <img alt='Huth Thompson' src='/assets/img/sponsors/Huth-Thompson.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Ivy Tech Community College' href='https://www.ivytech.edu/'>
-                  <img alt='Ivy Tech Community College' src='/assets/img/sponsors/Ivy-Tech.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Kettelhut Construction' href='http://www.kettelhut.com/'>
-                  <img alt='Kettelhut Construction' src='/assets/img/sponsors/Kettlehut.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Kirby Risk' href='https://www.kirbyrisk.com/corporate/index.jsp'>
-                  <img alt='Kirby Risk' src='/assets/img/sponsors/Kirby-Risk.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to LUEA' href='http://www.luea.org/'>
-                  <img alt='LUEA' src='/assets/img/sponsors/LUEA.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Lafayettech' href='http://lafayettech.org/'>
-                  <img alt='Lafayettech' src='/assets/img/sponsors/LafayetTECH.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to MBAH Insurance' href='http://www.mbah.com/'>
-                  <img alt='MBAH Insurance' src='/assets/img/sponsors/MBAH.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to MKSK' href='http://www.mkskstudios.com/'>
-                  <img alt='MKSK' src='/assets/img/sponsors/MKSK.jpg'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Nanshan America' href='http://nanshanamerica-aat.com/'>
-                  <img alt='Nanshan America' src='/assets/img/sponsors/Nanshan.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Old National Bank' href='https://www.oldnational.com/'>
-                  <img alt='Old National Bank' src='/assets/img/sponsors/OldNationalBank.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Passageways' href='http://www.passageways.com'>
-                  <img alt='Passageways' src='/assets/img/sponsors/passageways.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Purdue Convocations' href='https://www.purdue.edu/convocations/'>
-                  <img alt='Purdue Convocations' src='/assets/img/sponsors/convos.jpg'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Purdue Foundry' href='http://www.purduefoundry.com/'>
-                  <img alt='Purdue Foundry' src='/assets/img/sponsors/Foundry.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Purdue Industrial Design' href='https://www.cla.purdue.edu/vpa/ad/industrial/'>
-                  <img alt='Purdue Industrial Design' src='/assets/img/sponsors/Purdue-ID.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Security Federal' href='https://www.secfedbank.com'>
-                  <img alt='Security Federal' src='/assets/img/sponsors/security_federal.jpg'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to SIA' href='http://www.subaru-sia.com'>
-                  <img alt='SIA' src='/assets/img/sponsors/SIA-logo-black-copy.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to School Datebooks' href='https://www.schooldatebooks.com/'>
-                  <img alt='School Datebooks' src='/assets/img/sponsors/School-Datebooks.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to SpeedPro Imaging' href='http://www.speedpro.com/'>
-                  <img alt='SpeedPro Imaging' src='/assets/img/sponsors/SpeedPro.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Steiner Enterprises, Inc' href='http://www.steineronline.com/'>
-                  <img alt='Steiner Enterprises, Inc' src='/assets/img/sponsors/steiner.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Stormfront' href='http://sfp.net/'>
-                  <img alt='Stormfront' src='/assets/img/sponsors/Stormfront_logo.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Stuart and Branigin' href='http://www.stuartlaw.com/'>
-                  <img alt='Stuart and Branigin' src='/assets/img/sponsors/Stuart-and-Branigin.jpg'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to TBIRD' href='http://tbirddesign.com/'>
-                  <img alt='TBIRD' src='/assets/img/sponsors/TBIRD-Logo.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Tate and Lyle' href='http://www.tateandlyle.com/Pages/default.aspx'>
-                  <img alt='Tate and Lyle' src='/assets/img/sponsors/Tate-and-Lyle.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Tipmont REMC' href='https://www.tipmont.org'>
-                  <img alt='Tipmont REMC' src='/assets/img/sponsors/tipmont.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Tippecanoe County' href='https://www.tippecanoe.in.gov/'>
-                  <img alt='Tippecanoe County' src='/assets/img/sponsors/Tippecanoe-County.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Tippecanoe County Public Library' href='http://www.tcpl.lib.in.us/'>
-                  <img alt='Tippecanoe County Public Library' src='/assets/img/sponsors/TCPL.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to voestalpine' href='http://www.voestalpine.com/'>
-                  <img alt='voestalpine' src='/assets/img/sponsors/voestalpine.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Wabash National' href='http://www.wabashnational.com/'>
-                  <img alt='Wabash National' src='/assets/img/sponsors/Wabash.png'>
-                </a>
-              </li>
-              <li>
-                <a alt='Link to Wintek' href='http://www.wintek.com/'>
-                  <img alt='Wintek' src='/assets/img/sponsors/lg_wintek.png'>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
+      </div>
     </div>
-    <!-- Panel -->
-    <section class='slide-panel'>
-      <style>
-        .user, .interact {
-            display:none;
-        }
-        
-        .panel-wrap {
-            position: relative;
-            overflow: hidden;
-            padding: 36px 0 54px 0;
-        }
-        
-        .container .one-third.column {
-            width: 300px;
-        }
-        .tweet {
-            height:50px;
-        }
-        
-        .container .column, .container .columns {
-            float: left;
-            display: inline;
-            margin-left: 10px;
-            margin-right: 10px;
-        }
-      </style>
-      <div class='container'>
-        <div class='panel-wrap'>
-          <h3>Fellow members:</h3>
-          <div class='eight columns'>
-            <p>Revisioning the concept of traditional work environments and moving to a
-            collaborative space has been an amazing opportunity for our organization to
-            remain engaged with our constituents and expand our connections in the
-            community.</p>
-            
-            <p>&mdash;Kitty Campbell</p>
-            
-            <p>"MatchBOX is helping my company (One Fact) survive and prosper.  The affordable
-            space is only the start.  It is the connection with the other co-coworkers that
-            is proving helpful.  MatchBOX gets a share of credit for any success One Fact
-            sees in 2017!”</p>
-            
-            <p>&mdash;Cortland Starrett</p>
-            
-            <p>MatchBOX is where I met some of my newest best friends, Amanda, Emily,
-            Matt, Ed, and sometimes Ryan. It's conveniently located near Kathy's
-            candies and a bunch of places to get drinks during lunch. Could use a
-            couple more Pokestops though.</p>
-            
-            <p>&lt;3 Austin Toombs</p>
-          </div>
-          <div class='eight columns'>
-            <p>MatchBOX has provided an incredible opportunity for getting my work done,
-            collaborating with others (at least 4 projects so far), hosting meetings for
-            organizations I'm part of, and meeting other independent contractors in the
-            area. The feel and ambience of the place just adds to the fabulous workplace --
-            not to mention the coffee and snacks! I have friends around the country who are
-            jealous of our MatchBox space.</p>
-            
-            <p>&mdash;Johanna Merritt Wu</p>
-            
-            <p>My Enactus Purdue team got a tour of this studio recently. The environment is
-            outstandingly innovative! Everyone there is incredibly friendly and hospitable
-            and passionate about what they are doing. What a great place to see opportunity
-            in the city of Lafayette!</p>
-            
-            <p>&mdash;Acaimie Catron (from Facebook)</p>
-            
-            <p>There is such a positive, creative vibe to this space. I participated in
-            Lafayette Writers' Studio events and classes at MatchBOX fall, 2016. It is easy
-            to access, convenient to downtown Lafayette and parking is not difficult in its
-            area of town.</p>
-            
-            <p>&mdash;Sandra B. (from Yelp)</p>
-          </div>
-          <span class='toggle'>
+    <div class='sponsors container'>
+      <div class='sixteen columns'>
+        <h2 class='message-block'>Made with a little help from our <span>friends</span>:</h2>
+        <ul>
+          <li>
+            <a alt='Link to 1st Source' href='https://www.1stsource.com/'>
+              <img alt='1st Source' src='/assets/img/sponsors/1st-Source.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Alcoa' href='https://www.alcoa.com/global/en/home.asp'>
+              <img alt='Alcoa' src='/assets/img/sponsors/Alcoa.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Arconic' href='https://www.arconic.com/'>
+              <img alt='Arconic' src='/assets/img/sponsors/arconic.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Arkor' href='https://www.arkor-inc.com/'>
+              <img alt='Arkor' src='/assets/img/sponsors/arkor.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to AT&amp;T' href='https://www.att.com/'>
+              <img alt='AT&amp;T' src='/assets/img/sponsors/att.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Caterpiller' href='http://www.caterpillar.com/'>
+              <img alt='Caterpiller' src='/assets/img/sponsors/catpllr.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Centier Bank' href='https://www.centier.com/'>
+              <img alt='Centier Bank' src='/assets/img/sponsors/Centier_Bank.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to City of Lafayette' href='http://www.lafayette.in.gov/'>
+              <img alt='City of Lafayette' src='/assets/img/sponsors/LafayetteLogo.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Copper Moon' href='https://www.coppermooncoffee.com/'>
+              <img alt='Copper Moon' src='/assets/img/sponsors/CopperMoon.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to DelMar Software Development' href='http://delmarsd.com/'>
+              <img alt='DelMar Software Development' src='/assets/img/sponsors/delmarsd-h.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Duke Energy' href='https://www.duke-energy.com/'>
+              <img alt='Duke Energy' src='/assets/img/sponsors/Duke.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to First Financial Bank' href='https://www.bankatfirst.com/content/first-financial-bank/home.html'>
+              <img alt='First Financial Bank' src='/assets/img/sponsors/First-Financial.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Fresh City Market' href='http://freshcitymarket.com/'>
+              <img alt='Fresh City Market' src='/assets/img/sponsors/FreshCity.png'>
+            </a>
+          </li>
+          <li>
+            <a alt="Link to Gigi's Cupcakes" href='http://www.gigiscupcakesusa.com/location/lafayette-indiana-in/'>
+              <img alt="Gigi's Cupcakes" src='/assets/img/sponsors/gigis.jpg'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Greater Lafayette Commerce' href='http://www.greaterlafayettecommerce.com/'>
+              <img alt='Greater Lafayette Commerce' src='/assets/img/sponsors/GLC.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Gutwein Law' href='http://gutweinlaw.com/'>
+              <img alt='Gutwein Law' src='/assets/img/sponsors/Gutwein.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Harbor Freight Tools' href='http://www.harborfreight.com/'>
+              <img alt='Harbor Freight Tools' src='/assets/img/sponsors/HarborFreight.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Henriott Group' href='http://www.henriott.com/'>
+              <img alt='Henriott Group' src='/assets/img/sponsors/Henriott.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Horizon Bank' href='http://www.horizonbank.com/'>
+              <img alt='Horizon Bank' src='/assets/img/sponsors/Horizon-Bank.jpg'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Huth Thompson' href='https://www.huththompson.com/'>
+              <img alt='Huth Thompson' src='/assets/img/sponsors/Huth-Thompson.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Ivy Tech Community College' href='https://www.ivytech.edu/'>
+              <img alt='Ivy Tech Community College' src='/assets/img/sponsors/Ivy-Tech.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Kettelhut Construction' href='http://www.kettelhut.com/'>
+              <img alt='Kettelhut Construction' src='/assets/img/sponsors/Kettlehut.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Kirby Risk' href='https://www.kirbyrisk.com/corporate/index.jsp'>
+              <img alt='Kirby Risk' src='/assets/img/sponsors/Kirby-Risk.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to LUEA' href='http://www.luea.org/'>
+              <img alt='LUEA' src='/assets/img/sponsors/LUEA.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Lafayettech' href='http://lafayettech.org/'>
+              <img alt='Lafayettech' src='/assets/img/sponsors/LafayetTECH.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to MBAH Insurance' href='http://www.mbah.com/'>
+              <img alt='MBAH Insurance' src='/assets/img/sponsors/MBAH.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to MKSK' href='http://www.mkskstudios.com/'>
+              <img alt='MKSK' src='/assets/img/sponsors/MKSK.jpg'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Nanshan America' href='http://nanshanamerica-aat.com/'>
+              <img alt='Nanshan America' src='/assets/img/sponsors/Nanshan.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Old National Bank' href='https://www.oldnational.com/'>
+              <img alt='Old National Bank' src='/assets/img/sponsors/OldNationalBank.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Passageways' href='http://www.passageways.com'>
+              <img alt='Passageways' src='/assets/img/sponsors/passageways.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Purdue Convocations' href='https://www.purdue.edu/convocations/'>
+              <img alt='Purdue Convocations' src='/assets/img/sponsors/convos.jpg'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Purdue Foundry' href='http://www.purduefoundry.com/'>
+              <img alt='Purdue Foundry' src='/assets/img/sponsors/Foundry.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Purdue Industrial Design' href='https://www.cla.purdue.edu/vpa/ad/industrial/'>
+              <img alt='Purdue Industrial Design' src='/assets/img/sponsors/Purdue-ID.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Security Federal' href='https://www.secfedbank.com'>
+              <img alt='Security Federal' src='/assets/img/sponsors/security_federal.jpg'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to SIA' href='http://www.subaru-sia.com'>
+              <img alt='SIA' src='/assets/img/sponsors/SIA-logo-black-copy.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to School Datebooks' href='https://www.schooldatebooks.com/'>
+              <img alt='School Datebooks' src='/assets/img/sponsors/School-Datebooks.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to SpeedPro Imaging' href='http://www.speedpro.com/'>
+              <img alt='SpeedPro Imaging' src='/assets/img/sponsors/SpeedPro.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Steiner Enterprises, Inc' href='http://www.steineronline.com/'>
+              <img alt='Steiner Enterprises, Inc' src='/assets/img/sponsors/steiner.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Stormfront' href='http://sfp.net/'>
+              <img alt='Stormfront' src='/assets/img/sponsors/Stormfront_logo.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Stuart and Branigin' href='http://www.stuartlaw.com/'>
+              <img alt='Stuart and Branigin' src='/assets/img/sponsors/Stuart-and-Branigin.jpg'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to TBIRD' href='http://tbirddesign.com/'>
+              <img alt='TBIRD' src='/assets/img/sponsors/TBIRD-Logo.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Tate and Lyle' href='http://www.tateandlyle.com/Pages/default.aspx'>
+              <img alt='Tate and Lyle' src='/assets/img/sponsors/Tate-and-Lyle.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Tipmont REMC' href='https://www.tipmont.org'>
+              <img alt='Tipmont REMC' src='/assets/img/sponsors/tipmont.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Tippecanoe County' href='https://www.tippecanoe.in.gov/'>
+              <img alt='Tippecanoe County' src='/assets/img/sponsors/Tippecanoe-County.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Tippecanoe County Public Library' href='http://www.tcpl.lib.in.us/'>
+              <img alt='Tippecanoe County Public Library' src='/assets/img/sponsors/TCPL.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to voestalpine' href='http://www.voestalpine.com/'>
+              <img alt='voestalpine' src='/assets/img/sponsors/voestalpine.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Wabash National' href='http://www.wabashnational.com/'>
+              <img alt='Wabash National' src='/assets/img/sponsors/Wabash.png'>
+            </a>
+          </li>
+          <li>
+            <a alt='Link to Wintek' href='http://www.wintek.com/'>
+              <img alt='Wintek' src='/assets/img/sponsors/lg_wintek.png'>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</div>
+<!-- Panel -->
+<section class='slide-panel'>
+  <style>
+    .user, .interact {
+      display:none;
+    }
+
+    .panel-wrap {
+      position: relative;
+      overflow: hidden;
+      padding: 36px 0 54px 0;
+    }
+
+    .container .one-third.column {
+      width: 300px;
+    }
+    .tweet {
+      height:50px;
+    }
+
+    .container .column, .container .columns {
+      float: left;
+      display: inline;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  </style>
+  <div class='container'>
+    <div class='panel-wrap'>
+      <h3>Fellow members:</h3>
+      <div class='eight columns'>
+        <p>Revisioning the concept of traditional work environments and moving to a
+          collaborative space has been an amazing opportunity for our organization to
+          remain engaged with our constituents and expand our connections in the
+          community.</p>
+
+        <p>&mdash;Kitty Campbell</p>
+
+        <p>"MatchBOX is helping my company (One Fact) survive and prosper.  The affordable
+          space is only the start.  It is the connection with the other co-coworkers that
+          is proving helpful.  MatchBOX gets a share of credit for any success One Fact
+          sees in 2017!”</p>
+
+        <p>&mdash;Cortland Starrett</p>
+
+        <p>MatchBOX is where I met some of my newest best friends, Amanda, Emily,
+          Matt, Ed, and sometimes Ryan. It's conveniently located near Kathy's
+          candies and a bunch of places to get drinks during lunch. Could use a
+          couple more Pokestops though.</p>
+
+        <p>&lt;3 Austin Toombs</p>
+      </div>
+      <div class='eight columns'>
+        <p>MatchBOX has provided an incredible opportunity for getting my work done,
+          collaborating with others (at least 4 projects so far), hosting meetings for
+          organizations I'm part of, and meeting other independent contractors in the
+          area. The feel and ambience of the place just adds to the fabulous workplace --
+          not to mention the coffee and snacks! I have friends around the country who are
+          jealous of our MatchBox space.</p>
+
+        <p>&mdash;Johanna Merritt Wu</p>
+
+        <p>My Enactus Purdue team got a tour of this studio recently. The environment is
+          outstandingly innovative! Everyone there is incredibly friendly and hospitable
+          and passionate about what they are doing. What a great place to see opportunity
+          in the city of Lafayette!</p>
+
+        <p>&mdash;Acaimie Catron (from Facebook)</p>
+
+        <p>There is such a positive, creative vibe to this space. I participated in
+          Lafayette Writers' Studio events and classes at MatchBOX fall, 2016. It is easy
+          to access, convenient to downtown Lafayette and parking is not difficult in its
+          area of town.</p>
+
+        <p>&mdash;Sandra B. (from Yelp)</p>
+      </div>
+      <span class='toggle'>
             <i class='icon-minus'></i>
           </span>
-        </div>
-      </div>
-    </section>
-    <!-- Footer -->
-    <section class='footer'>
-      <div class='container'>
-        <div class='sixteen columns'>
-          MatchBOX Coworking Studio © All Rights Reserved
-        </div>
-      </div>
-    </section>
-    <!-- End Content -->
-    <!-- JS -->
-    <script src='/assets/js/jquery.scrollTo.min.js' type='text/javascript'></script>
-    <script src='/assets/js/jquery.localScroll.min.js' type='text/javascript'></script>
-    <script src='/assets/rs-plugin/js/jquery.themepunch.plugins.min.js' type='text/javascript'></script>
-    <script src='/assets/rs-plugin/js/jquery.themepunch.revolution.min.js' type='text/javascript'></script>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js'></script>
-    <script src='/assets/js/jquery.form.js'></script>
-    <script src='/assets/js/jquery.validate.min.js'></script>
-    <script src='/assets/js/scripts.js'></script>
-    <script src='/assets/js/supersized.3.2.7.js'></script>
-    <script src='/assets/js/supersized.shutter.min.js'></script>
-    <script src='/assets/js/jquery.prettyPhoto.js'></script>
-    <script src='/assets/js/main.js'></script>
-    <script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
-    <script src='/assets/js/mbx.concat.js'></script>
-  </body>
+    </div>
+  </div>
+</section>
+<!-- Footer -->
+<section class='footer'>
+  <div class='container'>
+    <div class='sixteen columns'>
+      MatchBOX Coworking Studio © All Rights Reserved
+    </div>
+  </div>
+</section>
+<!-- End Content -->
+<!-- JS -->
+<script src='/assets/js/jquery.scrollTo.min.js' type='text/javascript'></script>
+<script src='/assets/js/jquery.localScroll.min.js' type='text/javascript'></script>
+<script src='/assets/rs-plugin/js/jquery.themepunch.plugins.min.js' type='text/javascript'></script>
+<script src='/assets/rs-plugin/js/jquery.themepunch.revolution.min.js' type='text/javascript'></script>
+<script src='//cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js'></script>
+<script src='/assets/js/jquery.form.js'></script>
+<script src='/assets/js/jquery.validate.min.js'></script>
+<script src='/assets/js/scripts.js'></script>
+<script src='/assets/js/supersized.3.2.7.js'></script>
+<script src='/assets/js/supersized.shutter.min.js'></script>
+<script src='/assets/js/jquery.prettyPhoto.js'></script>
+<script src='/assets/js/main.js'></script>
+<script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+<script src='/assets/js/mbx.concat.js'></script>
+</body>
 </html>
