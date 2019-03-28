@@ -1,0 +1,291 @@
+#entrepreneur .para .message p {
+  font-size: 54px !important;
+  color: #FFF;
+  padding: 0;
+  margin: 0;
+}
+
+#entrepreneur .para span {
+  font-size: 20px;
+}
+
+/* background images */
+#monday-image {
+  background: url('../img/entrepreneur/light-fixtures-cover.jpg') repeat 50% -3px fixed transparent;
+}
+
+#tuesday-image {
+  background: url('../img/quote2.jpg') repeat 50% -3px fixed transparent;
+}
+
+#wednesday-image {
+  background: url('../img/entrepreneur/yes-sign-cover.jpg') repeat 50% -3px fixed transparent;
+}
+
+#thursday-image {
+  background: url('../img/quote4.jpg') repeat 50% -3px fixed transparent;
+}
+
+#friday-image {
+  background: url('../img/entrepreneur/puff-ball-light-cover.jpg') repeat 50% -3px fixed transparent;
+}
+
+#monday-image, #tuesday-image, #wednesday-image, #thursday-image, #friday-image {
+  height: 400px; 
+  width: 100%;
+  position: relative;
+  background-size: cover;
+}
+
+#entrepreneur .menu {
+  bottom:auto;
+}
+
+#entrepreneur .sponsors a img {
+  height:8.75em
+}
+
+#entrepreneur.lab .sponsors a img {
+  height:4.75em
+}
+
+#entrepreneur .sponsors li:nth-child(4) a img {
+  height:5.75em
+}
+
+.background-header {
+  width:100%;
+  height:100%;
+  background-color:#000;
+  text-align:center;
+  margin:auto;
+  background: url('../img/entrepreneur/ent-week.png') repeat 50% -3px fixed transparent;
+}
+/* /background images */
+
+.title {
+  text-align:center;
+  padding
+  :30px 0;
+  display: block;
+}
+
+.title img {
+  width:100%;
+  max-width:595px;
+}
+
+#entrepreneur .button {
+  background-color: #F05241;
+  margin-right: 0px;
+  margin-top: -3px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  height: auto;
+  cursor: pointer;
+  color: #fff !important;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.6) !important;
+  line-height: 45px !important;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  letter-spacing: -1px;
+  display:inline-block;
+}
+
+.button.entred {
+  box-shadow: #862b21 0px 3px 0px 0px, #af3b2e 0px -18px 21px inset;
+}
+
+.button.entred:hover {
+  box-shadow: #862b21 0px 3px 0px 0px, #af3b2e 0px 18px 21px inset;
+  /*margin-bottom: -3px !important;
+  margin-top: 0px !important;*/
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+#entrepreneur .menu-holder {
+  float: none;
+  display: inline-block;
+}
+
+.menu-list li a .day {
+  font-size:45px;
+  font-weight: 600;
+}
+
+#entrepreneur .menu-list li a {
+  line-height: 28px;
+}
+
+.events {
+  padding:50px 0;
+}
+
+.link-container {
+  text-align:center;
+  padding-top: 40px;
+}
+
+#entrepreneur .overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* font sizes */
+p {
+  font-size: 16px;
+  line-height: 1.5em
+}
+
+h2 {
+  font-size: 34px;
+  line-height: 40px;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+#entrepreneur .button {
+  padding: 3px 40px;
+  font-size:20px;
+}
+/* / font sizes */
+
+/* social section */
+.social {
+  padding: 40px 0;
+  margin-bottom: 0;
+}
+
+.social .third {
+  width:33%;
+  float:left;
+  text-align:center;
+  padding: 25px 0;
+}
+
+#entrepreneur .social a {
+  width:110px;
+  height:110px;
+  text-align:center;
+  line-height: 137px;
+  background-color: #666666;
+  color: #FFF;
+  border-radius: 55px;
+}
+
+.social a i {
+  font-size: 55px;
+}
+
+#entrepreneur .social {
+  border:0;
+}
+/* / social section */
+
+#entrepreneur b {
+  font-weight: 600;
+}
+
+.red-text {
+  color: #F05241;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+.quote-block > span {
+  margin-top: 20px;
+  line-height: 24px !important;
+  display: block;
+}
+
+#contact, #sponsors {
+  background-color: #e3e3e3;
+}
+
+.contact {
+  padding-bottom:24px;
+}
+
+#entrepreneur .sponsors.container {
+  margin-top:0
+}
+
+.list-section li {
+  list-style-type:disc;
+  line-height:26px;
+  text-transform: uppercase;
+  font-weight: 600
+}
+
+.list-section {
+  margin: 0; 
+  padding-left:50px;
+  font-size:16px;
+}
+
+#entrepreneur.lab {
+  color:#272262;
+}
+
+.burst {
+  height:150px;
+  width:150px;
+  position: absolute;
+  top: -100px;
+  right: 0;
+  z-index: 105;
+  transform: rotate(16deg);
+}
+
+@media only screen and (max-width: 767px) {
+  #entrepreneur .para .message p {
+    font-size: 45px !important;
+  }
+
+  #monday-image, #tuesday-image, #wednesday-image, #thursday-image, #friday-image {
+    height: 300px;
+  }
+
+  #entrepreneur .social a {
+    width:80px;
+    height:80px;
+    line-height: 104px;
+    border-radius: 40px;
+  }
+
+  .social a i {
+    font-size: 47px;
+  }
+
+  #entrepreneur .button {
+    font-size:20px !important;
+  }
+
+  .message-block {
+    padding: 18px 20px;
+  }
+
+  .message p{
+    line-height: 45px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  #monday-image, #tuesday-image, #wednesday-image, #thursday-image, #friday-image {
+    height: 300px;
+    background-attachment: inherit;
+    background-color:#000;
+    background-repeat: no-repeat;
+  }
+}
