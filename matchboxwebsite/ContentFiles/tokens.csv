@@ -1,0 +1,109 @@
+introduction.image,image,
+menu.day1,text,Monday
+menu.day2,text,Tuesday
+menu.day3,text,Wednesday
+menu.day4,text,Thursday
+menu.day5,text,Friday - Sunday
+mobile.menu.day1,text,Monday 10th
+mobile.menu.day2,text,Tuesday 11th
+mobile.menu.day3,text,Wednesday 12th
+mobile.menu.day4,text,Thursday 13th
+mobile.menu.day5,text,Friday 14th  - Sunday 16th
+introduction.header,text,GREATER LAFAYETTE ENTREPRENEURSHIP WEEK
+introduction.description,richText,"In celebration of the Greater Lafayette entrepreneurial ecosystem, MatchBOX Coworking Studio is hosting seven days of events surrounding tech and entrepreneurship. The week's events will feature special guests, unique events, and will focus on highlighting the local and regional resources for startups and entrepreneurs of all stripes.<br>GLEW will kick off with a T-6.6 Pitch Night, continue with office hours, workshops, panels, an evening outdoor Makers’ Market, and wrap with Greater Lafayette Startup weekend. Scroll through the days to see everything that’s happening."
+day1.background.image,image,
+day2.background.image,image,
+day3.background.image,image,
+day4.background.image,image,
+day5.background.image,image,
+day1.subheader,text,September 10th
+day2.subheader,text,September 11th
+day3.subheader,text,September 12th
+day4.subheader,text,September 13th
+day5.subheader,text,September 14th - September 16th
+day1.event1.title,text,OFFICE HOURS WITH RESULTS JUNKIES INVESTORS
+day1.event1.time,text,"Monday 9.10, scheduled through application"
+day1.event1.venue,text,MatchBOX Coworking Studio
+day1.event1.address,text,"17 South 6th St., Lafayette"
+day1.event1.description,richText,"Greater Lafayette founders are invited to apply to spend one-on-one time with Paul Singh and other startup investors / advisors. Paul is the former Managing Director of 1776, Founder of Disruption Corporation, Partner at 500Startups, and Entrepreneur in Resident at USCIS / DHS. Startups selected to participate will have the opportunity to pitch and receive feedback during their sessions with Paul and his guest investors. Everything shared in this conference room stays in the room."
+day1.event1.button.text,text,Apply for Office Hours
+day1.event1.button.link,text,https://docs.google.com/forms/d/1nA8KaBagts043uI5rt33JXTWYK5snV2nkw4kjTAMfcA/edit
+day1.event2.title,text,WOMENIN WINE WITH AMANDA FTG CHRISTINE DEEHRING
+day1.event2.time,text,"Monday 9.10, 6 pm – 7 pm"
+day1.event2.venue,text,MatchBOX Coworking Studio
+day1.event2.address,text,"17 South 6th St., Lafayette"
+day1.event2.description,richText,"WomenIN will host a Wine with Amanda Happy Hour prior to the kickoff of Greater Lafayette Entrepreneurship Week with special guest Christine Deehring, founder of Bump Boxes, in MatchBOX's Ivy Tech Room. All entrepreneurs are invited to join. This event is hosted by WomenIN, an effort of Purdue Foundry aimed at helping women entrepreneurs and women-led teams in Indiana launch their innovations into startups."
+day1.event3.title,text,T-6.6 PITCH NIGHT
+day1.event3.time,text,"Monday 9.10, 7 pm – 9 pm"
+day1.event3.venue,text,MatchBOX Coworking Studio
+day1.event3.address,text,"17 South 6th St., Lafayette"
+day1.event3.description,richText,"If you're a hacker, hustler, or hipster (a developer, investor, or designer) that has a passion for startups, this event is for you. At T-6.6 you’ll hear the news and most exciting startup pitches from local entrepreneurs, innovators, and friends of MatchBOX. Participate in the conversation and meet other venture enthusiasts. Featuring local startup pitches and conversations with experienced entrepreneurs."
+day1.event3.button.text,text,Register for Free Tickets
+day1.event3.button.link,text,https://tminussept.eventbrite.com
+day2.event1.title,text,PURDUE RAILYARD TECH DAY
+day2.event1.time,text,"Tuesday 9.11, 8 am – 5 pm"
+day2.event1.venue,text,Purdue Railyard in the Kurz Purdue Technology Center
+day2.event1.address,text,"1281 Win Hentschel Blvd., West Lafayette"
+day2.event1.description,richText,"The Purdue Railyard, a coworking space in the Purdue Research Park, will host a technology showcase, special luncheon guests and food trucks."
+day2.event2.title,text,WOMENIN BREAKFAST WITH CHRISTINE DEEHRING
+day2.event2.time,text,"Tuesday 9.11, 8:30 am – 10 am"
+day2.event2.venue,text,Burton D. Morgan Center for Entrepreneurship
+day2.event2.address,text,"1201 West State St., West Lafayette"
+day2.event2.description,richText,"Join us for a meet & greet and fireside chat with Christine Deehring, founder of Bump Boxes. Breakfast will be provided. Email foundry@prf.org for more information or to RSVP. This event is hosted by WomenIN, an effort of Purdue Foundry aimed at helping women entrepreneurs and women-led teams in Indiana launch their innovations into startups."
+day2.event3.title,text,HANDMADE TO BIG BOX
+day2.event3.time,text,"Tuesday 9.11, 11:30 am – 1:30 pm"
+day2.event3.venue,text,MatchBOX Coworking Studio
+day2.event3.address,text,"17 S 6th St, Lafayette"
+day2.event3.description,richText,"Handmade to Big Box Local features local artisans discussing how they took their designs / products from their local storefront to Big Box store. The panel features Lindsay Mason, founder of French Knot; Chris Johnson, owner at People’s Brewing Company; and Angela Taylor, owner at LaLa Gallery & Studio."
+day2.event3.button.text,text,Details Here
+day2.event3.button.link,text,https://www.facebook.com/events/1901822673458703/
+day2.event4.title,text,OFFICE HOURS WITH RESULTS JUNKIES INVESTORS
+day2.event4.time,text,"Tuesday 9.11, scheduled through application "
+day2.event4.venue,text,MatchBOX Coworking Studio
+day2.event4.address,text,"17 South 6th St., Lafayette"
+day2.event4.description,richText,"Greater Lafayette founders are invited to apply to spend one-on-one time with Paul Singh and other startup investors / advisors. Paul is the former Managing Director of 1776, Founder of Disruption Corporation, Partner at 500Startups, and Entrepreneur in Resident at USCIS / DHS. Startups selected to participate will have the opportunity to pitch and receive feedback during their sessions with Paul and his guest investors. Everything shared in this conference room stays in the room."
+day2.event4.button.text,text,Apply for Office Hours
+day2.event4.button.link,text,https://docs.google.com/forms/d/1nA8KaBagts043uI5rt33JXTWYK5snV2nkw4kjTAMfcA/edit
+day3.event1.title,text,HABITS OF EFFECTIVE FREELANCERS
+day3.event1.time,text,"Wednesday 9.12, 9:30 am – 11:30 am"
+day3.event1.venue,text,MatchBOX Coworking Studio
+day3.event1.address,text,"17 South 6th St., Lafayette"
+day3.event1.description,richText,"This workshop aims to help freelancers tackle those sticky problems inherent in freelancing. Jason Tennenhouse of 10 IN HOUSE and Mikel Berger with DelMar Software Development and Little Engine Ventures will talk about streamlining the less exciting aspects of freelancing, working with multiple clients, and other strategies they’ve learned."
+day3.event1.button.text,text,Details Here
+day3.event1.button.link,text,https://www.facebook.com/events/216022529063661/
+day3.event2.title,text,WHAT VCS ARE LOOKING FOR
+day3.event2.time,text,"Wednesday 9.12, 12 pm – 1 pm"
+day3.event2.venue,text,Purdue Railyard in the Kurz Purdue Technology Center
+day3.event2.address,text,"1281 Win Hentschel Blvd., West Lafayette"
+day3.event2.description,richText,"Rich Redelfs will join us for a presentation and conversation on what appeals to venture capitalists, what doesn't, and how to position yourself to be in the former category instead of the latter. Rich is a General Partner with Silicon Valley venture capital firm Foundation Capital. Since joining the firm in 2004, his investments have focused in semiconductors, networking, and security."
+day4.event1.title,text,MAKERS MARKET
+day4.event1.time,text,Thursday 9.13 from 5 - 9 pm 
+day4.event1.venue,text,
+day4.event1.address,text,"5th Street, downtown Lafayette between Main and Columbia"
+day4.event1.description,richText,"A mashup of a Maker Faire and the Farmers Market with opportunities meet and purchase from local and regional artisans, craftspeople, and makers of all types! Food trucks and entertainment and lots to see."
+day4.event1.button.text,text,Details Here
+day4.event1.button.link,text,https://www.facebook.com/events/1007370479443863/
+day5.event1.title,text,GREATER LAFAYETTE STARTUP WEEKEND
+day5.event1.time,text,Friday 9.14 from 8 am - 8 pm
+day5.event1.venue,text,MatchBOX Coworking Studio
+day5.event1.address,text,"17 South 6th St., Lafayette"
+day5.event1.description,richText,"From ideas to startups in 50 unforgettable hours! Do you have an idea you'd like to pursue or a problem you'd like to solve but don't know where to start or who to start with? Greater Lafayette Startup Weekend is the place to look for a team, create a prototype of your idea, validate your business idea, and receive feedback from experienced entrepreneurs, all in one weekend."
+day5.event1.button.text,text,Buy Tickets Here
+day5.event1.button.link,text,https://glsw2018.eventbrite.com
+day5.event2.title,text,FRIDAY MORNING FOUNDRY GROUNDS
+day5.event2.time,text,Friday 9.14 from 8:30 am - 10 am
+day5.event2.venue,text,Burton D. Morgan Center for Entrepreneurship 
+day5.event2.address,text,"1201 West State St., West Lafayette"
+day5.event2.description,richText,"Join the Purdue Foundry for conversation, presentation & networking focused on startups, ideas & entrepreneurship. Two-hour parking is available on State Street and event will take place in the cafe on the first floor of the Burton D. Morgan Center."
+day5.event2.button.text,text,Click Here for Details
+day5.event2.button.link,text,https://purduefoundry.com/events
+closing.description,richText,To share your ideas or contribute to the body of thought celebrating entrepreneurship in Greater Lafayette please email us at entrepreneur@matchboxstudio.org
+sponsor1.name,text,The City of Lafayette
+sponsor1.link,text,http://www.lafayette.in.gov/
+sponsor1.logo,image,
+sponsor2.name,text,The City of West Lafayette
+sponsor2.link,text,http://www.westlafayette.in.gov/
+sponsor2.logo,image,
+sponsor3.name,text,MatchBOX Studio
+sponsor3.link,text,http://matchboxstudio.org/
+sponsor3.logo,image,

@@ -668,7 +668,7 @@
                     <h2>2019 Events Calendar</h2>
                     <div id='events-list' style="overflow: hidden;">
 
-                        @@calendar@@
+                        @@calendar.events@@
 
                     </div>
 

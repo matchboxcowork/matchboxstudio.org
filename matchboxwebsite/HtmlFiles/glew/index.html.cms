@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]> <html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]> <html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]> ><! <![endif]-->
+<html lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type'>
+    <!--
+      Basic Page Needs
+      ==================================================
+    -->
+    <meta charset='utf-8'>
+    <title>Greater Lafayette Entrepreneurship Week | 2018</title>
+    <meta content='Greater Lafayette Entrepreneurship Week | 2018' name='description'>
+    <meta content='Entrepreneurship, coworking, co-working, cowork, co-work, office, shared, community, Lafayette, Indiana' name='keywords'>
+    <link href='../favicon.ico' rel='shortcut icon'>
+    <!--
+      Mobile Specific Metas
+      ==================================================
+    -->
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+    <!--
+      CSS
+      ==================================================
+    -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,800|Oswald:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='../assets/css/supersized.css' rel='stylesheet'>
+    <link href='../assets/css/supersized.shutter.css' rel='stylesheet'>
+    <link href='../assets/css/base.css' rel='stylesheet'>
+    <link href='../assets/css/font-awesome.css' rel='stylesheet'>
+    <link href='../assets/css/skeleton.css' rel='stylesheet'>
+    <link href='../assets/css/layout.css' rel='stylesheet'>
+    <link href='../assets/css/entrepreneur.css' rel='stylesheet'>
+    <link href='../assets/css/prettyPhoto.css' rel='stylesheet'>
+    <!-- COLOR CSS -->
+    <link href='../assets/css/mbx.css' id='default' rel='stylesheet'>
+    <!-- REVOLUTION BANNER CSS SETTINGS -->
+    <!-- <link rel="stylesheet" type="text/css" href="../assets/css/fullwidth.css" media="screen" /> -->
+    <link href='../assets/rs-plugin/css/settings.css' media='screen' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if IE 7]>
+      <link rel="stylesheet" href="../assets/css/font-awesome-ie7.css">
+      <style type="text/css">
+      .page-wrapper,.footer{
+      width: 100%;
+      position: relative;
+      }
+      #break7{
+      overflow: hidden;
+      }
+      </style>
+    <![endif]-->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      
+      ga('create', 'UA-41745008-1', 'matchboxstudio.org');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  <body id='entrepreneur'>
+    <fb-root></fb-root>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=443709452332248";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <!--
+      Primary Page Layout
+      ==================================================
+    -->
+    <script>
+      function moveTo(contentArea){
+              	var goPosition = $(contentArea).offset().top - 73;
+              	$('html,body').animate({ scrollTop: goPosition}, 'slow');
+              }
+    </script>
+    <div id='up'></div>
+    <section>
+      <img src='../@@glew.introduction.image@@' width='100%'>
+    </section>
+    <section class='menu'>
+      <div class='container'>
+        <div class='sixteen columns clearfix' style='text-align: center;'>
+          <nav class='menu-holder'>
+            <ul class='menu-list' id='main-menu'>
+              <li>
+                <a onclick="moveTo('#monday-image')">
+                  @@glew.menu.day1@@<br>
+                  <span class='day'>
+                    @@glew.menu.date1@@
+                  </span>
+                  <span class='arrow'></span>
+                </a>
+              </li>
+              <li>
+                <a onclick="moveTo('#tuesday-image')">
+                  @@glew.menu.day2@@<br>
+                  <span class='day'>
+                    @@glew.menu.date2@@
+                  </span>
+                  <span class='arrow'></span>
+                </a>
+              </li>
+              <li>
+                <a onclick="moveTo('#wednesday-image')">
+                  @@glew.menu.day3@@<br>
+                  <span class='day'>
+                    @@glew.menu.date3@@
+                  </span>
+                  <span class='arrow'></span>
+                </a>
+              </li>
+              <li>
+                <a onclick="moveTo('#thursday-image')">
+                  @@glew.menu.day4@@<br>
+                  <span class='day'>
+                    @@glew.menu.date4@@
+                  </span>
+                  <span class='arrow'></span>
+                </a>
+              </li>
+              <li>
+                <a onclick="moveTo('#friday-image')">
+                  @@glew.menu.day5@@<br>
+                  <span class='day'>
+                    @@glew.menu.date5@@
+                  </span>
+                  <span class='arrow'></span>
+                </a>
+              </li>
+            </ul>
+            <!-- SubMenu -->
+            <select class='sub-menu' id='subMenu' name='subMenu' onchange='moveTo(this.value)' size='1'>
+              <option selected='selected' value=''>Menu</option>
+              <option value='#monday-image'>@@glew.mobile.menu.day1@@</option>
+              <option value='#tuesday-image'>@@glew.mobile.menu.day2@@</option>
+              <option value='#wednesday-image'>@@glew.mobile.menu.day3@@</option>
+              <option value='#thursday-image'>@@glew.mobile.menu.day4@@</option>
+              <option value='#friday-image'>@@glew.mobile.menu.day5@@</option>
+            </select>
+          </nav>
+        </div>
+        <!-- ./sixteen columns -->
+      </div>
+      <!-- ./container -->
+    </section>
+    <!-- ./menu -->
+    <div class='page-wrapper' id='container'>
+      <section class='up' id='up'>
+        <div class='container events' style='padding-top:100px'>
+          <!-- SECTION TITLE -->
+          <!-- .sixteen.columns.title -->
+          <!-- %img{:src => "../assets/img/entrepreneur/title.png"} -->
+          <div class='sixteen columns'>
+            <p style='text-align:center; color:#999; font-size:24px;'>
+              <b>@@glew.introduction.header@@</b>
+            </p>
+            <div id="glew_introduction_description">
+              @@glew.introduction.description@@
+            </div>
+          </div>
+          <!-- ./sixteen columns -->
+        </div>
+        <!-- ./container -->
+        <!-- PARALLAX -->
+        <section class='monday para' id='monday-image'>
+          <div class='overlay'>
+            <div class='container message'>
+              <p class='quote-block'>
+                @@glew.menu.day1@@
+                <span>
+                  @@glew.day1.subheader@@
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- END PARALLAX -->
+        <section class='monday' id='monday'>
+          <div class='container events'>
+            <div class='sixteen columns'>
+              <h3 class='red-text'>@@glew.day1.event1.title@@</h3>
+              <p><b>@@glew.day1.event1.time@@</b><br>@@glew.day1.event1.venue@@<br>@@glew.day1.event1.address@@</p>
+              @@glew.day1.event1.description@@
+              <div class='link-container'>
+                <a class='button entred' href='@@glew.day1.event1.button.link@@' id='see-inside' target='_blank'>@@glew.day1.event1.button.text@@</a>
+              </div><br><br><hr style='width:100%'><br></div>
+            <div class='sixteen columns'>
+              <h3 class='red-text'>WOMENIN WINE WITH AMANDA FTG CHRISTINE DEEHRING</h3>
+              <p><b>Monday 9.10, 6 pm – 7 pm</b> <br> MatchBOX Coworking Studio <br> 17 South 6th St., Lafayette</p>
+              <p>WomenIN will host a Wine with Amanda Happy Hour prior to the kickoff of Greater Lafayette Entrepreneurship Week with special guest Christine Deehring, founder of Bump Boxes, in MatchBOX's Ivy Tech Room. All entrepreneurs are invited to join. This event is hosted by WomenIN, an effort of Purdue Foundry aimed at helping women entrepreneurs and women-led teams in Indiana launch their innovations into startups.</p><br><br><hr style='width:100%'><br></div>
+            <div class='sixteen columns'>
+              <h3 class='red-text'>T-6.6 PITCH NIGHT</h3>
+              <p><b>Monday 9.10, 7 pm – 9 pm</b> <br> MatchBOX Coworking Studio <br> 17 South 6th St., Lafayette</p>
+              <p>If you're a hacker, hustler, or hipster (a developer, investor, or designer) that has a passion for startups, this event is for you. At T-6.6 you’ll hear the news and most exciting startup pitches from local entrepreneurs, innovators, and friends of MatchBOX. Participate in the conversation and meet other venture enthusiasts. Featuring local startup pitches and conversations with experienced entrepreneurs.</p>
+              <div class='link-container'>
+                <a class='button entred' href='https://tminussept.eventbrite.com' id='see-inside' target='_blank'>Register for Free Tickets</a>
+              </div>
+            </div>
+          </div>
+          <!-- ./container -->
+        </section>
+        <!-- PARALLAX -->
+        <section class='tueday para' id='tuesday-image'>
+          <div class='overlay'>
+            <div class='container message'>
+              <p class='quote-block'>
+                @@glew.menu.day2@@
+                <span>
+                  @@glew.day2.subheader@@
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- END PARALLAX -->
+        <section>
+          <div class='container events'>
+            <div class='sixteen columns'>
+              <h3 class='red-text'>PURDUE RAILYARD TECH DAY</h3>
+              <p><b>Tuesday 9.11, 8 am – 5 pm</b> <br> Purdue Railyard in the Kurz Purdue Technology Center <br> 1281 Win Hentschel Blvd., West Lafayette</p>
+              <p>The Purdue Railyard, a coworking space in the Purdue Research Park, will host a technology showcase, special luncheon guests and food trucks.</p>
+              <br>
+              <br>
+              <hr style='width:100%'>
+              <br>
+            </div>
+            <div class='sixteen columns'>
+              <h3 class='red-text'>WOMENIN BREAKFAST WITH CHRISTINE DEEHRING</h3>
+              <p><b>Tuesday 9.11, 8:30 am – 10 am</b> <br> Burton D. Morgan Center for Entrepreneurship <br> 1201 West State St., West Lafayette</p>
+              <p>Join us for a meet & greet and fireside chat with Christine Deehring, founder of Bump Boxes. Breakfast will be provided.  Email <a href="mailto:foundry@prf.org">foundry@prf.org</a> for more information or to RSVP. This event is hosted by WomenIN, an effort of Purdue Foundry aimed at helping women entrepreneurs and women-led teams in Indiana launch their innovations into startups.</p>
+              <br>
+              <br>
+              <hr style='width:100%'>
+              <br>
+            </div>
+            <div class='sixteen columns'>
+              <h3 class='red-text'>HANDMADE TO BIG BOX</h3>
+              <p><b>Tuesday 9.11, 11:30 am – 1:30 pm</b> <br> MatchBOX Coworking Studio <br> 17 S 6th St, Lafayette</p>
+              <p>Handmade to Big Box Local features local artisans discussing how they took their designs / products from their local storefront to Big Box store. The panel features Lindsay Mason, founder of French Knot; Chris Johnson, owner at People’s Brewing Company; and Angela Taylor, owner at LaLa Gallery & Studio.</p>
+              <div class='link-container'>
+                <a class='button entred' href='https://www.facebook.com/events/1901822673458703/' id='see-inside' target='_blank'>Details Here</a>
+              </div>
+              <br>
+              <br>
+              <hr style='width:100%'>
+              <br>
+            </div>
+            <div class='sixteen columns'>
+              <h3 class='red-text'>OFFICE HOURS WITH RESULTS JUNKIES INVESTORS</h3>
+              <p><b>Tuesday 9.11, scheduled through application </b> <br> MatchBOX Coworking Studio <br> 17 South 6th St., Lafayette</p>
+              <p>Greater Lafayette founders are invited to apply to spend one-on-one time with Paul Singh and other startup investors / advisors. Paul is the former Managing Director of 1776, Founder of Disruption Corporation, Partner at 500Startups, and Entrepreneur in Resident at USCIS / DHS. Startups selected to participate will have the opportunity to pitch and receive feedback during their sessions with Paul and his guest investors. Everything shared in this conference room stays in the room.</p>
+              <div class='link-container'>
+                <a class='button entred' href='https://docs.google.com/forms/d/1nA8KaBagts043uI5rt33JXTWYK5snV2nkw4kjTAMfcA/edit' id='see-inside' target='_blank'>Apply for Office Hours</a>
+              </div>
+            </div>
+          </div>
+          <!-- ./container -->
+        </section>
+        <!-- PARALLAX -->
+        <section class='wednesday para' id='wednesday-image'>
+          <div class='overlay'>
+            <div class='container message'>
+              <p class='quote-block'>
+                @@glew.menu.day3@@
+                <span>
+                  @@glew.day3.subheader@@
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- END PARALLAX -->
+        <section>
+          <div class='container events'>
+            <div class='sixteen columns'>
+              <h3 class='red-text'>HABITS OF EFFECTIVE FREELANCERS</h3>
+              <p><b>Wednesday 9.12, 9:30 am – 11:30 am</b> <br> MatchBOX Coworking Studio <br> 17 South 6th St., Lafayette</p>
+              <p>This workshop aims to help freelancers tackle those sticky problems inherent in freelancing. Jason Tennenhouse of 10 IN HOUSE and Mikel Berger with DelMar Software Development and Little Engine Ventures will talk about streamlining the less exciting aspects of freelancing, working with multiple clients, and other strategies they’ve learned.</p>
+              <div class='link-container'>
+                <a class='button entred' href='https://www.facebook.com/events/216022529063661/' id='see-inside' target='_blank'>Details Here</a>
+              </div>
+              <br>
+              <br>
+              <hr style='width:100%'>
+              <br>
+            </div>
+            <div class='sixteen columns'>
+              <h3 class='red-text'>WHAT VCS ARE LOOKING FOR</h3>
+              <p><b>Wednesday 9.12, 12 pm – 1 pm</b> <br> Purdue Railyard in the Kurz Purdue Technology Center <br> 1281 Win Hentschel Blvd., West Lafayette</p>
+              <p>Rich Redelfs will join us for a presentation and conversation on what appeals to venture capitalists, what doesn't, and how to position yourself to be in the former category instead of the latter. Rich is a General Partner with Silicon Valley venture capital firm Foundation Capital. Since joining the firm in 2004, his investments have focused in semiconductors, networking, and security.</p>
+            </div>
+          </div>
+        </section>
+        <!-- PARALLAX -->
+        <section class='thursday para' id='thursday-image'>
+          <div class='overlay'>
+            <div class='container message'>
+              <p class='quote-block'>
+                @@glew.menu.day4@@
+                <span>
+                  @@glew.day4.subheader@@
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- END PARALLAX -->
+        <section>
+          <div class='container events'>
+            <div class='sixteen columns'>
+              <h3 class='red-text'>MAKERS MARKET</h3>
+              <p><b>Thursday 9.13 from 5 - 9 pm</b> <br> 5th Street, downtown Lafayette between Main and Columbia</p>
+              <p>A mashup of a Maker Faire and the Farmers Market with opportunities meet and purchase from local and regional artisans, craftspeople, and makers of all types! Food trucks and entertainment and lots to see.</p>
+              <div class='link-container'>
+                <a class='button entred' href='https://www.facebook.com/events/1007370479443863/' id='see-inside' target='_blank'>Details Here</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- PARALLAX -->
+        <section class='friday para' id='friday-image'>
+          <div class='overlay'>
+            <div class='container message'>
+              <p class='quote-block'>
+                @@glew.menu.day5@@
+                <span>
+                  <!--<span class='no-wrap'>September 14th -</span>
+                  <span class='no-wrap'>September 16th</span>-->
+                  @@glew.day5.subheader@@
+                </span>
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- END PARALLAX -->
+        <section class='summary' id='summary'>
+          <div class='container events'>
+            <div class='sixteen columns'>
+              <h3 class='red-text'>GREATER LAFAYETTE STARTUP WEEKEND</h3>
+              <p><b>Friday 9.14 from 8 am - 8 pm</b> <br> MatchBOX Coworking Studio <br> 17 South 6th St., Lafayette</p>
+              <p>From ideas to startups in 50 unforgettable hours! Do you have an idea you'd like to pursue or a problem you'd like to solve but don't know where to start or who to start with? Greater Lafayette Startup Weekend is the place to look for a team, create a prototype of your idea, validate your business idea, and receive feedback from experienced entrepreneurs, all in one weekend.</p>
+              <div class='link-container'>
+                <a class='button entred' href='https://glsw2018.eventbrite.com' id='see-inside' target='_blank'>Buy Tickets Here</a>
+              </div>
+              <br>
+              <br>
+              <hr style='width:100%'>
+              <br>
+            </div>
+            <div class='sixteen columns'>
+              <h3 class='red-text'>FRIDAY MORNING FOUNDRY GROUNDS</h3>
+              <p><b>Friday 9.14 from 8:30 am - 10 am</b> <br> Burton D. Morgan Center for Entrepreneurship <br> 1201 West State St., West Lafayette</p>
+              <p>Join the Purdue Foundry for conversation, presentation & networking focused on startups, ideas & entrepreneurship. Two-hour parking is available on State Street and event will take place in the cafe on the first floor of the Burton D. Morgan Center.</p>
+              <div class='link-container'>
+                <a class='button entred' href='https://purduefoundry.com/events' id='see-inside' target='_blank'>Click Here For Details</a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id='contact'>
+          <div class='container'>
+            <div class='sixteen columns social'>
+              <div class='third'>
+                <a href='http://twitter.com/matchboxcowork'>
+                  <i class='icon-twitter'></i>
+                </a>
+              </div>
+              <div class='third'>
+                <a href='http://facebook.com/matchboxcowork'>
+                  <i class='icon-facebook'></i>
+                </a>
+              </div>
+              <div class='third'>
+                <a href='https://www.instagram.com/matchboxcowork/'>
+                  <i class='icon-instagram'></i>
+                </a>
+              </div>
+            </div>
+            <div class='sixteen columns' style='padding-bottom: 25px;'>
+              <p>To share your ideas or contribute to the body of thought celebrating entrepreneurship in Greater Lafayette please email us at <a href="mailto:entrepreneur@matchboxstudio.org">entrepreneur@matchboxstudio.org</a></p>
+            </div>
+          </div>
+        </section>
+        <section id='facebook'>
+          <div class='container events'>
+            <div class='sixteen columns' style='text-align:center'>
+              <div class='fb-page' data-adapt-container-width='true' data-hide-cover='false' data-href='https://www.facebook.com/matchboxcowork/' data-show-facepile='true' data-small-header='false' data-tabs='timeline' data-width='960px'>
+                <blockquote cite='https://www.facebook.com/matchboxcowork/' class='fb-xfbml-parse-ignore'>
+                  <a href='https://www.facebook.com/matchboxcowork/'>
+                    MatchBOX
+                  </a>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Contact -->
+        <section class='contact' id='sponsors'>
+          <div class='sponsors container'>
+            <div class='sixteen columns'>
+              <div class='message-block'>
+                <h3 style='text-align:center'>MatchBOX Presents: Greater Lafayette Entrepreneurship Week is supported by:</h3>
+              </div>
+              <ul>
+                <li>
+                  <a alt='Link to The City of Lafayette' href='http://www.lafayette.in.gov/'>
+                    <img alt='The City of Lafayette' src='/assets/img/sponsors/LafayetteLogo.png'>
+                  </a>
+                </li>
+                <li>
+                  <a alt='Link to The City of West Lafayette' href='http://www.westlafayette.in.gov/'>
+                    <img alt='The City of West Lafayette' src='/assets/img/sponsors/West-Lafayette.png'>
+                  </a>
+                </li>
+                <li>
+                  <a alt='Link to MatchBOX Studio' href='http://matchboxstudio.org/'>
+                    <img alt='MatchBOX Studio' src='/assets/img/sponsors/matchbox.png'>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+    </div>
+    <!-- ./page-wrapper -->
+    <!-- FOOTER -->
+    <section class='footer'>
+      <div class='container'>
+        <div class='sixteen columns'>
+          MatchBOX Coworking Studio © All Rights Reserved
+        </div>
+      </div>
+    </section>
+    <!--
+      End Document
+      ==================================================
+    -->
+    <!--
+      JS
+      ==================================================
+    -->
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.js' type='text/javascript'></script>
+    <script src='../assets/js/jquery.scrollTo.min.js' type='text/javascript'></script>
+    <script src='../assets/js/jquery.localScroll.min.js' type='text/javascript'></script>
+    <script src='../assets/rs-plugin/js/jquery.themepunch.plugins.min.js' type='text/javascript'></script>
+    <script src='../assets/rs-plugin/js/jquery.themepunch.revolution.min.js' type='text/javascript'></script>
+    <script src='../assets/js/jquery.form.js'></script>
+    <script src='../assets/js/jquery.validate.min.js'></script>
+    <script src='../assets/js/scripts.js'></script>
+    <script src='../assets/js/supersized.3.2.7.js'></script>
+    <script src='../assets/js/supersized.shutter.min.js'></script>
+    <script src='../assets/js/jquery.prettyPhoto.js'></script>
+    <script src='../assets/js/main.js'></script>
+  </body>
+</html>
