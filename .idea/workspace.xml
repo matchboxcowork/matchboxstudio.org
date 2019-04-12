@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39569dd9-d310-41cb-b562-c646f534f825" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matchboxwebsite/Config.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/Config.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/generate_tokens.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.closing.description.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.closing.description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day1.event2.description.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day1.event2.description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day2.event1.description.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day2.event1.description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day2.event2.description.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day2.event2.description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day2.event4.description.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day2.event4.description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day3.event2.description.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day3.event2.description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day4.event1.description.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day4.event1.description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.description.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event2.description.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event2.description.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.sponsor1.logo.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.sponsor1.logo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.sponsor2.logo.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.sponsor2.logo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.sponsor3.logo.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.sponsor3.logo.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/glew/index.html.cms" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/glew/index.html.cms" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/calendar.events.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/ContentFiles/calendar.events.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/assets/css/mbx.css" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/assets/css/mbx.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matchboxwebsite/Preview/glew/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/Preview/glew/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matchboxwebsite/Preview/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/Preview/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,14 +26,14 @@
           <entry key="project.open.time.2" value="1" />
           <entry key="project.open.time.25" value="1" />
           <entry key="project.open.time.5" value="2" />
-          <entry key="project.open.time.6" value="3" />
-          <entry key="project.opened" value="21" />
+          <entry key="project.open.time.6" value="4" />
+          <entry key="project.opened" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cms" value="3" />
-          <entry key="css" value="19" />
+          <entry key="cms" value="4" />
+          <entry key="css" value="20" />
           <entry key="haml" value="7" />
           <entry key="html" value="19" />
           <entry key="js" value="1" />
@@ -56,8 +44,8 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="19" />
-          <entry key="HTML" value="22" />
+          <entry key="CSS" value="20" />
+          <entry key="HTML" value="23" />
           <entry key="Haml" value="7" />
           <entry key="JSON" value="138" />
           <entry key="JavaScript" value="1" />
@@ -68,7 +56,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="cms" value="576" />
-          <entry key="css" value="4484" />
+          <entry key="css" value="4486" />
           <entry key="haml" value="1342" />
           <entry key="html" value="1085" />
           <entry key="json" value="147" />
@@ -76,7 +64,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="4484" />
+          <entry key="CSS" value="4486" />
           <entry key="HTML" value="1661" />
           <entry key="Haml" value="1342" />
           <entry key="JSON" value="147" />
@@ -87,26 +75,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/glew/sponsors.html">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/index.html.cms">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="668" column="49" lean-forward="true" selection-start-line="668" selection-start-column="49" selection-end-line="668" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/glew/index.html.cms">
+        <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/assets/css/mbx.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="45" column="83" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
-              <folding>
-                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#section#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#section#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#section#3;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#section#3;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#0;n#div#2;n#div#0;n#section#3;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#section#5;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#section#9;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#section#12;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="274">
+              <caret line="193" column="20" lean-forward="true" selection-start-line="193" selection-start-column="20" selection-end-line="193" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -156,7 +140,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day4.event1.venue.json" />
         <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.background.image.json" />
         <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.address.json" />
         <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.button.link.json" />
@@ -207,6 +190,7 @@
         <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.description.json" />
         <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event2.description.json" />
         <option value="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/glew/index.html.cms" />
+        <option value="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/assets/css/mbx.css" />
       </list>
     </option>
   </component>
@@ -216,11 +200,10 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-2539" />
-    <option name="y" value="41" />
-    <option name="width" value="2432" />
-    <option name="height" value="1283" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -245,6 +228,21 @@
               <item name="MatchboxSite" type="462c0819:PsiDirectoryNode" />
               <item name="matchboxwebsite" type="462c0819:PsiDirectoryNode" />
               <item name="HtmlFiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MatchboxSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MatchboxSite" type="462c0819:PsiDirectoryNode" />
+              <item name="matchboxwebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="HtmlFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MatchboxSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MatchboxSite" type="462c0819:PsiDirectoryNode" />
+              <item name="matchboxwebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="HtmlFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MatchboxSite" type="b2602c69:ProjectViewProjectNode" />
@@ -291,10 +289,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2539" y="41" width="2432" height="1283" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14435147" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14592275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -325,13 +323,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.time.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.title.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -532,13 +523,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/matchboxwebsite/ContentFiles/calendar.json" />
     <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/glew/index.html" />
-    <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/index.html.cms">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="669" selection-start-line="669" selection-end-line="669" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.sponsor1.link.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -632,12 +616,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/glew/sponsors.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/glew/index.html.cms">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
+        <state relative-caret-position="-5163">
           <caret line="45" column="83" selection-start-line="45" selection-start-column="83" selection-end-line="45" selection-end-column="83" />
           <folding>
             <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -650,6 +631,26 @@
             <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#section#9;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#section#12;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/glew/sponsors.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/index.html.cms">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="668" column="49" lean-forward="true" selection-start-line="668" selection-start-column="49" selection-end-line="668" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/assets/css/mbx.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="193" column="20" lean-forward="true" selection-start-line="193" selection-start-column="20" selection-end-line="193" selection-end-column="20" />
         </state>
       </provider>
     </entry>
