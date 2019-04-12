@@ -1,1 +1,6 @@
-{"contentId":"glew.closing.description","content":"To share your ideas or contribute to the body of thought celebrating entrepreneurship in Greater Lafayette please email us at entrepreneur@matchboxstudio.org","type":"richText","fileContents":""}
+{
+  "contentId": "glew.closing.description",
+  "content": "<p>To share your ideas or contribute to the body of thought celebrating entrepreneurship in Greater Lafayette please email us at <a href=\"mailto:entrepreneur@matchboxstudio.org\" target=\"\">entrepreneur@matchboxstudio.org</a></p>",
+  "type": "richText",
+  "fileContents": null
+}

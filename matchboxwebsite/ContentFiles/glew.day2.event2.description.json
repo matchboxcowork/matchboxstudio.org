@@ -1,1 +1,6 @@
-{"contentId":"glew.day2.event2.description","content":"Join us for a meet & greet and fireside chat with Christine Deehring, founder of Bump Boxes. Breakfast will be provided. Email foundry@prf.org for more information or to RSVP. This event is hosted by WomenIN, an effort of Purdue Foundry aimed at helping women entrepreneurs and women-led teams in Indiana launch their innovations into startups.","type":"richText","fileContents":""}
+{
+  "contentId": "glew.day2.event2.description",
+  "content": "<p>Join us for a meet &amp; greet and fireside chat with Christine Deehring, founder of Bump Boxes. Breakfast will be provided. Email <a href=\"mailto:foundry@prf.org\" target=\"\">foundry@prf.org</a> for more information or to RSVP. This event is hosted by WomenIN, an effort of Purdue Foundry aimed at helping women entrepreneurs and women-led teams in Indiana launch their innovations into startups.</p>",
+  "type": "richText",
+  "fileContents": null
+}

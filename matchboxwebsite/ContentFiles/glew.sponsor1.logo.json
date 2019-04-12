@@ -1,1 +1,6 @@
-{"contentId":"glew.sponsor1.logo","content":"","type":"image","fileContents":""}
+{
+  "contentId": "glew.sponsor1.logo",
+  "content": "img/matchboxwebsite/glew.sponsor1.logo.Thumbnail.png",
+  "type": "image",
+  "fileContents": "img/glew.sponsor1.logo.Image.png"
+}
