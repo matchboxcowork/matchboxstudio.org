@@ -315,7 +315,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href='/calendar'>
+                        <a href='#calendar'>
                             Calendar
                             <span class='arrow'></span>
                         </a>
@@ -346,7 +346,7 @@
                     <option value='/about.html'>- About</option>
                     <option value='https://matchbox.spaces.nexudus.com/en/signup'>- Join</option>
                     <option value='/acceleration'>- Acceleration</option>
-                    <option value='/calendar'>- Calendar</option>
+                    <option value='#calendar'>- Calendar</option>
                     <option value='/blog'>- Blog</option>
                     <option value='#contact'>- Contact</option>
                 </select>
@@ -663,7 +663,7 @@
                     Don't be shy, you can ask us <span>anything</span>.
                 </h2>
                 <!-- Events Calendar -->
-                <div>
+                <div id="calendar">
 
                     <h2>2019 Events Calendar</h2>
                     <div id='events-list' style="overflow: hidden;">

@@ -3,10 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="39569dd9-d310-41cb-b562-c646f534f825" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matchboxwebsite/Config.json" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/Config.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/acceleration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/acceleration/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/assets/css/mbx.css" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/assets/css/mbx.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/blog/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/calendar/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/index.html.cms" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/index.html.cms" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matchboxwebsite/Preview/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/Preview/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matchboxwebsite/Preview/acceleration/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/Preview/acceleration/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matchboxwebsite/Preview/assets/css/mbx.css" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/Preview/assets/css/mbx.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matchboxwebsite/Preview/blog/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/Preview/blog/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matchboxwebsite/Preview/glew/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/matchboxwebsite/Preview/glew/index.html" afterDir="false" />
@@ -36,10 +40,10 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cms" value="7" />
+          <entry key="cms" value="9" />
           <entry key="css" value="22" />
-          <entry key="haml" value="7" />
-          <entry key="html" value="22" />
+          <entry key="haml" value="8" />
+          <entry key="html" value="27" />
           <entry key="js" value="1" />
           <entry key="json" value="138" />
           <entry key="php" value="1" />
@@ -50,8 +54,8 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="22" />
-          <entry key="HTML" value="29" />
-          <entry key="Haml" value="7" />
+          <entry key="HTML" value="36" />
+          <entry key="Haml" value="8" />
           <entry key="JSON" value="138" />
           <entry key="JavaScript" value="1" />
           <entry key="PLAIN_TEXT" value="1" />
@@ -61,17 +65,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cms" value="576" />
-          <entry key="css" value="5060" />
+          <entry key="cms" value="602" />
+          <entry key="css" value="5239" />
           <entry key="haml" value="1342" />
-          <entry key="html" value="1665" />
+          <entry key="html" value="1965" />
           <entry key="json" value="147" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="5060" />
-          <entry key="HTML" value="2241" />
+          <entry key="CSS" value="5239" />
+          <entry key="HTML" value="2567" />
           <entry key="Haml" value="1342" />
           <entry key="JSON" value="147" />
         </counts>
@@ -83,9 +87,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/index.html.cms">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="674" column="161" selection-start-line="674" selection-start-column="20" selection-end-line="674" selection-end-column="161" />
+            <state relative-caret-position="1000">
+              <caret line="351" column="25" lean-forward="true" selection-start-line="351" selection-start-column="25" selection-end-line="351" selection-end-column="25" />
               <folding>
+                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#span#0;n#div#0;n#div#0;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#span#1;n#div#0;n#div#0;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -94,17 +99,32 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/about.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="486">
+              <caret line="128" column="19" lean-forward="true" selection-start-line="119" selection-start-column="10" selection-end-line="128" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/acceleration/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="129" column="19" selection-start-line="129" selection-start-column="19" selection-end-line="129" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/blog/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="688">
-              <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+            <state relative-caret-position="692">
+              <caret line="133" selection-start-line="133" selection-end-line="133" />
               <folding>
                 <element signature="n#script#1;n#head#0;n#html#0;n#!!top" />
-                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#i#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -124,11 +144,24 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/blog/blog1.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="125" column="35" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" />
+                <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/assets/css/mbx.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="428">
-              <caret line="698" column="19" selection-start-line="698" selection-start-column="19" selection-end-line="698" selection-end-column="19" />
+            <state relative-caret-position="555">
+              <caret line="738" column="33" selection-start-line="738" selection-start-column="33" selection-end-line="738" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -137,10 +170,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>see more</find>
-      <find>jus</find>
-      <find>subscri</find>
-      <find>&lt;script&gt;</find>
       <find>scr</find>
       <find>flex-row</find>
       <find>see</find>
@@ -160,13 +189,17 @@
       <find>flex-grow</find>
       <find>justify-content-end</find>
       <find>background-fill</find>
-      <find>see-more-button</find>
       <find>blog</find>
       <find>grow</find>
       <find>flex-col</find>
-      <find>see-more</find>
       <find>space-</find>
       <find>blog-</find>
+      <find>&lt;selec</find>
+      <find>see-more-button</find>
+      <find>see-more</find>
+      <find>@media</find>
+      <find>@@cale</find>
+      <find>contact</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/assets</dir>
@@ -178,9 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.address.json" />
-        <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.button.link.json" />
-        <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.button.text.json" />
         <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.time.json" />
         <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.title.json" />
         <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.venue.json" />
@@ -226,9 +256,12 @@
         <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event1.description.json" />
         <option value="$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event2.description.json" />
         <option value="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/glew/index.html.cms" />
-        <option value="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/index.html.cms" />
-        <option value="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/assets/css/mbx.css" />
         <option value="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/blog/index.html" />
+        <option value="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/assets/css/mbx.css" />
+        <option value="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/index.html.cms" />
+        <option value="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/about.html" />
+        <option value="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/acceleration/index.html" />
+        <option value="$PROJECT_DIR$/matchboxwebsite/HtmlFiles/blog/blog1.html" />
       </list>
     </option>
   </component>
@@ -239,8 +272,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2400" />
-    <option name="y" value="656" />
+    <option name="x" value="-2361" />
+    <option name="y" value="450" />
     <option name="width" value="1623" />
     <option name="height" value="877" />
   </component>
@@ -266,6 +299,13 @@
               <item name="MatchboxSite" type="462c0819:PsiDirectoryNode" />
               <item name="matchboxwebsite" type="462c0819:PsiDirectoryNode" />
               <item name="HtmlFiles" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MatchboxSite" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MatchboxSite" type="462c0819:PsiDirectoryNode" />
+              <item name="matchboxwebsite" type="462c0819:PsiDirectoryNode" />
+              <item name="HtmlFiles" type="462c0819:PsiDirectoryNode" />
+              <item name="acceleration" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MatchboxSite" type="b2602c69:ProjectViewProjectNode" />
@@ -335,10 +375,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-2400" y="656" width="1623" height="877" extended-state="0" />
+    <frame x="-2361" y="450" width="1623" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25869703" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25869703" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection Results" weight="0.3299363" />
@@ -369,28 +409,19 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/blog/index.html</url>
+          <line>120</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event2.button.link.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event2.button.text.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event2.time.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="19" selection-start-column="19" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/matchboxwebsite/ContentFiles/glew.day5.event2.title.json">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -645,20 +676,6 @@
     <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/glew/sponsors.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/glew/index.html.cms">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="34" column="60" selection-start-line="34" selection-start-column="46" selection-end-line="34" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/about.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="323" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/pycharm.jar!/resources/html5-schema/html5/block.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="620">
@@ -666,11 +683,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/about.haml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/glew/index.html.cms">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="150" column="21" lean-forward="true" selection-start-line="142" selection-start-column="12" selection-end-line="150" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#section#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#section#1;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#section#3;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#div#1;n#div#0;n#section#3;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#div#2;n#div#0;n#section#3;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#section#5;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#div#0;n#div#0;n#section#9;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#section#12;n#section#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/assets/css/mbx.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="738" column="33" selection-start-line="738" selection-start-column="33" selection-end-line="738" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/index.html.cms">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="674" column="161" selection-start-line="674" selection-start-column="20" selection-end-line="674" selection-end-column="161" />
+        <state relative-caret-position="1000">
+          <caret line="351" column="25" lean-forward="true" selection-start-line="351" selection-start-column="25" selection-end-line="351" selection-end-column="25" />
           <folding>
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#span#0;n#div#0;n#div#0;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#span#1;n#div#0;n#div#0;n#div#0;n#section#4;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -678,23 +724,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/assets/css/mbx.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="428">
-          <caret line="698" column="19" selection-start-line="698" selection-start-column="19" selection-end-line="698" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/blog/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="688">
-          <caret line="234" column="18" selection-start-line="234" selection-start-column="18" selection-end-line="234" selection-end-column="18" />
+        <state relative-caret-position="692">
+          <caret line="133" selection-start-line="133" selection-end-line="133" />
           <folding>
             <element signature="n#script#1;n#head#0;n#html#0;n#!!top" />
-            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#i#0;n#span#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#8;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -709,6 +745,31 @@
             <element signature="n#style#0;n#i#0;n#span#0;n#div#1;n#div#1;n#div#5;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
             <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="128" column="19" lean-forward="true" selection-start-line="119" selection-start-column="10" selection-end-line="128" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/acceleration/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="129" column="19" selection-start-line="129" selection-start-column="19" selection-end-line="129" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/matchboxwebsite/HtmlFiles/blog/blog1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="125" column="35" selection-start-line="125" selection-start-column="35" selection-end-line="125" selection-end-column="35" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -699,7 +699,7 @@ h2.blog-title {
   margin-bottom: 0;
 }
 
-.blog-description p, span.see-more-button {
+.blog-description p, a.see-more-button {
   font-size: 15px;
   line-height: 1.5;
 }
@@ -707,11 +707,41 @@ h2.blog-title {
 p.blog-date {
   margin-bottom: 0;
   color: #9B9B9B;
+  padding: 5px 0;
 }
 
-span.see-more-button {
+a.see-more-button {
   color: #F05241;
   cursor: pointer;
+  padding: 5px;
+}
+
+a.see-more-button:hover {
+  background-color: rgba(240, 62, 85, 0.1);
+  text-decoration: none;
+}
+
+.blog-full-content p, .blog-full-content i {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.blog-full-content {
+  display: flex !important;
+  flex-direction: column;
+}
+
+.blog-full-content img {
+  width: 100%;
+}
+
+.blog-full-content .red-line {
+  margin-bottom: 30px !important;
+}
+@media only screen and (min-width: 1200px) {
+  .wide-container {
+    width: 1200px !important;
+  }
 }
 
 @media only screen and (max-width: 960px) {

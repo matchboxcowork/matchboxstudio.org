@@ -92,7 +92,7 @@
               </a>
             </li>
             <li>
-              <a href='/calendar'>
+              <a href='#calendar'>
                 Calendar
                 <span class='arrow'></span>
               </a>
@@ -117,6 +117,16 @@
               </a>
             </li>
           </ul>
+          <!-- SubMenu -->
+          <select class='sub-menu' id='subMenu' name='subMenu' onchange='navigate(this.value)' size='1'>
+            <option selected='selected' value=''>Menu</option>
+            <option value='/about.html'>- About</option>
+            <option value='https://matchbox.spaces.nexudus.com/en/signup'>- Join</option>
+            <option value='/acceleration'>- Acceleration</option>
+            <option value='#calendar'>- Calendar</option>
+            <option value='/blog'>- Blog</option>
+            <option value='#contact'>- Contact</option>
+          </select>
         </nav>
       </div>
       <!-- ./sixteen columns -->
