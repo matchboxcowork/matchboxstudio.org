@@ -330,6 +330,14 @@ img.fullimage {
   justify-content: center;
 }
 
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
 .bold {
   font-weight: bold; }
 
@@ -642,6 +650,69 @@ table.news-management input[type="checkbox"] {
   position: absolute;
   right: -17px;
   margin-top: -55px; }
+
+.blog-container {
+  flex-wrap: wrap;
+  display: flex !important;
+  flex-direction: row;
+  margin: 0 auto;
+}
+
+.blog-preview {
+  flex-direction: column;
+  display: flex;
+  margin: 30px;
+  width: 300px;
+  height: 380px;
+  position: relative;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.3) 0 5px 25px;
+}
+
+.background-fill {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+  width: 300px;
+  height: 150px;
+}
+
+.red-line {
+  width: 50px;
+  border-bottom: #F05241 solid 2px;
+  height: 10px;
+  margin-bottom: 3px;
+}
+
+.blog-description {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 210px;
+}
+
+h2.blog-title {
+  font-family: Montserrat, Gotham, sans-serif;
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+
+.blog-description p, span.see-more-button {
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+p.blog-date {
+  margin-bottom: 0;
+  color: #9B9B9B;
+}
+
+span.see-more-button {
+  color: #F05241;
+  cursor: pointer;
+}
 
 @media only screen and (max-width: 960px) {
   .pricing .teir {
